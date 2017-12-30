@@ -1,0 +1,1065 @@
+/*
+        Theme Name: Neo Barcamp Bangalore Theme 21
+        Theme URL: https://github.com/BarcampBangalore/bcb-theme
+        Description: Neo BarcampBangalore theme created for WordPress for the site of Barcamp Bangalore.
+        Author: Aman Manglik
+        Author URI: http://www.amanmanglik.com
+        Version: 21
+
+        The CSS, XHTML and design is released under GPL:
+        http://www.opensource.org/licenses/gpl-license.php
+
+        Changelog:
+*/
+
+html {
+    height: 100%;
+}
+
+
+a {
+    color: inherit;
+}
+
+body {
+    
+    height: 100%;
+    font-family: 'Lato', sans-serif;
+    
+    
+}
+
+#header_small {
+    max-width: none;
+}
+
+#header_small #menu_button_container {
+    padding: 16px 0px 0px 0px;
+    z-index: 200;
+    height: 56px;
+}
+
+#header_small_logo_container img {
+    width: 100%;
+    padding-top: 16px;
+}
+
+#header_large {
+    padding-left: 58px;
+}
+
+
+#header_large .menu {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+#header_large .menu .current-menu-item a {
+    color: #FFFFFF;
+}
+
+#header_large .menu li {
+    margin: 5px 0px;
+}
+
+#header_large .menu li a {
+    color: #000000;
+    text-decoration: none;
+}
+
+#header_large .menu li a:hover {
+    color: #FFFFFF;
+}
+
+#header_large_logo_container img {
+    height: 125px;
+    margin: 30px 0px;
+}
+
+
+
+
+
+
+#master_container {
+    height: 100%;
+    position: relative;
+}
+
+#background_icons_container {
+    position: absolute;
+    height: 100%;
+    width: 94%;
+}
+
+
+#background_icons_container img {
+    position: absolute;
+    width: 55px;
+}
+
+
+#background_icons_container #hat_icon {
+    top: 6%;
+    right: 24%;
+}
+
+#background_icons_container #ruler_icon {
+    top: 21%;
+    right: 18%;
+}
+
+#background_icons_container #grid_icon {
+    top: 24%;
+    right: 4%;
+}
+
+#background_icons_container #web_icon {
+    top: 43%;
+    right: 3%;
+}
+
+#background_icons_container #cloud_icon {
+    top: 64%;
+    right: 29%;
+}
+
+#background_icons_container #loopy_icon {
+    top: 79%;
+    right: 19%;
+}
+
+#background_icons_container #mouse_icon {
+    top: 74%;
+    right: 6%;
+}
+
+
+#background_icons_container_small {
+    position: absolute;
+    height: 100%;
+    width: 94%;
+}
+
+#background_icons_container_small img {
+    position: absolute;
+    width: 45px;
+}
+
+#background_icons_container_small #hat_icon {
+    top: 16%;
+    right: 42%;
+}
+
+#background_icons_container_small #ruler_icon {
+    top: 30%;
+    right: 34%;
+}
+
+#background_icons_container_small #grid_icon {
+    top: 32%;
+    right: 6%;
+}
+
+#background_icons_container_small #web_icon {
+    top: 52%;
+    right: 6%;
+}
+
+#background_icons_container_small #cloud_icon {
+    top: 64%;
+    right: 51%;
+}
+
+#background_icons_container_small #loopy_icon {
+    top: 81%;
+    right: 34%;
+}
+
+#background_icons_container_small #mouse_icon {
+    top: 74%;
+    right: 6%;
+}
+
+
+
+
+
+#page_master_container {
+    max-width: none;
+    padding: 35px 0px;
+    overflow: auto;
+    
+    padding: 0px 0px 0px 0px;
+}
+
+@media (min-width: 768px) {
+    
+    #page_master_container {
+        padding-right: 200px;
+    }
+    
+    
+}
+
+
+
+#page_home_container {
+    color: #FFFFFF;
+}
+
+
+
+
+#page_about_container {
+    
+}
+
+#page_about_title {
+    color: #FFFFFF;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#page_about_content {
+    font-size: 1.1em;
+}
+
+
+#page_sessions_wrapper {
+    width: 100%;
+}
+
+
+#sessions_page_track_buttons_container {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    max-width: 100px;
+}
+
+.sessions_page_track_button {
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    cursor: pointer;
+    
+/*    margin-right: 46px;
+    vertical-align: top;*/
+}
+
+.sessions_page_track_button img {
+    width: 45px;
+}
+
+.sessions_page_track_icon_name {
+    font-size: 12px;
+    
+}
+
+@media (min-width: 768px) {
+    
+    #sessions_page_track_buttons_container {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    min-height: 90px;
+    max-width:  none;
+}
+    
+    .sessions_page_track_button {
+        margin-left: 0px;
+    }
+    
+    .sessions_page_track_button img {
+        width: 60px;
+    }
+}
+
+
+#sessions_page_list_container {
+    width: 100%;
+}
+
+
+
+
+.sessions_page_card_content {
+    background: linear-gradient(to right, #eff0bb, #d5d3dd);
+    border-width: 4px;
+    margin-bottom: 15px;
+}
+
+.sessions_page_card_avatar {
+    padding: 0px;
+    text-align: center;
+}
+
+.sessions_page_card_avatar a img {
+    margin: 25px 5px;
+    background-color: #E6E6E6;
+    border-radius: 5px;
+}
+
+.sessions_page_card_right_column {
+    margin: 6px 0px;
+    border: 0px;
+    border-left-width: 1px;
+    height: 99px;
+}
+
+.sessions_page_card_title {
+    font-size: 15px;
+    height: 50px;
+}
+
+.sessions_page_card_author {
+    color: #666666;
+}
+
+.sessions_page_card_comments_stats {
+    float: right;
+    display: inline-block;
+}
+
+.sessions_page_card_comments_icon {
+    height: 20px;
+    position: relative;
+}
+
+.sessions_page_card_comments_icon img {
+    height: 25px;
+    position: relative;
+    top: -5px;
+}
+
+.sessions_page_card_comments_count {
+    font-size: 8px;
+    position: relative;
+    top: -5px;
+    text-align: center;
+}
+
+
+.sessions_page_card_attendees_stats {
+    float: right;
+    display: inline-block;
+}
+
+.sessions_page_card_attendees_icon {
+    height: 20px;
+    position: relative;
+}
+
+.sessions_page_card_attendees_icon img {
+    height: 25px;
+    position: relative;
+    top: -5px;
+}
+
+.sessions_page_card_attendees_count {
+    font-size: 8px;
+    position: relative;
+    top: -5px;
+    text-align: center;
+}
+
+
+.sessions_page_card_attend_button .neo_attend_button
+{
+    float: right;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.sessions_page_card_attend_button
+{
+    height: 20px;
+    position: relative;
+}
+
+.sessions_page_card_attend_button img {
+    height: 25px;
+    position: relative;
+    top: -5px;
+}
+
+/*.sessions_page_card_attend_button .neo_button_attending:hover
+{
+    background-color: #6DCF18;
+}
+.sessions_page_card_attend_button .neo_button_wanna_attend:hover
+{
+    background-color: #A9EC6F;
+    color: #FFFFFF;
+}*/
+
+
+
+.track_color_1
+{
+    color: #000000;
+}
+.track_color_bg_1
+{
+    background-color: #000000;
+}
+
+.track_color_3
+{
+    color: #507aa5;
+}
+.track_color_bg_3
+{
+    background-color: #507aa5;
+}
+
+.track_color_6
+{
+    color: #f2e40c;
+}
+.track_color_bg_6
+{
+    background-color: #f2e40c;
+}
+
+.track_color_5
+{
+    color: #7cb241;
+}
+.track_color_bg_5
+{
+    background-color: #7cb241;
+}
+
+.track_color_0
+{
+    color: #f79423;
+}
+.track_color_bg_0
+{
+    background-color: #f79423;
+}
+
+.track_color_2
+{
+    color: #ef5768;
+}
+.track_color_bg_2
+{
+    background-color: #ef5768;
+}
+
+.track_color_4
+{
+    color: #613516;
+}
+.track_color_bg_4
+{
+    background-color: #613516;
+}
+
+
+.track_color_border_0  {
+    border-color: #f79423;
+    border-style: solid;
+}
+
+.track_color_border_1 {
+    border-color: #000000;
+    border-style: solid;
+}
+
+.track_color_border_2 {
+    border-color: #ef5768;
+    border-style: solid;
+}
+
+
+.track_color_border_3 {
+    border-color: #507aa5;
+    border-style: solid;
+}
+
+.track_color_border_4 {
+    border-color: #613516;
+    border-style: solid;
+}
+
+.track_color_border_5 {
+    border-color: #7cb241;
+    border-style: solid;
+}
+
+.track_color_border_6 {
+    border-color: #f2e40c;
+    border-style: solid;
+}
+
+
+
+
+
+.track_color_933
+{
+    color: #9E2B1C;
+}
+
+.track_color_bg_933
+{
+    background-color: #9E2B1C;
+}
+
+/*  techlash = 933 */
+.track_color_tl
+{
+    color: #9E2B1C;
+}
+
+.track_color_bg_tl, .track_color_bg_1065
+{
+    background-color: #9E2B1C;
+}
+
+
+
+
+#page_single_container {
+    height: 100%;
+}
+
+#page_single_wrapper {
+    height: auto;
+    background: linear-gradient(to right, #eff0bb, #d5d3dd);
+    margin-top: 40px;
+    padding-top: 30px;
+}
+
+.single_page_box {
+    background-color: #e5e5e5;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+#single_page_avatar_container #single_page_attend_area img {
+    width: 60px;
+}
+
+#single_page_avatar {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#single_page_avatar img {
+    width: 50px;
+    height: auto;
+}
+
+
+#single_page_title {
+    font-weight: bold;
+}
+
+@media (min-width: 768px) {
+    
+    #single_page_avatar img {
+        width: 90px;
+        height: auto;
+    }
+    
+    #single_page_title {
+        font-size: 25px;
+    }
+    
+}
+
+#single_page_author {
+    color: #666666;
+}
+
+#single_page_header {
+    
+}
+
+#single_page_attend_area {
+    cursor: pointer;
+}
+
+#single_page_attend_area img {
+    width: 80px;
+}
+
+#single_page_attendees_icon {
+    width: 50px;
+}
+
+
+
+#single_page_attendees_list {
+    margin-left: 52px;
+}
+
+.attending_user {
+    color: #545454;
+    display: inline-block;
+    padding: 1px 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+#single_page_tags_icon {
+    width: 50px;
+    height: auto;
+}
+
+#single_page_tags_list {
+    margin-left: 45px;
+    color: #999999;
+    font-size: 13px;
+}
+
+#single_page_tags_list a {
+    padding: 0px 10px;
+    color: #333333;
+}
+
+
+
+
+
+
+
+
+
+
+
+#sessionpage_commentsarea
+{
+    position: relative;
+    margin-top: 20px;
+}
+
+
+#sessionpage_commentshead
+{
+
+    font-size: 24px;
+    color: #888888;
+    text-decoration: underline;
+}
+
+#sessionpage_commentsarea ul
+{
+    list-style: none;
+    padding: 10px 0px 10px 25px;
+}
+
+#sessionpage_commentsarea .comment-body
+{
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#sessionpage_commentsarea .comment-body:hover
+{
+    background-color: #EEEEEE;
+}
+
+#sessionpage_commentsarea img
+{
+    float: left;
+    border-radius: 6px;
+}
+
+#sessionpage_commentsarea .comment-body-inner
+{
+    padding-left: 60px;
+}
+
+
+#sessionpage_commentsarea a
+{
+    color: #888888;
+
+    font-style: normal;
+}
+
+#sessionpage_commentsarea .comment-author a
+{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#sessionpage_commentsarea .comment-author a:hover
+{
+    text-decoration: underline;
+}
+
+#sessionpage_commentsarea .comment-body-inner p
+{
+    margin: 5px 0px;
+    text-align: justify;
+}
+
+#sessionpage_commentsarea .comment_footer
+{
+    font-size: 11px;
+
+}
+
+#sessionpage_commentsarea .comment_footer a
+{
+    color: #AAAAAA;
+
+}
+
+#sessionpage_commentsarea #respond
+{
+    margin-top: 30px;
+}
+
+#sessionpage_commentsarea #reply-title
+{
+    font-size: 18px;
+    color: #888888;
+}
+
+#sessionpage_commentsarea #submit
+{
+    width: 160px;
+    height: 30px;
+}
+
+#sessionpage_commentsarea #comment
+{
+    border: 1px solid #AAAAAA;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 385px;
+    height: 130px;
+}
+
+
+
+
+
+#page_author_container {
+    height: 100%;
+}
+
+#page_author_wrapper {
+    height: auto;
+    
+    margin-top: 40px;
+    padding-top: 30px;
+}
+
+#page_author_avatar {
+    text-align: center;
+}
+
+#page_author_avatar img {
+    width: 50px;
+    height: auto;
+}
+
+
+
+#page_author_name {
+    font-size: 20px;
+    color: #888888;
+    margin-bottom: 4px;
+}
+
+#page_author_name a {
+    color: #000000;
+}
+
+#page_author_sincedate {
+    font-size: 13px;
+    color: #999999;
+}
+
+
+@media (min-width: 768px) {
+    
+    #page_author_avatar img {
+        width: 90px;
+        height: auto;
+    }
+
+    #page_author_name {
+        font-size: 25px;
+    }
+
+    
+    
+}
+
+
+
+
+
+
+
+#page_techlash_wrapper {
+    color: #FFFFFF;
+}
+
+
+#page_techlash_header {
+    font-size: 40px;
+}
+
+@media (min-width: 768px) {
+    
+    #page_techlash_header {
+        font-size: 70px;
+    }
+}
+
+#page_techlash_sessionheading {
+    margin: 30px 0px;
+}
+
+#page_techlash_card {
+    
+    border: 2px solid #cab1ab;
+    margin-bottom: 30px;
+    padding: 15px;
+}
+
+.page_techlash_postname a:hover {
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.page_techlash_author {
+    color: #ead8d5;
+}
+
+
+#footer_container {
+    max-width: none;
+}
+
+#social_bar_container {
+    margin-top: 14px;
+    color: #FFFFFF;
+}
+
+.social_bar_icon {
+    width: 23px;
+    margin-right: 5px;
+}
+
+#sidebar {
+    position: absolute;
+    background: linear-gradient(to right, #eff0bb, #d5d3dd);
+    height: 100%;
+    width: 225px;
+    left: -235px;
+    z-index: 100;
+    padding-top: 70px;
+    padding-left: 24px;
+    box-shadow: 2px 0px 4px #2d2d2d;
+}
+
+#sidebar ul {
+    list-style: none;
+    padding: 0px;
+}
+
+#sidebar ul li {
+    margin-bottom: 15px;
+}
+
+#sidebar ul li a {
+    color: #000000;
+}
+
+#sidebar .current-menu-item a {
+    color: #999c35;
+}
+
+
+
+
+#when_where_container {
+    position: absolute;
+    right: 50px;
+    top: 40%;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    width: 50px;
+    font-size: 1.3em;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+#when_where_container:hover {
+    color: #FFFFFF;
+}
+
+
+#when_where_container_small {
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #000000;
+    margin-left: 20px;
+    padding: 3px;
+    font-size: 12px;
+}
+
+
+
+#venue_and_search_container {
+    padding: 15px 0px 0px 0px;
+}
+
+
+
+#venue_container {
+    position: absolute;
+    top: 10%;
+    right: 0px;
+    background: linear-gradient(to right, #eff0bb, #d5d3dd);
+    height: 80%;
+}
+
+
+#venue_container #venue_details_wrapper {
+    width: 70%;
+    margin: 50px auto 0px auto;
+    text-align: center;
+}
+
+#venue_container #venue_date_wrapper {
+    display: inline-block;
+    width: 33%;
+}
+
+#venue_container #venue_date {
+    font-size: 42px;
+}
+
+#venue_container #venue_year {
+    font-size: 14px;
+}
+
+#venue_container #venue_time_wrapper {
+    display: inline-block;
+    width: 32%;
+}
+
+#venue_container #venue_time {
+    font-size: 42px;
+}
+
+#venue_container #venue_tod {
+    font-size: 14px;
+}
+
+
+#venue_container #venue_address_wrapper {
+    display: inline-block;
+    width: 34%;
+}
+
+#venue_container #venue_address_line1 {
+    font-size: 23px;
+}
+
+#venue_container #venue_address_line2 {
+    font-size: 14px;
+}
+
+#venue_container #venue_map iframe {
+    width: 96%;
+    height: 85%;
+    margin: auto;
+    box-shadow: 4px 4px 10px #adadad;
+}
+
+#venue_container #close_button {
+    position: absolute;
+    top: 35px;
+    right: 35px;
+    font-size: 30px;
+    color: #4e4e4e;
+    cursor: pointer;
+}
+
+
+#venue_container_small {
+    position: absolute;
+    bottom: 0px;
+    
+    background: linear-gradient(to right, #eff0bb, #d5d3dd);
+    height: 80%;
+    width: 90%;
+    left: 5%;
+}
+
+#venue_container_small #venue_details_wrapper_row1 {
+    text-align: center;
+    margin: 30px auto 0px auto;
+}
+
+#venue_container_small #venue_date_wrapper {
+    width: 50%;
+}
+
+#venue_container_small #venue_date {
+    font-size: 30px;
+}
+
+#venue_container_small #venue_year {
+    font-size: 11px;
+}
+
+#venue_container_small #venue_time_wrapper {
+    width: 50%;
+}
+
+#venue_container_small #venue_time {
+    font-size: 30px;
+}
+
+#venue_container_small #venue_tod {
+    font-size: 11px;
+}
+
+#venue_container_small #venue_details_wrapper_row2 {
+    text-align: center;
+    margin: 20px auto 20px auto;
+}
+
+#venue_container_small #venue_address_line1 {
+    font-size: 20px;
+}
+
+#venue_container_small #venue_address_line2 {
+    font-size: 11px;
+}
+
+#venue_container_small #venue_map {
+    padding: 0px;
+}
+
+#venue_container_small #venue_map iframe {
+    height: 95%;
+    box-shadow: 4px 4px 10px #adadad;
+}
+
+#venue_container_small #close_button {
+    position: absolute;
+    top: 6px;
+    right: 15px;
+    font-size: 26px;
+    color: #4e4e4e;
+    cursor: pointer;
+}
