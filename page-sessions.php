@@ -149,7 +149,7 @@
         
         
         <?php
-        $tracks = array(5, 6, 7, 8, 9, 10, 11);
+        $tracks = array(1694, 1695, 1696, 1697, 1698, 1699, 1700);
         $track_counter = 0;
         ?>
         
@@ -199,7 +199,7 @@
                     <?php
                     
                     
-                    $sessionsloop = new WP_Query(array('cat' => '5, 6, 7, 8, 9, 10, 11', 'nopaging' => true));
+                    $sessionsloop = new WP_Query(array('cat' => '1694, 1695, 1696, 1697, 1698, 1699, 1700', 'nopaging' => true));
                     if (!$sessionsloop->have_posts()) {
                         echo '<div class="sessioncard_no_session_message">No sessions in this track yet :)</div>';
                     }

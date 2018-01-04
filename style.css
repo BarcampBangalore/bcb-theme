@@ -799,6 +799,26 @@ body {
 }
 
 
+.authorpage_bcb_title {
+    font-size: 1.3em;
+    color: #444444;
+}
+
+.authorpage_sesstions_type {
+    color: #4a4a4a;
+    font-size: 17px;
+    margin: 7px 0px;
+}
+
+.authorpage_session_item h2 {
+    font-size: 15px;
+    color: #6b6b6b;
+}
+
+
+.ac_results {
+    background-color: #FFFFFF;
+}
 
 
 

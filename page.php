@@ -11,7 +11,8 @@
         </div>
 
         <div id="page_about_content" class="d-flex flex-column">
-            <?php echo get_the_content(); ?>
+            
+            <?php the_content(); ?>
         </div>
     </div>
     
