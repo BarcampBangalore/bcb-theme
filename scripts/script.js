@@ -4,7 +4,7 @@ jQuery(document).ready(function( $ ) {
     
     
     // Namaskara text
-    $("#page_home_wrapper").fitText(0.9);
+    $("#page_home_namaskara").fitText(0.9);
     
     $("#page_about_title").fitText(1.2, {maxFontSize: '60px'});
     
