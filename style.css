@@ -44,10 +44,58 @@ body {
     padding-top: 16px;
 }
 
+
+
+#search_button_small {
+    text-align: right;
+    margin-right: 5px;
+    font-size: 24px;
+}
+
+#search_slider_mobile {
+    position: absolute;
+    top: 40px;
+    right: -90%;
+    background: linear-gradient(to right, #eff0bb, #d5d3dd);
+    padding: 40px 10px 20px 25px;
+    width: 90%;
+    height: 130px;
+    
+}
+
+
+
+#search_slider_mobile #searchform {
+    width: 85%;
+}
+
+#search_slider_mobile #searchform #s {
+    background: rgba(0, 0, 0, 0.17);
+    border: none;
+    border-radius: 15px;
+    box-shadow: inset -1px -1px 2px #666666;
+    padding: 4px;
+    color: #000000;
+    width: 100%;
+}
+
+#search_slider_mobile #searchform #s::placeholder {
+    color: #666666;
+}
+
+#search_slider_mobile #close_button {
+    position: absolute;
+    top: 14px;
+    right: 20px;
+    font-size: 26px;
+}
+
+
+
+
 #header_large {
     padding-left: 58px;
 }
-
 
 #header_large .menu {
     list-style: none;
@@ -78,6 +126,39 @@ body {
     margin: 30px 0px;
 }
 
+
+
+#searchform  {
+    width: 75%;
+    margin-top: 10px;
+}
+
+#searchform .screen-reader-text {
+    display: none;
+}
+
+#searchform .col {
+    padding-left: 0px;
+}
+
+#searchform #s {
+    background: rgba(0, 0, 0, 0.17);
+    border: none;
+    border-radius: 15px;
+    box-shadow: inset -1px -1px 2px #666666;
+    padding: 4px;
+    color: #FFFFFF;
+    width: 100%;
+}
+
+#searchform #s::placeholder {
+    color: #AAAAAA;
+}
+
+#searchform button {
+    background: none;
+    border: none;
+}
 
 
 
@@ -859,6 +940,58 @@ body {
 .page_techlash_author {
     color: #ead8d5;
 }
+
+
+
+
+
+#page_search_wrapper {
+    width: 100%;
+}
+
+#page_search_title {
+    font-size: 30px;
+    color: #FFFFFF;
+    margin: 20px 0px;
+    
+}
+
+@media (min-width: 768px) {
+    
+    #page_search_title {
+        font-size: 60px;
+        color: #FFFFFF;
+
+    }
+}
+
+
+#page_search_title #page_search_title_prefix {
+    opacity: 0.6;
+}
+
+#page_search_content ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.search_result_item h2 {
+    font-size: 20px;
+}
+
+.search_result_item_details {
+    font-size: 16px;
+    color: #999999;
+}
+
+
+
+
+
+
+
+
 
 
 #footer_container {

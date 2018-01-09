@@ -83,6 +83,11 @@
         <div id="close_button"><i class="fa fa-times-circle-o" aria-hidden="true"></i></div>
     </div>
     
+    <div id="search_slider_mobile" class="d-none">
+        <?php get_search_form(true); ?>
+        <div id="close_button"><i class="fa fa-times-circle-o" aria-hidden="true"></i></div>
+    </div>
+    
 </div>
 
     <?php wp_footer(); ?>

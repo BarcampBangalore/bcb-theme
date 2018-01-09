@@ -65,6 +65,7 @@
                     <img src="<?php bloginfo('template_url'); ?>/images/BCB-LOGO-02.png" />
                 </div>
                 <?php wp_nav_menu(array('theme_location' => 'menu_part2')); ?>
+                <?php get_search_form(true); ?>
 
 
             </div>

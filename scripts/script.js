@@ -34,6 +34,29 @@ jQuery(document).ready(function( $ ) {
     
     
     
+    var searchSliderHidden = true;
+    $("#search_button_small").click(function() {
+        if (searchSliderHidden) {
+            $("#search_slider_mobile").removeClass("d-none");
+            $("#search_slider_mobile").animate({
+                right: '0px'
+            }, 400);
+            searchSliderHidden = false;
+        }
+    });
+    
+    
+    $("#search_slider_mobile #close_button").click(function() {
+        $("#search_slider_mobile").animate({
+            right: '-90%'
+        }, 400, function() {
+            $("#search_slider_mobile").addClass("d-none");
+        });
+        searchSliderHidden = true;
+    });
+    
+    
+    
     // Venue container large
     
     $("#venue_container").css('right', -($("#page_master_container").width() + 250));
@@ -98,6 +121,9 @@ jQuery(document).ready(function( $ ) {
                 
             case 'techlash':
                 return 'linear-gradient(to right, #B79891, #94716B)';
+            
+            case 'search':
+                return 'linear-gradient(to right, #a770ef, #cf8bf3, #fdb99b)'
                 
             default :
                 return 'linear-gradient(to right, #36D1DC, #5B86E5)';
