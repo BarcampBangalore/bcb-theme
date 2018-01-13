@@ -107,6 +107,9 @@
                             }
                     }, 400);
                 }
+                
+                
+                
                 var  showButton = new Array();
                 var allButtons = document.getElementsByClassName("sessions_page_track_button");
                 for (var i = 0; i < allButtons.length; i++) {
@@ -149,38 +152,39 @@
         
         
         <?php
-        $tracks = array(1694, 1695, 1696, 1697, 1698, 1699, 1700);
+        $tracks = array(1694, 1695, 1696, 1697, 1698, 1699, 1700);  // staging
+//        $tracks = array(5, 6, 7, 8, 9, 10, 11);   // dev
         $track_counter = 0;
         ?>
         
         
         
-        <div id="sessions_page_track_buttons_container"  class="row">
-            <div class="sessions_page_track_button col" onclick="showOnly(<?php echo $track_counter; ?>)" data-tooltip="Bangalore & Lifestyle" data-track-id="<?php echo $track_counter++; ?>">
+        <div id="sessions_page_track_buttons_container"  class="row flex-column flex-md-row">
+            <div class="sessions_page_track_button col-md" onclick="showOnly(<?php echo $track_counter; ?>)" data-tooltip="Bangalore & Lifestyle" data-track-id="<?php echo $track_counter++; ?>">
                 <img class="" src="<?php echo get_bloginfo('template_url').'/images/ICONS/web-icons-13.png' ?>" />
                 <div class="sessions_page_track_icon_name">Bangalore & Lifestyle</div>
             </div>
-            <div class="sessions_page_track_button col" onclick="showOnly(<?php echo $track_counter; ?>)" data-tooltip="Scaling  Infrastructure" data-track-id="<?php echo $track_counter++; ?>">
+            <div class="sessions_page_track_button col-md" onclick="showOnly(<?php echo $track_counter; ?>)" data-tooltip="Scaling  Infrastructure" data-track-id="<?php echo $track_counter++; ?>">
                 <img src="<?php echo get_bloginfo('template_url').'/images/ICONS/web-icons-14.png' ?>" />
                 <div class="sessions_page_track_icon_name">Scaling & Infrastructure</div>
             </div>
-            <div class="sessions_page_track_button col" onclick="showOnly(<?php echo $track_counter; ?>)" data-tooltip="Design" data-track-id="<?php echo $track_counter++; ?>">
+            <div class="sessions_page_track_button col-md" onclick="showOnly(<?php echo $track_counter; ?>)" data-tooltip="Design" data-track-id="<?php echo $track_counter++; ?>">
                 <img src="<?php echo get_bloginfo('template_url').'/images/ICONS/web-icons-15.png' ?>" />
                 <div class="sessions_page_track_icon_name">Design</div>
             </div>
-            <div class="sessions_page_track_button col" onclick="showOnly(<?php echo $track_counter; ?>)" data-tooltip="Mobile  Web" data-track-id="<?php echo $track_counter++; ?>">
+            <div class="sessions_page_track_button col-md" onclick="showOnly(<?php echo $track_counter; ?>)" data-tooltip="Mobile  Web" data-track-id="<?php echo $track_counter++; ?>">
                 <img src="<?php echo get_bloginfo('template_url').'/images/ICONS/web-icons-16.png' ?>" />
                 <div class="sessions_page_track_icon_name">Mobile & Web</div>
             </div>
-            <div class="sessions_page_track_button col" onclick="showOnly(<?php echo $track_counter; ?>)" data-tooltip="Entrepreneurship" data-track-id="<?php echo $track_counter++; ?>">
+            <div class="sessions_page_track_button col-md" onclick="showOnly(<?php echo $track_counter; ?>)" data-tooltip="Entrepreneurship" data-track-id="<?php echo $track_counter++; ?>">
                 <img src="<?php echo get_bloginfo('template_url').'/images/ICONS/web-icons-17.png' ?>" />
                 <div class="sessions_page_track_icon_name">Entre-preneurship</div>
             </div>
-            <div class="sessions_page_track_button col" onclick="showOnly(<?php echo $track_counter; ?>)" data-tooltip="Rest of the World" data-track-id="<?php echo $track_counter++; ?>">
+            <div class="sessions_page_track_button col-md" onclick="showOnly(<?php echo $track_counter; ?>)" data-tooltip="Rest of the World" data-track-id="<?php echo $track_counter++; ?>">
                 <img src="<?php echo get_bloginfo('template_url').'/images/ICONS/web-icons-18.png' ?>" />
                 <div class="sessions_page_track_icon_name">Rest of the world</div>
             </div>
-            <div class="sessions_page_track_button col" onclick="showOnly(<?php echo $track_counter; ?>)" data-track-id="<?php echo $track_counter++; ?>">
+            <div class="sessions_page_track_button col-md" onclick="showOnly(<?php echo $track_counter; ?>)" data-track-id="<?php echo $track_counter++; ?>">
                 <img src="<?php echo get_bloginfo('template_url').'/images/ICONS/web-icons-19.png' ?>" />
                 <div class="sessions_page_track_icon_name">Technology</div>
             </div>
@@ -198,8 +202,8 @@
 
                     <?php
                     
-                    
-                    $sessionsloop = new WP_Query(array('cat' => '1694, 1695, 1696, 1697, 1698, 1699, 1700', 'nopaging' => true));
+                    $sessionsloop = new WP_Query(array('cat' => '1694, 1695, 1696, 1697, 1698, 1699, 1700', 'nopaging' => true));   // staging
+//                    $sessionsloop = new WP_Query(array('cat' => '5, 6, 7, 8, 9, 10, 11', 'nopaging' => true));  // dev
                     if (!$sessionsloop->have_posts()) {
                         echo '<div class="sessioncard_no_session_message">No sessions in this track yet :)</div>';
                     }

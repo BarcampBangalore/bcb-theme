@@ -5,34 +5,7 @@
             When & Where
         </div>
     </div>
-    <div id="footer_container" class="row col-1 m-0 p-0">
-        <div id="social_bar_container" class="container-fluid">
-            <div class="row">
-                <div class="col text-center">
-                    <img class="social_bar_icon" src="<?php bloginfo('template_url'); ?>/images/ICONS/web-icons-01.png"/>
-                    <span class="d-none d-md-inline">SPONSORSHIP PDF</span>
-                </div>
-                <div class="col text-center">
-                    <img class="social_bar_icon" src="<?php bloginfo('template_url'); ?>/images/ICONS/web-icons-02.png"/>
-                    <span class="d-none d-md-inline">MEETUP</span>
-                </div>
-                <div class="col text-center">
-                    <img class="social_bar_icon" src="<?php bloginfo('template_url'); ?>/images/ICONS/web-icons-03.png"/>
-                    <span class="d-none d-md-inline">TWITTER</span>
-                </div>
-                <div class="col text-center">
-                    <img class="social_bar_icon" src="<?php bloginfo('template_url'); ?>/images/ICONS/web-icons-04.png"/>
-                    <span class="d-none d-md-inline">FACEBOOK</span>
-                </div>
-                <div class="col text-center">
-                    <img class="social_bar_icon" src="<?php bloginfo('template_url'); ?>/images/ICONS/web-icons-05.png"/>
-                    <span class="d-none d-md-inline">PHOTOS ON FLICKR</span>
-                </div>
-                
-                
-            </div>
-        </div>
-    </div>
+    
     
     <div id="sidebar" class="d-md-none">
         <?php wp_nav_menu(array('theme_location' => 'menu_part1')); ?>
@@ -89,6 +62,39 @@
     </div>
     
 </div>
+
+
+
+<div id="footer_container" class="row col-1 m-0">
+    <div id="social_bar_container" class="container-fluid">
+        <div class="row">
+            <div class="col text-center">
+                <img class="social_bar_icon" src="<?php bloginfo('template_url'); ?>/images/ICONS/web-icons-01.png"/>
+                <span class="d-none d-md-inline">SPONSORSHIP PDF</span>
+            </div>
+            <div class="col text-center">
+                <img class="social_bar_icon" src="<?php bloginfo('template_url'); ?>/images/ICONS/web-icons-02.png"/>
+                <span class="d-none d-md-inline">MEETUP</span>
+            </div>
+            <div class="col text-center">
+                <img class="social_bar_icon" src="<?php bloginfo('template_url'); ?>/images/ICONS/web-icons-03.png"/>
+                <span class="d-none d-md-inline">TWITTER</span>
+            </div>
+            <div class="col text-center">
+                <img class="social_bar_icon" src="<?php bloginfo('template_url'); ?>/images/ICONS/web-icons-04.png"/>
+                <span class="d-none d-md-inline">FACEBOOK</span>
+            </div>
+            <div class="col text-center">
+                <img class="social_bar_icon" src="<?php bloginfo('template_url'); ?>/images/ICONS/web-icons-05.png"/>
+                <span class="d-none d-md-inline">PHOTOS ON FLICKR</span>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+
 
     <?php wp_footer(); ?>
 </body>

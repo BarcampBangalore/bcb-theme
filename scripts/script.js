@@ -109,7 +109,10 @@ jQuery(document).ready(function( $ ) {
     
     // background gradients
     
-    $("body").css('background', function() {
+   
+    
+    
+    function getGradientForPage() {
         
         switch (bcb_page_name) {
             case 'home':
@@ -129,10 +132,10 @@ jQuery(document).ready(function( $ ) {
                 return 'linear-gradient(to right, #36D1DC, #5B86E5)';
         }
         
-    });
+    }
     
-    
-    
+    $("body").css('background', getGradientForPage());
+    $("#footer_container").css('background', getGradientForPage());
     
     
     
