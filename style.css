@@ -1022,9 +1022,15 @@ body {
     color: #FFFFFF;
 }
 
+#social_bar_container a:hover {
+    color: inherit;
+}
+
 .social_bar_icon {
     width: 23px;
     margin-right: 5px;
+    font-size: 23px;
+    vertical-align: middle;
 }
 
 #sidebar {

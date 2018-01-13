@@ -69,24 +69,34 @@
     <div id="social_bar_container" class="container-fluid">
         <div class="row">
             <div class="col text-center">
-                <img class="social_bar_icon" src="<?php bloginfo('template_url'); ?>/images/ICONS/web-icons-01.png"/>
-                <span class="d-none d-md-inline">SPONSORSHIP PDF</span>
+                <a href="https://barcampbangalore.com/bcb/sponsorship/sponsorship.pdf">
+                    <img class="social_bar_icon" src="<?php bloginfo('template_url'); ?>/images/ICONS/web-icons-01.png"/>
+                    <span class="d-none d-md-inline">SPONSORSHIP PDF</span>
+                </a>
             </div>
             <div class="col text-center">
-                <img class="social_bar_icon" src="<?php bloginfo('template_url'); ?>/images/ICONS/web-icons-02.png"/>
-                <span class="d-none d-md-inline">MEETUP</span>
+                <a href="https://www.meetup.com/Barcamp-Bangalore/">
+                    <img class="social_bar_icon" src="<?php bloginfo('template_url'); ?>/images/ICONS/web-icons-02.png"/>
+                    <span class="d-none d-md-inline">MEETUP</span>
+                </a>
             </div>
             <div class="col text-center">
-                <img class="social_bar_icon" src="<?php bloginfo('template_url'); ?>/images/ICONS/web-icons-03.png"/>
-                <span class="d-none d-md-inline">TWITTER</span>
+                <a href="https://twitter.com/barcampbng">
+                    <img class="social_bar_icon" src="<?php bloginfo('template_url'); ?>/images/ICONS/web-icons-03.png"/>
+                    <span class="d-none d-md-inline">TWITTER</span>
+                </a>
             </div>
             <div class="col text-center">
-                <img class="social_bar_icon" src="<?php bloginfo('template_url'); ?>/images/ICONS/web-icons-04.png"/>
-                <span class="d-none d-md-inline">FACEBOOK</span>
+                <a href="https://www.facebook.com/barcampbng">
+                    <img class="social_bar_icon" src="<?php bloginfo('template_url'); ?>/images/ICONS/web-icons-04.png"/>
+                    <span class="d-none d-md-inline">FACEBOOK</span>
+                </a>
             </div>
             <div class="col text-center">
-                <img class="social_bar_icon" src="<?php bloginfo('template_url'); ?>/images/ICONS/web-icons-05.png"/>
-                <span class="d-none d-md-inline">PHOTOS ON FLICKR</span>
+                <a href="http://slack.barcampbangalore.com/">
+                    <i class="fa fa-slack social_bar_icon" aria-hidden="true"></i>
+                    <span class="d-none d-md-inline">JOIN US ON SLACK</span>
+                </a>
             </div>
 
 
