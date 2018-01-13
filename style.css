@@ -1177,7 +1177,7 @@ body {
 
 
 #venue_container_small {
-    position: absolute;
+    position: fixed;
     bottom: 0px;
     
     background: linear-gradient(to right, #eff0bb, #d5d3dd);
