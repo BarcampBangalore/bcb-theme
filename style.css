@@ -299,7 +299,7 @@ body {
 
 
 #page_about_container {
-    
+    width: 100%;
 }
 
 #page_about_title {
@@ -319,7 +319,6 @@ body {
 }
 
 #page_sessions_wrapper {
-
     width: 100%;
 }
 
@@ -624,6 +623,7 @@ body {
 
 #page_single_container {
     height: 100%;
+    width: 100%;
 }
 
 #page_single_wrapper {
@@ -844,6 +844,7 @@ body {
 
 #page_author_container {
     height: 100%;
+    width: 100%;
 }
 
 #page_author_wrapper {
@@ -959,7 +960,9 @@ body {
 
 
 
-
+#page_search_container {
+    width: 100%;
+}
 
 #page_search_wrapper {
     width: 100%;
