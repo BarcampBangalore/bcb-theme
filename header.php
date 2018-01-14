@@ -48,7 +48,9 @@
                     <div id="menu_button_container" class="col-4"><i class="fa fa-bars" aria-hidden="true"></i> MENU</div>
                     <div class="col-4 p-0">
                         <div id="header_small_logo_container">
-                            <img src="<?php bloginfo('template_url'); ?>/images/BCB-LOGO-02.png" />
+                            <a href="<?php echo home_url(); ?>">
+                                <img src="<?php bloginfo('template_url'); ?>/images/BCB-LOGO-02.png" />
+                            </a>
                         </div>
                     </div>
                     <div id="venue_and_search_container" class="col-4">
@@ -62,7 +64,9 @@
             <div id="header_large" class="header_container d-none d-md-flex col-md-3 flex-column justify-content-center">
                 <?php wp_nav_menu(array('theme_location' => 'menu_part1')); ?>
                 <div id="header_large_logo_container">
-                    <img src="<?php bloginfo('template_url'); ?>/images/BCB-LOGO-02.png" />
+                    <a href="<?php echo home_url(); ?>">
+                        <img src="<?php bloginfo('template_url'); ?>/images/BCB-LOGO-02.png" />
+                    </a>
                 </div>
                 <?php wp_nav_menu(array('theme_location' => 'menu_part2')); ?>
                 <?php get_search_form(true); ?>
