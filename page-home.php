@@ -5,7 +5,7 @@
 <div id="page_home_container" class="d-flex align-items-center justify-content-center text-center h-md-100">
     <div id="page_home_wrapper" class="col">
         <div id="page_home_namaskara">
-            Namaskara...
+            Namaskara
         </div>
         <div id="page_home_blr_logo">
             <img src="<?php bloginfo('template_url'); ?>/images/Bengaluru-01.png" />
