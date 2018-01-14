@@ -163,6 +163,10 @@ body {
     border: none;
 }
 
+#logins {
+    margin-top: 15px;
+    text-transform: uppercase;
+}
 
 
 
@@ -1043,9 +1047,14 @@ body {
     width: 225px;
     left: -235px;
     z-index: 100;
-    padding-top: 70px;
+    padding-top: 50px;
     padding-left: 24px;
     box-shadow: 2px 0px 4px #2d2d2d;
+}
+
+
+#sidebar #logins {
+    margin-bottom: 30px;
 }
 
 #sidebar ul {

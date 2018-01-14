@@ -66,6 +66,24 @@
                 </div>
                 <?php wp_nav_menu(array('theme_location' => 'menu_part2')); ?>
                 <?php get_search_form(true); ?>
+                
+                
+
+                <div id="logins">
+                    <?php
+                    global $current_user;
+                    get_currentuserinfo();
+                    if (is_user_logged_in()) {
+                        echo '<a href="' . admin_url('profile.php') . '">Hi ' . $current_user->user_login . '</a>&nbsp; |&nbsp; ';
+                         wp_loginout(get_permalink()); 
+                    } else {
+                        echo "<a href=\"" . wp_registration_url() . "\" title=\"Sign Up\"> SIGN-UP </a>&nbsp; |&nbsp;";
+                        echo "<a href=\"" . wp_login_url(get_permalink()) . "\" title=\"Login\"> Login </a>";
+                    }
+                    ?>
+                </div>
+
+                
 
 
             </div>
