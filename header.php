@@ -2,7 +2,7 @@
 <html <?php language_attributes(); ?> >
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
-<title><?php wp_title(); ?></title>
+<title><?php echo wp_title('»', false, 'right') . " Barcamp Bangalore"; ?></title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <?php wp_head(); ?>
