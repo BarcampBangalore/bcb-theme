@@ -155,7 +155,7 @@ body {
 }
 
 #searchform #s::placeholder {
-    color: #AAAAAA;
+    color: #CCCCCC;
 }
 
 #searchform button {
@@ -168,6 +168,9 @@ body {
     text-transform: uppercase;
 }
 
+#logins a:hover {
+    color: #FFFFFF;
+}
 
 
 
@@ -304,6 +307,10 @@ body {
 
 #page_about_container {
     width: 100%;
+}
+
+#page_about_wrapper a {
+    color: #FFFFFF;
 }
 
 #page_about_title {
@@ -681,6 +688,11 @@ body {
 
 #single_page_header {
     
+}
+
+#single_page_description a {
+    color: #717171;
+    font-weight: bold;
 }
 
 #single_page_attend_area {

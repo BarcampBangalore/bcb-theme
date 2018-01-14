@@ -120,6 +120,7 @@ jQuery(document).ready(function( $ ) {
                 return 'linear-gradient(to right, #F2994A, #F2C94C)';
                 
             case 'about':
+            case 'faq':
                 return 'linear-gradient(to right, #56ab2f, #a8e063)';
                 
             case 'techlash':
