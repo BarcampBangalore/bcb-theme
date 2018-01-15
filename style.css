@@ -296,12 +296,50 @@ body {
 
 #page_home_container {
     color: #FFFFFF;
-    height: 70vh;
+    height: 75vh;
 }
 
 #page_home_blr_logo img {
     width: 50%;
 }
+
+#page_home_sponsors_container {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.19);
+    padding: 10px 5px;
+    border-radius: 10px;
+}
+
+#page_home_sponsors_header {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.page_home_sponsors_type {
+    margin-top: 15px;
+}
+
+.page_home_sponsortype_header {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.page_home_sponsor a:hover {
+    color: #FFFFFF;
+}
+
+.page_home_sponsor img {
+    height: 70px;
+    
+    
+}
+
+
+
+
+
+
 
 
 
