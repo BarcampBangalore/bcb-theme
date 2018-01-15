@@ -36,7 +36,7 @@
                     Gold Sponsor
                 </div>
                 <div id="sponsor_intuit" class="page_home_sponsor">
-                    <a href="https://www.intuit.com/">
+                    <a href="<?php echo get_permalink( get_page_by_path('about-intuit'));  ?>">
                         <div>
                             <img src="<?php echo get_bloginfo('template_url').'/images/sponsors/Intuit.JPG' ?>"/>
                         </div>
@@ -51,7 +51,7 @@
                 </div>
                 <div>
                     <div class="page_home_sponsor">
-                        <a href="https://www.wandx.co/">
+                        <a href="<?php echo get_permalink( get_page_by_path('about-wandx'));  ?>">
                             <div>
                                 <img src="<?php echo get_bloginfo('template_url').'/images/sponsors/WandX_logo.jpg' ?>"/>
                             </div>
@@ -59,7 +59,7 @@
                         </a>
                     </div>
                     <div class="page_home_sponsor">
-                        <a href="http://janastu.org/main.html">
+                        <a href="<?php echo get_permalink( get_page_by_path('about-janastu'));  ?>">
                             <div>
                                 <img src="<?php echo get_bloginfo('template_url').'/images/sponsors/janastu_logo.gif' ?>"/>
                             </div>
