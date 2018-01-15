@@ -19,18 +19,10 @@
                 
                 <div class="page_team_membercard col-3">
                     <div class="page_team_member_avatar">
-                        <img src="<?php echo get_bloginfo('template_url').'/images/team/saurabh.jpg' ?>" />
+                        <img src="<?php echo get_bloginfo('template_url').'/images/team/aditya.png' ?>" />
                     </div>
-                    <div class="page_team_member_name">Saurabh Minni</div>
-                    <div class="page_team_member_link"><a href="https://twitter.com/the100rabh">@the100rabh</a></div>
-                </div>
-                
-                <div class="page_team_membercard col-3">
-                    <div class="page_team_member_avatar">
-                        <img src="<?php echo get_bloginfo('template_url').'/images/team/sathya.jpg' ?>" />
-                    </div>
-                    <div class="page_team_member_name">Sathyajith Bhat</div>
-                    <div class="page_team_member_link"><a href="https://twitter.com/SathyaBhat">@SathyaBhat</a></div>
+                    <div class="page_team_member_name">Aditya Reddy</div>
+                    <div class="page_team_member_link"><a href="https://twitter.com/thetallpants">@thetallpants</a></div>
                 </div>
                 
                 <div class="page_team_membercard col-3">
@@ -43,26 +35,26 @@
                 
                 <div class="page_team_membercard col-3">
                     <div class="page_team_member_avatar">
-                        <img src="<?php echo get_bloginfo('template_url').'/images/team/daaku.jpg' ?>" />
-                    </div>
-                    <div class="page_team_member_name">Amit Khare</div>
-                    <div class="page_team_member_link"><a href="https://twitter.com/daaku">@daaku</a></div>
-                </div>
-                
-                <div class="page_team_membercard col-3">
-                    <div class="page_team_member_avatar">
-                        <img src="<?php echo get_bloginfo('template_url').'/images/team/vivek.jpg' ?>" />
-                    </div>
-                    <div class="page_team_member_name">Vivek</div>
-                    <div class="page_team_member_link"><a href="https://twitter.com/ivivekkm">@ivivekkm</a></div>
-                </div>
-                
-                <div class="page_team_membercard col-3">
-                    <div class="page_team_member_avatar">
                         <img src="<?php echo get_bloginfo('template_url').'/images/team/arunteja.jpg' ?>" />
                     </div>
                     <div class="page_team_member_name">Arun Teja</div>
                     <div class="page_team_member_link"><a href="https://twitter.com/aruntejagod">@aruntejagod</a></div>
+                </div>
+                
+                <div class="page_team_membercard col-3">
+                    <div class="page_team_member_avatar">
+                        <img src="<?php echo get_bloginfo('template_url').'/images/team/sathya.jpg' ?>" />
+                    </div>
+                    <div class="page_team_member_name">Sathyajith Bhat</div>
+                    <div class="page_team_member_link"><a href="https://twitter.com/SathyaBhat">@SathyaBhat</a></div>
+                </div>
+                
+                <div class="page_team_membercard col-3">
+                    <div class="page_team_member_avatar">
+                        <img src="<?php echo get_bloginfo('template_url').'/images/team/saurabh.jpg' ?>" />
+                    </div>
+                    <div class="page_team_member_name">Saurabh Minni</div>
+                    <div class="page_team_member_link"><a href="https://twitter.com/the100rabh">@the100rabh</a></div>
                 </div>
                 
                 <div class="page_team_membercard col-3">
@@ -75,13 +67,11 @@
                 
                 <div class="page_team_membercard col-3">
                     <div class="page_team_member_avatar">
-                        <img src="<?php echo get_bloginfo('template_url').'/images/team/eswar.jpg' ?>" />
+                        <img src="<?php echo get_bloginfo('template_url').'/images/team/vivek.jpg' ?>" />
                     </div>
-                    <div class="page_team_member_name">Eswar</div>
-                    <div class="page_team_member_link"><a href="https://twitter.com/eswar_001">@eswar_001</a></div>
+                    <div class="page_team_member_name">Vivek</div>
+                    <div class="page_team_member_link"><a href="https://twitter.com/ivivekkm">@ivivekkm</a></div>
                 </div>
-                
-                
                 
             </div>
             
