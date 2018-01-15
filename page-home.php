@@ -35,7 +35,7 @@
                 <div class="page_home_sponsortype_header">
                     Gold Sponsor
                 </div>
-                <div class="page_home_sponsor">
+                <div id="sponsor_intuit" class="page_home_sponsor">
                     <a href="https://www.intuit.com/">
                         <div>
                             <img src="<?php echo get_bloginfo('template_url').'/images/sponsors/Intuit.JPG' ?>"/>
@@ -49,13 +49,23 @@
                 <div class="page_home_sponsortype_header">
                     Friends of Barcamp
                 </div>
-                <div class="page_home_sponsor">
-                    <a href="https://www.wandx.co/">
-                        <div>
-                            <img src="<?php echo get_bloginfo('template_url').'/images/sponsors/WandX_logo.jpg' ?>"/>
-                        </div>
-                        <div>WandX</div>
-                    </a>
+                <div>
+                    <div class="page_home_sponsor">
+                        <a href="https://www.wandx.co/">
+                            <div>
+                                <img src="<?php echo get_bloginfo('template_url').'/images/sponsors/WandX_logo.jpg' ?>"/>
+                            </div>
+                            <div>WandX</div>
+                        </a>
+                    </div>
+                    <div class="page_home_sponsor">
+                        <a href="http://janastu.org/main.html">
+                            <div>
+                                <img src="<?php echo get_bloginfo('template_url').'/images/sponsors/janastu_logo.gif' ?>"/>
+                            </div>
+                            <div>Janastu</div>
+                        </a>
+                    </div>
                 </div>
             </div>
             

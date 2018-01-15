@@ -325,16 +325,27 @@ body {
     margin-bottom: 5px;
 }
 
+.page_home_sponsor {
+    display: inline-block;
+    padding: 0px 5px;
+}
+
 .page_home_sponsor a:hover {
     color: #FFFFFF;
 }
 
 .page_home_sponsor img {
-    height: 70px;
+    height: 50px;
+}
+
+@media (min-width: 768px) {
+    
+    .page_home_sponsor img {
+        height: 70px;
+    }
     
     
 }
-
 
 
 
