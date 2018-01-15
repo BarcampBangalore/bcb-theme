@@ -92,6 +92,7 @@
                     <span class="d-none d-md-inline">JOIN US ON SLACK</span>
                 </a>
             </div>
+            <div class="col d-md-none"> </div>
 
 
         </div>
