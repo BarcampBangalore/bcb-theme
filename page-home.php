@@ -22,7 +22,7 @@
                     Venue Sponsor
                 </div>
                 <div class="page_home_sponsor">
-                    <a target="_blank" href="https://www.dsu.edu.in/">
+                    <a target="_blank" href="<?php echo get_permalink( get_page_by_path('about-dayanand-sagar-university'));  ?>">
                         <div>
                             <img src="<?php echo get_bloginfo('template_url').'/images/sponsors/dsu2.png' ?>"/>
                         </div>
