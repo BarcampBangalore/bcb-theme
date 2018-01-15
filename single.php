@@ -6,11 +6,13 @@
     
     <script type="text/javascript">
     
-        var $ = jQuery.noConflict();
-        $(function(){
+        
+        
+        jQuery(function($) {
 				
         	
-            $("#single_page_attend_area").on("click", ".neo_attend_button", function(){
+            $(".sessionpage_attend").on("click", ".neo_attend_button", function(){
+                
                 
                 var card = $(this);
                 
