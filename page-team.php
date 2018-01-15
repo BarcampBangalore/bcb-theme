@@ -17,7 +17,7 @@
             
             <div id="page_team_memberlist" class="row">
                 
-                <div class="page_team_membercard col-3">
+                <div class="page_team_membercard col-6 col-md-3">
                     <div class="page_team_member_avatar">
                         <img src="<?php echo get_bloginfo('template_url').'/images/team/aditya.png' ?>" />
                     </div>
@@ -25,7 +25,7 @@
                     <div class="page_team_member_link"><a href="https://twitter.com/thetallpants">@thetallpants</a></div>
                 </div>
                 
-                <div class="page_team_membercard col-3">
+                <div class="page_team_membercard col-6 col-md-3">
                     <div class="page_team_member_avatar">
                         <img src="<?php echo get_bloginfo('template_url').'/images/team/aman.jpg' ?>" />
                     </div>
@@ -33,7 +33,7 @@
                     <div class="page_team_member_link"><a href="https://twitter.com/amanmanglik">@amanmanglik</a></div>
                 </div>
                 
-                <div class="page_team_membercard col-3">
+                <div class="page_team_membercard col-6 col-md-3">
                     <div class="page_team_member_avatar">
                         <img src="<?php echo get_bloginfo('template_url').'/images/team/arunteja.jpg' ?>" />
                     </div>
@@ -41,7 +41,7 @@
                     <div class="page_team_member_link"><a href="https://twitter.com/aruntejagod">@aruntejagod</a></div>
                 </div>
                 
-                <div class="page_team_membercard col-3">
+                <div class="page_team_membercard col-6 col-md-3">
                     <div class="page_team_member_avatar">
                         <img src="<?php echo get_bloginfo('template_url').'/images/team/sathya.jpg' ?>" />
                     </div>
@@ -49,7 +49,7 @@
                     <div class="page_team_member_link"><a href="https://twitter.com/SathyaBhat">@SathyaBhat</a></div>
                 </div>
                 
-                <div class="page_team_membercard col-3">
+                <div class="page_team_membercard col-6 col-md-3">
                     <div class="page_team_member_avatar">
                         <img src="<?php echo get_bloginfo('template_url').'/images/team/saurabh.jpg' ?>" />
                     </div>
@@ -57,7 +57,7 @@
                     <div class="page_team_member_link"><a href="https://twitter.com/the100rabh">@the100rabh</a></div>
                 </div>
                 
-                <div class="page_team_membercard col-3">
+                <div class="page_team_membercard col-6 col-md-3">
                     <div class="page_team_member_avatar">
                         <img src="<?php echo get_bloginfo('template_url').'/images/team/fossil.jpg' ?>" />
                     </div>
@@ -65,7 +65,7 @@
                     <div class="page_team_member_link"><a href="https://twitter.com/fossiloflife">@fossiloflife</a></div>
                 </div>
                 
-                <div class="page_team_membercard col-3">
+                <div class="page_team_membercard col-6 col-md-3">
                     <div class="page_team_member_avatar">
                         <img src="<?php echo get_bloginfo('template_url').'/images/team/vivek.jpg' ?>" />
                     </div>
