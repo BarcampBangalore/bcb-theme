@@ -6,7 +6,7 @@
     
     <div id="page_about_wrapper" class="flex-column ">
         <?php the_post(); ?>
-        <div id="page_about_title" class="d-flex">
+        <div id="page_about_title" class="d-flex fitted-title">
             <?php echo get_the_title(); ?>
         </div>
 

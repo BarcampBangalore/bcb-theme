@@ -309,6 +309,10 @@ body {
     width: 100%;
 }
 
+#page_about_wrapper {
+    width: 100%;
+}
+
 #page_about_wrapper a {
     color: #FFFFFF;
 }
@@ -322,6 +326,50 @@ body {
 #page_about_content {
     font-size: 1.1em;
 }
+
+
+#page_team_container {
+    width: 100%;
+}
+
+#page_team_wrapper {
+    width: 100%;
+}
+
+#page_team_wrapper a {
+    color: #FFFFFF;
+}
+
+#page_team_title {
+    color: #FFFFFF;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#page_team_content {
+    font-size: 1.1em;
+}
+
+#page_team_memberlist {
+    margin: 20px 0px;
+}
+
+.page_team_membercard {
+    text-align: center;
+    margin: 25px 0px;
+}
+
+.page_team_member_avatar img {
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    border: 2px solid #FFFFFF;
+}
+
+.page_team_member_name {
+    margin-top: 10px;
+}
+
 
 
 
