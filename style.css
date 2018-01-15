@@ -1352,3 +1352,9 @@ body {
     color: #4e4e4e;
     cursor: pointer;
 }
+
+
+
+#page_about_content .wpuf-form-add a {
+    color: #000000;
+}
