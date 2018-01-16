@@ -164,25 +164,25 @@
                 <img class="" src="<?php echo get_bloginfo('template_url').'/images/ICONS/web-icons-13.png' ?>" />
                 <div class="sessions_page_track_icon_name">Bangalore & Lifestyle</div>
             </div>
-            <div class="sessions_page_track_button col-md" onclick="showOnly(<?php echo $track_counter; ?>)" data-tooltip="Scaling  Infrastructure" data-track-id="<?php echo $track_counter++; ?>">
-                <img src="<?php echo get_bloginfo('template_url').'/images/ICONS/web-icons-14.png' ?>" />
-                <div class="sessions_page_track_icon_name">Scaling & Infrastructure</div>
-            </div>
             <div class="sessions_page_track_button col-md" onclick="showOnly(<?php echo $track_counter; ?>)" data-tooltip="Design" data-track-id="<?php echo $track_counter++; ?>">
                 <img src="<?php echo get_bloginfo('template_url').'/images/ICONS/web-icons-15.png' ?>" />
                 <div class="sessions_page_track_icon_name">Design</div>
-            </div>
-            <div class="sessions_page_track_button col-md" onclick="showOnly(<?php echo $track_counter; ?>)" data-tooltip="Mobile  Web" data-track-id="<?php echo $track_counter++; ?>">
-                <img src="<?php echo get_bloginfo('template_url').'/images/ICONS/web-icons-16.png' ?>" />
-                <div class="sessions_page_track_icon_name">Mobile & Web</div>
             </div>
             <div class="sessions_page_track_button col-md" onclick="showOnly(<?php echo $track_counter; ?>)" data-tooltip="Entrepreneurship" data-track-id="<?php echo $track_counter++; ?>">
                 <img src="<?php echo get_bloginfo('template_url').'/images/ICONS/web-icons-17.png' ?>" />
                 <div class="sessions_page_track_icon_name">Entre-preneurship</div>
             </div>
+            <div class="sessions_page_track_button col-md" onclick="showOnly(<?php echo $track_counter; ?>)" data-tooltip="Mobile  Web" data-track-id="<?php echo $track_counter++; ?>">
+                <img src="<?php echo get_bloginfo('template_url').'/images/ICONS/web-icons-16.png' ?>" />
+                <div class="sessions_page_track_icon_name">Mobile & Web</div>
+            </div>
             <div class="sessions_page_track_button col-md" onclick="showOnly(<?php echo $track_counter; ?>)" data-tooltip="Rest of the World" data-track-id="<?php echo $track_counter++; ?>">
                 <img src="<?php echo get_bloginfo('template_url').'/images/ICONS/web-icons-18.png' ?>" />
                 <div class="sessions_page_track_icon_name">Rest of the world</div>
+            </div>
+            <div class="sessions_page_track_button col-md" onclick="showOnly(<?php echo $track_counter; ?>)" data-tooltip="Scaling  Infrastructure" data-track-id="<?php echo $track_counter++; ?>">
+                <img src="<?php echo get_bloginfo('template_url').'/images/ICONS/web-icons-14.png' ?>" />
+                <div class="sessions_page_track_icon_name">Scaling & Infrastructure</div>
             </div>
             <div class="sessions_page_track_button col-md" onclick="showOnly(<?php echo $track_counter; ?>)" data-track-id="<?php echo $track_counter++; ?>">
                 <img src="<?php echo get_bloginfo('template_url').'/images/ICONS/web-icons-19.png' ?>" />
