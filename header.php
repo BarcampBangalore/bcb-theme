@@ -91,4 +91,4 @@
 
 
             </div>
-            <div id="page_master_container" class="d-md-flex flex-md-columns col-md-9 justify-content-center">
+            <div id="page_master_container" class="d-md-flex flex-md-column col-md-9 justify-content-center">
