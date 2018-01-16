@@ -29,7 +29,7 @@
         <div id="venue_details_wrapper" class="d-flex">
             <div id="venue_date_wrapper">
                 <div id="venue_date">FEB 10</div>
-                <div id="venur_year">TWO THOUSAND AND SEVENTEEN</div>
+                <div id="venur_year">TWO THOUSAND AND EIGHTEEN</div>
             </div>
             <div id="venue_time_wrapper">
                 <div id="venue_time">8:00</div>

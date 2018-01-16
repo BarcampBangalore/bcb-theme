@@ -792,6 +792,19 @@ body {
     font-weight: bold;
 }
 
+#page_single_cms_content img {
+    max-width: 80%;
+    height: auto;
+}
+
+@media (min-width: 768px) {
+    #page_single_cms_content img {
+        max-width: 400px;
+        height: auto;
+    }
+}
+
+
 #single_page_attend_area {
     cursor: pointer;
 }

@@ -84,7 +84,9 @@
                     <div class="row">
                         <div id="single_page_description" class="col">
                             <div class="single_page_box">
-                                <?php the_content(); ?>
+                                <div id="page_single_cms_content">
+                                    <?php the_content(); ?>
+                                </div>
                                 <div>
                                     <?php edit_post_link("Edit Session"); ?>
                                 </div>
