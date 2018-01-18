@@ -5,6 +5,7 @@ $curauth = (get_query_var('author_name')) ? get_user_by('slug', get_query_var('a
 
 
 $cat_buckets = array(
+    "1691" => array(array(), array()),
     "1556" => array(array(), array()),
     "1458" => array(array(), array()),
     "1366" => array(array(), array()),
@@ -20,6 +21,7 @@ $cat_buckets = array(
     "3" => array(array(), array()),
 );
 $cat_names = array(
+    200  => array("1691", "BCB 2018"),
     190  => array("1556", "BCB Spring 2016"),
     180  => array("1458", "BCB Monsoon 2015"),
     175  => array("1366", "BCBX AntHill"),
@@ -118,7 +120,7 @@ $cat_names = array(
                                     ?>
                                     <div class="col-sm-6 authorpage_sessions_area">
                                         <div class="authorpage_sesstions_type">
-                                            Sessions Presented
+                                            Sessions Proposed/Presented
                                         </div>
                                         <?php 
                                             foreach ($cat_buckets[$bcb[0]][0] as $sess) {
