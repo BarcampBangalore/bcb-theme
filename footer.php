@@ -1,12 +1,12 @@
-    
+
         </div>
-        
+
         <div id="when_where_container" class="col d-none d-md-block">
             When & Where
         </div>
     </div>
-    
-    
+
+
     <div id="sidebar" class="d-md-none">
         <div id="logins">
             <?php
@@ -24,7 +24,7 @@
         <?php wp_nav_menu(array('theme_location' => 'menu_part1')); ?>
         <?php wp_nav_menu(array('theme_location' => 'menu_part2')); ?>
     </div>
-    
+
     <div id="venue_container" class="d-none flex-column col-md-9">
         <div id="venue_details_wrapper" class="d-flex">
             <div id="venue_date_wrapper">
@@ -41,20 +41,19 @@
             </div>
         </div>
         <div id="venue_map" class="d-flex col">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d23309.73843747998!2d77.62973469482712!3d12.885461976054271!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae14b03a700c55%3A0x11ea83c6df010c4f!2s17%2C+NH+44%2C+Kudlu+Gate%2C+Bank+Colony%2C+AECS+Layout%2C+Singasandra%2C+Bengaluru%2C+Karnataka+560068%2C+India!5e0!3m2!1sen!2sus!4v1515997137117" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1944.6513201221865!2d77.64004634197842!3d12.888250997713861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDUzJzE3LjciTiA3N8KwMzgnMjguMSJF!5e0!3m2!1sen!2sus!4v1516169924508" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
         <div id="close_button"><i class="fa fa-times-circle-o" aria-hidden="true"></i></div>
     </div>
-    
-    
-    
+
+
+
     <div id="search_slider_mobile" class="d-none">
         <?php get_search_form(true); ?>
         <div id="close_button"><i class="fa fa-times-circle-o" aria-hidden="true"></i></div>
     </div>
-    
-</div>
 
+</div>
 
 
 
@@ -104,7 +103,7 @@
     <div id="venue_details_wrapper_row1" class="d-flex">
         <div id="venue_date_wrapper" class="justify-content-around">
             <div id="venue_date">FEB 10</div>
-            <div id="venue_year">TWO THOUSAND AND SEVENTEEN</div>
+            <div id="venue_year">TWO THOUSAND AND EIGHTEEN</div>
         </div>
         <div id="venue_time_wrapper">
             <div id="venue_time">8:00</div>
@@ -118,7 +117,7 @@
         </div>
     </div>
     <div id="venue_map" class="d-flex col">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25419.21550976037!2d77.63132719065717!3d12.88776716113802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae14b1d3b5bc97%3A0x201eccba58e7911b!2sDayananda+Sagar+University!5e0!3m2!1sen!2sus!4v1512311750510" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1944.6513201221865!2d77.64004634197842!3d12.888250997713861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDUzJzE3LjciTiA3N8KwMzgnMjguMSJF!5e0!3m2!1sen!2sus!4v1516169924508" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
     <div id="close_button"><i class="fa fa-times-circle-o" aria-hidden="true"></i></div>
 </div>
