@@ -599,15 +599,46 @@ body {
     color: #FFFFFF;
 }*/
 
+.track_color_0
+{
+    color: #f79423;
+}
+.track_color_bg_0
+{
+    background-color: #f79423;
+}
 
+.track_color_border_0  {
+    border-color: #f79423;
+    border-style: solid;
+}
 
 .track_color_1
 {
-    color: #000000;
+    color: #ef5768;
 }
 .track_color_bg_1
 {
-    background-color: #000000;
+    background-color: #ef5768;
+}
+
+.track_color_border_1 {
+    border-color: #ef5768;
+    border-style: solid;
+}
+
+.track_color_2
+{
+    color: #613516;
+}
+.track_color_bg_2
+{
+    background-color: #613516;
+}
+
+.track_color_border_2 {
+    border-color: #613516;
+    border-style: solid;
 }
 
 .track_color_3
@@ -619,6 +650,39 @@ body {
     background-color: #507aa5;
 }
 
+.track_color_border_3 {
+    border-color: #507aa5;
+    border-style: solid;
+}
+
+.track_color_4
+{
+    color: #7cb241;
+}
+.track_color_bg_4
+{
+    background-color: #7cb241;
+}
+
+.track_color_border_4 {
+    border-color: #7cb241;
+    border-style: solid;
+}
+
+.track_color_5
+{
+    color: #000000;
+}
+.track_color_bg_5
+{
+    background-color: #000000;
+}
+
+.track_color_border_5 {
+    border-color: #000000;
+    border-style: solid;
+}
+
 .track_color_6
 {
     color: #f2e40c;
@@ -626,74 +690,6 @@ body {
 .track_color_bg_6
 {
     background-color: #f2e40c;
-}
-
-.track_color_5
-{
-    color: #7cb241;
-}
-.track_color_bg_5
-{
-    background-color: #7cb241;
-}
-
-.track_color_0
-{
-    color: #f79423;
-}
-.track_color_bg_0
-{
-    background-color: #f79423;
-}
-
-.track_color_2
-{
-    color: #ef5768;
-}
-.track_color_bg_2
-{
-    background-color: #ef5768;
-}
-
-.track_color_4
-{
-    color: #613516;
-}
-.track_color_bg_4
-{
-    background-color: #613516;
-}
-
-
-.track_color_border_0  {
-    border-color: #f79423;
-    border-style: solid;
-}
-
-.track_color_border_1 {
-    border-color: #000000;
-    border-style: solid;
-}
-
-.track_color_border_2 {
-    border-color: #ef5768;
-    border-style: solid;
-}
-
-
-.track_color_border_3 {
-    border-color: #507aa5;
-    border-style: solid;
-}
-
-.track_color_border_4 {
-    border-color: #613516;
-    border-style: solid;
-}
-
-.track_color_border_5 {
-    border-color: #7cb241;
-    border-style: solid;
 }
 
 .track_color_border_6 {
