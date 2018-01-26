@@ -66,6 +66,14 @@
                             <div>Janastu</div>
                         </a>
                     </div>
+                    <div class="page_home_sponsor">
+                        <a target="_blank" href="<?php echo get_permalink( get_page_by_path('about-tinkerform'));  ?>">
+                            <div>
+                                <img src="<?php echo get_bloginfo('template_url').'/images/sponsors/Tinkerform-logo.png' ?>"/>
+                            </div>
+                            <div>Tinkerform</div>
+                        </a>
+                    </div>
                 </div>
             </div>
             
