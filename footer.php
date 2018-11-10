@@ -28,8 +28,8 @@
     <div id="venue_container" class="d-none flex-column col-md-9">
         <div id="venue_details_wrapper" class="d-flex">
             <div id="venue_date_wrapper">
-                <div id="venue_date">FEB 10</div>
-                <div id="venur_year">TWO THOUSAND AND EIGHTEEN</div>
+                <div id="venue_date">FEB 2</div>
+                <div id="venur_year">TWO THOUSAND AND NINETEEN</div>
             </div>
             <div id="venue_time_wrapper">
                 <div id="venue_time">8:00</div>
@@ -37,7 +37,7 @@
             </div>
             <div id="venue_address_wrapper">
                 <div id="venue_address_line1">DAYANAND SAGAR UNIVERSITY</div>
-                <div id="venue_address_line2">KUDLU GATE, BANGALORE</div>
+                <div id="venue_address_line2">KUDLU GATE, BANGALORE ( Not Kumarswamy Layout)</div>
             </div>
         </div>
         <div id="venue_map" class="d-flex col">
