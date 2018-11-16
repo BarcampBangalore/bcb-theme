@@ -11,7 +11,7 @@
             <img src="<?php bloginfo('template_url'); ?>/images/Bengaluru-01.png" />
         </div>
         <div id="event_data">
-          <div>Barcamp Bangalore is back on 2nd Feb 2018</div>
+          <div>Barcamp Bangalore is back on 2nd Feb 2019</div>
           <div>Registrations to open soon</div>
         </div>
     </div>
