@@ -10,12 +10,29 @@
         <div id="page_home_blr_logo">
             <img src="<?php bloginfo('template_url'); ?>/images/Bengaluru-01.png" />
         </div>
-        <div id="event_data">
-          <div>Barcamp Bangalore is back on 2nd Feb 2019</div>
-          <div>Registrations to open soon</div>
-        </div>
-    </div>
     <div id="page_home_sponsors_container">
+        <div id="page_home_sponsors_header">
+            Barcamp Bangalore is back
+        </div>
+
+        <div id="home_venue_details_wrapper" class="row">
+            <div id="home_venue_date_wrapper" class="col-12 col-md-4">
+                <div id="venue_when">ON</div>
+                <div id="venue_date">Saturday </div>
+                <div id="venue_year">2nd Feb 2019</div>
+            </div>
+            <div id="home_venue_time_wrapper" class="col-12 col-md-4">
+                <div id="venue_when">AT</div>
+                <div id="venue_time">8:00</div>
+                <div id="venue_tod">in the morning</div>
+            </div>
+            <div id="home_venue_address_wrapper" class="col-12 col-md-4">
+                <div id="venue_when"> LOCATION: </div>
+                <div id="venue_address_line1">Dayanand Sagar University</div>
+                <div id="venue_address_line2">Kudlu Gate, Bangalore <strong>(Not Kumarswamy Layout)</strong></div>
+            </div>
+        </div>
+
         <div id="page_home_sponsors_header">
             Event Sponsors
         </div>
@@ -83,7 +100,6 @@
 
 
         </div>
-    </div>
 
 </div>
 

@@ -16,17 +16,13 @@ html {
     height: 100%;
 }
 
-
 a {
     color: inherit;
 }
 
 body {
-    
     height: 100%;
     font-family: 'Lato', sans-serif;
-    
-    
 }
 
 #header_small {
@@ -44,8 +40,6 @@ body {
     padding-top: 16px;
 }
 
-
-
 #search_button_small {
     text-align: right;
     margin-right: 5px;
@@ -60,10 +54,7 @@ body {
     padding: 40px 10px 20px 25px;
     width: 90%;
     height: 130px;
-    
 }
-
-
 
 #search_slider_mobile #searchform {
     width: 85%;
@@ -90,9 +81,6 @@ body {
     font-size: 26px;
 }
 
-
-
-
 #header_large {
     padding-left: 58px;
     height: 100vh;
@@ -104,7 +92,6 @@ body {
     list-style: none;
     margin: 0px;
     padding: 0px;
-    
 }
 
 #header_large .menu .current-menu-item a {
@@ -129,9 +116,7 @@ body {
     margin: 30px 0px;
 }
 
-
-
-#searchform  {
+#searchform {
     width: 75%;
     margin-top: 40px;
 }
@@ -172,8 +157,6 @@ body {
     color: #FFFFFF;
 }
 
-
-
 #master_container {
     /*height: 100%;*/
     position: relative;
@@ -185,12 +168,10 @@ body {
     width: 94%;
 }
 
-
 #background_icons_container img {
     position: absolute;
     width: 55px;
 }
-
 
 #background_icons_container #hat_icon {
     top: 6%;
@@ -226,7 +207,6 @@ body {
     top: 74%;
     right: 6%;
 }
-
 
 #background_icons_container_small {
     position: absolute;
@@ -274,25 +254,16 @@ body {
     right: 6%;
 }
 
-
-
-
-
 #page_master_container {
     padding: 20px 0px 0px 0px;
     margin-bottom: 90px;
 }
 
 @media (min-width: 768px) {
-    
     #page_master_container {
         padding-right: 200px;
     }
-    
-    
 }
-
-
 
 #page_home_container {
     color: #FFFFFF;
@@ -308,6 +279,7 @@ body {
     background-color: rgba(255, 255, 255, 0.19);
     padding: 10px 5px;
     border-radius: 10px;
+    margin-bottom: 100px;
 }
 
 #page_home_sponsors_header {
@@ -339,20 +311,10 @@ body {
 }
 
 @media (min-width: 768px) {
-    
     .page_home_sponsor img {
         height: 70px;
     }
-    
-    
 }
-
-
-
-
-
-
-
 
 #page_about_container {
     width: 100%;
@@ -375,7 +337,6 @@ body {
 #page_about_content {
     font-size: 1.1em;
 }
-
 
 #page_team_container {
     width: 100%;
@@ -419,9 +380,6 @@ body {
     margin-top: 10px;
 }
 
-
-
-
 #page_sessions_container {
     width: 100%;
 }
@@ -429,7 +387,6 @@ body {
 #page_sessions_wrapper {
     width: 100%;
 }
-
 
 #sessions_page_track_buttons_container {
     margin-top: 0px;
@@ -444,10 +401,7 @@ body {
     cursor: pointer;
     padding: 0px 0px 15px 5px;
     min-width: 85px;
-    
-    
-    
-/*    margin-right: 46px;
+    /*    margin-right: 46px;
     vertical-align: top;*/
 }
 
@@ -458,34 +412,26 @@ body {
 .sessions_page_track_icon_name {
     font-size: 12px;
     min-width: 85px;
-    
 }
 
 @media (min-width: 768px) {
-    
     #sessions_page_track_buttons_container {
-    margin-top: 50px;
-    margin-bottom: 20px;
-    min-height: 90px;
-    max-width:  none;
-}
-    
+        margin-top: 50px;
+        margin-bottom: 20px;
+        min-height: 90px;
+        max-width: none;
+    }
     .sessions_page_track_button {
         margin-left: 0px;
     }
-    
     .sessions_page_track_button img {
         width: 60px;
     }
 }
 
-
 #sessions_page_list_container {
     width: 100%;
 }
-
-
-
 
 .sessions_page_card_content {
     background: linear-gradient(to right, #eff0bb, #d5d3dd);
@@ -545,7 +491,6 @@ body {
     text-align: center;
 }
 
-
 .sessions_page_card_attendees_stats {
     float: right;
     display: inline-block;
@@ -569,16 +514,13 @@ body {
     text-align: center;
 }
 
-
-.sessions_page_card_attend_button .neo_attend_button
-{
+.sessions_page_card_attend_button .neo_attend_button {
     float: right;
     display: inline-block;
     cursor: pointer;
 }
 
-.sessions_page_card_attend_button
-{
+.sessions_page_card_attend_button {
     height: 20px;
     position: relative;
 }
@@ -599,26 +541,24 @@ body {
     color: #FFFFFF;
 }*/
 
-.track_color_0
-{
+.track_color_0 {
     color: #f79423;
 }
-.track_color_bg_0
-{
+
+.track_color_bg_0 {
     background-color: #f79423;
 }
 
-.track_color_border_0  {
+.track_color_border_0 {
     border-color: #f79423;
     border-style: solid;
 }
 
-.track_color_1
-{
+.track_color_1 {
     color: #ef5768;
 }
-.track_color_bg_1
-{
+
+.track_color_bg_1 {
     background-color: #ef5768;
 }
 
@@ -627,12 +567,11 @@ body {
     border-style: solid;
 }
 
-.track_color_2
-{
+.track_color_2 {
     color: #613516;
 }
-.track_color_bg_2
-{
+
+.track_color_bg_2 {
     background-color: #613516;
 }
 
@@ -641,12 +580,11 @@ body {
     border-style: solid;
 }
 
-.track_color_3
-{
+.track_color_3 {
     color: #507aa5;
 }
-.track_color_bg_3
-{
+
+.track_color_bg_3 {
     background-color: #507aa5;
 }
 
@@ -655,12 +593,11 @@ body {
     border-style: solid;
 }
 
-.track_color_4
-{
+.track_color_4 {
     color: #7cb241;
 }
-.track_color_bg_4
-{
+
+.track_color_bg_4 {
     background-color: #7cb241;
 }
 
@@ -669,12 +606,11 @@ body {
     border-style: solid;
 }
 
-.track_color_5
-{
+.track_color_5 {
     color: #000000;
 }
-.track_color_bg_5
-{
+
+.track_color_bg_5 {
     background-color: #000000;
 }
 
@@ -683,12 +619,11 @@ body {
     border-style: solid;
 }
 
-.track_color_6
-{
+.track_color_6 {
     color: #f2e40c;
 }
-.track_color_bg_6
-{
+
+.track_color_bg_6 {
     background-color: #f2e40c;
 }
 
@@ -697,33 +632,23 @@ body {
     border-style: solid;
 }
 
-
-
-
-
-.track_color_933
-{
+.track_color_933 {
     color: #9E2B1C;
 }
 
-.track_color_bg_933
-{
+.track_color_bg_933 {
     background-color: #9E2B1C;
 }
 
 /*  techlash = 933 */
-.track_color_tl
-{
+
+.track_color_tl {
     color: #9E2B1C;
 }
 
-.track_color_bg_tl, .track_color_bg_1065
-{
+.track_color_bg_tl, .track_color_bg_1065 {
     background-color: #9E2B1C;
 }
-
-
-
 
 #page_single_container {
     height: 100%;
@@ -757,31 +682,25 @@ body {
     height: auto;
 }
 
-
 #single_page_title {
     font-weight: bold;
 }
 
 @media (min-width: 768px) {
-    
     #single_page_avatar img {
         width: 90px;
         height: auto;
     }
-    
     #single_page_title {
         font-size: 25px;
     }
-    
 }
 
 #single_page_author {
     color: #666666;
 }
 
-#single_page_header {
-    
-}
+#single_page_header {}
 
 #single_page_description a {
     color: #717171;
@@ -800,7 +719,6 @@ body {
     }
 }
 
-
 #single_page_attend_area {
     cursor: pointer;
 }
@@ -812,8 +730,6 @@ body {
 #single_page_attendees_icon {
     width: 50px;
 }
-
-
 
 #single_page_attendees_list {
     margin-left: 52px;
@@ -844,125 +760,88 @@ body {
     color: #333333;
 }
 
-
-
-
-
-
-
-
-
-
-
-#sessionpage_commentsarea
-{
+#sessionpage_commentsarea {
     position: relative;
     margin-top: 20px;
 }
 
-
-#sessionpage_commentshead
-{
-
+#sessionpage_commentshead {
     font-size: 24px;
     color: #888888;
     text-decoration: underline;
 }
 
-#sessionpage_commentsarea ul
-{
+#sessionpage_commentsarea ul {
     list-style: none;
     padding: 10px 0px 10px 25px;
 }
 
-#sessionpage_commentsarea .comment-body
-{
+#sessionpage_commentsarea .comment-body {
     padding: 5px;
     border-radius: 5px;
 }
 
-#sessionpage_commentsarea .comment-body:hover
-{
+#sessionpage_commentsarea .comment-body:hover {
     background-color: #EEEEEE;
 }
 
-#sessionpage_commentsarea img
-{
+#sessionpage_commentsarea img {
     float: left;
     border-radius: 6px;
 }
 
-#sessionpage_commentsarea .comment-body-inner
-{
+#sessionpage_commentsarea .comment-body-inner {
     padding-left: 60px;
 }
 
-
-#sessionpage_commentsarea a
-{
+#sessionpage_commentsarea a {
     color: #888888;
-
     font-style: normal;
 }
 
-#sessionpage_commentsarea .comment-author a
-{
+#sessionpage_commentsarea .comment-author a {
     text-decoration: none;
     font-weight: bold;
 }
 
-#sessionpage_commentsarea .comment-author a:hover
-{
+#sessionpage_commentsarea .comment-author a:hover {
     text-decoration: underline;
 }
 
-#sessionpage_commentsarea .comment-body-inner p
-{
+#sessionpage_commentsarea .comment-body-inner p {
     margin: 5px 0px;
     text-align: justify;
 }
 
-#sessionpage_commentsarea .comment_footer
-{
+#sessionpage_commentsarea .comment_footer {
     font-size: 11px;
-
 }
 
-#sessionpage_commentsarea .comment_footer a
-{
+#sessionpage_commentsarea .comment_footer a {
     color: #AAAAAA;
-
 }
 
-#sessionpage_commentsarea #respond
-{
+#sessionpage_commentsarea #respond {
     margin-top: 30px;
 }
 
-#sessionpage_commentsarea #reply-title
-{
+#sessionpage_commentsarea #reply-title {
     font-size: 18px;
     color: #888888;
 }
 
-#sessionpage_commentsarea #submit
-{
+#sessionpage_commentsarea #submit {
     width: 160px;
     height: 30px;
 }
 
-#sessionpage_commentsarea #comment
-{
+#sessionpage_commentsarea #comment {
     border: 1px solid #AAAAAA;
     border-radius: 5px;
     width: 100%;
     max-width: 385px;
     height: 130px;
 }
-
-
-
-
 
 #page_author_container {
     height: 100%;
@@ -971,7 +850,6 @@ body {
 
 #page_author_wrapper {
     height: auto;
-    
     margin-top: 40px;
     padding-top: 30px;
 }
@@ -984,8 +862,6 @@ body {
     width: 50px;
     height: auto;
 }
-
-
 
 #page_author_name {
     font-size: 20px;
@@ -1002,22 +878,15 @@ body {
     color: #999999;
 }
 
-
 @media (min-width: 768px) {
-    
     #page_author_avatar img {
         width: 90px;
         height: auto;
     }
-
     #page_author_name {
         font-size: 25px;
     }
-
-    
-    
 }
-
 
 .authorpage_bcb_title {
     font-size: 1.3em;
@@ -1035,26 +904,19 @@ body {
     color: #6b6b6b;
 }
 
-
 .ac_results {
     background-color: #FFFFFF;
 }
 
-
-
-
-
 #page_techlash_wrapper {
     color: #FFFFFF;
 }
-
 
 #page_techlash_header {
     font-size: 40px;
 }
 
 @media (min-width: 768px) {
-    
     #page_techlash_header {
         font-size: 70px;
     }
@@ -1065,7 +927,6 @@ body {
 }
 
 #page_techlash_card {
-    
     border: 2px solid #cab1ab;
     margin-bottom: 30px;
     padding: 15px;
@@ -1080,8 +941,6 @@ body {
     color: #ead8d5;
 }
 
-
-
 #page_search_container {
     width: 100%;
 }
@@ -1094,18 +953,14 @@ body {
     font-size: 30px;
     color: #FFFFFF;
     margin: 20px 0px;
-    
 }
 
 @media (min-width: 768px) {
-    
     #page_search_title {
         font-size: 60px;
         color: #FFFFFF;
-
     }
 }
-
 
 #page_search_title #page_search_title_prefix {
     opacity: 0.6;
@@ -1125,15 +980,6 @@ body {
     font-size: 16px;
     color: #999999;
 }
-
-
-
-
-
-
-
-
-
 
 #footer_container {
     max-width: none;
@@ -1170,7 +1016,6 @@ body {
     box-shadow: 2px 0px 4px #2d2d2d;
 }
 
-
 #sidebar #logins {
     margin-bottom: 30px;
 }
@@ -1192,9 +1037,6 @@ body {
     color: #999c35;
 }
 
-
-
-
 #when_where_container {
     position: fixed;
     height: 60vh;
@@ -1208,11 +1050,9 @@ body {
     cursor: pointer;
 }
 
-
 #when_where_container:hover {
     color: #FFFFFF;
 }
-
 
 #when_where_container_small {
     text-align: center;
@@ -1223,13 +1063,9 @@ body {
     font-size: 12px;
 }
 
-
-
 #venue_and_search_container {
     padding: 15px 0px 0px 0px;
 }
-
-
 
 #venue_container {
     position: fixed;
@@ -1238,7 +1074,6 @@ body {
     background: linear-gradient(to right, #eff0bb, #d5d3dd);
     height: 80vh;
 }
-
 
 #venue_container #venue_details_wrapper {
     width: 70%;
@@ -1272,7 +1107,6 @@ body {
     font-size: 14px;
 }
 
-
 #venue_container #venue_address_wrapper {
     display: inline-block;
     width: 34%;
@@ -1302,11 +1136,9 @@ body {
     cursor: pointer;
 }
 
-
 #venue_container_small {
     position: fixed;
     bottom: 0px;
-    
     background: linear-gradient(to right, #eff0bb, #d5d3dd);
     height: 80%;
     width: 90%;
@@ -1373,8 +1205,40 @@ body {
     cursor: pointer;
 }
 
-
-
 #page_about_content .wpuf-form-add a {
     color: #000000;
+}
+
+#home_venue_date_wrapper {
+    background: rgba(255, 255, 255, 0.19);
+    border-width: 5px;
+    border-color: rgba(255, 255, 255, 0.2);
+    border-style: solid;
+}
+
+#home_venue_time_wrapper {
+    background: rgba(255, 255, 255, 0.19);
+    border-width: 5px;
+    border-color: rgba(255, 255, 255, 0.2);
+    border-style: solid;
+}
+
+#home_venue_address_wrapper {
+    background: rgba(255, 255, 255, 0.19);
+    border-width: 5px;
+    border-color: rgba(255, 255, 255, 0.2);
+    border-style: solid;
+}
+
+#venue_when {
+    font-weight: bold;
+    text-decoration: underline;
+    color: white;
+    font-size: 1.3rem;
+}
+
+#home_venue_details_wrapper {
+    width: 100%;
+    margin: 10px auto 40px auto;
+    text-align: center;
 }
