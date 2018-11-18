@@ -1242,3 +1242,7 @@ body {
     margin: 10px auto 40px auto;
     text-align: center;
 }
+
+.attend_text{
+    max-width: 80px;
+}
