@@ -21,7 +21,7 @@ $cat_buckets = array(
     "3" => array(array(), array()),
 );
 $cat_names = array(
-    200  => array("1691", "BCB 2018"),
+    200  => array("1691", "BCB Spring 2018"),
     190  => array("1556", "BCB Spring 2016"),
     180  => array("1458", "BCB Monsoon 2015"),
     175  => array("1366", "BCBX AntHill"),
