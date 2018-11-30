@@ -36,8 +36,8 @@
                 <div id="venue_tod">IN THE MORNING</div>
             </div>
             <div id="venue_address_wrapper">
-                <div id="venue_address_line1">DAYANAND SAGAR UNIVERSITY</div>
-                <div id="venue_address_line2">KUDLU GATE, BANGALORE ( Not Kumarswamy Layout)</div>
+            <div id="venue_address_line1">DAYANAND SAGAR UNIVERSITY, SCHOOL OF ENGINEERING</div>
+            <div id="venue_address_line2">HOSUR ROAD, KUDLU GATE, BANGALORE <strong>(NOT KUMARSWAMY LAYOUT)</strong></div>
             </div>
         </div>
         <div id="venue_map" class="d-flex col">

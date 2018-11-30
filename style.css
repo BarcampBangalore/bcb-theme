@@ -1448,8 +1448,19 @@ body {
 
 /* Sharing buttons End*/
 
-#home_sharearea{
+#home_sharearea {
     background-color: rgba(255, 255, 255, 0.19);
     margin: 0px 5px 25px 5px;
+}
 
+.add-to-calendar {
+    background-color: rgba(255, 255, 255);
+    color: black;
+    padding: 10px;
+}
+
+.calendar-options {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+    text-align: left;
 }
