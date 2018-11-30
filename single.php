@@ -176,12 +176,8 @@
                                 </div>
                             </div>
                             </a>
-
-
                         </div>
                     </div>
-
-
                     <div class="row">
                         <div id="single_page_comments_area" class="col">
                             <div class="single_page_box">
@@ -192,8 +188,6 @@
                         </div>
                     </div>
                 </div>
-
-
             </div>
         </div>
 
