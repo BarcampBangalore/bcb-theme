@@ -32,7 +32,7 @@
             </div>
             <div id="home_venue_address_wrapper" class="col-12 col-md-4">
                 <div class="home_venue_item_bg">
-                    <div id="home_venue_when"> <a rel="noreferrer" target="_blank" href="https://www.google.com/maps/place/Dayananda+Sagar+University,+School+of+Engineering/@12.8873635,77.6393876,17z/data=!3m1!4b1!4m5!3m4!1s0x3bae14b1d2f9d549:0xfa5e934c17e969ff!8m2!3d12.8873635!4d77.6415763">
+                    <div id="home_venue_when"> <a rel="noreferrer" target="_blank" href="https://goo.gl/maps/TEoiP1dPi542">
                     LOCATION: </a></div>
                     <div id="home_venue_address_line1">Dayanand Sagar University, School of Engineering</div>
                     <div id="home_venue_address_line2">Hosur Road, Kudlu Gate, Bangalore <strong>(Not Kumarswamy Layout)</strong></div>
