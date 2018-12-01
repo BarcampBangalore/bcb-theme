@@ -1209,6 +1209,18 @@ body {
     color: #000000;
 }
 
+#home_venue_date_wrapper {
+    margin-bottom: .5rem;
+}
+
+#home_venue_time_wrapper {
+    margin-bottom: .5rem;
+}
+
+#home_venue_address_wrapper {
+    margin-bottom: .5rem;
+}
+
 .home_venue_item_bg {
     background: rgba(255, 255, 255, 0.6);
     border-radius: 10px;
@@ -1476,7 +1488,6 @@ body {
 
 .add-to-calendar-checkbox~a {
     display: block;
-    width: 250px;
     padding: 4px
 }
 
