@@ -1209,25 +1209,19 @@ body {
     color: #000000;
 }
 
-#home_venue_date_wrapper {
-    background: rgba(255, 255, 255, 0.19);
-    border-width: 5px;
-    border-color: rgba(255, 255, 255, 0.2);
-    border-style: solid;
+.home_venue_item_bg {
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+    padding: .5rem;
+    color: black;
+    height: 100%;
 }
 
-#home_venue_time_wrapper {
-    background: rgba(255, 255, 255, 0.19);
-    border-width: 5px;
-    border-color: rgba(255, 255, 255, 0.2);
-    border-style: solid;
-}
-
-#home_venue_address_wrapper {
-    background: rgba(255, 255, 255, 0.19);
-    border-width: 5px;
-    border-color: rgba(255, 255, 255, 0.2);
-    border-style: solid;
+#home_venue_when {
+    font-weight: bold;
+    text-decoration: underline;
+    color: #ed1a39;
+    font-size: 1.3rem;
 }
 
 #venue_when {
@@ -1455,12 +1449,16 @@ body {
 
 .add-to-calendar {
     background-color: rgba(255, 255, 255);
+    opacity: .76;
     color: black;
-    padding: 10px;
+    border-radius: 5px;
+    transition: 25ms ease-out;
+    padding: 0.5em 0.75em;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif
 }
 
 .calendar-options {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.7);
     color: black;
     text-align: left;
 }

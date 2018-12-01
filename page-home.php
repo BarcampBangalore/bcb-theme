@@ -17,20 +17,26 @@
 
         <div id="home_venue_details_wrapper" class="row">
             <div id="home_venue_date_wrapper" class="col-12 col-md-4">
-                <div id="venue_when">ON</div>
-                <div id="venue_date">Saturday </div>
-                <div id="venue_year">2nd Feb 2019</div>
+                <div class="home_venue_item_bg">
+                    <div id="home_venue_when">ON</div>
+                    <div id="home_venue_date">Saturday </div>
+                    <div id="home_venue_year">2nd Feb 2019</div>
+                </div>
             </div>
             <div id="home_venue_time_wrapper" class="col-12 col-md-4">
-                <div id="venue_when">AT</div>
-                <div id="venue_time">8:00</div>
-                <div id="venue_tod">in the morning</div>
+                <div class="home_venue_item_bg">
+                    <div id="home_venue_when">AT</div>
+                    <div id="home_venue_time">8:00</div>
+                    <div id="home_venue_tod">in the morning</div>
+                </div>
             </div>
             <div id="home_venue_address_wrapper" class="col-12 col-md-4">
-                <div id="venue_when"> <a rel="noreferrer" target="_blank" href="https://www.google.com/maps/place/Dayananda+Sagar+University,+School+of+Engineering/@12.8873635,77.6393876,17z/data=!3m1!4b1!4m5!3m4!1s0x3bae14b1d2f9d549:0xfa5e934c17e969ff!8m2!3d12.8873635!4d77.6415763">
-                LOCATION: </a></div>
-                <div id="venue_address_line1">Dayanand Sagar University, School of Engineering</div>
-                <div id="venue_address_line2">Hosur Road, Kudlu Gate, Bangalore <strong>(Not Kumarswamy Layout)</strong></div>
+                <div class="home_venue_item_bg">
+                    <div id="home_venue_when"> <a rel="noreferrer" target="_blank" href="https://www.google.com/maps/place/Dayananda+Sagar+University,+School+of+Engineering/@12.8873635,77.6393876,17z/data=!3m1!4b1!4m5!3m4!1s0x3bae14b1d2f9d549:0xfa5e934c17e969ff!8m2!3d12.8873635!4d77.6415763">
+                    LOCATION: </a></div>
+                    <div id="home_venue_address_line1">Dayanand Sagar University, School of Engineering</div>
+                    <div id="home_venue_address_line2">Hosur Road, Kudlu Gate, Bangalore <strong>(Not Kumarswamy Layout)</strong></div>
+                </div>
             </div>
         </div>
         <div id="home_sharearea" class="row">
@@ -85,7 +91,7 @@
                     </a>
 
                     <label for="checkbox-for-196851" class="add-to-calendar add-to-calendar-checkbox"> + Add Barcamp Bangalore Spring 2019 to my Calendar</label>
-                    <div class="calendar-options"> 
+                    <div class="calendar-options">
                     <input name="add-to-calendar-checkbox" class="add-to-calendar-checkbox" id="checkbox-for-196851" type="checkbox">
                     <a class="icon-google" target="_blank" href="https://www.google.com/calendar/render?action=TEMPLATE&amp;text=Barcamp%20Bangalore%20Spring%202019&amp;dates=20190202T023000Z/20190202T123000Z&amp;details=Barcamp%20Bangalore%20Spring%202019&amp;location=Dayand%20Sagar%20University,%20School%20of%20Engineering,%20Hosur%20Road,%20Kudlu%20Gate&amp;sprop=&amp;sprop=name:">Google Calendar</a>
                     <a class="icon-yahoo" target="_blank" href="http://calendar.yahoo.com/?v=60&amp;view=d&amp;type=20&amp;title=Barcamp%20Bangalore%20Spring%202019&amp;st=20190202T080000Z&amp;dur=1000&amp;desc=Barcamp%20Bangalore%20Spring%202019&amp;in_loc=Dayand%20Sagar%20University,%20School%20of%20Engineering,%20Hosur%20Road,%20Kudlu%20Gate">Yahoo! Calendar</a>
