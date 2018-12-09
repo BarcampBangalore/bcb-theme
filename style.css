@@ -465,7 +465,7 @@ body {
 
 .sessions_page_card_author {
     color: #666666;
-    font-size: 14px;
+    font-size: 14px; 
 }
 
 .sessions_page_card_comments_stats {
@@ -1517,3 +1517,87 @@ input[type=checkbox].add-to-calendar-checkbox {
 .icon-google:before {
     background-position: -52px 0
 }
+
+#archives_page_title {
+    font-size: 28px;
+}
+
+#archive_cards_row {
+    padding-top: 15px;
+    background-color: #ffffffa0;
+}
+
+#archives_page_bcb_selector {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+#archives_page_bcb_selector li {
+    display: inline-block;
+    background-color: #EAEAEA;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px #999999;
+    margin: 4px;
+}
+
+#archives_page_bcb_selector a {
+    cursor: pointer;
+}
+
+#archives_page_bcb_selector .archive_selected
+{
+    background-color: #CA4514;
+    opacity: 1;
+}
+
+#archives_page_bcb_selector .archive_selected a
+{
+    color: #fff;
+}
+
+
+
+.archive_sponsors_wrapper
+{
+    padding: 30px;
+    background-color: #FFFFFF;
+    border-radius: 3px;
+    margin: 0px 20px;
+
+}
+
+.archive_sponsors_wrapper h2
+{
+    font-size: 20px;
+    padding-bottom: 20px;
+
+}
+
+
+.archive_sponsor
+{
+    margin: 0px 10px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+
+.archive_sponsor_title
+{
+    color: #666666;
+    font-size: 16px;
+    padding-bottom: 10px;
+
+}
+
+.archive_sponsor_logo
+{
+    max-width: 100px;
+    max-height: 50px;
+}
+
