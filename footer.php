@@ -102,8 +102,8 @@
 <div id="venue_container_small" class="d-none d-md-none flex-column col-md-9">
     <div id="venue_details_wrapper_row1" class="d-flex">
         <div id="venue_date_wrapper" class="justify-content-around">
-            <div id="venue_date">FEB 10</div>
-            <div id="venue_year">TWO THOUSAND AND EIGHTEEN</div>
+            <div id="venue_date">FEB 02</div>
+            <div id="venue_year">TWO THOUSAND AND NINETEEN</div>
         </div>
         <div id="venue_time_wrapper">
             <div id="venue_time">8:00</div>
@@ -112,12 +112,12 @@
     </div>
     <div id="venue_details_wrapper_row2" class="d-flex">
         <div id="venue_address_wrapper">
-            <div id="venue_address_line1">DAYANAND SAGAR UNIVERSITY</div>
-            <div id="venue_address_line2">KUDLU GATE, BANGALORE</div>
+            <div id="venue_address_line1">DAYANAND SAGAR UNIVERSITY, SCHOOL OF ENGINEERING</div>
+            <div id="venue_address_line2">HOSUR ROAD, KUDLU GATE, BANGALORE <strong>(NOT KUMARSWAMY LAYOUT)</strong></div>
         </div>
     </div>
     <div id="venue_map" class="d-flex col">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1944.6513201221865!2d77.64004634197842!3d12.888250997713861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDUzJzE3LjciTiA3N8KwMzgnMjguMSJF!5e0!3m2!1sen!2sus!4v1516169924508" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d243.08212108927017!2d77.64153600261582!3d12.887523638258653!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfa5e934c17e969ff!2sDayananda+Sagar+University%2C+School+of+Engineering!5e0!3m2!1sen!2sus!4v1543656360731" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
     <div id="close_button"><i class="fa fa-times-circle-o" aria-hidden="true"></i></div>
 </div>
