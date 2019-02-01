@@ -14,6 +14,7 @@
         <div id="page_home_sponsors_header">
             Barcamp Bangalore is back
         </div>
+        <div> <b>Registrations closed for Feb 2nd 2019 event </b></div>
 
         <div id="home_venue_details_wrapper" class="row">
             <div id="home_venue_date_wrapper" class="col-12 col-md-4">
