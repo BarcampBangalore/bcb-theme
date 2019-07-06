@@ -28,7 +28,7 @@
     <div id="venue_container" class="d-none flex-column col-md-9">
         <div id="venue_details_wrapper" class="d-flex">
             <div id="venue_date_wrapper">
-                <div id="venue_date">FEB 2</div>
+                <div id="venue_date">SEPT 21</div>
                 <div id="venue_year">TWO THOUSAND AND NINETEEN</div>
             </div>
             <div id="venue_time_wrapper">
@@ -41,7 +41,7 @@
             </div>
         </div>
         <div id="venue_map" class="d-flex col">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d243.08212108927017!2d77.64153600261582!3d12.887523638258653!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfa5e934c17e969ff!2sDayananda+Sagar+University%2C+School+of+Engineering!5e0!3m2!1sen!2sus!4v1543656360731" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1635.2579710026564!2d77.64227583727812!3d12.887079977334546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x35272e55303bd711!2sDayananda+Sagar+University!5e0!3m2!1sen!2sin!4v1562423604911!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
         <div id="close_button"><i class="fa fa-times-circle-o" aria-hidden="true"></i></div>
     </div>
@@ -102,7 +102,7 @@
 <div id="venue_container_small" class="d-none d-md-none flex-column col-md-9">
     <div id="venue_details_wrapper_row1" class="d-flex">
         <div id="venue_date_wrapper" class="justify-content-around">
-            <div id="venue_date">FEB 02</div>
+            <div id="venue_date">SPET 21</div>
             <div id="venue_year">TWO THOUSAND AND NINETEEN</div>
         </div>
         <div id="venue_time_wrapper">
@@ -117,8 +117,7 @@
         </div>
     </div>
     <div id="venue_map" class="d-flex col">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d243.08212108927017!2d77.64153600261582!3d12.887523638258653!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfa5e934c17e969ff!2sDayananda+Sagar+University%2C+School+of+Engineering!5e0!3m2!1sen!2sus!4v1543656360731" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-    </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1635.2579710026564!2d77.64227583727812!3d12.887079977334546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x35272e55303bd711!2sDayananda+Sagar+University!5e0!3m2!1sen!2sin!4v1562423604911!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>    </div>
     <div id="close_button"><i class="fa fa-times-circle-o" aria-hidden="true"></i></div>
 </div>
 
