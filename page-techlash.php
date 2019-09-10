@@ -29,7 +29,7 @@
         </div>
 
         <div class="row">
-            <h2 id="page_techlash_sessionheading" class="col">Techlash sessions for BCB Spring 2019</h2>
+            <h2 id="page_techlash_sessionheading" class="col">Techlash sessions for BCB Monsoon 2019</h2>
         </div>
         
         <div id="page_techlash_post_parent" class="row">
