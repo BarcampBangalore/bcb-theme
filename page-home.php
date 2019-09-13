@@ -75,7 +75,7 @@
 
                     <!-- Sharingbutton Twitter -->
                     <a class="resp-sharing-button__link"
-                        href="https://twitter.com/intent/tweet/?text=<?php echo rawurlencode("I am attending Barcamp Bangalore Spring 2019 - you might find the topics discussed interesting. More info at " . get_permalink() . " #barcampblr @barcampbng") ?>"
+                        href="https://twitter.com/intent/tweet/?text=<?php echo rawurlencode("I am attending Barcamp Bangalore Monsoon 2019 - you might find the topics discussed interesting. More info at " . get_permalink() . " #barcampblr @barcampbng") ?>"
                         target="_blank" aria-label="">
                         <div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--small">
                             <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
@@ -89,7 +89,7 @@
 
                     <!-- Sharingbutton LinkedIn -->
                     <a class="resp-sharing-button__link"
-                        href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fbarcampbangalore.com&amp;title=I%20am%20attending%20Barcamp%20Bangalore%20Spring%202019%2C%20You%20too%20will%20find%20the%20topics%20discussed%20interesting.%20&amp;summary=I%20am%20attending%20Barcamp%20Bangalore%20Spring%202019%2C%20You%20too%20will%20find%20the%20topics%20discussed%20interesting.%20&amp;source=https%3A%2F%2Fbarcampbangalore.com"
+                        href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fbarcampbangalore.com&amp;title=I%20am%20attending%20Barcamp%20Bangalore%20Monsoon%202019%2C%20You%20too%20will%20find%20the%20topics%20discussed%20interesting.%20&amp;summary=I%20am%20attending%20Barcamp%20Bangalore%20Spring%202019%2C%20You%20too%20will%20find%20the%20topics%20discussed%20interesting.%20&amp;source=https%3A%2F%2Fbarcampbangalore.com"
                         target="_blank" aria-label="">
                         <div class="resp-sharing-button resp-sharing-button--linkedin resp-sharing-button--small">
                             <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
