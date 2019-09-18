@@ -11,28 +11,31 @@
             <img src="<?php bloginfo('template_url');?>/images/Bengaluru-01.png" />
         </div>
         <div id="page_home_sponsors_container">
-            <div id="page_home_sponsors_header" style="font-size:2em;">
+            <div id="page_home_sponsors_header" style="font-size:2em;" hidden>
                 Barcamp Bangalore will be back soon...
             </div>
+            <div id="page_home_sponsors_header" style="font-size:2em;" >
+                Barcamp Bangalore will be happening
+            </div>
 
-            <div id="home_venue_details_wrapper" class="row" hidden>
+            <div id="home_venue_details_wrapper" class="row" >
                 <div id="home_venue_date_wrapper" class="col-12 col-md-4">
                     <div class="home_venue_item_bg">
                         <div id="home_venue_when">ON</div>
                         <div id="home_venue_date">Saturday </div>
-                        <div id="home_venue_year">2nd Feb 2019</div>
+                        <div id="home_venue_year">21st September 2019</div>
                         <div class="calendar-options">
                             <span> Add event to ...</span>
                             <input name="add-to-calendar-checkbox" class="add-to-calendar-checkbox"
                                 id="checkbox-for-196851" type="checkbox">
                             <a class="icon-google" target="_blank"
-                                href="https://www.google.com/calendar/render?action=TEMPLATE&amp;text=Barcamp%20Bangalore%20Spring%202019&amp;dates=20190202T023000Z/20190202T123000Z&amp;details=Barcamp%20Bangalore%20Spring%202019&amp;location=Dayand%20Sagar%20University,%20School%20of%20Engineering,%20Hosur%20Road,%20Kudlu%20Gate&amp;sprop=&amp;sprop=name:">Google
+                                href="https://www.google.com/calendar/render?action=TEMPLATE&amp;text=Barcamp%20Bangalore%20Monsoon%202019&amp;dates=20190921T023000Z/20190921T123000Z&amp;details=Barcamp%20Bangalore%20Monsoon%202019&amp;location=Dayand%20Sagar%20University,%20School%20of%20Engineering,%20Hosur%20Road,%20Kudlu%20Gate&amp;sprop=&amp;sprop=name:">Google
                                 Calendar</a>
                             <a class="icon-ical" target="_blank"
-                                href="data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0AURL:http://carlsednaoui.github.io/add-to-calendar-buttons/generator/generator.html?event-title=Barcamp+Bangalore+Spring+2019&amp;start-time=02%252F02%252F2019+08%253A00am&amp;end-time=02%252F02%252F2019+06%253A00pm&amp;event-address=Dayanand+Sagar+University%252C+School+of+Engineering%252C+Kudlu+gate&amp;textarea=&amp;event-id=&amp;event-class=%0ADTSTART:20190202T023000Z%0ADTEND:20190202T123000Z%0ASUMMARY:Barcamp%20Bangalore%20Spring%202019%0ADESCRIPTION:Barcamp%20Bangalore%20Spring%202019%0ALOCATION:Dayand%20Sagar%20University,%20School%20of%20Engineering,%20Hosur%20Road,%20Kudlu%20Gate%0AEND:VEVENT%0AEND:VCALENDAR">iCal
+                                href="data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0AURL:http://carlsednaoui.github.io/add-to-calendar-buttons/generator/generator.html?event-title=Barcamp+Bangalore+Monsoon+2019&amp;start-time=21%252F09%252F2019+08%253A00am&amp;end-time=21%252F09%252F2019+06%253A00pm&amp;event-address=Dayanand+Sagar+University%252C+School+of+Engineering%252C+Kudlu+gate&amp;textarea=&amp;event-id=&amp;event-class=%0ADTSTART:20190202T023000Z%0ADTEND:20190202T123000Z%0ASUMMARY:Barcamp%20Bangalore%20Monsoon%202019%0ADESCRIPTION:Barcamp%20Bangalore%20Monsoon%202019%0ALOCATION:Dayand%20Sagar%20University,%20School%20of%20Engineering,%20Hosur%20Road,%20Kudlu%20Gate%0AEND:VEVENT%0AEND:VCALENDAR">iCal
                                 Calendar</a>
                             <a class="icon-outlook" target="_blank"
-                                href="data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0AURL:http://carlsednaoui.github.io/add-to-calendar-buttons/generator/generator.html?event-title=Barcamp+Bangalore+Spring+2019&amp;start-time=02%252F02%252F2019+08%253A00am&amp;end-time=02%252F02%252F2019+06%253A00pm&amp;event-address=Dayanand+Sagar+University%252C+School+of+Engineering%252C+Kudlu+gate&amp;textarea=&amp;event-id=&amp;event-class=%0ADTSTART:20190202T023000Z%0ADTEND:20190202T123000Z%0ASUMMARY:Barcamp%20Bangalore%20Spring%202019%0ADESCRIPTION:Barcamp%20Bangalore%20Spring%202019%0ALOCATION:Dayand%20Sagar%20University,%20School%20of%20Engineering,%20Hosur%20Road,%20Kudlu%20Gate%0AEND:VEVENT%0AEND:VCALENDAR">Outlook
+                                href="data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0AURL:http://carlsednaoui.github.io/add-to-calendar-buttons/generator/generator.html?event-title=Barcamp+Bangalore+Monsoon+2019&amp;start-time=21%252F09%252F2019+08%253A00am&amp;end-time=21%252F09%252F2019+06%253A00pm&amp;event-address=Dayanand+Sagar+University%252C+School+of+Engineering%252C+Kudlu+gate&amp;textarea=&amp;event-id=&amp;event-class=%0ADTSTART:20190202T023000Z%0ADTEND:20190202T123000Z%0ASUMMARY:Barcamp%20Bangalore%20Monsoon%202019%0ADESCRIPTION:Barcamp%20Bangalore%20Monsoon%202019%0ALOCATION:Dayand%20Sagar%20University,%20School%20of%20Engineering,%20Hosur%20Road,%20Kudlu%20Gate%0AEND:VEVENT%0AEND:VCALENDAR">Outlook
                                 Calendar</a>
                         </div>
 
@@ -48,7 +51,7 @@
                 <div id="home_venue_address_wrapper" class="col-12 col-md-4">
                     <div class="home_venue_item_bg">
                         <div id="home_venue_when"> <a rel="noreferrer" target="_blank"
-                                href="https://goo.gl/maps/TEoiP1dPi542">
+                                href="https://goo.gl/maps/P9yMnXdQzbeWXVsP7">
                                 LOCATION: </a></div>
                         <div id="home_venue_address_line1">Dayanand Sagar University, School of Engineering</div>
                         <div id="home_venue_address_line2">Hosur Road, Kudlu Gate, Bangalore <strong>(Not Kumarswamy
@@ -56,7 +59,7 @@
                     </div>
                 </div>
             </div>
-            <div id="home_sharearea" class="row" hidden>
+            <div id="home_sharearea" class="row">
                 <div class="col-12">
                     <strong>Spread the word :</strong>
                     <!-- Sharingbutton Facebook -->
@@ -89,7 +92,7 @@
 
                     <!-- Sharingbutton LinkedIn -->
                     <a class="resp-sharing-button__link"
-                        href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fbarcampbangalore.com&amp;title=I%20am%20attending%20Barcamp%20Bangalore%20Monsoon%202019%2C%20You%20too%20will%20find%20the%20topics%20discussed%20interesting.%20&amp;summary=I%20am%20attending%20Barcamp%20Bangalore%20Spring%202019%2C%20You%20too%20will%20find%20the%20topics%20discussed%20interesting.%20&amp;source=https%3A%2F%2Fbarcampbangalore.com"
+                        href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fbarcampbangalore.com&amp;title=I%20am%20attending%20Barcamp%20Bangalore%20Monsoon%202019%2C%20You%20too%20will%20find%20the%20topics%20discussed%20interesting.%20&amp;summary=I%20am%20attending%20Barcamp%20Bangalore%20Monsoon%202019%2C%20You%20too%20will%20find%20the%20topics%20discussed%20interesting.%20&amp;source=https%3A%2F%2Fbarcampbangalore.com"
                         target="_blank" aria-label="">
                         <div class="resp-sharing-button resp-sharing-button--linkedin resp-sharing-button--small">
                             <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
@@ -117,7 +120,7 @@
 
                     <!-- Sharingbutton WhatsApp -->
                     <a class="resp-sharing-button__link"
-                        href="whatsapp://send?text=I%20am%20attending%20Barcamp%20Bangalore%20Spring%202019%2C%20You%20too%20will%20find%20the%20topics%20discussed%20interesting.%20%20https%3A%2F%2Fbarcampbangalore.com"
+                        href="whatsapp://send?text=I%20am%20attending%20Barcamp%20Bangalore%20Monsoon%202019%2C%20You%20too%20will%20find%20the%20topics%20discussed%20interesting.%20%20https%3A%2F%2Fbarcampbangalore.com"
                         target="_blank" aria-label="">
                         <div class="resp-sharing-button resp-sharing-button--whatsapp resp-sharing-button--small">
                             <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
@@ -131,7 +134,7 @@
 
                     <!-- Sharingbutton Telegram -->
                     <a class="resp-sharing-button__link"
-                        href="https://telegram.me/share/url?text=I%20am%20attending%20Barcamp%20Bangalore%20Spring%202019%2C%20You%20too%20will%20find%20the%20topics%20discussed%20interesting.%20&amp;url=https%3A%2F%2Fbarcampbangalore.com"
+                        href="https://telegram.me/share/url?text=I%20am%20attending%20Barcamp%20Bangalore%20Monsoon%202019%2C%20You%20too%20will%20find%20the%20topics%20discussed%20interesting.%20&amp;url=https%3A%2F%2Fbarcampbangalore.com"
                         target="_blank" aria-label="">
                         <div class="resp-sharing-button resp-sharing-button--telegram resp-sharing-button--small">
                             <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
