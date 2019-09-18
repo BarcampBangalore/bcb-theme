@@ -11,9 +11,11 @@
             <img src="<?php bloginfo('template_url');?>/images/Bengaluru-01.png" />
         </div>
         <div id="page_home_sponsors_container">
-            <div id="page_home_sponsors_header" style="font-size:2em;" hidden>
-                Barcamp Bangalore will be back soon...
+            <div id="page_home_sponsors_header" style="font-size:2em;" >
+                Barcamp Bangalore Monsoon 2019 has been cancelled due to lack of participation from the community. Details about 
+                reasons and what you can do to keep it alive are <font color="red"><a href="">here</a></font>. 
             </div>
+            <div hidden>
             <div id="page_home_sponsors_header" style="font-size:2em;" >
                 Barcamp Bangalore will be happening
             </div>
@@ -214,7 +216,7 @@
                     </div> -->
                     </div>
                 </div>
-
+                </div>
 
             </div>
         </div>
