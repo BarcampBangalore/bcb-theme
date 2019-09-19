@@ -13,7 +13,7 @@
         <div id="page_home_sponsors_container">
             <div id="page_home_sponsors_header" style="font-size:2em;" >
                 Barcamp Bangalore Monsoon 2019 has been cancelled due to lack of participation from the community. Details about 
-                reasons and what you can do to keep it alive are <font color="red"><a href="">here</a></font>. 
+                reasons and what you can do to keep it alive are <font color="red"><a href="https://barcampbangalore.com/planning/barcamp-bangalore-monsoon-2019-stands-cancelled/">here</a></font>. 
             </div>
             <div hidden>
             <div id="page_home_sponsors_header" style="font-size:2em;" >
