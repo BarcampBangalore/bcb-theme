@@ -362,20 +362,30 @@ get_header();?>
                     <div id="archives_page_title"><?php the_title();?></div>
                     <div id="archives_page_bcb_selector_buttons">
                         <ul id="archives_page_bcb_selector">
-                            <li class="archive_selected"><a class="archives_current" data-contentdiv="archive_1691">BCB Spring 2018</a></li>
-                            <li><a data-contentdiv="archive_1556">BCB Spring 2016</a></li>
-                            <li><a data-contentdiv="archive_1458">BCB Monsoon 2015</a></li>
-                            <li><a data-contentdiv="archive_1366">BCBX AntHill</a></li>
-                            <li><a data-contentdiv="archive_1224">BCB17</a></li>
-                            <li><a data-contentdiv="archive_1057">BCB16</a></li>
-                            <li><a data-contentdiv="archive_931">BCB15</a></li>
-                            <li><a data-contentdiv="archive_785">BCB14</a></li>
-                            <li><a data-contentdiv="archive_636">BCB13</a></li>
-                            <li><a data-contentdiv="archive_479">BCB12</a></li>
-                            <li><a data-contentdiv="archive_399">BCB11</a></li>
-                            <li><a data-contentdiv="archive_324">BCB10</a></li>
-                            <li><a data-contentdiv="archive_220">BCB9</a></li>
-                            <li><a data-contentdiv="archive_3">BCB8</a></li>
+                            <?php
+                            $first = true;
+                            $archive_term_id = get_cat_ID('archives');
+                            $taxonomy_name = 'category';
+                            $termchildren = get_term_children( $archive_term_id, $taxonomy_name );
+                            echo '<ul>';
+                            foreach ( $termchildren as $child ) {
+                                $term = get_term_by( 'id', $child, $taxonomy_name );
+                                // Get the depth of the category.
+                                $cats_str = get_category_parents($term, false, '%#%');
+                                $cats_array = explode('%#%', $cats_str);
+                                $cat_depth = sizeof($cats_array)-2;
+
+                                if ($term->parent == $archive_term_id && $cat_depth == 1 && $term->count > 0) {
+                                    echo '<li><a ';
+                                    if ($first == true) {
+                                        echo 'class="archives_current"';
+                                        $first = false;
+                                    } 
+                                    echo ' data-contentdiv="archive_' . $term->term_id . '">' . $term->name . '</a></li>';
+                                }
+                            }
+                            echo '</ul>';
+                            ?> 
                         </ul>
                     </div>
                 </div>
@@ -388,6 +398,7 @@ $archive_categories = array(1691 => "BCB Spring 2018", 1556 => "BCB Spring 2016"
     1224 => 'bcb17', 1057 => 'bcb16', 931 => 'bcb15',
     785 => 'bcb14', 636 => 'bcb13', 479 => 'bcb12',
     399 => 'bcb11', 324 => 'bcb10', 220 => 'bcb9', 3 => 'bcb8');
+
 foreach ($archive_categories as $archive_cat => $archive_catname):
 ?>
             <div id="archive_<?php echo $archive_cat; ?>" class="archives_parent" >
