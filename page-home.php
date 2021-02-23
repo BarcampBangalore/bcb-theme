@@ -2,52 +2,42 @@
 
 
 
-<div id="page_home_container" class="d-flex flex-column align-items-center justify-content-center text-center h-md-100">
-    <div id="page_home_wrapper" class="col">
-        <div id="page_home_namaskara">
-            Namaskara
+<div id="page_home_container" class="d-flex align-items-center justify-content-center text-center">
+    <div id="page_home_wrapper" class="flex-column">
+        <div id="page_home_namaskara" class="row">
+            <div class="col-12">Namaskara</div>
         </div>
-        <div id="page_home_blr_logo">
-            <img src="<?php bloginfo('template_url');?>/images/Bengaluru-01.png" />
+        <div id="page_home_blr_logo" class="row">
+            <div class="col-12">
+                <img src="<?php bloginfo('template_url');?>/images/Bengaluru-01.png" />
+            </div>
         </div>
-        <div id="page_home_sponsors_container">
+        <div id="page_home_sponsors_container" class="">
+            <?php /*
             <div id="page_home_sponsors_header" style="font-size:2em;" >
                 Barcamp Bangalore Monsoon 2019 has been cancelled due to lack of participation from the community. Details about 
                 reasons and what you can do to keep it alive are <font color="red"><a href="https://barcampbangalore.com/planning/barcamp-bangalore-monsoon-2019-stands-cancelled/">here</a></font>. 
-            </div>
-            <div hidden>
+            </div> */
+                    
+            ?>
             <div id="page_home_sponsors_header" style="font-size:2em;" >
-                Barcamp Bangalore will be happening
+                BCB is going virtual with Monthly talks!
             </div>
 
             <div id="home_venue_details_wrapper" class="row" >
                 <div id="home_venue_date_wrapper" class="col-12 col-md-4">
                     <div class="home_venue_item_bg">
-                        <div id="home_venue_when">ON</div>
+                        <div id="home_venue_when">NEXT</div>
                         <div id="home_venue_date">Saturday </div>
-                        <div id="home_venue_year">21st September 2019</div>
-                        <div class="calendar-options">
-                            <span> Add event to ...</span>
-                            <input name="add-to-calendar-checkbox" class="add-to-calendar-checkbox"
-                                id="checkbox-for-196851" type="checkbox">
-                            <a class="icon-google" target="_blank"
-                                href="https://www.google.com/calendar/render?action=TEMPLATE&amp;text=Barcamp%20Bangalore%20Monsoon%202019&amp;dates=20190921T023000Z/20190921T123000Z&amp;details=Barcamp%20Bangalore%20Monsoon%202019&amp;location=Dayand%20Sagar%20University,%20School%20of%20Engineering,%20Hosur%20Road,%20Kudlu%20Gate&amp;sprop=&amp;sprop=name:">Google
-                                Calendar</a>
-                            <a class="icon-ical" target="_blank"
-                                href="data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0AURL:http://carlsednaoui.github.io/add-to-calendar-buttons/generator/generator.html?event-title=Barcamp+Bangalore+Monsoon+2019&amp;start-time=21%252F09%252F2019+08%253A00am&amp;end-time=21%252F09%252F2019+06%253A00pm&amp;event-address=Dayanand+Sagar+University%252C+School+of+Engineering%252C+Kudlu+gate&amp;textarea=&amp;event-id=&amp;event-class=%0ADTSTART:20190202T023000Z%0ADTEND:20190202T123000Z%0ASUMMARY:Barcamp%20Bangalore%20Monsoon%202019%0ADESCRIPTION:Barcamp%20Bangalore%20Monsoon%202019%0ALOCATION:Dayand%20Sagar%20University,%20School%20of%20Engineering,%20Hosur%20Road,%20Kudlu%20Gate%0AEND:VEVENT%0AEND:VCALENDAR">iCal
-                                Calendar</a>
-                            <a class="icon-outlook" target="_blank"
-                                href="data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0AURL:http://carlsednaoui.github.io/add-to-calendar-buttons/generator/generator.html?event-title=Barcamp+Bangalore+Monsoon+2019&amp;start-time=21%252F09%252F2019+08%253A00am&amp;end-time=21%252F09%252F2019+06%253A00pm&amp;event-address=Dayanand+Sagar+University%252C+School+of+Engineering%252C+Kudlu+gate&amp;textarea=&amp;event-id=&amp;event-class=%0ADTSTART:20190202T023000Z%0ADTEND:20190202T123000Z%0ASUMMARY:Barcamp%20Bangalore%20Monsoon%202019%0ADESCRIPTION:Barcamp%20Bangalore%20Monsoon%202019%0ALOCATION:Dayand%20Sagar%20University,%20School%20of%20Engineering,%20Hosur%20Road,%20Kudlu%20Gate%0AEND:VEVENT%0AEND:VCALENDAR">Outlook
-                                Calendar</a>
-                        </div>
+                        <div id="home_venue_year">20th March 2021</div>
 
                     </div>
                 </div>
                 <div id="home_venue_time_wrapper" class="col-12 col-md-4">
                     <div class="home_venue_item_bg">
                         <div id="home_venue_when">AT</div>
-                        <div id="home_venue_time">8:00</div>
-                        <div id="home_venue_tod">in the morning</div>
+                        <div id="home_venue_time">1 PM to 3PM</div>
+                        <!--<div id="home_venue_tod">in the morning</div>-->
                     </div>
                 </div>
                 <div id="home_venue_address_wrapper" class="col-12 col-md-4">
@@ -55,12 +45,153 @@
                         <div id="home_venue_when"> <a rel="noreferrer" target="_blank"
                                 href="https://goo.gl/maps/P9yMnXdQzbeWXVsP7">
                                 LOCATION: </a></div>
-                        <div id="home_venue_address_line1">Dayanand Sagar University, School of Engineering</div>
-                        <div id="home_venue_address_line2">Hosur Road, Kudlu Gate, Bangalore <strong>(Not Kumarswamy
-                                Layout)</strong></div>
+                        <div id="home_venue_address_line1">Airmeet</div>
+                        <!--<div id="home_venue_address_line2">(Links will be posted 2 days before the talks)</div>-->
                     </div>
                 </div>
             </div>
+            
+            
+            
+            
+            <div id="page_home_chosen_container" class="row flex-column"  >
+            <div class="sessions_page_list_header row">
+                <div class="col-12">
+                    Sessions For Upcoming Event
+                </div>
+            </div>
+            
+            <div class="row">                    
+
+                <?php
+                $tracks = get_current_cats(false);
+                $chosen_post_ids = get_chosen_track_ids();
+                $sessions_selection_done = sizeof($chosen_post_ids) > 0;
+                $airmeet_links = get_airmeet_links();
+                
+                
+                if ($sessions_selection_done) {
+                    
+                    $chosen_posts = new WP_Query(array('post__in' => $chosen_post_ids, 'nopaging' => true));   // BCB 2021 Virtual Dev
+
+                    while ($chosen_posts->have_posts()) : $chosen_posts->the_post();
+
+                        ?>
+
+                        <?php
+                        $post_cats = get_the_category();
+
+                        foreach (get_the_category() as $c) {
+
+                            $track_id = array_search($c->cat_ID, $tracks);
+
+                            if ($track_id !== FALSE) {
+                                break;
+                            }
+                        }
+                        ?>
+
+                        <div class="sessions_page_card_chosen col-12 col-md-6" data-track-id="<?php echo $track_id; ?>">
+                            <div class="sessions_page_card_content container-fluid track_color_border_<?php echo $track_id; ?>">
+                                <div class="row">
+                                    <div class="sessions_page_card_avatar">
+                                        <?php echo '<a href="' . get_author_posts_url(get_the_author_meta('ID')) . '">' . get_avatar(get_the_author_meta('ID'), 48) . '</a>'; ?>
+                                    </div>
+                                    <div class="sessions_page_card_right_column track_color_border_<?php echo $track_id ?> col">
+                                        <div class="sessions_page_card_title">
+
+                                            <?php
+                                                $titlestr = get_the_title();
+                                                $title_trimmed = false;
+                                                if (strlen($titlestr) > 50) {
+                                                    $titlestr = substr($titlestr, 0, 50)."...";
+                                                    $title_trimmed = true;
+                                                }
+                                            ?>
+                                            <a href="<?php echo get_permalink(); ?>" <?php if ($title_trimmed) {echo 'title="'.get_the_title().'"';} ?>>
+                                                <?php echo $titlestr; ?>
+                                            </a>
+                                        </div>
+                                        <div class="sessions_page_card_author">
+                                            <?php echo '<a href="' . get_author_posts_url(get_the_author_meta('ID')) . '">' . get_the_author_meta('user_nicename') . '</a>'; ?>
+                                        </div>
+                                        <div class="sessions_page_card_bottomarea">
+
+                                            <div class="sessions_page_card_comments_stats">
+                                                <div class="sessions_page_card_comments_icon">
+                                                    <img src="<?php echo get_bloginfo('template_url').'/images/icons-21.png' ?>" title="Comments" />
+                                                </div>
+                                                <div class="sessions_page_card_comments_count">
+                                                    <?php comments_number('0', '1', '%'); ?>
+                                                </div>
+                                            </div>
+
+                                            <div class="sessions_page_card_attendees_stats">
+                                                <div class="sessions_page_card_attendees_icon">
+                                                    <img src="<?php echo get_bloginfo('template_url').'/images/icons-20.png' ?>" title="Attendees" />
+                                                </div>
+                                                <div id="sessions_page_card_attendees_count_<?php echo get_the_ID();  ?>" class="sessions_page_card_attendees_count">
+                                                    <?php echo attending_users_count(get_the_ID()) ?>
+                                                </div>
+                                            </div>
+
+                                            <div class="sessions_page_card_attend_button" data-postid="<?php echo get_the_ID(); ?>">
+                                                <?php echo get_my_attending_button(get_the_ID()); ?>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+
+                    <?php endwhile; ?>
+                
+                    <div class="col-6">
+                        <div class="airmeet_link_container">
+                            Airmeet link - <a href="<?php echo $airmeet_links[0]; ?>">Session Slot 1</a>
+                        </div>
+                    </div>
+
+                    <div class=" col-6">
+                        <div class="airmeet_link_container">
+                            Airmeet link - <a href="<?php echo $airmeet_links[1]; ?>">Session Slot 2</a>
+                        </div>
+                    </div>
+                
+                
+                <?php } else { ?>
+                
+                
+                    <div class="col-12">
+                        <div id="page_home_session_unscheduled_msg">
+                            Session topics will be decided 2 days before the event based on community interest. Feel free to register for Session Slots.
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <div class="airmeet_link_container">
+                            Airmeet link - <a href="<?php echo $airmeet_links[0]; ?>">Session Slot 1</a>
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <div class="airmeet_link_container">
+                            Airmeet link - <a href="<?php echo $airmeet_links[1]; ?>">Session Slot 2</a>
+                        </div>
+                    </div>
+                
+                
+                <?php } ?>
+            </div>
+
+            
+        </div>
+            
+       
+            
             <div id="home_sharearea" class="row">
                 <div class="col-12">
                     <strong>Spread the word :</strong>
@@ -155,48 +286,26 @@
             </div>
             <div id="page_home_sponsors_list" class="row">
 
-                <div class="page_home_sponsors_type col-12 col-md-4">
+                <div class="page_home_sponsors_type col-12 col-md-6">
                     <div class="page_home_sponsortype_header">
                         Venue Sponsor
                     </div>
                     <div class="page_home_sponsor">
                         <a target="_blank"
-                            href="<?php echo get_permalink(get_page_by_path('about-dayanand-sagar-university')); ?>">
+                            href="https://airmeet.com">
                             <div>
-                                <img src="<?php echo get_bloginfo('template_url') . '/images/sponsors/dsu2.png' ?>" />
+                                <img src="<?php echo get_bloginfo('template_url') . '/images/sponsors/airmeet-logo.svg' ?>" />
                             </div>
-                            <div>Dayananda Sagar University</div>
+                            <div>Airmeet</div>
                         </a>
                     </div>
                 </div>
 
-                <!-- <div class="page_home_sponsors_type col-6 col-md-4">
-                <div class="page_home_sponsortype_header">
-                    Gold Sponsor
-                </div>
-                <div id="sponsor_intuit" class="page_home_sponsor">
-                    <a target="_blank" href="<?php echo get_permalink(get_page_by_path('about-intuit')); ?>">
-                        <div>
-                            <img src="<?php echo get_bloginfo('template_url') . '/images/sponsors/Intuit.JPG' ?>"/>
-                        </div>
-                        <div>Intuit</div>
-                    </a>
-                </div>
-            </div> -->
-
-                <div class="page_home_sponsors_type col-6 col-md-4">
+                <div class="page_home_sponsors_type col-12 col-md-6">
                     <div class="page_home_sponsortype_header">
                         Friends of Barcamp
                     </div>
                     <div>
-                        <!-- <div class="page_home_sponsor">
-                        <a target="_blank" href="<?php echo get_permalink(get_page_by_path('about-wandx')); ?>">
-                            <div>
-                                <img src="<?php echo get_bloginfo('template_url') . '/images/sponsors/WandX_logo.jpg' ?>"/>
-                            </div>
-                            <div>WandX</div>
-                        </a>
-                    </div> -->
                         <div class="page_home_sponsor">
                             <a target="_blank" href="<?php echo get_permalink(get_page_by_path('about-janastu')); ?>">
                                 <div>
@@ -206,19 +315,10 @@
                                 <div>Janastu</div>
                             </a>
                         </div>
-                        <!-- <div class="page_home_sponsor">
-                        <a target="_blank" href="<?php echo get_permalink(get_page_by_path('about-tinkerform')); ?>">
-                            <div>
-                                <img src="<?php echo get_bloginfo('template_url') . '/images/sponsors/Tinkerform-logo.png' ?>"/>
-                            </div>
-                            <div>Tinkerform</div>
-                        </a>
-                    </div> -->
                     </div>
                 </div>
                 </div>
 
-            </div>
         </div>
     </div>
 

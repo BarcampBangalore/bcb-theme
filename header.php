@@ -60,7 +60,7 @@
                         </div>
                     </div>
                     <div id="venue_and_search_container" class="col-4">
-                        <div id="when_where_container_small">When & Where</div>
+                        <?php // <div id="when_where_container_small">When & Where</div> ?>
                         <div id="search_button_small"><i class="fa fa-search" aria-hidden="true"></i></div>
                     </div>
                 </div>

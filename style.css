@@ -261,18 +261,52 @@ body {
 
 @media (min-width: 768px) {
     #page_master_container {
-        padding-right: 200px;
+        padding-right: 50px;
     }
 }
 
 #page_home_container {
     color: #FFFFFF;
-    height: 75vh;
+    /*height: 75vh;*/
 }
+
 
 #page_home_blr_logo img {
     width: 50%;
 }
+
+
+
+#page_home_chosen_container {
+    margin: 10px 15px 20px 15px;
+    color: #000000;
+    text-align: left;
+}
+
+
+.airmeet_link_container {
+    
+    background: rgba(242,161,75,0.6);
+    padding: 10px;
+    color: #424242;
+    border-radius: 8px;
+   
+}
+
+.airmeet_link_container a {
+    color: #FFFFFF;
+}
+
+
+#page_home_session_unscheduled_msg {
+    text-align: center;
+    color: #424242;
+    padding: 10px;
+    background-color: rgba(255,255,255,0.6);
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
 
 #page_home_sponsors_container {
     width: 100%;
@@ -283,9 +317,13 @@ body {
 }
 
 #page_home_sponsors_header {
-    font-size: 1.2em;
+    font-size: 1.8em;
     font-weight: bold;
     margin-bottom: 5px;
+}
+
+#page_home_sponsors_list {
+    padding-bottom: 10px;
 }
 
 .page_home_sponsors_type {
@@ -295,6 +333,7 @@ body {
 .page_home_sponsortype_header {
     font-weight: bold;
     margin-bottom: 5px;
+    font-size: 1.2em;
 }
 
 .page_home_sponsor {
@@ -308,11 +347,13 @@ body {
 
 .page_home_sponsor img {
     height: 50px;
+    max-width: 175px;
 }
 
 @media (min-width: 768px) {
     .page_home_sponsor img {
         height: 70px;
+        max-width: 200px;
     }
 }
 
@@ -388,6 +429,15 @@ body {
     width: 100%;
 }
 
+.sessions_page_list_header {
+    
+    text-align: center;
+    font-size: 2em;
+    padding: 30px 20px 20px 20px;
+    color: #FFFFFF;
+    
+}
+
 #sessions_page_track_buttons_container {
     margin-top: 0px;
     margin-left: 0px;
@@ -416,7 +466,7 @@ body {
 
 @media (min-width: 768px) {
     #sessions_page_track_buttons_container {
-        margin-top: 50px;
+        margin-top: 20px;
         margin-bottom: 20px;
         min-height: 90px;
         max-width: none;
@@ -1482,9 +1532,9 @@ body {
     display: none;
 }
 
-.add-to-calendar-checkbox~a {
+/*.add-to-calendar-checkbox~a {
     display: none
-}
+}*/
 
 .add-to-calendar-checkbox~a {
     display: block;

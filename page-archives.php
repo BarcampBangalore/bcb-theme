@@ -3,6 +3,64 @@
 function insertSponsors($bcbname)
 {
     switch ($bcbname) {
+        case "BCB 2021 Virtual":
+            ?>
+
+            <div class="archive_sponsors_wrapper">
+                <h2>Sponsors for <?php echo $bcbname; ?></h2>
+
+                <div class="archive_sponsor">
+                    <h3 class="archive_sponsor_title">Venue Sponsor</h3>
+                    <a target="_blank" href="https://airmeet.com">
+                        <div style="background-color: rgba(194, 194, 194, 1); padding: 10px;">
+                            <img class="archive_sponsor_logo" src="<?php echo get_bloginfo('template_url') . '/images/sponsors/airmeet-logo.svg' ?>"/>
+                        </div>
+                        <div>Airmeet</div>
+                    </a>
+
+                </div>
+                
+                <div class="archive_sponsor">
+                    <h3 class="archive_sponsor_title">Friends of Barcamp</h3>
+                    
+                    <div><img class="archive_sponsor_logo" src="<?php bloginfo('template_url')?>/images/sponz_logos/janastu_logo.gif" /></div>   
+                    <div>Janastu</div>
+                    
+
+                </div>
+            </div>
+
+            <?php
+break;
+        case "BCB Spring 2019":
+            ?>
+
+            <div class="archive_sponsors_wrapper">
+                <h2>Sponsors for <?php echo $bcbname; ?></h2>
+
+                <div class="archive_sponsor">
+                    <h3 class="archive_sponsor_title">Venue Sponsor</h3>
+                    <a target="_blank" href="<?php echo get_permalink(get_page_by_path('about-dayanand-sagar-university')); ?>">
+                        <div>
+                            <img class="archive_sponsor_logo" src="<?php echo get_bloginfo('template_url') . '/images/sponsors/dsu2.png' ?>"/>
+                        </div>
+                        <div>Dayananda Sagar University</div>
+                    </a>
+
+                </div>
+                
+                <div class="archive_sponsor">
+                    <h3 class="archive_sponsor_title">Friends of Barcamp</h3>
+                    
+                    <div><img class="archive_sponsor_logo" src="<?php bloginfo('template_url')?>/images/sponz_logos/janastu_logo.gif" /></div>   
+                    <div>Janastu</div>
+                    
+
+                </div>
+            </div>
+
+            <?php
+break;
         case "BCB Spring 2018":
             ?>
 
@@ -362,7 +420,9 @@ get_header();?>
                     <div id="archives_page_title"><?php the_title();?></div>
                     <div id="archives_page_bcb_selector_buttons">
                         <ul id="archives_page_bcb_selector">
-                            <li class="archive_selected"><a class="archives_current" data-contentdiv="archive_1691">BCB Spring 2018</a></li>
+                            <li class="archive_selected"><a class="archives_current" data-contentdiv="archive_1863">BCB 2021 Virtual (Past Sessions)</a></li>
+                            <li><a data-contentdiv="archive_1759">BCB Spring 2019</a></li>
+                            <li><a data-contentdiv="archive_1691">BCB Spring 2018</a></li>
                             <li><a data-contentdiv="archive_1556">BCB Spring 2016</a></li>
                             <li><a data-contentdiv="archive_1458">BCB Monsoon 2015</a></li>
                             <li><a data-contentdiv="archive_1366">BCBX AntHill</a></li>
@@ -384,7 +444,8 @@ get_header();?>
 
             <?php
 $techlash_categories = array(639, 787, 933, 1065, 1232, 1465);
-$archive_categories = array(1691 => "BCB Spring 2018", 1556 => "BCB Spring 2016", 1458 => "BCB Monsoon 2015", 1366 => 'bcbxah',
+$archive_categories = array(1863 => "BCB 2021 Virtual", 1759 => "BCB Spring 2019", 1691 => "BCB Spring 2018", 
+    1556 => "BCB Spring 2016", 1458 => "BCB Monsoon 2015", 1366 => 'bcbxah',
     1224 => 'bcb17', 1057 => 'bcb16', 931 => 'bcb15',
     785 => 'bcb14', 636 => 'bcb13', 479 => 'bcb12',
     399 => 'bcb11', 324 => 'bcb10', 220 => 'bcb9', 3 => 'bcb8');
@@ -400,16 +461,32 @@ foreach ($archive_categories as $archive_cat => $archive_catname):
                 <div class="row" id="archive_cards_row">
 
                         <?php
-query_posts('cat=' . $archive_cat);
-while (have_posts()): the_post();?>
+
+
+if ($archive_cat == 1863) {   // VIRTUAL BCB CATEGORY
+    
+    $current_bcb_archived_posts = get_archived_track_ids();
+    
+    if (sizeof($current_bcb_archived_posts) === 0) {
+        echo '<div class="text-center sessions_page_card col-12" >No Sessions here yet!</div>';
+        echo '</div></div>'; // closing tags for proper DOM structure as we are short circuiting the loop
+        continue;
+    }
+    
+    $archive_posts = new WP_Query(array('post__in' => $current_bcb_archived_posts, 'nopaging' => true));
+} else {
+    $archive_posts = new WP_Query(array('cat' => $archive_cat, 'nopaging' => true));
+}
+
+while ($archive_posts->have_posts()): $archive_posts->the_post();?>
 
 	                        <div class="sessions_page_card col-12 col-md-6" data-track-id="<?php echo $track_id; ?>">
-	                            <div class="sessions_page_card_content container-fluid track_color_border_<?php echo $track_id; ?>">
+	                            <div class="sessions_page_card_content container-fluid track_color_border_0">
 	                                <div class="row">
 	                                    <div class="sessions_page_card_avatar">
 	                                        <?php echo '<a href="' . get_author_posts_url(get_the_author_meta('ID')) . '">' . get_avatar(get_the_author_meta('ID'), 48) . '</a>'; ?>
 	                                    </div>
-	                                    <div class="sessions_page_card_right_column track_color_border_<?php echo $track_id ?> col">
+	                                    <div class="sessions_page_card_right_column track_color_border_0 col">
 	                                        <div class="sessions_page_card_title">
 
 	                                            <?php
