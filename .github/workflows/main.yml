@@ -18,6 +18,5 @@ jobs:
         username: ${{ secrets.SSH_USERNAME }}
         key: ${{ secrets.SSH_KEY }}
         script: |
-          whoami
           cd ~/bcb-docker/wp-content/themes/NeoBCB21
           git pull origin master
