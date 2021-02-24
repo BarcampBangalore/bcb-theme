@@ -20,4 +20,4 @@ jobs:
         script: |
           whoami
           cd ~/bcb-docker/wp-content/themes/NeoBCB21
-          git fetch
+          git pull origin master
