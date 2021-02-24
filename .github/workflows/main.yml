@@ -20,3 +20,9 @@ jobs:
         script: |
           cd ~/bcb-docker/wp-content/themes/NeoBCB21
           git pull origin master
+    - name: Discord notification
+      uses: sarisia/actions-status-discord@v1
+      if: always()
+      with:
+        webhook: ${{ secrets.DISCORD_WEBHOOK }}
+    
