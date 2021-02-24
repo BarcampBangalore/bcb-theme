@@ -1,16 +1,23 @@
-name: CI
+name: update-theme-on-server
 
-on: [push]
+on: 
+  push:
+    branches:
+      - main
+      - master
 
 jobs:
   build:
-
+    name: Pull theme
     runs-on: ubuntu-latest
-    
     steps:
-    - uses: actions/checkout@v1
-    - name: Run a one-line script
-      run: echo Hello, world!
-    - name: Run a multi-line script
-      run: |
-        ls -lah
+    - name: Pull from master
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.SSH_HOST_IP }}
+        username: ${{ secrets.SSH_USERNAME }}
+        key: ${{ secrets.SSH_KEY }}
+        script: |
+          whoami
+          cd ~/bcb-docker/wp-content/themes/NeoBCB21
+          git fetch
