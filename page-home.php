@@ -42,9 +42,8 @@
                 </div>
                 <div id="home_venue_address_wrapper" class="col-12 col-md-4">
                     <div class="home_venue_item_bg">
-                        <div id="home_venue_when"> <a rel="noreferrer" target="_blank"
-                                href="https://goo.gl/maps/P9yMnXdQzbeWXVsP7">
-                                LOCATION: </a></div>
+                        <div id="home_venue_when"> 
+                                LOCATION </div>
                         <div id="home_venue_address_line1">Airmeet</div>
                         <!--<div id="home_venue_address_line2">(Links will be posted 2 days before the talks)</div>-->
                     </div>
