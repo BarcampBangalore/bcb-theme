@@ -36,7 +36,7 @@
                 <div id="home_venue_time_wrapper" class="col-12 col-md-4">
                     <div class="home_venue_item_bg">
                         <div id="home_venue_when">AT</div>
-                        <div id="home_venue_time">1 PM to 3PM</div>
+                        <div id="home_venue_time"><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210320T073000Z%2F20210320T093000Z&location=Online&text=Barcamp%20Bangalore%20Virtual">1 PM to 3PM</a></div>
                         <!--<div id="home_venue_tod">in the morning</div>-->
                     </div>
                 </div>
