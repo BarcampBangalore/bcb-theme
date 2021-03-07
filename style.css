@@ -1510,17 +1510,10 @@ body {
 }
 
 .add-to-calendar {
-    background-color: rgba(255, 255, 255);
-    opacity: .76;
     color: black;
-    border-radius: 5px;
-    transition: 25ms ease-out;
-    padding: 0.5em 0.75em;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif
 }
 
 .calendar-options {
-    background-color: rgba(255, 255, 255, 0.7);
     color: black;
     text-align: left;
     margin-top: .5rem;

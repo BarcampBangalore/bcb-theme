@@ -12,7 +12,7 @@
 
         <div id="page_team_content" class="">
             <div id="page_team_intro">
-                Meet the planners behind Barcamp Bangalore, and see behind the scenes action at <a href="https://barcampbangalore.com/planning/">BCB Planners Blog</a>.
+                Meet the planners behind Barcamp Bangalore, and see behind the scenes action at <a href="https://planning.barcampbangalore.com/">BCB Planners Blog</a>.
             </div>
             
             <div id="page_team_memberlist" class="row">
