@@ -420,8 +420,8 @@ get_header();?>
                     <div id="archives_page_title"><?php the_title();?></div>
                     <div id="archives_page_bcb_selector_buttons">
                         <ul id="archives_page_bcb_selector">
-                            <li class="archive_selected"><a class="archives_current" data-contentdiv="archive_1863">BCB 2021 Virtual (Past Sessions)</a></li>
-                            <li><a data-contentdiv="archive_1759">BCB Spring 2019</a></li>
+                            <!--<li class="archive_selected"><a class="archives_current" data-contentdiv="archive_1863">BCB 2021 Virtual (Past Sessions)</a></li>-->
+                            <li class="archive_selected"><a class="archives_current" data-contentdiv="archive_1759">BCB Spring 2019</a></li>
                             <li><a data-contentdiv="archive_1691">BCB Spring 2018</a></li>
                             <li><a data-contentdiv="archive_1556">BCB Spring 2016</a></li>
                             <li><a data-contentdiv="archive_1458">BCB Monsoon 2015</a></li>
@@ -444,7 +444,9 @@ get_header();?>
 
             <?php
 $techlash_categories = array(639, 787, 933, 1065, 1232, 1465);
-$archive_categories = array(1863 => "BCB 2021 Virtual", 1759 => "BCB Spring 2019", 1691 => "BCB Spring 2018", 
+$archive_categories = array(
+//    1863 => "BCB 2021 Virtual",
+    1759 => "BCB Spring 2019", 1691 => "BCB Spring 2018", 
     1556 => "BCB Spring 2016", 1458 => "BCB Monsoon 2015", 1366 => 'bcbxah',
     1224 => 'bcb17', 1057 => 'bcb16', 931 => 'bcb15',
     785 => 'bcb14', 636 => 'bcb13', 479 => 'bcb12',
@@ -461,24 +463,8 @@ foreach ($archive_categories as $archive_cat => $archive_catname):
                 <div class="row" id="archive_cards_row">
 
                         <?php
-
-
-if ($archive_cat == 1863) {   // VIRTUAL BCB CATEGORY
-    
-    $current_bcb_archived_posts = get_archived_track_ids();
-    
-    if (sizeof($current_bcb_archived_posts) === 0) {
-        echo '<div class="text-center sessions_page_card col-12" >No Sessions here yet!</div>';
-        echo '</div></div>'; // closing tags for proper DOM structure as we are short circuiting the loop
-        continue;
-    }
-    
-    $archive_posts = new WP_Query(array('post__in' => $current_bcb_archived_posts, 'nopaging' => true));
-} else {
-    $archive_posts = new WP_Query(array('cat' => $archive_cat, 'nopaging' => true));
-}
-
-while ($archive_posts->have_posts()): $archive_posts->the_post();?>
+query_posts('cat=' . $archive_cat);
+while (have_posts()): the_post();?>
 
 	                        <div class="sessions_page_card col-12 col-md-6" data-track-id="<?php echo $track_id; ?>">
 	                            <div class="sessions_page_card_content container-fluid track_color_border_0">

@@ -29,7 +29,7 @@
                     <div class="home_venue_item_bg">
                         <div id="home_venue_when">NEXT</div>
                         <div id="home_venue_date">Saturday </div>
-                        <div id="home_venue_year">20th March 2021</div>
+                        <div id="home_venue_year">TBD</div>
 
                     </div>
                 </div>
