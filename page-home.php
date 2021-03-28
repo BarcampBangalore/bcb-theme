@@ -28,26 +28,26 @@
                 <div id="home_venue_date_wrapper" class="col-12 col-md-4">
                     <div class="home_venue_item_bg">
                         <div id="home_venue_when">NEXT</div>
-                        <div id="home_venue_date">Saturday </div>
-                        <div id="home_venue_year">TBD</div>
+                        <div id="home_venue_date">Sunday </div>
+                        <div id="home_venue_year">25th April</div>
 
                     </div>
                 </div>
                 <div id="home_venue_time_wrapper" class="col-12 col-md-4">
                     <div class="home_venue_item_bg">
                         <div id="home_venue_when">AT</div>
-                        <div id="home_venue_time">1 PM to 3PM</div>
+                        <div id="home_venue_time">11 AM to 1 PM</div>
                         <div class="calendar-options">
                             <input name="add-to-calendar-checkbox" class="add-to-calendar-checkbox"
                                 id="checkbox-for-196851" type="checkbox">
                             <a class="icon-google" target="_blank"
-                                href="https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210320T073000Z%2F20210320T093000Z&details=Barcamp%20Bangalore%20is%20an%20open%20event%20focused%20on%20people%2C%20ideas%2C%20and%20collaboration.%20You%20pick%20the%20topics%2C%20share%20your%20interests%20and%20expertise.&location=Online&text=Barcamp%20Bangalore%202021%20Virtual%20Edition">Google
+                                href="https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210425T053000Z%2F20210425T073000Z&details=Barcamp%20Bangalore%20is%20an%20open%20event%20focused%20on%20people%2C%20ideas%2C%20and%20collaboration.%20You%20pick%20the%20topics%2C%20share%20your%20interests%20and%20expertise.&location=Online&text=Barcamp%20Bangalore%202021%20Virtual%20Edition">Google
                                 Calendar</a>
                             <a class="icon-ical" target="_blank"
-                                href="data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210320T073000Z%0ADTEND:20210320T093000Z%0ASUMMARY:Barcamp%20Bangalore%202021%20Virtual%20Edition%0ADESCRIPTION:Barcamp%20Bangalore%20is%20an%20open%20event%20focused%20on%20people%2C%20ideas%2C%20and%20collaboration.%20You%20pick%20the%20topics%2C%20share%20your%20interests%20and%20expertise.%0ALOCATION:Online%0AEND:VEVENT%0AEND:VCALENDAR%0A">iCal
+                                href="data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210425T053000Z%0ADTEND:20210425T073000Z%0ASUMMARY:Barcamp%20Bangalore%202021%20Virtual%20Edition%0ADESCRIPTION:Barcamp%20Bangalore%20is%20an%20open%20event%20focused%20on%20people%2C%20ideas%2C%20and%20collaboration.%20You%20pick%20the%20topics%2C%20share%20your%20interests%20and%20expertise.%0ALOCATION:Online%0AEND:VEVENT%0AEND:VCALENDAR%0A">iCal
                                 Calendar</a>
                             <a class="icon-outlook" target="_blank"
-                                href="https://outlook.live.com/calendar/0/deeplink/compose?body=Barcamp%20Bangalore%20is%20an%20open%20event%20focused%20on%20people%2C%20ideas%2C%20and%20collaboration.%20You%20pick%20the%20topics%2C%20share%20your%20interests%20and%20expertise.&enddt=2021-03-20T09%3A30%3A00%2B00%3A00&location=Online&path=%2Fcalendar%2Faction%2Fcompose&rru=addevent&startdt=2021-03-20T07%3A30%3A00%2B00%3A00&subject=Barcamp%20Bangalore%202021%20Virtual%20Edition">Outlook
+                                href="https://outlook.live.com/calendar/0/deeplink/compose?body=Barcamp%20Bangalore%20is%20an%20open%20event%20focused%20on%20people%2C%20ideas%2C%20and%20collaboration.%20You%20pick%20the%20topics%2C%20share%20your%20interests%20and%20expertise.&enddt=2021-04-25T07%3A30%3A00%2B00%3A00&location=Online&path=%2Fcalendar%2Faction%2Fcompose&rru=addevent&startdt=2021-04-25T05%3A30%3A00%2B00%3A00&subject=Barcamp%20Bangalore%202021%20Virtual%20Edition">Outlook
                                 Calendar</a>
                         </div>
                         <!--<div id="home_venue_tod">in the morning</div>-->
