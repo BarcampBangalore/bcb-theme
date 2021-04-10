@@ -122,7 +122,6 @@
 
                         </div>
                     </div>
-
                     <div class="row single_page_box">
                         <p>
                             Share this session:
