@@ -253,7 +253,7 @@ function get_archived_track_ids() {
 function get_airmeet_links() {
     
     return array(
-        "https://airmeet.com",
-        "https://airmeet.com"
+        "https://www.airmeet.com/e/1b53c000-774e-11eb-9356-e3ddd7103c02",
+        "https://www.airmeet.com/e/1b53c000-774e-11eb-9356-e3ddd7103c02"
         );
 }
