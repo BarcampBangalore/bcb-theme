@@ -230,7 +230,7 @@ function get_current_cats(bool $get_as_string)
  * If tracks not chosen, return empty array
  */
 function get_chosen_track_ids() {
-    return array(7363, 7354);
+    return array(7354, 7363);
     
 //    return array(7300, 7302);    
 }
