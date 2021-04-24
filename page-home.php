@@ -81,7 +81,7 @@
                 
                 if ($sessions_selection_done) {
                     
-                    $chosen_posts = new WP_Query(array('post__in' => $chosen_post_ids, 'nopaging' => true));   // BCB 2021 Virtual Dev
+                    $chosen_posts = new WP_Query(array('post__in' => $chosen_post_ids, 'order' => 'ASC', 'nopaging' => true));   // BCB 2021 Virtual Dev
 
                     while ($chosen_posts->have_posts()) : $chosen_posts->the_post();
 
