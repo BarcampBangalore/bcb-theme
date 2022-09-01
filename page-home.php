@@ -1,7 +1,4 @@
 <?php get_header();?>
-
-
-
 <div id="page_home_container" class="d-flex align-items-center justify-content-center text-center">
     <div id="page_home_wrapper" class="flex-column">
         <div id="page_home_namaskara" class="row">
@@ -13,42 +10,53 @@
             </div>
         </div>
         <div id="page_home_sponsors_container" class="">
-            <?php /*
-            <div id="page_home_sponsors_header" style="font-size:2em;" >
-                Barcamp Bangalore Monsoon 2019 has been cancelled due to lack of participation from the community. Details about 
-                reasons and what you can do to keep it alive are <font color="red"><a href="https://barcampbangalore.com/planning/barcamp-bangalore-monsoon-2019-stands-cancelled/">here</a></font>. 
-            </div> */
-                    
+            <?php
             ?>
             <div id="page_home_sponsors_header" style="font-size:2em;" >
-                BCB is going virtual with Monthly talks!
+                BCB will be back soon!
             </div>
 
             <div id="home_venue_details_wrapper" class="row" >
                 <div id="home_venue_date_wrapper" class="col-12 col-md-4">
                     <div class="home_venue_item_bg">
-                        <div id="home_venue_when">NEXT</div>
-                        <div id="home_venue_date">Sunday </div>
-                        <div id="home_venue_year">25th April</div>
+                        <div id="home_venue_when">Saturday</div>
+                        <div id="home_venue_date">Nov 5</div>
+                        <div id="home_venue_year">2022</div>
 
                     </div>
                 </div>
                 <div id="home_venue_time_wrapper" class="col-12 col-md-4">
                     <div class="home_venue_item_bg">
-                        <div id="home_venue_when">AT</div>
-                        <div id="home_venue_time">11 AM to 1 PM</div>
-                        <div class="calendar-options">
-                            <input name="add-to-calendar-checkbox" class="add-to-calendar-checkbox"
-                                id="checkbox-for-196851" type="checkbox">
-                            <a class="icon-google" target="_blank"
-                                href="https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210425T053000Z%2F20210425T073000Z&details=Barcamp%20Bangalore%20is%20an%20open%20event%20focused%20on%20people%2C%20ideas%2C%20and%20collaboration.%20You%20pick%20the%20topics%2C%20share%20your%20interests%20and%20expertise.&location=Online&text=Barcamp%20Bangalore%202021%20Virtual%20Edition">Google
-                                Calendar</a>
-                            <a class="icon-ical" target="_blank"
-                                href="data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210425T053000Z%0ADTEND:20210425T073000Z%0ASUMMARY:Barcamp%20Bangalore%202021%20Virtual%20Edition%0ADESCRIPTION:Barcamp%20Bangalore%20is%20an%20open%20event%20focused%20on%20people%2C%20ideas%2C%20and%20collaboration.%20You%20pick%20the%20topics%2C%20share%20your%20interests%20and%20expertise.%0ALOCATION:Online%0AEND:VEVENT%0AEND:VCALENDAR%0A">iCal
-                                Calendar</a>
-                            <a class="icon-outlook" target="_blank"
-                                href="https://outlook.live.com/calendar/0/deeplink/compose?body=Barcamp%20Bangalore%20is%20an%20open%20event%20focused%20on%20people%2C%20ideas%2C%20and%20collaboration.%20You%20pick%20the%20topics%2C%20share%20your%20interests%20and%20expertise.&enddt=2021-04-25T07%3A30%3A00%2B00%3A00&location=Online&path=%2Fcalendar%2Faction%2Fcompose&rru=addevent&startdt=2021-04-25T05%3A30%3A00%2B00%3A00&subject=Barcamp%20Bangalore%202021%20Virtual%20Edition">Outlook
-                                Calendar</a>
+                        <div id="home_venue_when">Time</div>
+                        <div id="home_venue_time">9 AM to 5 PM</div>
+                        <div class="calendar-options">  
+                            <script src="https://cdn.jsdelivr.net/npm/add-to-calendar-button@1" async defer></script>
+                            <div class="atcb" >
+                                {
+                                    "name":"Barcamp Bangalore",
+                                    "description":"A nice description does not hurt",
+                                    "startDate":"2022-11-05",
+                                    "endDate":"2022-11-05",
+                                    "startTime":"09:00",
+                                    "endTime":"17:00",
+                                    "size": "5",
+                                    "location":"RV University, near Pattanagere Metro, Bengaluru",
+                                    "label":"Save a calendar reminder",
+                                    "lightMode": "system",
+                                    "options":[
+                                    "Apple",
+                                    "Google",
+                                    "iCal",
+                                    "Microsoft365",
+                                    "Outlook.com"
+                                    ],
+                                    "timeZone":"Asia/Kolkata",
+                                    
+                                    "inline":true,
+                                    "listStyle":"modal",
+                                    "iCalFileName":"bcb-2022-reminder"
+                                }
+                                </div>
                         </div>
                         <!--<div id="home_venue_tod">in the morning</div>-->
                     </div>
@@ -57,144 +65,11 @@
                     <div class="home_venue_item_bg">
                         <div id="home_venue_when"> 
                                 LOCATION </div>
-                        <div id="home_venue_address_line1">Airmeet</div>
-                        <!--<div id="home_venue_address_line2">(Links will be posted 2 days before the talks)</div>-->
+                        <div id="home_venue_address_line1">RV University, near Pattanagere Metro, Bengaluru</div>
                     </div>
                 </div>
             </div>
             
-            <div id="page_home_chosen_container" class="row flex-column"  >
-            <div class="sessions_page_list_header row">
-                <div class="col-12">
-                    Sessions For Upcoming Event
-                </div>
-            </div>
-            
-            <div class="row">                    
-
-                <?php
-                $tracks = get_current_cats(false);
-                $chosen_post_ids = get_chosen_track_ids();
-                $sessions_selection_done = sizeof($chosen_post_ids) > 0;
-                $airmeet_links = get_airmeet_links();
-                
-                
-                if ($sessions_selection_done) {
-                    
-                    $chosen_posts = new WP_Query(array('post__in' => $chosen_post_ids, 'order' => 'ASC', 'nopaging' => true));   // BCB 2021 Virtual Dev
-
-                    while ($chosen_posts->have_posts()) : $chosen_posts->the_post();
-
-                        ?>
-
-                        <?php
-                        $post_cats = get_the_category();
-
-                        foreach (get_the_category() as $c) {
-
-                            $track_id = array_search($c->cat_ID, $tracks);
-
-                            if ($track_id !== FALSE) {
-                                break;
-                            }
-                        }
-                        ?>
-
-                        <div class="sessions_page_card_chosen col-12 col-md-6" data-track-id="<?php echo $track_id; ?>">
-                            <div class="sessions_page_card_content container-fluid track_color_border_<?php echo $track_id; ?>">
-                                <div class="row">
-                                    <div class="sessions_page_card_avatar">
-                                        <?php echo '<a href="' . get_author_posts_url(get_the_author_meta('ID')) . '">' . get_avatar(get_the_author_meta('ID'), 48) . '</a>'; ?>
-                                    </div>
-                                    <div class="sessions_page_card_right_column track_color_border_<?php echo $track_id ?> col">
-                                        <div class="sessions_page_card_title">
-
-                                            <?php
-                                                $titlestr = get_the_title();
-                                                $title_trimmed = false;
-                                                if (strlen($titlestr) > 50) {
-                                                    $titlestr = substr($titlestr, 0, 50)."...";
-                                                    $title_trimmed = true;
-                                                }
-                                            ?>
-                                            <a href="<?php echo get_permalink(); ?>" <?php if ($title_trimmed) {echo 'title="'.get_the_title().'"';} ?>>
-                                                <?php echo $titlestr; ?>
-                                            </a>
-                                        </div>
-                                        <div class="sessions_page_card_author">
-                                            <?php echo '<a href="' . get_author_posts_url(get_the_author_meta('ID')) . '">' . get_the_author_meta('user_nicename') . '</a>'; ?>
-                                        </div>
-                                        <div class="sessions_page_card_bottomarea">
-
-                                            <div class="sessions_page_card_comments_stats">
-                                                <div class="sessions_page_card_comments_icon">
-                                                    <img src="<?php echo get_bloginfo('template_url').'/images/icons-21.png' ?>" title="Comments" />
-                                                </div>
-                                                <div class="sessions_page_card_comments_count">
-                                                    <?php comments_number('0', '1', '%'); ?>
-                                                </div>
-                                            </div>
-
-                                            <div class="sessions_page_card_attendees_stats">
-                                                <div class="sessions_page_card_attendees_icon">
-                                                    <img src="<?php echo get_bloginfo('template_url').'/images/icons-20.png' ?>" title="Attendees" />
-                                                </div>
-                                                <div id="sessions_page_card_attendees_count_<?php echo get_the_ID();  ?>" class="sessions_page_card_attendees_count">
-                                                    <?php echo attending_users_count(get_the_ID()) ?>
-                                                </div>
-                                            </div>
-
-                                            <div class="sessions_page_card_attend_button" data-postid="<?php echo get_the_ID(); ?>">
-                                                <?php echo get_my_attending_button(get_the_ID()); ?>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-
-                        </div>
-
-                    <?php endwhile; ?>
-                
-                    <div class="col-6">
-                        <div class="airmeet_link_container">
-                            Airmeet link - <a href="<?php echo $airmeet_links[0]; ?>">Session Slot 1</a>
-                        </div>
-                    </div>
-
-                    <div class=" col-6">
-                        <div class="airmeet_link_container">
-                            Airmeet link - <a href="<?php echo $airmeet_links[1]; ?>">Session Slot 2</a>
-                        </div>
-                    </div>
-                
-                
-                <?php } else { ?>
-                
-                
-                    <div class="col-12">
-                        <div id="page_home_session_unscheduled_msg">
-                            Session topics will be decided 2 days before the event based on community interest. Feel free to register for Session Slots.
-                        </div>
-                    </div>
-
-                    <div class="col-6">
-                        <div class="airmeet_link_container">
-                            Airmeet link - <a href="<?php echo $airmeet_links[0]; ?>">Session Slot 1</a>
-                        </div>
-                    </div>
-
-                    <div class="col-6">
-                        <div class="airmeet_link_container">
-                            Airmeet link - <a href="<?php echo $airmeet_links[1]; ?>">Session Slot 2</a>
-                        </div>
-                    </div>
-                
-                
-                <?php } ?>
-            </div>
 
             
         </div>
@@ -300,17 +175,11 @@
                         Venue Sponsor
                     </div>
                     <div class="page_home_sponsor">
-                        <a target="_blank"
-                            href="https://airmeet.com">
-                            <div>
-                                <img src="<?php echo get_bloginfo('template_url') . '/images/sponsors/airmeet-logo.svg' ?>" />
-                            </div>
-                            <div>Airmeet</div>
-                        </a>
+                            <div>RV University</div>
                     </div>
                 </div>
 
-                <div class="page_home_sponsors_type col-12 col-md-6">
+                <div class="page_home_sponsors_type col-12 col-md-4">
                     <div class="page_home_sponsortype_header">
                         Friends of Barcamp
                     </div>
@@ -324,15 +193,19 @@
                                 <div>Janastu</div>
                             </a>
                         </div>
+
+                        <div class="page_home_sponsor">
+                            <a target="_blank" href="mailto:contact@barcampbangalore.com">
+                            <div>
+                                    
+                                </div>
+                                <div>Reach us to be a sponsor</div>
+                        </div>
                     </div>
                 </div>
                 </div>
 
         </div>
     </div>
-
-
-
-
-
+    </div>
     <?php get_footer();?>
