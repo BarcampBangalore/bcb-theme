@@ -11,6 +11,7 @@
 <link rel="mask-icon" href="safari-pinned-tab.svg?v=PY4NNGXQPr" color="#5bbad5">
 <link rel="shortcut icon" href="favicon.ico?v=PY4NNGXQPr">
 <meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/add-to-calendar-button@1/assets/css/atcb.min.css">
 <?php wp_head(); ?>
 </head>
 <body>
