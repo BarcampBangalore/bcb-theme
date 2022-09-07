@@ -1,17 +1,17 @@
 <?php get_header();?>
 <div id="page_home_container" class="d-flex align-items-center justify-content-center text-center">
     <div id="page_home_wrapper" class="flex-column">
-        <div id="page_home_namaskara" class="row">
-            <div class="col-12">Namaskara</div>
-        </div>
-        <div id="page_home_blr_logo" class="row">
-            <div class="col-12">
-                <img src="<?php bloginfo('template_url');?>/images/Bengaluru-01.png" />
+        <div id="page_home_hero">
+            <div id="page_home_namaskara" class="row">
+                <div class="col-12">Namaskara</div>
+            </div>
+            <div id="page_home_blr_logo" class="row">
+                <div class="col-12">
+                    <img src="<?php bloginfo('template_url');?>/images/Bengaluru-01.png" />
+                </div>
             </div>
         </div>
         <div id="page_home_sponsors_container" class="">
-            <?php
-            ?>
             <div id="page_home_sponsors_header" style="font-size:2em;" >
                 BCB will be back soon!
             </div>
@@ -29,7 +29,7 @@
                     <div class="home_venue_item_bg">
                         <div id="home_venue_when">Time</div>
                         <div id="home_venue_time">9 AM to 5 PM</div>
-                        <div class="calendar-options">  
+                        <div class="calendar-options">
                             <script src="https://cdn.jsdelivr.net/npm/add-to-calendar-button@1" async defer></script>
                             <div class="atcb" >
                                 {
@@ -51,7 +51,7 @@
                                     "Outlook.com"
                                     ],
                                     "timeZone":"Asia/Kolkata",
-                                    
+
                                     "inline":true,
                                     "listStyle":"modal",
                                     "iCalFileName":"bcb-2022-reminder"
@@ -63,19 +63,13 @@
                 </div>
                 <div id="home_venue_address_wrapper" class="col-12 col-md-4">
                     <div class="home_venue_item_bg">
-                        <div id="home_venue_when"> 
+                        <div id="home_venue_when">
                                 LOCATION </div>
                         <div id="home_venue_address_line1">RV University, near Pattanagere Metro, Bengaluru</div>
                     </div>
                 </div>
             </div>
-            
-
-            
         </div>
-            
-       
-            
             <div id="home_sharearea" class="row">
                 <div class="col-12">
                     <strong>Spread the word :</strong>
@@ -197,7 +191,7 @@
                         <div class="page_home_sponsor">
                             <a target="_blank" href="mailto:contact@barcampbangalore.com">
                             <div>
-                                    
+
                                 </div>
                                 <div>Reach us to be a sponsor</div>
                         </div>

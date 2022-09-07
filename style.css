@@ -61,10 +61,9 @@ body {
 }
 
 #search_slider_mobile #searchform #s {
-    background: rgba(0, 0, 0, 0.17);
-    border: none;
-    border-radius: 15px;
-    box-shadow: inset -1px -1px 2px #666666;
+    background: #efefef;
+    border: 1px solid #aaa;
+    border-radius: 4px 0 0 4px;
     padding: 4px;
     color: #000000;
     width: 100%;
@@ -82,7 +81,7 @@ body {
 }
 
 #header_large {
-    padding-left: 58px;
+    /* padding-left: 58px; */
     height: 100vh;
     position: sticky;
     top: 0px;
@@ -117,7 +116,6 @@ body {
 }
 
 #searchform {
-    width: 75%;
     margin-top: 40px;
 }
 
@@ -127,16 +125,16 @@ body {
 
 #searchform .col {
     padding-left: 0px;
+    display: flex;
 }
 
 #searchform #s {
-    background: rgba(0, 0, 0, 0.17);
-    border: none;
-    border-radius: 15px;
-    box-shadow: inset -1px -1px 2px #666666;
+    background: #efefef;
+    border: 1px solid #aaa;
+    border-radius: 4px 0 0 4px;
     padding: 4px;
-    color: #FFFFFF;
     width: 100%;
+    display: flex;
 }
 
 #searchform #s::placeholder {
@@ -144,8 +142,10 @@ body {
 }
 
 #searchform button {
-    background: none;
-    border: none;
+    background: #efefef;
+    border: 1px solid #aaa;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
 }
 
 #logins {
@@ -258,16 +258,24 @@ body {
     padding: 20px 0px 0px 0px;
     margin-bottom: 90px;
 }
-
+/*
 @media (min-width: 768px) {
     #page_master_container {
         padding-right: 50px;
     }
-}
+} */
 
 #page_home_container {
     color: #FFFFFF;
     /*height: 75vh;*/
+}
+
+#page_home_hero {
+    /* background-image: linear-gradient(to bottom, rgba(255,0,0,0.5), rgba(0,0,255,0.5)), url(/wp-content/themes/NeoBCB21/images/hero-01.jpg); */
+    background-image: url(/wp-content/themes/NeoBCB21/images/hero-01.jpg);
+    background-position: center center;
+    height: 500px;
+    background-size: cover;
 }
 
 
@@ -285,12 +293,12 @@ body {
 
 
 .airmeet_link_container {
-    
+
     background: rgba(242,161,75,0.6);
     padding: 10px;
     color: #424242;
     border-radius: 8px;
-   
+
 }
 
 .airmeet_link_container a {
@@ -430,12 +438,12 @@ body {
 }
 
 .sessions_page_list_header {
-    
+
     text-align: center;
     font-size: 2em;
     padding: 30px 20px 20px 20px;
     color: #FFFFFF;
-    
+
 }
 
 #sessions_page_track_buttons_container {
@@ -515,7 +523,7 @@ body {
 
 .sessions_page_card_author {
     color: #666666;
-    font-size: 14px; 
+    font-size: 14px;
 }
 
 .sessions_page_card_comments_stats {

@@ -15,16 +15,16 @@
 <?php wp_head(); ?>
 </head>
 <body>
-    <?php 
-    global $post; 
+    <?php
+    global $post;
     $post_slug = $post->post_name;
     ?>
     <script type="text/javascript">
-        
+
         bcb_page_name = "<?php echo $post_slug; ?>";
-    
+
     </script>
-    
+
     <div id="master_container" class="container-fluid d-flex">
         <div id="background_icons_container" class="d-none d-md-block">
             <img id="hat_icon" src="<?php bloginfo('template_url'); ?>/images/ICONS/web-icons-06.png" />
@@ -34,9 +34,9 @@
             <img id="cloud_icon" src="<?php bloginfo('template_url'); ?>/images/ICONS/web-icons-10.png" />
             <img id="loopy_icon" src="<?php bloginfo('template_url'); ?>/images/ICONS/web-icons-11.png" />
             <img id="mouse_icon" src="<?php bloginfo('template_url'); ?>/images/ICONS/web-icons-12.png" />
-            
+
         </div>
-        
+
         <div id="background_icons_container_small" class="d-block d-md-none">
             <img id="hat_icon" src="<?php bloginfo('template_url'); ?>/images/ICONS/web-icons-06.png" />
             <img id="ruler_icon" src="<?php bloginfo('template_url'); ?>/images/ICONS/web-icons-07.png" />
@@ -45,9 +45,9 @@
             <img id="cloud_icon" src="<?php bloginfo('template_url'); ?>/images/ICONS/web-icons-10.png" />
             <img id="loopy_icon" src="<?php bloginfo('template_url'); ?>/images/ICONS/web-icons-11.png" />
             <img id="mouse_icon" src="<?php bloginfo('template_url'); ?>/images/ICONS/web-icons-12.png" />
-            
+
         </div>
-        
+
         <div id="master_row" class="row col d-md-flex flex-md-row align-items-stretch m-0 p-0">
 
             <div id="header_small" class="header_container container-fluid d-flex d-md-none m-0 p-0">
@@ -77,8 +77,6 @@
                 </div>
                 <?php wp_nav_menu(array('theme_location' => 'menu_part2')); ?>
                 <?php get_search_form(true); ?>
-                
-                
 
                 <div id="logins">
                     <?php
@@ -86,16 +84,13 @@
                     get_currentuserinfo();
                     if (is_user_logged_in()) {
                         echo '<a href="' . admin_url('profile.php') . '">Hi ' . $current_user->user_login . '</a>&nbsp; |&nbsp; ';
-                         wp_loginout(get_permalink()); 
+                         wp_loginout(get_permalink());
                     } else {
                         echo "<a href=\"" . wp_registration_url() . "\" title=\"Sign Up\"> SIGN-UP </a>&nbsp; |&nbsp;";
                         echo "<a href=\"" . wp_login_url(get_permalink()) . "\" title=\"Login\"> Login </a>";
                     }
                     ?>
                 </div>
-
-                
-
 
             </div>
             <div id="page_master_container" class="d-md-flex flex-md-column col-md-9 justify-content-center">
