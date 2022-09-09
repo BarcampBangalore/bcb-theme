@@ -146,6 +146,7 @@ body {
     border: 1px solid #aaa;
     border-radius: 0px 4px 4px 0px;
     cursor: pointer;
+    width: 35px;
 }
 
 #logins {
@@ -270,20 +271,53 @@ body {
     /*height: 75vh;*/
 }
 
-#page_home_hero {
-    /* background-image: linear-gradient(to bottom, rgba(255,0,0,0.5), rgba(0,0,255,0.5)), url(/wp-content/themes/NeoBCB21/images/hero-01.jpg); */
-    background-image: url(/wp-content/themes/NeoBCB21/images/hero-01.jpg);
-    background-position: center center;
-    height: 500px;
-    background-size: cover;
+.page_home_hero {
+    background-color: rgba(0, 0, 0, 0.2);
+    min-height: fit-content;
+    margin-bottom: 20px;
+    padding-left: 50px;
 }
 
 
-#page_home_blr_logo img {
+#page_home_hero_image img {
+    width: 100%;
+}
+
+.page_home_section {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 50px;
+    margin-bottom: 20px;
+}
+
+
+#page_home_intro img {
     width: 50%;
 }
 
+#page_home_intro {
+    font-size: 20px;
+    padding: 30px 0 30px 0;
+}
 
+#page_home_intro h3 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    #page_home_hero_image img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        object-position: 100% 55%;
+    }
+    .page_home_hero {
+        padding-left: 0;
+    }
+    #page_home_intro {
+        padding: 50px;
+    }
+}
 
 #page_home_chosen_container {
     margin: 10px 15px 20px 15px;

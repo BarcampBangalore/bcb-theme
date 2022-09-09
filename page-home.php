@@ -1,13 +1,25 @@
 <?php get_header();?>
-<div id="page_home_container" class="d-flex align-items-center justify-content-center text-center">
+<div id="page_home_container" class="d-flex">
     <div id="page_home_wrapper" class="flex-column">
-        <div id="page_home_hero">
-            <div id="page_home_namaskara" class="row">
-                <div class="col-12">Namaskara</div>
+        <div class="page_home_hero">
+            <div class="row align-items-end">
+                <div id="page_home_intro" class="col-md-6 col-sm-12">
+                    <img src="<?php bloginfo('template_url');?>/images/BCB-LOGO-02.png" />
+                    <h3>BarCamp Bangalore</h3>
+                    <p>BarCamp Bangalore is an unconference – an ad-hoc gathering born from the desire for people to share and learn in an open environment.</p>
+                    <p>We're coming back on November 5, 2022, Saturday, at the <a href="https://goo.gl/maps/m7ARhpVeEHAWxYYGA" target="_blank">RV University, Bangalore</a>.</p>
+                </div>
+                <div id="page_home_hero_image" class="col-md-6 col-sm-12">
+                    <img src="<?php bloginfo('template_url');?>/images/hero-01.jpg" />
+                </div>
             </div>
-            <div id="page_home_blr_logo" class="row">
-                <div class="col-12">
-                    <img src="<?php bloginfo('template_url');?>/images/Bengaluru-01.png" />
+        </div>
+        <div class="page_home_section">
+            <div class="row align-items-end">
+                <div id="page_home_intro_text">
+                    <h3>What is BarCamp Bangalore?</h3>
+                    <p>BarCamp Bangalore is an opportunity for the Bangalore community to come together every year to learn, network, and discuss great ideas in person.</p>
+                    <p>Sessions are given on a variety of topics, and the day is created collaboratively – built by you and the other attendees who have a topic, story, knowledge, or experience to share with the rest of the community.</p>
                 </div>
             </div>
         </div>
