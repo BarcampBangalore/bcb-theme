@@ -7,10 +7,39 @@
                     <img src="<?php bloginfo('template_url');?>/images/BCB-LOGO-02.png" />
                     <h3>BarCamp Bangalore</h3>
                     <p>BarCamp Bangalore is an unconference – an ad-hoc gathering born from the desire for people to share and learn in an open environment.</p>
-                    <p>We're coming back on November 5, 2022, Saturday, at the <a href="https://goo.gl/maps/m7ARhpVeEHAWxYYGA" target="_blank">RV University, Bangalore</a>.</p>
+                    <p>We're coming back on <span id="page_home_hero_date">November 5, 2022, Saturday</span>, at the <a href="https://goo.gl/maps/m7ARhpVeEHAWxYYGA" target="_blank">RV University, Bangalore</a>.</p>
+                    <div class="calendar-options">
+                        <script src="https://cdn.jsdelivr.net/npm/add-to-calendar-button@1" async defer></script>
+                        <div class="atcb" >
+                            {
+                                "name":"Barcamp Bangalore",
+                                "description":"BarCamp Bangalore is an opportunity for the Bangalore community to come together every year to learn, network, and discuss great ideas in person.",
+                                "startDate":"2022-11-05",
+                                "endDate":"2022-11-05",
+                                "startTime":"09:00",
+                                "endTime":"17:00",
+                                "size": "5",
+                                "location":"RV University, near Pattanagere Metro, Bengaluru",
+                                "label":"Save a calendar reminder",
+                                "lightMode": "system",
+                                "options":[
+                                    "Apple",
+                                    "Google",
+                                    "iCal",
+                                    "Microsoft365",
+                                    "Outlook.com"
+                                ],
+                                "timeZone":"Asia/Kolkata",
+
+                                "inline":true,
+                                "listStyle":"modal",
+                                "iCalFileName":"bcb-2022-reminder"
+                            }
+                        </div>
+                    </div>
                 </div>
                 <div id="page_home_hero_image" class="col-md-6 col-sm-12">
-                    <img src="<?php bloginfo('template_url');?>/images/hero-01.jpg" />
+                    <img src="<?php bloginfo('template_url');?>/images/hero-02.jpg" />
                 </div>
             </div>
         </div>
@@ -23,65 +52,7 @@
                 </div>
             </div>
         </div>
-        <div id="page_home_sponsors_container" class="">
-            <div id="page_home_sponsors_header" style="font-size:2em;" >
-                BCB will be back soon!
-            </div>
 
-            <div id="home_venue_details_wrapper" class="row" >
-                <div id="home_venue_date_wrapper" class="col-12 col-md-4">
-                    <div class="home_venue_item_bg">
-                        <div id="home_venue_when">Saturday</div>
-                        <div id="home_venue_date">Nov 5</div>
-                        <div id="home_venue_year">2022</div>
-
-                    </div>
-                </div>
-                <div id="home_venue_time_wrapper" class="col-12 col-md-4">
-                    <div class="home_venue_item_bg">
-                        <div id="home_venue_when">Time</div>
-                        <div id="home_venue_time">9 AM to 5 PM</div>
-                        <div class="calendar-options">
-                            <script src="https://cdn.jsdelivr.net/npm/add-to-calendar-button@1" async defer></script>
-                            <div class="atcb" >
-                                {
-                                    "name":"Barcamp Bangalore",
-                                    "description":"A nice description does not hurt",
-                                    "startDate":"2022-11-05",
-                                    "endDate":"2022-11-05",
-                                    "startTime":"09:00",
-                                    "endTime":"17:00",
-                                    "size": "5",
-                                    "location":"RV University, near Pattanagere Metro, Bengaluru",
-                                    "label":"Save a calendar reminder",
-                                    "lightMode": "system",
-                                    "options":[
-                                    "Apple",
-                                    "Google",
-                                    "iCal",
-                                    "Microsoft365",
-                                    "Outlook.com"
-                                    ],
-                                    "timeZone":"Asia/Kolkata",
-
-                                    "inline":true,
-                                    "listStyle":"modal",
-                                    "iCalFileName":"bcb-2022-reminder"
-                                }
-                                </div>
-                        </div>
-                        <!--<div id="home_venue_tod">in the morning</div>-->
-                    </div>
-                </div>
-                <div id="home_venue_address_wrapper" class="col-12 col-md-4">
-                    <div class="home_venue_item_bg">
-                        <div id="home_venue_when">
-                                LOCATION </div>
-                        <div id="home_venue_address_line1">RV University, near Pattanagere Metro, Bengaluru</div>
-                    </div>
-                </div>
-            </div>
-        </div>
             <div id="home_sharearea" class="row">
                 <div class="col-12">
                     <strong>Spread the word :</strong>
