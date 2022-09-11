@@ -12,6 +12,10 @@
 <link rel="shortcut icon" href="favicon.ico?v=PY4NNGXQPr">
 <meta name="theme-color" content="#ffffff">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/add-to-calendar-button@1/assets/css/atcb.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+
 <?php wp_head(); ?>
 </head>
 <body>
@@ -69,6 +73,11 @@
 
 
             <div id="header_large" class="header_container d-none d-md-flex col-md-3 flex-column justify-content-center">
+                <div id="header_large_logo_container">
+                    <a href="<?php echo home_url(); ?>">
+                        <img src="<?php bloginfo('template_url'); ?>/images/BCB-LOGO-02.png" />
+                    </a>
+                </div>
                 <?php wp_nav_menu(array('theme_location' => 'menu_part1')); ?>
                 <?php wp_nav_menu(array('theme_location' => 'menu_part2')); ?>
                 <?php get_search_form(true); ?>

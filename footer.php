@@ -1,6 +1,6 @@
 
         </div>
-          
+
         <?php
 //        <div id="when_where_container" class="col d-none d-md-block">
 //            When & Where
@@ -48,12 +48,12 @@
         </div>
         <div id="close_button"><i class="fa fa-times-circle-o" aria-hidden="true"></i></div>
     </div> */
-    ?>        
+    ?>
 
 
     <div id="search_slider_mobile" class="d-none">
         <?php get_search_form(true); ?>
-        <div id="close_button"><i class="fa fa-times-circle-o" aria-hidden="true"></i></div>
+        <div id="close_button"><i class="fa fa-times-circle" aria-hidden="true"></i></div>
     </div>
 
 </div>
@@ -79,7 +79,7 @@
                     <span class="d-none d-md-inline">JOIN US ON DISCORD</span>
                 </a>
             </div>
-            
+
             <div class="col text-center">
                 <a href="https://twitter.com/barcampbng">
                     <i class="fab fa-twitter social_bar_icon"></i>

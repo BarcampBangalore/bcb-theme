@@ -4,7 +4,6 @@
         <div class="page_home_hero">
             <div class="row align-items-end">
                 <div id="page_home_intro" class="col-md-6 col-sm-12">
-                    <img src="<?php bloginfo('template_url');?>/images/BCB-LOGO-02.png" />
                     <h3>BarCamp Bangalore</h3>
                     <p>BarCamp Bangalore is an unconference – an ad-hoc gathering born from the desire for people to share and learn in an open environment.</p>
                     <p>We're coming back on <span id="page_home_hero_date">November 5, 2022, Saturday</span>, at the <a href="https://goo.gl/maps/m7ARhpVeEHAWxYYGA" target="_blank">RV University, Bangalore</a>.</p>
@@ -111,10 +110,6 @@
                         </div>
                     </div>
                     </a>
-
-
-
-
                 </div>
             </div>
 
