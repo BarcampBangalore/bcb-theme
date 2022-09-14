@@ -9,6 +9,7 @@ function neobcb21_enqueue_scripts()
     wp_enqueue_script("fittext", get_bloginfo('template_url') . "/scripts/FitText/jquery.fittext.js");
 
     wp_enqueue_script("my_script", get_bloginfo('template_url') . "/scripts/script.js");
+    wp_enqueue_script("bootstrap-js", "https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js");
 
     wp_enqueue_style('bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css');
 //    wp_enqueue_style('font-awesome', get_bloginfo('template_url') . "/font-awesome-4.7.0/css/font-awesome.min.css");

@@ -162,6 +162,7 @@ body {
 #master_container {
     /*height: 100%;*/
     position: relative;
+    margin-top: 60px;
 }
 
 #background_icons_container {
