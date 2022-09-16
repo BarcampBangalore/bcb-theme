@@ -19,14 +19,6 @@
                 
                 <div class="page_team_membercard col-6 col-md-3">
                     <div class="page_team_member_avatar">
-                        <img src="<?php echo get_bloginfo('template_url').'/images/team/aditya.png' ?>" />
-                    </div>
-                    <div class="page_team_member_name">Aditya Reddy</div>
-                    <div class="page_team_member_link"><a href="https://twitter.com/thetallpants">@thetallpants</a></div>
-                </div>
-                
-                <div class="page_team_membercard col-6 col-md-3">
-                    <div class="page_team_member_avatar">
                         <img src="<?php echo get_bloginfo('template_url').'/images/team/aman.jpg' ?>" />
                     </div>
                     <div class="page_team_member_name">Aman Manglik</div>
@@ -65,17 +57,7 @@
                     <div class="page_team_member_link"><a href="https://twitter.com/fossiloflife">@fossiloflife</a></div>
                 </div>
                 
-                <div class="page_team_membercard col-6 col-md-3">
-                    <div class="page_team_member_avatar">
-                        <img src="<?php echo get_bloginfo('template_url').'/images/team/vivek.jpg' ?>" />
-                    </div>
-                    <div class="page_team_member_name">Vivek</div>
-                    <div class="page_team_member_link"><a href="https://twitter.com/ivivekkm">@ivivekkm</a></div>
-                </div>
-                
             </div>
-            
-            
             
         </div>
     </div>
