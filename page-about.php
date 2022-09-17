@@ -1,10 +1,10 @@
 <?php get_header(); ?>
-    
-    
 
-<div id="page_about_container" class="d-flex justify-content-center">
-    
-    <div id="page_about_wrapper" class="flex-column ">
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-12">
         <?php the_post(); ?>
         <div id="page_about_title" class="d-flex fitted-title">
             <?php echo get_the_title(); ?>
@@ -14,11 +14,11 @@
             <?php echo get_the_content(); ?>
         </div>
     </div>
-    
+  </div>
 </div>
-        
-        
-    
-    
+
+
+
+
 <?php get_footer(); ?>
-    
+

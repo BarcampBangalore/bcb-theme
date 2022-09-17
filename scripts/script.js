@@ -136,11 +136,6 @@ jQuery(document).ready(function( $ ) {
 
     }
 
-    $("body").css('background', getGradientForPage());
     $("#footer_container").css('background', getGradientForPage());
-
-
-
-
 
 });

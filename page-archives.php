@@ -412,7 +412,6 @@ get_header();?>
 
     </script>
 
-    <div id="archives_page_content" class="d-flex justify-content-center">
 
         <div class="container">
             <div class="row">
@@ -550,7 +549,6 @@ foreach ($archive_categories as $archive_cat => $archive_catname):
 
     </div>
 
-</div>
 
 
 <?php get_footer();?>

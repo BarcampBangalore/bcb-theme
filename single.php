@@ -2,11 +2,12 @@
 <?php the_post();?>
 
 
-<div id="page_single_container" class="">
+<div class="container">
+  <div class="row">
 
     <script type="text/javascript">
         jQuery(function($) {
-            $(".sessionpage_attend").on("click", ".neo_attend_button", function(){
+            $(".sessionpage_attend").on("click", function(){
                 var card = $(this);
                 card.html('<img src="<?php bloginfo('template_url')?>/images/ajaxloader.gif" />');
                 $.post("<?php echo admin_url('admin-ajax.php?' . http_build_query(array("action" => "toggle_attend"))); ?>", {post_id: <?php the_ID();?> }, function(data){
@@ -18,16 +19,17 @@
                         card.parent().html(data.button_text);
                     }
                     else {
-                        $("#single_page_attendees_count").html(data.attendees_count + " Attending");
-                        $("#single_page_attendees_list").html(data.attendees_list);
-                        card.parent().html(data.button_text);
+                        // $("#single_page_attendees_count").html(data.attendees_count + " Attending");
+                        // $("#single_page_attendees_list").html(data.attendees_list);
+                        // card.parent().html(data.button_text);
+                        window.location.reload();
                     }
                 }, 'json');
             });
         });
     </script>
 
-    <div id="page_single_wrapper" class="d-flex flex-column container-fluid">
+    <div id="page_single_wrapper" class="col-12">
         <div class="row">
             <div id="single_page_avatar_container" class="col-2">
                 <div id="single_page_avatar" class=""><?php echo get_avatar(get_the_author_meta('ID'), 96); ?></div>
@@ -43,9 +45,16 @@
             <div class="col-2"></div>
             <div class="col-10">
                 <div class="single-page-attending-widget">
-                    <button type="button" class="btn btn-sm btn-attending-single">👋 I am interested!</button>
                     <?php
                     $attending_users = attending_users(get_the_ID());
+
+                    if (array_search($current_user->user_login, $attending_users) !== false) {
+                    ?>
+                      <button type="button" class="btn btn-sm btn-attending-single sessionpage_attend">👍 Interesting!</button>
+                    <?php } else { ?>
+                      <button type="button" class="btn btn-sm btn-attending-single sessionpage_attend">👋 I am interested!</button>
+                    <?php } ?>
+                    <?php
                     for ($i = 0; $i < count($attending_users); $i++) { ?>
                         <?php echo get_avatar($attending_users[$i], 20) ?>
                     <?php } ?>
@@ -167,8 +176,7 @@
         </div>
 
     </div>
-
-
+  </div>
 </div>
 
 
