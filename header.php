@@ -18,7 +18,7 @@
 
 <?php wp_head(); ?>
 </head>
-<body style="background-color: #fdfbf2;">
+<body style="background-color: #eee;">
     <?php
     global $post;
     $post_slug = $post->post_name;
@@ -61,24 +61,6 @@
                 <?php } ?>
               </div>
             </li>
-          </ul>
-          <?php
-          function custom_search_form( $form ) {
-            $form = '<form class="form-inline my-2 my-lg-0" action="' . home_url( '/' ) . '">
-              <div class="input-group">
-                <input type="text" class="form-control" placeholder="'. esc_attr__( 'Search' ) .'" aria-label="'. esc_attr__( 'Search' ) .'">
-                <div class="input-group-append">
-                  <button class="btn btn-secondary" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
-                </div>
-              </div>
-            </form>';
-
-            return $form;
-          }
-          add_filter( 'get_search_form', 'custom_search_form', 40 );
-          get_search_form(true);
-          ?>
-          <ul class="navbar-nav">
             <li class="nav-item dropdown">
             <?php
             global $current_user;
@@ -96,6 +78,24 @@
                   <a class="dropdown-item" href="<?php echo wp_login_url(get_permalink()) ?>">Login</a>
               </div>
             <?php } ?>
+            </li>
+            <li>
+            <?php
+            function custom_search_form( $form ) {
+              $form = '<form class="form-inline my-2 my-lg-0" action="' . home_url( '/' ) . '">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="'. esc_attr__( 'Search' ) .'" aria-label="'. esc_attr__( 'Search' ) .'">
+                  <div class="input-group-append">
+                    <button class="btn btn-secondary" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                  </div>
+                </div>
+              </form>';
+
+              return $form;
+            }
+            add_filter( 'get_search_form', 'custom_search_form', 40 );
+            get_search_form(true);
+            ?>
             </li>
           </ul>
         </div>

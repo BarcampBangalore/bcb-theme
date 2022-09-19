@@ -415,8 +415,10 @@ get_header();?>
 
         <div class="container">
             <div class="row">
-                <div id="archives_page_header" class="col-xs-12 single_page_box">
-                    <div id="archives_page_title"><?php the_title();?></div>
+                <div class="col-12 p-5">
+                    <div id="archives_page_title">
+                        <h1 class="display-4 text-center"><?php the_title();?></h1>
+                    </div>
                     <div id="archives_page_bcb_selector_buttons">
                         <ul id="archives_page_bcb_selector">
                             <!--<li class="archive_selected"><a class="archives_current" data-contentdiv="archive_1863">BCB 2021 Virtual (Past Sessions)</a></li>-->
@@ -453,13 +455,16 @@ $archive_categories = array(
 foreach ($archive_categories as $archive_cat => $archive_catname):
 ?>
             <div id="archive_<?php echo $archive_cat; ?>" class="archives_parent" >
-                <div class="archive_sponsors_wrapper row">
-                    <div class="col-12">
+                <div class="row archive_sponsors_wrapper">
+                    <div class="col-12 p-2 text-center">
                         <?php insertSponsors($archive_catname);?>
                     </div>
                 </div>
 
                 <div class="row" id="archive_cards_row">
+                    <div class="col-12 p-2 text-center">
+                        <h2>Sessions</h2>
+                    </div>
                     <?php
                     query_posts('cat=' . $archive_cat);
                     while (have_posts()): the_post();
@@ -485,59 +490,6 @@ foreach ($archive_categories as $archive_cat => $archive_catname):
                                 </div>
                             </div>
                         </div>
-
-                        <!-- <div class="sessions_page_card col-12 col-md-6" data-track-id="<?php echo $track_id; ?>">
-                            <div class="sessions_page_card_content container-fluid track_color_border_0">
-                                <div class="row">
-                                    <div class="sessions_page_card_avatar">
-                                        <?php echo '<a href="' . get_author_posts_url(get_the_author_meta('ID')) . '">' . get_avatar(get_the_author_meta('ID'), 128) . '</a>'; ?>
-                                    </div>
-                                    <div class="sessions_page_card_right_column">
-                                        <div class="sessions_page_card_title">
-
-                                            <?php
-                                                $titlestr = get_the_title();
-                                                $title_trimmed = false;
-                                                if (strlen($titlestr) > 50) {
-                                                    $titlestr = substr($titlestr, 0, 45) . "...";
-                                                    $title_trimmed = true;
-                                                }
-                                                ?>
-                                            <a href="<?php echo get_permalink(); ?>" <?php if ($title_trimmed) {echo 'title="' . get_the_title() . '"';}?>>
-                                                <?php echo $titlestr; ?>
-                                            </a>
-                                        </div>
-                                        <div class="sessions_page_card_author">
-                                            <?php echo '<a href="' . get_author_posts_url(get_the_author_meta('ID')) . '">' . get_the_author_meta('display_name') . '</a>'; ?>
-                                        </div>
-                                        <div class="sessions_page_card_bottomarea">
-
-                                            <div class="sessions_page_card_comments_stats">
-                                                <div class="sessions_page_card_comments_icon">
-                                                    <img src="<?php echo get_bloginfo('template_url') . '/images/icons-21.png' ?>" title="Comments" />
-                                                </div>
-                                                <div class="sessions_page_card_comments_count">
-                                                    <?php comments_number('0', '1', '%');?>
-                                                </div>
-                                            </div>
-
-                                            <div class="sessions_page_card_attendees_stats">
-                                                <div class="sessions_page_card_attendees_icon">
-                                                    <img src="<?php echo get_bloginfo('template_url') . '/images/icons-20.png' ?>" title="Attendees" />
-                                                </div>
-                                                <div id="sessions_page_card_attendees_count_<?php echo get_the_ID(); ?>" class="sessions_page_card_attendees_count">
-                                                    <?php echo attending_users_count(get_the_ID()) ?>
-                                                </div>
-                                            </div>
-
-                                            <div class="sessions_page_card_attend_button" data-postid="<?php echo get_the_ID(); ?>">
-                                                <?php echo get_my_attending_button(get_the_ID()); ?>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
 		            <?php endwhile;?>
 
                 </div>

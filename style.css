@@ -17,7 +17,7 @@ html {
 }
 
 a {
-    color: inherit;
+    color: darkcyan;
 }
 
 body {
@@ -182,18 +182,18 @@ body {
 }
 
 #background_icons_container #ruler_icon {
-    top: 21%;
-    right: 18%;
+    top: 11%;
+    right: 48%;
 }
 
 #background_icons_container #grid_icon {
     top: 24%;
-    right: 4%;
+    right: 64%;
 }
 
 #background_icons_container #web_icon {
     top: 43%;
-    right: 3%;
+    right: 73%;
 }
 
 #background_icons_container #cloud_icon {
@@ -203,12 +203,12 @@ body {
 
 #background_icons_container #loopy_icon {
     top: 79%;
-    right: 19%;
+    right: 59%;
 }
 
 #background_icons_container #mouse_icon {
     top: 74%;
-    right: 6%;
+    right: 86%;
 }
 
 #background_icons_container_small {
@@ -643,6 +643,10 @@ footer {
 .avatar {
     margin-right: 10px;
     border-radius: 5px;
+}
+
+.card {
+  background-color: #ffffffd4 !important;
 }
 
 .card-meta {
@@ -1861,3 +1865,10 @@ input[type=checkbox].add-to-calendar-checkbox {
     max-height: 50px;
 }
 
+.nav-link {
+  color: #ffffffbd !important;
+}
+
+.nav-link:hover {
+  color: #ffffffee !important;
+}

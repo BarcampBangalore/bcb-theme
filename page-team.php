@@ -6,12 +6,12 @@
   <div class="row">
     <div class="col-12">
         <?php the_post(); ?>
-        <div id="page_team_title" class="d-flex fitted-title">
+        <div class="display-4 fitted-title text-center p-3">
             <?php echo get_the_title(); ?>
         </div>
 
-        <div id="page_team_content" class="">
-            <div id="page_team_intro">
+        <div id="page_team_content" class="text-center">
+            <div id="page_team_intro" >
                 Meet the planners behind Barcamp Bangalore, and see behind the scenes action at <a href="https://planning.barcampbangalore.com/">BCB Planners Blog</a>.
             </div>
 

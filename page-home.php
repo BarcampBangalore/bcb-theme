@@ -1,5 +1,5 @@
 <?php get_header();?>
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
+<!-- <div id="myCarousel" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#myCarousel" data-slide-to="0" class=""></li>
     <li data-target="#myCarousel" data-slide-to="1" class=""></li>
@@ -48,11 +48,11 @@
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </button>
-</div>
+</div> -->
 <div class="container marketing">
   <!-- START THE FEATURETTES -->
 
-  <div class="row featurette">
+  <div class="row featurette align-items-center">
     <div class="col-md-7">
       <h2 class="featurette-heading">What is BarCamp Bangalore? <span class="text-muted">#bcb22</span></h2>
       <p class="lead">BarCamp Bangalore is an unconference – an ad-hoc gathering born from the desire for people to share and learn in an open environment.</p>
@@ -110,7 +110,7 @@
   <div class="row featurette">
     <div class="col-md-7">
       <h2 class="featurette-heading">Meet the most outside-the-box thinkers in the city. <span class="text-muted">No, really.</span></h2>
-      <p class="lead">Sessions include topics ranging from this, this, this, to that and that.</p>
+      <p class="lead">Sessions include topics ranging from design, technology, creativity, to entrepreneurship and lifestyle.</p>
     </div>
     <div class="col-md-5">
     <img height="500px" src="<?php bloginfo('template_url');?>/images/hero-03.jpg" />
@@ -119,19 +119,33 @@
 
   <hr class="featurette-divider">
 
-  <!-- Three columns of text below the carousel -->
+  <div class="row">
+    <div class="col-lg-12 text-center mb-10">
+      <h1 class="display-4 pb-2">Event venue</h1>
+    </div>
+    <div class="col-lg-12">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.757290776476!2d77.49752121548372!3d12.923314990887569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bafad1d6f18a4b9%3A0xc6082c1a24eba0bf!2sRV%20University!5e0!3m2!1sen!2sin!4v1663609167948!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div><!-- /.row -->
+
+  <hr class="featurette-divider">
+
   <div class="row">
     <div class="col-lg-12 text-center mb-10">
       <h1 class="display-3 pb-5">Sponsors</h1>
     </div>
     <div class="col-lg-4">
+      <a href="https://barcampbangalore.com/bcb/about-janastu"><img height="100px" src="<?php bloginfo('template_url');?>/images/logo-janastu.png" /></a>
+
+      <h2>Friend of Barcamp </h2>
+      <p>Janastu</p>
     </div><!-- /.col-lg-4 -->
     <div class="col-lg-4">
-    <img height="100px" src="<?php bloginfo('template_url');?>/images/rvu_logo.svg" />
+      <img height="100px" src="<?php bloginfo('template_url');?>/images/logo-rvu.svg" />
 
       <h2>Venue Sponsor</h2>
       <p>RV University, Bangalore</p>
-      <p><a class="btn btn-primary" href="#">Sponsor us?</a></p>
+      <p><a class="btn btn-primary" href="https://planning.barcampbangalore.com/call-for-sponsors-for-barcamp-bangalore-2022/" target="_blank">Sponsor us?</a></p>
     </div><!-- /.col-lg-4 -->
     <div class="col-lg-4">
     </div><!-- /.col-lg-4 -->

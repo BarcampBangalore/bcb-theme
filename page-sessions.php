@@ -49,7 +49,7 @@
 
                 console.log(trackid);
                 var $ = jQuery.noConflict();
-                var allSessionCards = document.getElementsByClassName("sessions_page_card");
+                var allSessionCards = document.getElementsByClassName("sessions-page-card");
                 console.log("cards - " + allSessionCards.length)
                 var lastSelected = false;
                 if(document.lastselected === trackid){
@@ -179,21 +179,15 @@
                     <?php
                     $sessionsloop = new WP_Query(array('cat' => get_current_cats(true), 'nopaging' => true));
 
-
                     if (!$sessionsloop->have_posts()) {
                         echo '<div class="sessioncard_no_session_message">No sessions in this track yet :)</div>';
                     }
-
                     while ($sessionsloop->have_posts()) : $sessionsloop->the_post();
-
                         ?>
 
                         <?php
-
                         // Do not show chosen or archived posts
-
                         if (array_search(get_the_ID(), array_merge(get_chosen_track_ids(), get_archived_track_ids())) !== false) {
-
                             continue;
                         }
 
@@ -210,7 +204,29 @@
                         }
                         ?>
 
-                        <div class="sessions_page_card col-12 col-md-6" data-track-id="<?php echo $track_id; ?>">
+                        <div class="col-md-6 sessions-page-card" data-track-id="<?php echo $track_id; ?>">
+                            <div class="card archive-session-card p-3 mb-2">
+                                <div class="d-flex justify-content-between">
+                                    <div class="d-flex flex-row align-items-center">
+                                        <div class="icon"><?php echo '<a href="' . get_author_posts_url(get_the_author_meta('ID')) . '">' . get_avatar(get_the_author_meta('ID'), 32) . '</a>'; ?></div>
+                                        <div class="ms-2 c-details">
+                                            <h6 class="mb-0"><?php echo '<a href="' . get_author_posts_url(get_the_author_meta('ID')) . '">' . get_the_author_meta('display_name') . '</a>'; ?></h6>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="badge"> <span>Design</span> </div> -->
+                                </div>
+                                <div class="mt-2">
+                                    <h5 class="heading"><a href="<?php echo get_permalink(); ?>" title=""><?php echo get_the_title(); ?></a></h5>
+                                    <div class="mt-2">
+                                        <div class="mt-2">
+                                        <span class="card-meta"><?php echo attending_users_count(get_the_ID()) ?> attendees</span>,
+                                        <span class="card-meta"><?php comments_number('0', '1', '%');?> comments</span> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- <div class="sessions_page_card col-12 col-md-6" data-track-id="<?php echo $track_id; ?>">
                             <div class="sessions_page_card_content container-fluid track_color_border_<?php echo $track_id; ?>">
                                 <div class="row">
                                     <div class="sessions_page_card_avatar">
@@ -264,7 +280,7 @@
 
 
 
-                        </div>
+                        </div> -->
 
                     <?php endwhile; ?>
                 </div>
