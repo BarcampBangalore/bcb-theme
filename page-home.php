@@ -54,7 +54,7 @@
 
   <div class="row featurette align-items-center">
     <div class="col-md-7">
-      <h2 class="featurette-heading">What is BarCamp Bangalore? <span class="text-muted">#bcb22</span></h2>
+      <h2 class="featurette-heading">What is BarCamp Bangalore? <span class="text-muted">#bcb2022</span></h2>
       <p class="lead">BarCamp Bangalore is an unconference – an ad-hoc gathering born from the desire for people to share and learn in an open environment.</p>
       <p class="lead">BarCamp Bangalore is an opportunity for the Bangalore community to come together every year to learn, network, and discuss great ideas in person.</p>
       <p class="lead">We're coming back on <span id="page_home_hero_date">November 5, 2022, Saturday</span>, at the <a href="https://goo.gl/maps/m7ARhpVeEHAWxYYGA" target="_blank">RV University, Bangalore</a>.</p>

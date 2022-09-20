@@ -18,7 +18,7 @@
 
 <?php wp_head(); ?>
 </head>
-<body style="background-color: #eee;">
+<body style="background: linear-gradient(to right, #11dbdb, #18b5b5)">
     <?php
     global $post;
     $post_slug = $post->post_name;
