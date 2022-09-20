@@ -40,6 +40,7 @@
                     <div class="col">
                         <div id="single_page_title"><?php the_title();?></div>
                         <div id="single_page_author" class="">Presented by: <?php echo '<a href="' . get_author_posts_url(get_the_author_meta('ID')) . '">' . get_the_author_meta('display_name') . '</a>'; ?></div>
+                        <div><?php echo human_time_diff(get_post_time('U', true)) ?> ago</div>
                     </div>
                 </div>
             </div>
