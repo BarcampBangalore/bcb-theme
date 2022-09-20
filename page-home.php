@@ -137,7 +137,7 @@
     <div class="col-lg-4">
       <a href="https://barcampbangalore.com/bcb/about-janastu"><img height="100px" src="<?php bloginfo('template_url');?>/images/logo-janastu.png" /></a>
 
-      <h2>Friend of Barcamp </h2>
+      <h2>Friends of Barcamp </h2>
       <p>Janastu</p>
     </div><!-- /.col-lg-4 -->
     <div class="col-lg-4">
