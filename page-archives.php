@@ -447,7 +447,7 @@ get_header();?>
 $techlash_categories = array(639, 787, 933, 1065, 1232, 1465);
 $archive_categories = array(
     1863 => "BCB 2021 Virtual",
-    1759 => "BCB Spring 2019", 1691 => "BCB Spring 2018", 
+    1759 => "BCB Spring 2019", 1691 => "BCB Spring 2018",
     1556 => "BCB Spring 2016", 1458 => "BCB Monsoon 2015", 1366 => 'bcbxah',
     1224 => 'bcb17', 1057 => 'bcb16', 931 => 'bcb15',
     785 => 'bcb14', 636 => 'bcb13', 479 => 'bcb12',
@@ -473,7 +473,7 @@ foreach ($archive_categories as $archive_cat => $archive_catname):
                             <div class="card archive-session-card p-3 mb-2">
                                 <div class="d-flex justify-content-between">
                                     <div class="d-flex flex-row align-items-center">
-                                        <div class="icon"><?php echo '<a href="' . get_author_posts_url(get_the_author_meta('ID')) . '">' . get_avatar(get_the_author_meta('ID'), 32) . '</a>'; ?></div>
+                                        <div class="icon"><?php echo '<a href="' . get_author_posts_url(get_the_author_meta('ID')) . '">' . get_avatar(get_the_author_meta('ID'), 64) . '</a>'; ?></div>
                                         <div class="ms-2 c-details">
                                             <h6 class="mb-0"><?php echo '<a href="' . get_author_posts_url(get_the_author_meta('ID')) . '">' . get_the_author_meta('display_name') . '</a>'; ?></h6>
                                         </div>

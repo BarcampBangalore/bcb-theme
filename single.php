@@ -31,6 +31,7 @@
 
     <div id="page_single_wrapper" class="col-12">
         <div class="row">
+          <div class="col-12 mb-3 ml-2"><button class="btn btn-info btn-sm" onclick="history.back()" style="pointer: cursor">< back</button></div>
             <div id="single_page_avatar_container" class="col-2">
                 <div id="single_page_avatar" class=""><?php echo get_avatar(get_the_author_meta('ID'), 96); ?></div>
             </div>

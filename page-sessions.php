@@ -208,7 +208,7 @@
                             <div class="card archive-session-card p-3 mb-2">
                                 <div class="d-flex justify-content-between">
                                     <div class="d-flex flex-row align-items-center">
-                                        <div class="icon"><?php echo '<a href="' . get_author_posts_url(get_the_author_meta('ID')) . '">' . get_avatar(get_the_author_meta('ID'), 32) . '</a>'; ?></div>
+                                        <div class="icon"><?php echo '<a href="' . get_author_posts_url(get_the_author_meta('ID')) . '">' . get_avatar(get_the_author_meta('ID'), 64) . '</a>'; ?></div>
                                         <div class="ms-2 c-details">
                                             <h6 class="mb-0"><?php echo '<a href="' . get_author_posts_url(get_the_author_meta('ID')) . '">' . get_the_author_meta('display_name') . '</a>'; ?></h6>
                                         </div>

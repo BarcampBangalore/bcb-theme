@@ -6,7 +6,19 @@
     <div class="row">
       <div class="col-12 col-md">
         <img class="mb-2" src="<?php bloginfo('template_url'); ?>/images/BCB-LOGO-02.png" alt="" height="24">
-        <small class="d-block mb-3 text-muted">&copy; 1970-2022</small>
+        <small class="d-block mb-3 text-muted">
+          <!--[if lte IE 8]><span style="filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2); display: inline-block;"><![endif]-->
+          <span style="-webkit-transform: rotate(180deg); -moz-transform: rotate(180deg); -o-transform: rotate(180deg); -khtml-transform: rotate(180deg); -ms-transform: rotate(180deg); transform: rotate(180deg); display: inline-block;">
+            &copy;
+          </span>
+          <!--[if lte IE 8]></span><![endif]-->
+          Copyleft. All Wrongs Reserved <a href="<?php echo get_settings('home'); ?>/"><?php bloginfo('name'); ?></a> &bull;
+          Awesomely Powered by <a href="http://www.wordpress.org">WordPress</a> and
+          <?php
+          $result = count_users();
+          echo $result['total_users'];
+          ?> humans.
+        </small>
       </div>
       <div class="col-6 col-md">
         <h5>Reach us</h5>
