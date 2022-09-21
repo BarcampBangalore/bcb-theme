@@ -52,7 +52,7 @@
 <div class="container marketing">
   <!-- START THE FEATURETTES -->
 
-  <div class="row featurette align-items-center">
+  <div class="row featurette align-items-center first-featurette">
     <div class="col-md-7">
       <h2 class="featurette-heading">What is BarCamp Bangalore? <span class="text-muted">#bcb2022</span></h2>
       <p class="lead">BarCamp Bangalore is an unconference – an ad-hoc gathering born from the desire for people to share and learn in an open environment.</p>

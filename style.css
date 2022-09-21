@@ -1872,3 +1872,9 @@ input[type=checkbox].add-to-calendar-checkbox {
 .nav-link:hover {
   color: #ffffffee !important;
 }
+
+@media (max-width: 992px) {
+  .first-featurette {
+    margin-top: 2em;
+  }
+}
