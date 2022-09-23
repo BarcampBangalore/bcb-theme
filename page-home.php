@@ -29,7 +29,7 @@
                     <div class="home_venue_item_bg">
                         <div id="home_venue_when">Time</div>
                         <div id="home_venue_time">9 AM to 5 PM</div>
-                        <div class="calendar-options">  
+                        <div class="calendar-options">
                             <script src="https://cdn.jsdelivr.net/npm/add-to-calendar-button@1" async defer></script>
                             <div class="atcb" >
                                 {
@@ -51,7 +51,7 @@
                                     "Outlook.com"
                                     ],
                                     "timeZone":"Asia/Kolkata",
-                                    
+
                                     "inline":true,
                                     "listStyle":"modal",
                                     "iCalFileName":"bcb-2022-reminder"
@@ -63,19 +63,19 @@
                 </div>
                 <div id="home_venue_address_wrapper" class="col-12 col-md-4">
                     <div class="home_venue_item_bg">
-                        <div id="home_venue_when"> 
+                        <div id="home_venue_when">
                                 LOCATION </div>
                         <div id="home_venue_address_line1">RV University, near Pattanagere Metro, Bengaluru</div>
                     </div>
                 </div>
             </div>
-            
 
-            
+
+
         </div>
-            
-       
-            
+
+
+
             <div id="home_sharearea" class="row">
                 <div class="col-12">
                     <strong>Spread the word :</strong>
@@ -172,14 +172,33 @@
 
                 <div class="page_home_sponsors_type col-12 col-md-6">
                     <div class="page_home_sponsortype_header">
-                        Venue Sponsor
+                        Silver Sponsor
                     </div>
                     <div class="page_home_sponsor">
-                            <div>RV University</div>
+                        <a target="_blank" href="https://planning.barcampbangalore.com/announcing-foss-united-as-a-silver-sponsor-for-barcamp-bangalore-2022/">
+                            <div>
+                                <img
+                                    src="<?php echo get_bloginfo('template_url') . '/images/sponsors/logo-fossunited.png' ?>" />
+                            </div>
+                            <div>FOSS United</div>
+                        </a>
                     </div>
                 </div>
 
-                <div class="page_home_sponsors_type col-12 col-md-4">
+                <div class="page_home_sponsors_type col-12 col-md-6">
+                    <div class="page_home_sponsortype_header">
+                        Venue Sponsor
+                    </div>
+                    <div class="page_home_sponsor">
+                        <div>
+                            <img
+                                src="<?php echo get_bloginfo('template_url') . '/images/sponsors/logo-rvu.svg' ?>" />
+                        </div>
+                        <div>RV University</div>
+                    </div>
+                </div>
+
+                <div class="page_home_sponsors_type col-12 col-md-6">
                     <div class="page_home_sponsortype_header">
                         Friends of Barcamp
                     </div>
@@ -193,17 +212,18 @@
                                 <div>Janastu</div>
                             </a>
                         </div>
-
-                        <div class="page_home_sponsor">
-                            <a target="_blank" href="mailto:contact@barcampbangalore.com">
-                            <div>
-                                    
-                                </div>
-                                <div>Reach us to be a sponsor</div>
-                        </div>
                     </div>
                 </div>
+
+                <div class="page_home_sponsors_type col-12 col-md-6">
+                    <div class="page_home_sponsortype_header">
+                        Your logo?
+                    </div>
+                    <div class="page_home_sponsor">
+                      <a target="_blank" href="mailto:contact@barcampbangalore.com">Reach us to be a sponsor</a>
+                    </div>
                 </div>
+            </div>
 
         </div>
     </div>
