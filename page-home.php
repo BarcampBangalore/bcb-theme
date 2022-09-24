@@ -121,7 +121,7 @@
 
   <div class="row">
     <div class="col-lg-12 text-center mb-10">
-      <h1 class="display-4 pb-2">Event venue</h1>
+      <h1 class="pb-2">Event venue</h1>
       <p class="pb-2">RV University, RV Vidyanikethan Post 8th Mile, Mysore Rd, Bengaluru, Karnataka 560059</p>
     </div>
     <div class="col-lg-12">
@@ -131,25 +131,35 @@
 
   <hr class="featurette-divider">
 
-  <div class="row">
-    <div class="col-lg-12 text-center mb-10">
-      <h1 class="display-3 pb-5">Sponsors</h1>
+  <div class="row text-center">
+    <div class="col-lg-12 mb-10">
+      <h1 class="pb-5">Sponsors</h1>
     </div>
     <div class="col-lg-4">
-      <a href="https://barcampbangalore.com/bcb/about-janastu"><img height="100px" src="<?php bloginfo('template_url');?>/images/logo-janastu.png" /></a>
-
       <h2>Friends of Barcamp </h2>
+      <a href="https://barcampbangalore.com/bcb/about-janastu"><img height="100px" src="<?php bloginfo('template_url');?>/images/sponsors/janastu_logo.gif" /></a>
+
       <p>Janastu</p>
     </div><!-- /.col-lg-4 -->
     <div class="col-lg-4">
-      <img height="100px" src="<?php bloginfo('template_url');?>/images/logo-rvu.svg" />
-
       <h2>Venue Sponsor</h2>
+      <img height="100px" src="<?php bloginfo('template_url');?>/images/sponsors/logo-rvu.svg" />
+
       <p>RV University, Bangalore</p>
-      <p><a class="btn btn-primary" href="https://planning.barcampbangalore.com/call-for-sponsors-for-barcamp-bangalore-2022/" target="_blank">Sponsor us?</a></p>
     </div><!-- /.col-lg-4 -->
     <div class="col-lg-4">
+      <h2>Silver Sponsor</h2>
+      <a href="https://planning.barcampbangalore.com/announcing-foss-united-as-a-silver-sponsor-for-barcamp-bangalore-2022/"><img height="100px" src="<?php bloginfo('template_url');?>/images/sponsors/logo-fossunited.png" /></a>
+
+      <p>FOSS United</p>
     </div><!-- /.col-lg-4 -->
+    <div class="col-lg-12">
+      <h2>Gold Sponsor</h2>
+      <img height="100px" src="<?php bloginfo('template_url');?>/images/money.png" />
+
+      <p>Be the hero we need.</p>
+      <p><a class="btn btn-primary" href="https://planning.barcampbangalore.com/call-for-sponsors-for-barcamp-bangalore-2022/" target="_blank">Sponsor us</a></p>
+    </div>
   </div><!-- /.row -->
 
   <!-- /END THE FEATURETTES -->
