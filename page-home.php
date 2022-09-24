@@ -122,6 +122,7 @@
   <div class="row">
     <div class="col-lg-12 text-center mb-10">
       <h1 class="display-4 pb-2">Event venue</h1>
+      <p class="pb-2">RV University, RV Vidyanikethan Post 8th Mile, Mysore Rd, Bengaluru, Karnataka 560059</p>
     </div>
     <div class="col-lg-12">
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.757290776476!2d77.49752121548372!3d12.923314990887569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bafad1d6f18a4b9%3A0xc6082c1a24eba0bf!2sRV%20University!5e0!3m2!1sen!2sin!4v1663609167948!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>

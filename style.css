@@ -20,6 +20,11 @@ a {
     color: darkcyan;
 }
 
+hr {
+  border-top: 2px solid rgba(0, 0, 0, .2);
+  border-radius: 1px;
+}
+
 body {
     height: 100%;
     font-family: 'Rubik', sans-serif;
@@ -305,6 +310,7 @@ body {
     --atcb-shadow-button-hover: none !important;
     --atcb-shadow-button-active: none !important;
     --atcb-shadow-list: none !important;
+    padding: 0px !important;
 }
 
 #page_home_intro img {
@@ -1741,6 +1747,7 @@ background-color: #FF6600
 .calendar-options {
     color: black;
     text-align: left;
+    margin-left: -2px;
 }
 
 #add-to-calendar-checkbox-label {
