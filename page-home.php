@@ -183,6 +183,15 @@
                             <div>FOSS United</div>
                         </a>
                     </div>
+                    <div class="page_home_sponsor">
+                        <a target="_blank" href="https://planning.barcampbangalore.com/announcing-hoochat-as-a-silver-sponsor-for-barcamp-bangalore-2022/">
+                            <div>
+                                <img
+                                    src="<?php echo get_bloginfo('template_url') . '/images/sponsors/logo-hoochat.svg' ?>" />
+                            </div>
+                            <div>HooChat</div>
+                        </a>
+                    </div>
                 </div>
 
                 <div class="page_home_sponsors_type col-12 col-md-6">
