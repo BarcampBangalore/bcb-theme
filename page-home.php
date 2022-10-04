@@ -172,7 +172,7 @@
 
                 <div class="page_home_sponsors_type col-12 col-md-6">
                     <div class="page_home_sponsortype_header">
-                        Silver Sponsor
+                        Silver Sponsors
                     </div>
                     <div class="page_home_sponsor">
                         <a target="_blank" href="https://planning.barcampbangalore.com/announcing-foss-united-as-a-silver-sponsor-for-barcamp-bangalore-2022/">
