@@ -158,7 +158,7 @@
       <img height="100px" src="<?php bloginfo('template_url');?>/images/money.png" />
 
       <p>Be the hero we need.</p>
-      <p><a class="btn btn-primary" href="https://planning.barcampbangalore.com/call-for-sponsors-for-barcamp-bangalore-2022/" target="_blank">Sponsor us</a></p>
+      <p><a class="btn btn-sponsor-us" href="https://planning.barcampbangalore.com/call-for-sponsors-for-barcamp-bangalore-2022/" target="_blank">Sponsor us</a></p>
     </div>
   </div><!-- /.row -->
 

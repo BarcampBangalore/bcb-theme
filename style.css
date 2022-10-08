@@ -305,6 +305,16 @@ body {
     border-radius: 10px;
 }
 
+.atcb-button {
+    background-color: #008585 !important;
+    border-color: #559077 !important;
+}
+
+.atcb-button:hover {
+    background-color: #c7522a !important;
+    border-color: #e5c185 !important;
+}
+
 .atcb-button-wrapper {
     --atcb-shadow-button: none !important;
     --atcb-shadow-button-hover: none !important;
@@ -414,6 +424,30 @@ body {
 .page_home_sponsor img {
     height: 50px;
     max-width: 175px;
+}
+
+.btn-search {
+    background-color: #c7522a;
+    color: white;
+}
+
+.btn-search:hover {
+    background-color: #74a892;
+    color: white;
+}
+
+.btn-sponsor-us {
+    background-color: #008585;
+    color: white;
+}
+
+.btn-sponsor-us:hover {
+    background-color: #c7522a;
+    color: white;
+}
+
+.dropdown-menu {
+    background-color: #fbf2c4;
 }
 
 @media (min-width: 768px) {

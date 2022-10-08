@@ -18,7 +18,7 @@
 
 <?php wp_head(); ?>
 </head>
-<body style="background: linear-gradient(to right, #79e1f282, #74a8c170)">
+<body style="background: linear-gradient(to right, #e5c185c7, #fbf2c4c7);">
     <?php
     global $post;
     $post_slug = $post->post_name;
@@ -32,11 +32,11 @@
       <div class="container">
         <div class="row">
           <div class="col-12" style="text-align: center;">
-          <a class="navbar-brand" href="<?php echo home_url( '/' ); ?>"><img height="200px" src="<?php bloginfo('template_url'); ?>/images/BCB-LOGO-02.png" alt="test"></a>
+          <a class="navbar-brand" href="<?php echo home_url( '/' ); ?>"><img height="200px" src="<?php bloginfo('template_url'); ?>/images/logo-bcb22.png" alt="test"></a>
           </div>
         </div>
       </div>
-      <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #224b71;">
+      <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #008585;">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -86,7 +86,7 @@
                 <div class="input-group">
                   <input type="text" class="form-control" placeholder="'. esc_attr__( 'Search' ) .'" aria-label="'. esc_attr__( 'Search' ) .'">
                   <div class="input-group-append">
-                    <button class="btn btn-secondary" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                    <button class="btn btn-search" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
                   </div>
                 </div>
               </form>';
