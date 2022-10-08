@@ -17,17 +17,22 @@ html {
 }
 
 a {
-    color: darkcyan;
+    color: #008585;
 }
 
 hr {
   border-top: 2px solid rgba(0, 0, 0, .2);
   border-radius: 1px;
+  border-color: #74a892;
 }
 
 body {
     height: 100%;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Rubik', sans-serif !important;
+}
+
+.text-muted {
+    font-size: 0.7em;
 }
 
 #header_small {
@@ -288,7 +293,7 @@ body {
 }
 
 #page_home_hero_date {
-    color: darkviolet;
+    color: #c7522a;
 }
 
 #page_home_hero_image img {
