@@ -35,6 +35,19 @@ body {
     border-color: #74a892 !important;
 }
 
+.logo-on-top {
+    height: 220px;
+}
+
+
+@media (max-width: 600px) {
+    .logo-on-top {
+        height: auto;
+        width: 80%;
+        padding: 20px 0;
+    }
+}
+
 .text-muted {
     font-size: 0.7em;
 }

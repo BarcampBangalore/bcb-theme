@@ -32,7 +32,9 @@
       <div class="container">
         <div class="row">
           <div class="col-12" style="text-align: center;">
-          <a class="navbar-brand" href="<?php echo home_url( '/' ); ?>"><img height="200px" src="<?php bloginfo('template_url'); ?>/images/logo-bcb22.png" alt="test"></a>
+          <a class="navbar-brand" href="<?php echo home_url( '/' ); ?>">
+            <img class="logo-on-top" src="<?php bloginfo('template_url'); ?>/images/logo-bcb22.png" alt="test">
+          </a>
           </div>
         </div>
       </div>
