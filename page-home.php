@@ -155,31 +155,42 @@
     <div class="col-lg-12 mb-10">
       <h1 class="pb-5 section-heading">Sponsors</h1>
     </div>
-    <div class="col-lg-4">
-      <h2>Friends of Barcamp </h2>
-      <a href="https://barcampbangalore.com/bcb/about-janastu"><img height="100px" src="<?php bloginfo('template_url');?>/images/sponsors/janastu_logo.gif" /></a>
-
-      <p>Janastu</p>
-    </div><!-- /.col-lg-4 -->
-    <div class="col-lg-4">
-      <h2>Venue Sponsor</h2>
-      <img height="100px" src="<?php bloginfo('template_url');?>/images/sponsors/logo-rvu.svg" />
-
-      <p>RV University, Bangalore</p>
-    </div><!-- /.col-lg-4 -->
-    <div class="col-lg-4">
-      <h2>Silver Sponsor</h2>
-      <a href="https://planning.barcampbangalore.com/announcing-foss-united-as-a-silver-sponsor-for-barcamp-bangalore-2022/"><img height="100px" src="<?php bloginfo('template_url');?>/images/sponsors/logo-fossunited.png" /></a>
-
-      <p>FOSS United</p>
-    </div><!-- /.col-lg-4 -->
-    <div class="col-lg-12">
+    <div class="col-lg-6">
       <h2>Gold Sponsor</h2>
       <img height="100px" src="<?php bloginfo('template_url');?>/images/money.png" />
 
       <p>Be the hero we need.</p>
       <p><a class="btn btn-sponsor-us" href="https://planning.barcampbangalore.com/call-for-sponsors-for-barcamp-bangalore-2022/" target="_blank">Sponsor us</a></p>
     </div>
+    <div class="col-lg-6">
+      <h2>Silver Sponsors</h2>
+      <div class="row">
+        <div class="col-lg-4">
+          <a href="https://planning.barcampbangalore.com/announcing-foss-united-as-a-silver-sponsor-for-barcamp-bangalore-2022/">
+            <img height="100px" src="<?php bloginfo('template_url');?>/images/sponsors/logo-fossunited.png" />
+            <p>FOSS United</p>
+          </a>
+        </div>
+        <div class="col-lg-8">
+          <a href="https://planning.barcampbangalore.com/announcing-hoochat-as-a-silver-sponsor-for-barcamp-bangalore-2022/">
+            <img width="250px" height="100px" src="<?php bloginfo('template_url');?>/images/sponsors/logo-hoochat.svg" />
+            <p>HooChat</p>
+          </a>
+        </div>
+      </div>
+    </div><!-- /.col-lg-4 -->
+    <div class="col-lg-6">
+      <h2>Friends of Barcamp </h2>
+      <a href="https://barcampbangalore.com/bcb/about-janastu"><img height="100px" src="<?php bloginfo('template_url');?>/images/sponsors/janastu_logo.gif" /></a>
+
+      <p>Janastu</p>
+    </div><!-- /.col-lg-4 -->
+    <div class="col-lg-6">
+      <h2>Venue Sponsor</h2>
+      <img height="100px" src="<?php bloginfo('template_url');?>/images/sponsors/logo-rvu.svg" />
+
+      <p>RV University, Bangalore</p>
+    </div><!-- /.col-lg-4 -->
   </div><!-- /.row -->
 
   <!-- /END THE FEATURETTES -->
