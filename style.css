@@ -54,6 +54,7 @@ body {
 .home-map {
     filter: sepia(10%);
     -webkit-filter: sepia(10%);
+    border: 5px solid #74a892;
 }
 
 .section-heading {
