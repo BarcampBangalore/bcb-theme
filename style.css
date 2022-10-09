@@ -39,7 +39,6 @@ body {
     height: 220px;
 }
 
-
 @media (max-width: 600px) {
     .logo-on-top {
         height: auto;
@@ -50,6 +49,11 @@ body {
 
 .text-muted {
     font-size: 0.7em;
+}
+
+.home-map {
+    filter: sepia(10%);
+    -webkit-filter: sepia(10%);
 }
 
 #header_small {
