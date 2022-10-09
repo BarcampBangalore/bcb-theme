@@ -56,6 +56,10 @@ body {
     -webkit-filter: sepia(10%);
 }
 
+.section-heading {
+    font-size: 50px;
+}
+
 #header_small {
     max-width: none;
 }

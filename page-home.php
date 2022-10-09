@@ -110,7 +110,7 @@
       </p>
     </div>
     <div class="col-md-5 order-md-1">
-    <img height="500px" src="<?php bloginfo('template_url');?>/images/hero-01.jpg" />
+      <img style="width: inherit; height: inherit;" src="<?php bloginfo('template_url');?>/images/hero-01.jpg" />
     </div>
   </div>
 
@@ -137,7 +137,7 @@
 
   <div class="row">
     <div class="col-lg-12 text-center mb-10">
-      <h1 class="pb-2 featurette-heading">Event venue</h1>
+      <h1 class="pb-2 section-heading">Event venue</h1>
       <p class="pb-2">RV University, RV Vidyanikethan Post 8th Mile, Mysore Rd, Bengaluru, Karnataka 560059</p>
       <div class="pb-4">
         <h2>How to reach</h2>
@@ -153,7 +153,7 @@
 
   <div class="row text-center">
     <div class="col-lg-12 mb-10">
-      <h1 class="pb-5 featurette-heading">Sponsors</h1>
+      <h1 class="pb-5 section-heading">Sponsors</h1>
     </div>
     <div class="col-lg-4">
       <h2>Friends of Barcamp </h2>
