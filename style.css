@@ -12,28 +12,39 @@
         Changelog:
 */
 
+:root {
+    --color1: #c7522a;
+    --color2: #e5c185;
+    --color2op: #e5c185c7;
+    --color3: #fbf2c4;
+    --color3op: #fbf2c4c7;
+    --color4: #74a892;
+    --color5: #008585;
+}
+
 html {
     height: 100%;
 }
 
 a {
-    color: #008585;
+    color: var(--color5);
 }
 
 hr {
   border-top: 2px solid rgba(0, 0, 0, .2);
   border-radius: 1px;
-  border-color: #74a892;
+  border-color: var(--color4);
 }
 
 body {
     height: 100%;
+    background: linear-gradient(to right, var(--color2op), var(--color3op));
     font-family: 'Rubik', sans-serif !important;
 }
 
 .border-top {
     border-width: 2px !important;
-    border-color: #74a892 !important;
+    border-color: var(--color4) !important;
 }
 
 .logo-on-top {
@@ -55,11 +66,15 @@ body {
 .home-map {
     filter: sepia(10%);
     -webkit-filter: sepia(10%);
-    border: 5px solid #74a892;
+    border: 5px solid var(--color4);
 }
 
 .section-heading {
     font-size: 50px;
+}
+
+.navbar {
+    background-color: var(--color5) !important;
 }
 
 #header_small {
@@ -320,7 +335,7 @@ body {
 }
 
 #page_home_hero_date {
-    color: #c7522a;
+    color: var(--color1);
 }
 
 #page_home_hero_image img {
@@ -338,13 +353,13 @@ body {
 }
 
 .atcb-button {
-    background-color: #008585 !important;
+    background-color: var(--color5) !important;
     border-color: #559077 !important;
 }
 
 .atcb-button:hover {
-    background-color: #c7522a !important;
-    border-color: #e5c185 !important;
+    background-color: var(--color1) !important;
+    border-color: var(--color3) !important;
 }
 
 .atcb-button-wrapper {
@@ -459,27 +474,27 @@ body {
 }
 
 .btn-search {
-    background-color: #c7522a;
+    background-color: var(--color1);
     color: white;
 }
 
 .btn-search:hover {
-    background-color: #74a892;
+    background-color: var(--color4);
     color: white;
 }
 
 .btn-sponsor-us {
-    background-color: #008585;
+    background-color: var(--color5);
     color: white;
 }
 
 .btn-sponsor-us:hover {
-    background-color: #c7522a;
+    background-color: var(--color1);
     color: white;
 }
 
 .dropdown-menu {
-    background-color: #fbf2c4;
+    background-color: var(--color3);
 }
 
 @media (min-width: 768px) {
@@ -1890,7 +1905,7 @@ input[type=checkbox].add-to-calendar-checkbox {
 
 #archives_page_bcb_selector .archive_selected
 {
-    background-color: #CA4514;
+    background-color: var(--color1);
     opacity: 1;
 }
 

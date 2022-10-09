@@ -18,7 +18,7 @@
 
 <?php wp_head(); ?>
 </head>
-<body style="background: linear-gradient(to right, #e5c185c7, #fbf2c4c7);">
+<body>
     <?php
     global $post;
     $post_slug = $post->post_name;
@@ -38,7 +38,7 @@
           </div>
         </div>
       </div>
-      <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #008585;">
+      <nav class="navbar navbar-expand-md navbar-dark">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
