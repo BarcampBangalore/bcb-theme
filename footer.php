@@ -25,8 +25,8 @@
       <div class="col-6 col-md">
         <h5>About</h5>
         <ul class="list-unstyled text-small">
-          <li><a target="_blank" href="/about">About BCB</a></li>
-          <li><a target="_blank" href="/faq">FAQ</a></li>
+          <li><a target="_blank" href="<?php echo home_url() ?>/about">About BCB</a></li>
+          <li><a target="_blank" href="<?php echo home_url() ?>/faq">FAQ</a></li>
           <li><a target="_blank" href="https://planning.barcampbangalore.com/meet-the-team/">Team behind BCB</a></li>
         </ul>
       </div>
