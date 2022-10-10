@@ -12,17 +12,69 @@
         Changelog:
 */
 
+:root {
+    --color1: #c7522a;
+    --color2: #e5c185;
+    --color2op: #e5c185c7;
+    --color3: #fbf2c4;
+    --color3op: #fbf2c4c7;
+    --color4: #74a892;
+    --color5: #008585;
+}
+
 html {
     height: 100%;
 }
 
 a {
-    color: inherit;
+    color: var(--color5);
+}
+
+hr {
+  border-top: 2px solid rgba(0, 0, 0, .2);
+  border-radius: 1px;
+  border-color: var(--color4);
 }
 
 body {
     height: 100%;
-    font-family: 'Lato', sans-serif;
+    background: linear-gradient(to right, var(--color2op), var(--color3op));
+    font-family: 'Rubik', sans-serif !important;
+}
+
+.border-top {
+    border-width: 2px !important;
+    border-color: var(--color4) !important;
+}
+
+.logo-on-top {
+    height: 220px;
+}
+
+@media (max-width: 600px) {
+    .logo-on-top {
+        height: auto;
+        width: 80%;
+        padding: 20px 0;
+    }
+}
+
+.text-muted {
+    font-size: 0.7em;
+}
+
+.home-map {
+    filter: sepia(10%);
+    -webkit-filter: sepia(10%);
+    border: 5px solid var(--color4);
+}
+
+.section-heading {
+    font-size: 50px;
+}
+
+.navbar {
+    background-color: var(--color5) !important;
 }
 
 #header_small {
@@ -49,22 +101,21 @@ body {
 #search_slider_mobile {
     position: absolute;
     top: 40px;
-    right: -90%;
     background: linear-gradient(to right, #eff0bb, #d5d3dd);
-    padding: 40px 10px 20px 25px;
+    padding: 0px 10px 20px 25px;
     width: 90%;
-    height: 130px;
 }
 
 #search_slider_mobile #searchform {
     width: 85%;
+    margin-top: 20px;
 }
 
 #search_slider_mobile #searchform #s {
-    background: rgba(0, 0, 0, 0.17);
-    border: none;
-    border-radius: 15px;
-    box-shadow: inset -1px -1px 2px #666666;
+    background: #efefef;
+    border: 1px solid #aaa;
+    border-right-width: 0px;
+    border-radius: 4px 0 0 4px;
     padding: 4px;
     color: #000000;
     width: 100%;
@@ -82,7 +133,7 @@ body {
 }
 
 #header_large {
-    padding-left: 58px;
+    /* padding-left: 58px; */
     height: 100vh;
     position: sticky;
     top: 0px;
@@ -117,7 +168,6 @@ body {
 }
 
 #searchform {
-    width: 75%;
     margin-top: 40px;
 }
 
@@ -127,16 +177,17 @@ body {
 
 #searchform .col {
     padding-left: 0px;
+    display: flex;
 }
 
 #searchform #s {
-    background: rgba(0, 0, 0, 0.17);
-    border: none;
-    border-radius: 15px;
-    box-shadow: inset -1px -1px 2px #666666;
+    background: #efefef;
+    border: 1px solid #aaa;
+    border-right-width: 0px;
+    border-radius: 4px 0 0 4px;
     padding: 4px;
-    color: #FFFFFF;
     width: 100%;
+    display: flex;
 }
 
 #searchform #s::placeholder {
@@ -144,8 +195,11 @@ body {
 }
 
 #searchform button {
-    background: none;
-    border: none;
+    background: #efefef;
+    border: 1px solid #aaa;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+    width: 35px;
 }
 
 #logins {
@@ -160,6 +214,7 @@ body {
 #master_container {
     /*height: 100%;*/
     position: relative;
+    margin-top: 60px;
 }
 
 #background_icons_container {
@@ -179,18 +234,18 @@ body {
 }
 
 #background_icons_container #ruler_icon {
-    top: 21%;
-    right: 18%;
+    top: 11%;
+    right: 48%;
 }
 
 #background_icons_container #grid_icon {
     top: 24%;
-    right: 4%;
+    right: 64%;
 }
 
 #background_icons_container #web_icon {
     top: 43%;
-    right: 3%;
+    right: 73%;
 }
 
 #background_icons_container #cloud_icon {
@@ -200,12 +255,12 @@ body {
 
 #background_icons_container #loopy_icon {
     top: 79%;
-    right: 19%;
+    right: 59%;
 }
 
 #background_icons_container #mouse_icon {
     top: 74%;
-    right: 6%;
+    right: 86%;
 }
 
 #background_icons_container_small {
@@ -258,24 +313,92 @@ body {
     padding: 20px 0px 0px 0px;
     margin-bottom: 90px;
 }
-
+/*
 @media (min-width: 768px) {
     #page_master_container {
         padding-right: 50px;
     }
-}
+} */
 
 #page_home_container {
     color: #FFFFFF;
     /*height: 75vh;*/
 }
 
+.page_home_hero {
+    background-color: rgba(255, 255, 255, 0.2);
+    min-height: fit-content;
+    margin-bottom: 20px;
+    padding-left: 50px;
+    border-radius: 10px;
+    color: #333;
+}
 
-#page_home_blr_logo img {
+#page_home_hero_date {
+    color: var(--color1);
+}
+
+#page_home_hero_image img {
+    width: 100%;
+    border-radius: 0 10px 10px 0;
+}
+
+.page_home_section {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 50px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #333;
+    border-radius: 10px;
+}
+
+.atcb-button {
+    background-color: var(--color5) !important;
+    border-color: #559077 !important;
+}
+
+.atcb-button:hover {
+    background-color: var(--color1) !important;
+    border-color: var(--color3) !important;
+}
+
+.atcb-button-wrapper {
+    --atcb-shadow-button: none !important;
+    --atcb-shadow-button-hover: none !important;
+    --atcb-shadow-button-active: none !important;
+    --atcb-shadow-list: none !important;
+    padding: 0px !important;
+}
+
+#page_home_intro img {
     width: 50%;
 }
 
+#page_home_intro {
+    font-size: 20px;
+    padding: 30px 0 30px 0;
+}
 
+#page_home_intro h3 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    #page_home_hero_image img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        object-position: 100% 42%;
+        border-radius: 0 0 10px 10px;
+    }
+    .page_home_hero {
+        padding-left: 0;
+    }
+    #page_home_intro {
+        padding: 50px;
+    }
+}
 
 #page_home_chosen_container {
     margin: 10px 15px 20px 15px;
@@ -285,12 +408,12 @@ body {
 
 
 .airmeet_link_container {
-    
+
     background: rgba(242,161,75,0.6);
     padding: 10px;
     color: #424242;
     border-radius: 8px;
-   
+
 }
 
 .airmeet_link_container a {
@@ -350,12 +473,133 @@ body {
     max-width: 175px;
 }
 
+.btn-search {
+    background-color: var(--color1);
+    color: white;
+}
+
+.btn-search:hover {
+    background-color: var(--color4);
+    color: white;
+}
+
+.btn-sponsor-us {
+    background-color: var(--color5);
+    color: white;
+}
+
+.btn-sponsor-us:hover {
+    background-color: var(--color1);
+    color: white;
+}
+
+.dropdown-menu {
+    background-color: var(--color3);
+}
+
 @media (min-width: 768px) {
     .page_home_sponsor img {
         height: 70px;
         max-width: 200px;
     }
 }
+
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  /* padding-top: 3rem; */
+  /* padding-bottom: 6rem; */
+  color: #5a5a5a;
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 4rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 32rem;
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: 400;
+}
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -.05rem;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+
+footer {
+  bottom: 0px;
+  margin-bottom: 80px;
+}
+
 
 #page_about_container {
     width: 100%;
@@ -430,12 +674,12 @@ body {
 }
 
 .sessions_page_list_header {
-    
+
     text-align: center;
     font-size: 2em;
     padding: 30px 20px 20px 20px;
     color: #FFFFFF;
-    
+
 }
 
 #sessions_page_track_buttons_container {
@@ -483,9 +727,34 @@ body {
     width: 100%;
 }
 
+.avatar {
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.card {
+  background-color: #ffffffd4 !important;
+}
+
+.card-meta {
+    font-size: 14px;
+}
+
+.session-card {
+    background-color: #e1f5ff;
+    margin: 0 10px 10px 0;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.archive-session-card {
+    min-height: 180px;
+}
+
+
 .sessions_page_card_content {
-    background: linear-gradient(to right, #eff0bb, #d5d3dd);
-    border-width: 4px;
     margin-bottom: 15px;
 }
 
@@ -495,7 +764,6 @@ body {
 }
 
 .sessions_page_card_avatar a img {
-    margin: 25px 5px;
     background-color: #E6E6E6;
     border-radius: 5px;
 }
@@ -515,7 +783,7 @@ body {
 
 .sessions_page_card_author {
     color: #666666;
-    font-size: 14px; 
+    font-size: 14px;
 }
 
 .sessions_page_card_comments_stats {
@@ -707,15 +975,46 @@ body {
 
 #page_single_wrapper {
     height: auto;
-    background: linear-gradient(to right, #eff0bb, #d5d3dd);
+    background-color: #ffffffa0;
     margin-top: 40px;
-    padding-top: 30px;
+    padding-top: 20px;
+    font-size: 1.2rem;
 }
 
 .single_page_box {
-    background-color: #e5e5e5;
+    background-color: #ffffffa0;
     padding: 15px;
     margin-bottom: 15px;
+}
+
+.single-page-attending-widget {
+    padding-left: 10px;
+    margin-top: 10px;
+}
+
+.single-page-attending-widget button {
+    margin-right: 2px;
+}
+
+.single-page-attending-widget img {
+    border-radius: 10px;
+    margin-right: -10px;
+}
+
+.single-page-attending-count {
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.btn-attending-single {
+    background-color: #32b5a2;
+    border-color: #32b5a2;
+    color: white;
+}
+
+.btn-attending-single:hover {
+    background-color: #1aab95;
+    color: white;
 }
 
 #single_page_avatar_container #single_page_attend_area img {
@@ -723,8 +1022,8 @@ body {
 }
 
 #single_page_avatar {
-    text-align: center;
-    margin-bottom: 15px;
+    padding-left: 10px;
+    padding-top: 10px;
 }
 
 #single_page_avatar img {
@@ -1304,203 +1603,216 @@ body {
 }
 
 /* Sharing buttons Start*/
-
-.resp-sharing-button__link, .resp-sharing-button__icon {
-    display: inline-block
+.resp-sharing-button__link,
+.resp-sharing-button__icon {
+  display: inline-block
 }
 
 .resp-sharing-button__link {
-    text-decoration: none;
-    color: #fff;
-    margin: 0.5em
+  text-decoration: none;
+  color: #fff;
+  margin: 0.5em
 }
 
 .resp-sharing-button {
-    border-radius: 5px;
-    transition: 25ms ease-out;
-    padding: 0.5em 0.75em;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif
+  border-radius: 5px;
+  transition: 25ms ease-out;
+  padding: 0.5em 0.75em;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif
 }
 
 .resp-sharing-button__icon svg {
-    width: 1em;
-    height: 1em;
-    margin-right: 0.4em;
-    vertical-align: top
+  width: 1em;
+  height: 1em;
+  margin-right: 0.4em;
+  vertical-align: top
 }
 
 .resp-sharing-button--small svg {
-    margin: 0;
-    vertical-align: middle
+  margin: 0;
+  vertical-align: middle
 }
 
 /* Non solid icons get a stroke */
-
 .resp-sharing-button__icon {
-    stroke: #fff;
-    fill: none
+  stroke: #fff;
+  fill: none
 }
 
 /* Solid icons get a fill */
-
-.resp-sharing-button__icon--solid, .resp-sharing-button__icon--solidcircle {
-    fill: #fff;
-    stroke: none
+.resp-sharing-button__icon--solid,
+.resp-sharing-button__icon--solidcircle {
+  fill: #fff;
+  stroke: none
 }
 
 .resp-sharing-button--twitter {
-    background-color: #55acee
+  background-color: #55acee
 }
 
 .resp-sharing-button--twitter:hover {
-    background-color: #2795e9
+  background-color: #2795e9
 }
 
 .resp-sharing-button--pinterest {
-    background-color: #bd081c
+  background-color: #bd081c
 }
 
 .resp-sharing-button--pinterest:hover {
-    background-color: #8c0615
+  background-color: #8c0615
 }
 
 .resp-sharing-button--facebook {
-    background-color: #3b5998
+  background-color: #3b5998
 }
 
 .resp-sharing-button--facebook:hover {
-    background-color: #2d4373
+  background-color: #2d4373
 }
 
 .resp-sharing-button--tumblr {
-    background-color: #35465C
+  background-color: #35465C
 }
 
 .resp-sharing-button--tumblr:hover {
-    background-color: #222d3c
+  background-color: #222d3c
 }
 
 .resp-sharing-button--reddit {
-    background-color: #5f99cf
+  background-color: #5f99cf
 }
 
 .resp-sharing-button--reddit:hover {
-    background-color: #3a80c1
+  background-color: #3a80c1
 }
 
 .resp-sharing-button--google {
-    background-color: #dd4b39
+  background-color: #dd4b39
 }
 
 .resp-sharing-button--google:hover {
-    background-color: #c23321
+  background-color: #c23321
 }
 
 .resp-sharing-button--linkedin {
-    background-color: #0077b5
+  background-color: #0077b5
 }
 
 .resp-sharing-button--linkedin:hover {
-    background-color: #046293
+  background-color: #046293
 }
 
 .resp-sharing-button--email {
-    background-color: #777
+  background-color: #777
 }
 
 .resp-sharing-button--email:hover {
-    background-color: #5e5e5e
+  background-color: #5e5e5e
 }
 
 .resp-sharing-button--xing {
-    background-color: #1a7576
+  background-color: #1a7576
 }
 
 .resp-sharing-button--xing:hover {
-    background-color: #114c4c
+  background-color: #114c4c
 }
 
 .resp-sharing-button--whatsapp {
-    background-color: #25D366
+  background-color: #25D366
 }
 
 .resp-sharing-button--whatsapp:hover {
-    background-color: #1da851
+  background-color: #1da851
 }
 
 .resp-sharing-button--hackernews {
-    background-color: #FF6600
+background-color: #FF6600
 }
-
-.resp-sharing-button--hackernews:hover, .resp-sharing-button--hackernews:focus {
-    background-color: #FB6200
-}
+.resp-sharing-button--hackernews:hover, .resp-sharing-button--hackernews:focus {   background-color: #FB6200 }
 
 .resp-sharing-button--vk {
-    background-color: #507299
+  background-color: #507299
 }
 
 .resp-sharing-button--vk:hover {
-    background-color: #43648c
+  background-color: #43648c
 }
 
 .resp-sharing-button--facebook {
-    background-color: #3b5998;
-    border-color: #3b5998;
+  background-color: #3b5998;
+  border-color: #3b5998;
 }
 
-.resp-sharing-button--facebook:hover, .resp-sharing-button--facebook:active {
-    background-color: #2d4373;
-    border-color: #2d4373;
+.resp-sharing-button--facebook:hover,
+.resp-sharing-button--facebook:active {
+  background-color: #2d4373;
+  border-color: #2d4373;
 }
 
 .resp-sharing-button--twitter {
-    background-color: #55acee;
-    border-color: #55acee;
+  background-color: #55acee;
+  border-color: #55acee;
 }
 
-.resp-sharing-button--twitter:hover, .resp-sharing-button--twitter:active {
-    background-color: #2795e9;
-    border-color: #2795e9;
+.resp-sharing-button--twitter:hover,
+.resp-sharing-button--twitter:active {
+  background-color: #2795e9;
+  border-color: #2795e9;
+}
+
+.resp-sharing-button--email {
+  background-color: #777777;
+  border-color: #777777;
+}
+
+.resp-sharing-button--email:hover,
+.resp-sharing-button--email:active {
+  background-color: #5e5e5e;
+  border-color: #5e5e5e;
 }
 
 .resp-sharing-button--linkedin {
-    background-color: #0077b5;
-    border-color: #0077b5;
+  background-color: #0077b5;
+  border-color: #0077b5;
 }
 
-.resp-sharing-button--linkedin:hover, .resp-sharing-button--linkedin:active {
-    background-color: #046293;
-    border-color: #046293;
+.resp-sharing-button--linkedin:hover,
+.resp-sharing-button--linkedin:active {
+  background-color: #046293;
+  border-color: #046293;
 }
 
 .resp-sharing-button--reddit {
-    background-color: #5f99cf;
-    border-color: #5f99cf;
+  background-color: #5f99cf;
+  border-color: #5f99cf;
 }
 
-.resp-sharing-button--reddit:hover, .resp-sharing-button--reddit:active {
-    background-color: #3a80c1;
-    border-color: #3a80c1;
+.resp-sharing-button--reddit:hover,
+.resp-sharing-button--reddit:active {
+  background-color: #3a80c1;
+  border-color: #3a80c1;
 }
 
 .resp-sharing-button--whatsapp {
-    background-color: #25D366;
-    border-color: #25D366;
+  background-color: #25D366;
+  border-color: #25D366;
 }
 
-.resp-sharing-button--whatsapp:hover, .resp-sharing-button--whatsapp:active {
-    background-color: #1DA851;
-    border-color: #1DA851;
+.resp-sharing-button--whatsapp:hover,
+.resp-sharing-button--whatsapp:active {
+  background-color: #1DA851;
+  border-color: #1DA851;
 }
 
 .resp-sharing-button--telegram {
-    background-color: #54A9EB;
+  background-color: #54A9EB;
 }
 
 .resp-sharing-button--telegram:hover {
-    background-color: #4B97D1;
+  background-color: #4B97D1;
 }
+
 
 /* Sharing buttons End*/
 
@@ -1516,8 +1828,7 @@ body {
 .calendar-options {
     color: black;
     text-align: left;
-    margin-top: .5rem;
-    padding: .5rem;
+    margin-left: -2px;
 }
 
 #add-to-calendar-checkbox-label {
@@ -1594,7 +1905,7 @@ input[type=checkbox].add-to-calendar-checkbox {
 
 #archives_page_bcb_selector .archive_selected
 {
-    background-color: #CA4514;
+    background-color: var(--color1);
     opacity: 1;
 }
 
@@ -1607,11 +1918,9 @@ input[type=checkbox].add-to-calendar-checkbox {
 
 .archive_sponsors_wrapper
 {
-    padding: 30px;
-    background-color: #FFFFFF;
-    border-radius: 3px;
-    margin: 0px 20px;
-
+    background-color: #ffffffa0;
+    margin-bottom: 15px;
+    padding: 15px 0;
 }
 
 .archive_sponsors_wrapper h2
@@ -1644,3 +1953,16 @@ input[type=checkbox].add-to-calendar-checkbox {
     max-height: 50px;
 }
 
+.nav-link {
+  color: #ffffffbd !important;
+}
+
+.nav-link:hover {
+  color: #ffffffee !important;
+}
+
+@media (max-width: 992px) {
+  .first-featurette {
+    margin-top: 2em;
+  }
+}

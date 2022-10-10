@@ -6,7 +6,7 @@ function insertSponsors($bcbname)
         case "BCB 2021 Virtual":
             ?>
 
-            <div class="archive_sponsors_wrapper">
+            <div>
                 <h2>Sponsors for <?php echo $bcbname; ?></h2>
 
                 <div class="archive_sponsor">
@@ -19,13 +19,13 @@ function insertSponsors($bcbname)
                     </a>
 
                 </div>
-                
+
                 <div class="archive_sponsor">
                     <h3 class="archive_sponsor_title">Friends of Barcamp</h3>
-                    
-                    <div><img class="archive_sponsor_logo" src="<?php bloginfo('template_url')?>/images/sponz_logos/janastu_logo.gif" /></div>   
+
+                    <div><img class="archive_sponsor_logo" src="<?php bloginfo('template_url')?>/images/sponz_logos/janastu_logo.gif" /></div>
                     <div>Janastu</div>
-                    
+
 
                 </div>
             </div>
@@ -35,7 +35,7 @@ break;
         case "BCB Spring 2019":
             ?>
 
-            <div class="archive_sponsors_wrapper">
+            <div>
                 <h2>Sponsors for <?php echo $bcbname; ?></h2>
 
                 <div class="archive_sponsor">
@@ -48,13 +48,13 @@ break;
                     </a>
 
                 </div>
-                
+
                 <div class="archive_sponsor">
                     <h3 class="archive_sponsor_title">Friends of Barcamp</h3>
-                    
-                    <div><img class="archive_sponsor_logo" src="<?php bloginfo('template_url')?>/images/sponz_logos/janastu_logo.gif" /></div>   
+
+                    <div><img class="archive_sponsor_logo" src="<?php bloginfo('template_url')?>/images/sponz_logos/janastu_logo.gif" /></div>
                     <div>Janastu</div>
-                    
+
 
                 </div>
             </div>
@@ -64,7 +64,7 @@ break;
         case "BCB Spring 2018":
             ?>
 
-            <div class="archive_sponsors_wrapper">
+            <div>
                 <h2>Sponsors for <?php echo $bcbname; ?></h2>
                 <div class="archive_sponsor">
                     <h3 class="archive_sponsor_title">Gold Sponsor</h3>
@@ -114,7 +114,7 @@ break;
         case "BCB Spring 2016":
             ?>
 
-        <div class="archive_sponsors_wrapper">
+        <div>
             <h2>Sponsors for <?php echo $bcbname; ?></h2>
 
             <div class="archive_sponsor">
@@ -129,7 +129,7 @@ break;
         case "BCB Monsoon 2015":
             ?>
 
-            <div class="archive_sponsors_wrapper">
+            <div>
                 <h2>Sponsors for <?php echo $bcbname; ?></h2>
 
                 <div class="archive_sponsor">
@@ -144,7 +144,7 @@ break;
         case "bcbxah":
             ?>
 
-            <div class="archive_sponsors_wrapper">
+            <div>
                 <h2>Sponsors for BCBXAntHill</h2>
                 <!-- <div class="archive_sponsor">
                     <h3 class="archive_sponsor_title">Event Partner</h3>
@@ -162,7 +162,7 @@ break;
         case "bcb17":
             ?>
 
-            <div class="archive_sponsors_wrapper">
+            <div>
                 <h2>Sponsors for <?php echo $bcbname; ?></h2>
                 <!-- <div class="archive_sponsor">
                     <h3 class="archive_sponsor_title">Event Partner</h3>
@@ -181,7 +181,7 @@ break;
         case "bcb16":
             ?>
 
-            <div class="archive_sponsors_wrapper">
+            <div>
                 <h2>Sponsors for <?php echo $bcbname; ?></h2>
                 <div class="archive_sponsor">
                     <h3 class="archive_sponsor_title">Event Partner</h3>
@@ -200,7 +200,7 @@ break;
         case "bcb15":
             ?>
 
-            <div class="archive_sponsors_wrapper">
+            <div>
                 <h2>Sponsors for <?php echo $bcbname ?></h2>
                 <div class="archive_sponsor">
                     <h3 class="archive_sponsor_title">Event Partner</h3>
@@ -224,7 +224,7 @@ break;
         case "bcb14":
             ?>
 
-            <div class="archive_sponsors_wrapper">
+            <div>
                 <h2>Sponsors for <?php echo $bcbname ?></h2>
                 <div class="archive_sponsor">
                     <h3 class="archive_sponsor_title">Event Partner</h3>
@@ -260,7 +260,7 @@ break;
         case "bcb13":
             ?>
 
-            <div class="archive_sponsors_wrapper">
+            <div>
                 <h2>Sponsors for <?php echo $bcbname ?></h2>
                 <div class="archive_sponsor">
                     <h3 class="archive_sponsor_title">Event Partner</h3>
@@ -282,7 +282,7 @@ break;
         case "bcb12":
             ?>
 
-            <div class="archive_sponsors_wrapper">
+            <div>
                 <h2>Sponsors for <?php echo $bcbname ?></h2>
                 <div class="archive_sponsor">
                     <h3 class="archive_sponsor_title">Event Partner</h3>
@@ -304,7 +304,7 @@ break;
         case "bcb11":
             ?>
 
-            <div class="archive_sponsors_wrapper">
+            <div>
                 <h2>Sponsors for <?php echo $bcbname ?></h2>
                 <div class="archive_sponsor">
                     <h3 class="archive_sponsor_title">Event Partner</h3>
@@ -323,7 +323,7 @@ break;
         case "bcb10":
             ?>
 
-            <div class="archive_sponsors_wrapper">
+            <div>
                 <h2>Sponsors for <?php echo $bcbname ?></h2>
                 <div class="archive_sponsor">
                     <h3 class="archive_sponsor_title">Event Partner</h3>
@@ -345,7 +345,7 @@ break;
         case "bcb9":
             ?>
 
-            <div class="archive_sponsors_wrapper">
+            <div>
                 <h2>Sponsors for <?php echo $bcbname ?></h2>
                 <div class="archive_sponsor">
                     <h3 class="archive_sponsor_title">Event Partner</h3>
@@ -367,7 +367,7 @@ break;
         case "bcb8":
             ?>
 
-            <div class="archive_sponsors_wrapper">
+            <div>
                 <h2>Sponsors for <?php echo $bcbname ?></h2>
                 <div class="archive_sponsor">
                     <h3 class="archive_sponsor_title">Event Partner</h3>
@@ -412,12 +412,13 @@ get_header();?>
 
     </script>
 
-    <div id="archives_page_content" class="d-flex justify-content-center">
 
         <div class="container">
             <div class="row">
-                <div id="archives_page_header" class="col-xs-12 single_page_box">
-                    <div id="archives_page_title"><?php the_title();?></div>
+                <div class="col-12 p-5">
+                    <div id="archives_page_title">
+                        <h1 class="display-4 text-center"><?php the_title();?></h1>
+                    </div>
                     <div id="archives_page_bcb_selector_buttons">
                         <ul id="archives_page_bcb_selector">
                             <li class="archive_selected"><a class="archives_current" data-contentdiv="archive_1863">BCB 2021 Virtual</a></li>
@@ -446,7 +447,7 @@ get_header();?>
 $techlash_categories = array(639, 787, 933, 1065, 1232, 1465);
 $archive_categories = array(
     1863 => "BCB 2021 Virtual",
-    1759 => "BCB Spring 2019", 1691 => "BCB Spring 2018", 
+    1759 => "BCB Spring 2019", 1691 => "BCB Spring 2018",
     1556 => "BCB Spring 2016", 1458 => "BCB Monsoon 2015", 1366 => 'bcbxah',
     1224 => 'bcb17', 1057 => 'bcb16', 931 => 'bcb15',
     785 => 'bcb14', 636 => 'bcb13', 479 => 'bcb12',
@@ -454,73 +455,42 @@ $archive_categories = array(
 foreach ($archive_categories as $archive_cat => $archive_catname):
 ?>
             <div id="archive_<?php echo $archive_cat; ?>" class="archives_parent" >
-                <div class="row">
-                    <div class="single_page_box">
+                <div class="row archive_sponsors_wrapper">
+                    <div class="col-12 p-2 text-center">
                         <?php insertSponsors($archive_catname);?>
                     </div>
                 </div>
 
                 <div class="row" id="archive_cards_row">
-
-                        <?php
-query_posts('cat=' . $archive_cat);
-while (have_posts()): the_post();?>
-
-	                        <div class="sessions_page_card col-12 col-md-6" data-track-id="<?php echo $track_id; ?>">
-	                            <div class="sessions_page_card_content container-fluid track_color_border_0">
-	                                <div class="row">
-	                                    <div class="sessions_page_card_avatar">
-	                                        <?php echo '<a href="' . get_author_posts_url(get_the_author_meta('ID')) . '">' . get_avatar(get_the_author_meta('ID'), 48) . '</a>'; ?>
-	                                    </div>
-	                                    <div class="sessions_page_card_right_column track_color_border_0 col">
-	                                        <div class="sessions_page_card_title">
-
-	                                            <?php
-                                                    $titlestr = get_the_title();
-                                                    $title_trimmed = false;
-                                                    if (strlen($titlestr) > 50) {
-                                                        $titlestr = substr($titlestr, 0, 50) . "...";
-                                                        $title_trimmed = true;
-                                                    }
-                                                    ?>
-	                                            <a href="<?php echo get_permalink(); ?>" <?php if ($title_trimmed) {echo 'title="' . get_the_title() . '"';}?>>
-	                                                <?php echo $titlestr; ?>
-	                                            </a>
-	                                        </div>
-	                                        <div class="sessions_page_card_author">
-	                                            <?php echo '<a href="' . get_author_posts_url(get_the_author_meta('ID')) . '">' . get_the_author_meta('user_nicename') . '</a>'; ?>
-	                                        </div>
-	                                        <div class="sessions_page_card_bottomarea">
-
-	                                            <div class="sessions_page_card_comments_stats">
-	                                                <div class="sessions_page_card_comments_icon">
-	                                                    <img src="<?php echo get_bloginfo('template_url') . '/images/icons-21.png' ?>" title="Comments" />
-	                                                </div>
-	                                                <div class="sessions_page_card_comments_count">
-	                                                    <?php comments_number('0', '1', '%');?>
-	                                                </div>
-	                                            </div>
-
-	                                            <div class="sessions_page_card_attendees_stats">
-	                                                <div class="sessions_page_card_attendees_icon">
-	                                                    <img src="<?php echo get_bloginfo('template_url') . '/images/icons-20.png' ?>" title="Attendees" />
-	                                                </div>
-	                                                <div id="sessions_page_card_attendees_count_<?php echo get_the_ID(); ?>" class="sessions_page_card_attendees_count">
-	                                                    <?php echo attending_users_count(get_the_ID()) ?>
-	                                                </div>
-	                                            </div>
-
-	                                            <div class="sessions_page_card_attend_button" data-postid="<?php echo get_the_ID(); ?>">
-	                                                <?php echo get_my_attending_button(get_the_ID()); ?>
-	                                            </div>
-	                                        </div>
-	                                    </div>
-	                                </div>
+                    <div class="col-12 p-2 text-center">
+                        <h2>Sessions</h2>
+                    </div>
+                    <?php
+                    query_posts('cat=' . $archive_cat);
+                    while (have_posts()): the_post();
+                    ?>
+                        <div class="col-md-6">
+                            <div class="card archive-session-card p-3 mb-2">
+                                <div class="d-flex justify-content-between">
+                                    <div class="d-flex flex-row align-items-center">
+                                        <div class="icon"><?php echo '<a href="' . get_author_posts_url(get_the_author_meta('ID')) . '">' . get_avatar(get_the_author_meta('ID'), 64) . '</a>'; ?></div>
+                                        <div class="ms-2 c-details">
+                                            <h6 class="mb-0"><?php echo '<a href="' . get_author_posts_url(get_the_author_meta('ID')) . '">' . get_the_author_meta('display_name') . '</a>'; ?></h6>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="badge"> <span>Design</span> </div> -->
+                                </div>
+                                <div class="mt-2">
+                                    <h5 class="heading"><a href="<?php echo get_permalink(); ?>" title=""><?php echo get_the_title(); ?></a></h5>
+                                    <div class="mt-2">
+                                        <div class="mt-2">
+                                        <span class="card-meta"><?php echo attending_users_count(get_the_ID()) ?> attendees</span>,
+                                        <span class="card-meta"><?php comments_number('0', '1', '%');?> comments</span> </div>
+                                    </div>
                                 </div>
                             </div>
-
-
-		                        <?php endwhile;?>
+                        </div>
+		            <?php endwhile;?>
 
                 </div>
             </div>
@@ -531,7 +501,6 @@ while (have_posts()): the_post();?>
 
     </div>
 
-</div>
 
 
 <?php get_footer();?>

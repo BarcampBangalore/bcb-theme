@@ -9,8 +9,9 @@ function neobcb21_enqueue_scripts()
     wp_enqueue_script("fittext", get_bloginfo('template_url') . "/scripts/FitText/jquery.fittext.js");
 
     wp_enqueue_script("my_script", get_bloginfo('template_url') . "/scripts/script.js");
+    wp_enqueue_script("bootstrap-js", "https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js");
 
-    wp_enqueue_style('bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css');
+    wp_enqueue_style('bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css');
 //    wp_enqueue_style('font-awesome', get_bloginfo('template_url') . "/font-awesome-4.7.0/css/font-awesome.min.css");
     wp_enqueue_style('font-awesome', get_bloginfo('template_url') . "/fontawesome-free-5.15.2-web/css/all.css");
     wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css?family=Lato');
@@ -190,8 +191,20 @@ function get_my_attending_button_single($postid)
  *
  **************************************************************/
 
+add_action('rest_api_init', function() {
+    register_rest_route('custom', '/sessions', array(
+        'methods' => 'GET',
+        'callback' => 'getSessions'
+    ));
+});
 
-
+function getSessions($data) {
+    $post = get_posts(array(
+        'name' => $data->get_param('slug'),
+        'post_status' => 'any'
+    ));
+    return $post;
+}
 
 
 /**************************************************************
@@ -204,24 +217,24 @@ function get_my_attending_button_single($postid)
 
 function get_current_cats(bool $get_as_string)
 {
-    
-    
+
+
     // NOTE -  The Order of the categories matters! It has to be same as the icons on the sessions page.
-    
+
     // Tech, Design, Mobile & Web, Bangalore LIfestyle, Scaling Infra, Entrepreneurship, Rest of world
-    
-    $tracks = array(1868, 1864, 1866, 1869, 1867, 1865, 1870);  // BCB 2021 Virtual
-//    $tracks = array(1760, 1761, 1762, 1763, 1764, 1765, 1767);  // prod - bcb spring 2019
+
+    // $tracks = array(1868, 1864, 1866, 1869, 1867, 1865, 1870);  // BCB 2021 Virtual
+   $tracks = array(1760, 1761, 1762, 1763, 1764, 1765, 1767);  // prod - bcb spring 2019
 //    $tracks = array(1692, 1693, 1694, 1695, 1696, 1697, 1698);  // prod
 //    $tracks = array(1694, 1695, 1696, 1697, 1698, 1699, 1700);  // staging
 //    $tracks = array(5, 6, 7, 8, 9, 10, 11);   // dev
-    
+
     if ($get_as_string) {
         return implode(", ", $tracks);
     } else {
         return $tracks;
     }
-    
+
 }
 
 
@@ -231,25 +244,25 @@ function get_current_cats(bool $get_as_string)
  */
 function get_chosen_track_ids() {
     return array(7354, 7363);
-    
-//    return array(7300, 7302);    
+
+//    return array(7300, 7302);
 }
 
 
 
 function get_archived_track_ids() {
-    
+
     return array();
 }
 
 
 /**
  * Return links to 2 airmeet session slots
- * 
+ *
  * @return type array
  */
 function get_airmeet_links() {
-    
+
     return array(
         "https://www.airmeet.com/e/1b53c000-774e-11eb-9356-e3ddd7103c02",
         "https://www.airmeet.com/e/1b53c000-774e-11eb-9356-e3ddd7103c02"

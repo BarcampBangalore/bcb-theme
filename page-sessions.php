@@ -1,20 +1,14 @@
 <?php get_header(); ?>
-    
-    
 
-<div id="page_sessions_container" class="d-flex justify-content-center">
-    
-    <div id="page_sessions_wrapper" class="d-flex flex-row-reverse flex-md-column">
-        
-        
-        
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+
         <script type="text/javascript">
-            
-            
             jQuery(function($) {
-  
+
                 $(".sessions_page_card_attend_button").on("click", ".neo_attend_button", function() {
-                    
+
                     var card = $(this);
                     card.html('<img src="<?php bloginfo('template_url') ?>/images/ajaxloader.gif" />');
                     $.post("<?php echo admin_url('admin-ajax.php?' . http_build_query(array("action" => "toggle_attend"))); ?>", {post_id: $(this).data("postid")}, function(data) {
@@ -34,32 +28,28 @@
                         }
                     }, 'json');
                 });
-                
+
 //                $(".sessions_page_track_button").hover(function(){
-//                    
+//
 //                    $(this).animate({width: '200px'}, 300);
 //                    $(this).find(".sessions_page_track_icon_name").show(300);
-//                
+//
 //                }, function(){
-//                    
+//
 //                    $(this).animate({width: '50px'}, 300);
 //                    $(this).find(".sessions_page_track_icon_name").hide(300);
-//                    
+//
 //                });
-                
+
             });
-            
-            
-            
-            
-            
+
             function showOnly(trackid){
-            
+
                 trackid = "" + trackid;
-            
+
                 console.log(trackid);
                 var $ = jQuery.noConflict();
-                var allSessionCards = document.getElementsByClassName("sessions_page_card");
+                var allSessionCards = document.getElementsByClassName("sessions-page-card");
                 console.log("cards - " + allSessionCards.length)
                 var lastSelected = false;
                 if(document.lastselected === trackid){
@@ -96,7 +86,7 @@
                         }
                     }
                 }
-                
+
                 console.log("showCards - " + showCards.length)
                 if(showCards.length > 0 ){
                     setTimeout(function(){
@@ -107,9 +97,7 @@
                             }
                     }, 400);
                 }
-                
-                
-                
+
                 var  showButton = new Array();
                 var allButtons = document.getElementsByClassName("sessions_page_track_button");
                 for (var i = 0; i < allButtons.length; i++) {
@@ -148,18 +136,11 @@
                 }
             }
         </script>
-        
-        <?php
-            
-            $tracks = get_current_cats(false);
-            
-            $track_counter = 0;
-            
-            
-        ?>
 
-        
-        
+        <?php
+            $tracks = get_current_cats(false);
+            $track_counter = 0;
+        ?>
         <div id="sessions_page_track_buttons_container"  class="row flex-column flex-md-row">
             <div class="sessions_page_track_button col-md" onclick="showOnly(<?php echo $track_counter; ?>)" data-tooltip="Technology" data-track-id="<?php echo $track_counter++; ?>">
                 <img src="<?php echo get_bloginfo('template_url').'/images/ICONS/web-icons-19.png' ?>" />
@@ -189,55 +170,63 @@
                 <img src="<?php echo get_bloginfo('template_url').'/images/ICONS/web-icons-18.png' ?>" />
                 <div class="sessions_page_track_icon_name">Rest of the world</div>
             </div>
-            
-            
         </div>
 
-        
-        
-        
-        
-        
-        
         <div id="sessions_page_list_container" >
             <div class="">
-                <div class="row">                    
+                <div class="row">
 
                     <?php
-                    $sessionsloop = new WP_Query(array('cat' => get_current_cats(true), 'nopaging' => true));  
-                    
-                    
+                    $sessionsloop = new WP_Query(array('cat' => get_current_cats(true), 'nopaging' => true));
+
                     if (!$sessionsloop->have_posts()) {
                         echo '<div class="sessioncard_no_session_message">No sessions in this track yet :)</div>';
                     }
-                    
                     while ($sessionsloop->have_posts()) : $sessionsloop->the_post();
-                    
                         ?>
 
                         <?php
-                        
                         // Do not show chosen or archived posts
-                        
                         if (array_search(get_the_ID(), array_merge(get_chosen_track_ids(), get_archived_track_ids())) !== false) {
-                            
                             continue;
                         }
-                        
-                        
+
+
                         $post_cats = get_the_category();
-                        
+
                         foreach (get_the_category() as $c) {
-                            
+
                             $track_id = array_search($c->cat_ID, $tracks);
-                            
+
                             if ($track_id !== FALSE) {
                                 break;
                             }
                         }
                         ?>
 
-                        <div class="sessions_page_card col-12 col-md-6" data-track-id="<?php echo $track_id; ?>">
+                        <div class="col-md-6 sessions-page-card" data-track-id="<?php echo $track_id; ?>">
+                            <div class="card archive-session-card p-3 mb-2">
+                                <div class="d-flex justify-content-between">
+                                    <div class="d-flex flex-row align-items-center">
+                                        <div class="icon"><?php echo '<a href="' . get_author_posts_url(get_the_author_meta('ID')) . '">' . get_avatar(get_the_author_meta('ID'), 64) . '</a>'; ?></div>
+                                        <div class="ms-2 c-details">
+                                            <h6 class="mb-0"><?php echo '<a href="' . get_author_posts_url(get_the_author_meta('ID')) . '">' . get_the_author_meta('display_name') . '</a>'; ?></h6>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="badge"> <span>Design</span> </div> -->
+                                </div>
+                                <div class="mt-2">
+                                    <h5 class="heading"><a href="<?php echo get_permalink(); ?>" title=""><?php echo get_the_title(); ?></a></h5>
+                                    <div class="mt-2">
+                                        <div class="mt-2">
+                                        <span class="card-meta"><?php echo attending_users_count(get_the_ID()) ?> attendees</span>,
+                                        <span class="card-meta"><?php comments_number('0', '1', '%');?> comments</span> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- <div class="sessions_page_card col-12 col-md-6" data-track-id="<?php echo $track_id; ?>">
                             <div class="sessions_page_card_content container-fluid track_color_border_<?php echo $track_id; ?>">
                                 <div class="row">
                                     <div class="sessions_page_card_avatar">
@@ -291,24 +280,14 @@
 
 
 
-                        </div>
+                        </div> -->
 
                     <?php endwhile; ?>
                 </div>
             </div>
-
         </div>
-
-        
-        
-        
-        
     </div>
-    
+  </div>
 </div>
-        
-        
-    
-    
+
 <?php get_footer(); ?>
-    
