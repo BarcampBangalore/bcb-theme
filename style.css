@@ -375,6 +375,10 @@ body {
     margin-bottom: 0.6em !important;
 }
 
+.atcb-text {
+    font-family: "Rubik";
+}
+
 #page_home_intro img {
     width: 50%;
 }
