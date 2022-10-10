@@ -354,7 +354,8 @@ body {
 
 .atcb-button {
     background-color: var(--color5) !important;
-    border-color: #559077 !important;
+    border-color: var(--color5) !important;
+    color: whitesmoke !important;
 }
 
 .atcb-button:hover {
@@ -368,6 +369,10 @@ body {
     --atcb-shadow-button-active: none !important;
     --atcb-shadow-list: none !important;
     padding: 0px !important;
+}
+
+.atcb-icon {
+    margin-bottom: 0.6em !important;
 }
 
 #page_home_intro img {
