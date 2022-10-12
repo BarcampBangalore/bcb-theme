@@ -223,11 +223,7 @@ function get_current_cats(bool $get_as_string)
 
     // Tech, Design, Mobile & Web, Bangalore LIfestyle, Scaling Infra, Entrepreneurship, Rest of world
 
-    // $tracks = array(1868, 1864, 1866, 1869, 1867, 1865, 1870);  // BCB 2021 Virtual
-   $tracks = array(1760, 1761, 1762, 1763, 1764, 1765, 1767);  // prod - bcb spring 2019
-//    $tracks = array(1692, 1693, 1694, 1695, 1696, 1697, 1698);  // prod
-//    $tracks = array(1694, 1695, 1696, 1697, 1698, 1699, 1700);  // staging
-//    $tracks = array(5, 6, 7, 8, 9, 10, 11);   // dev
+    $tracks = array(1881, 1876, 1878, 1875, 1880, 1877, 1879);  
 
     if ($get_as_string) {
         return implode(", ", $tracks);
@@ -255,16 +251,3 @@ function get_archived_track_ids() {
     return array();
 }
 
-
-/**
- * Return links to 2 airmeet session slots
- *
- * @return type array
- */
-function get_airmeet_links() {
-
-    return array(
-        "https://www.airmeet.com/e/1b53c000-774e-11eb-9356-e3ddd7103c02",
-        "https://www.airmeet.com/e/1b53c000-774e-11eb-9356-e3ddd7103c02"
-        );
-}
