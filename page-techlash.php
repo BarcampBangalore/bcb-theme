@@ -1,21 +1,20 @@
 <?php get_header(); ?>
-    
-    
-<div id="page_techlash_contaiiner">
-    <div id="page_techlash_wrapper" class="d-flex flex-column">
-        <div class="row">
-            <div id="page_techlash_header" class="col">
-                SIX minute brew
-            </div>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+        <div class="display-4 fitted-title text-center p-3">
+            SIX minute brew
         </div>
-        
+
         <div class="row">
             <div id="page_techlash_description" class="col">
                 <p><font size="3">Represent your company in the latest edition of Barcamp Bangalore Techlash.</font></p><font size="3">
                 <p>
                     Talk about your latest tech smartness in front of hundreds of techies.</p>
                 <p style="font-weight: bold; font-size: 20px;">6 Min per session and a total of 10 speakers.</p>
-                <!-- 
+                <!--
                 <p>To add your techlash session <a href="https://barcampbangalore.com/bcb/add-a-session"> click here.</a></p><br><br>
                 -->
                 </font>
@@ -31,14 +30,14 @@
         <div class="row">
             <h2 id="page_techlash_sessionheading" class="col">Techlash sessions for BCB Monsoon 2019</h2>
         </div>
-        
+
         <div id="page_techlash_post_parent" class="row">
             <?php
             $args = 'cat=1766';
             query_posts($args);
             while (have_posts()) : the_post();
                 ?>
-            
+
             <div class="col-12 col-md-6">
                 <div id="page_techlash_card" class="">
                     <div class="page_techlash_postname">
@@ -58,11 +57,12 @@
         </div>
 
 
-        
-        
+
+
     </div>
+  </div>
 </div>
-    
-    
+
+
 <?php get_footer(); ?>
-    
+
