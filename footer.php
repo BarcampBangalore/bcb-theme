@@ -7,7 +7,7 @@
       <div class="col-6 col-md">
         <h5>Reach us</h5>
         <ul class="list-unstyled text-small">
-          <li><a target="_blank" href="https://discord.gg/SqYxgd45wD">Discord</a></li>
+          <li><a target="_blank" href="https://discord.gg/MxgfAMXwFS">Discord</a></li>
           <li><a target="_blank" href="https://twitter.com/barcampbng">Twitter</a></li>
           <li><a target="_blank" href="https://www.facebook.com/barcampbng">Facebook</a></li>
           <li><a target="_blank" href="https://www.meetup.com/Barcamp-Bangalore/">Meetup</a></li>
