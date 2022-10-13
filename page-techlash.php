@@ -10,17 +10,11 @@
 
         <div class="row">
             <div id="page_techlash_description" class="col">
-                <p><font size="3">Showcase your tech project in the latest edition of Barcamp Bangalore Techlash.</font></p><font size="3">
-                <p>
-                    Talk about your latest tech smartness in front of hundreds of techies.</p>
+                <p>Showcase your tech project in the latest edition of Barcamp Bangalore Techlash.</p>
+                <p>Talk about your latest tech smartness in front of hundreds of techies.</p>
                 <p style="font-weight: bold; font-size: 20px;">6 Min per session and a total of 10 speakers.</p>
 
-                </font>
-                <p>
-                    <font size="3">
-                        PS: These ideas will undergo a filtering process. Remember to put in your phone number in the right field while you adding your session, we might require some clarifications from you.
-                    </font>
-                </p>
+                <p>PS: These ideas will undergo a filtering process. Remember to put in your phone number in the right field while you adding your session, we might require some clarifications from you.</p>
 
             </div>
         </div>
