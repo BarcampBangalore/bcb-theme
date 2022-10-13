@@ -132,15 +132,17 @@
     </div><!-- /.col-lg-4 -->
     <div class="col-lg-6">
       <h2>Friends of Barcamp </h2>
-      <a href="https://barcampbangalore.com/bcb/about-janastu"><img height="100px" src="<?php bloginfo('template_url');?>/images/sponsors/janastu_logo.gif" /></a>
-
-      <p>Janastu</p>
+      <a href="https://barcampbangalore.com/bcb/about-janastu">
+        <img height="100px" src="<?php bloginfo('template_url');?>/images/sponsors/janastu_logo.gif" />
+        <p>Janastu</p>
+      </a>
     </div><!-- /.col-lg-4 -->
     <div class="col-lg-6">
       <h2>Venue Sponsor</h2>
-      <img height="100px" src="<?php bloginfo('template_url');?>/images/sponsors/logo-rvu.svg" />
-
-      <p>RV University, Bangalore</p>
+      <a href="https://rvu.edu.in" target="_blank" rel="noopener noreferrer">
+        <img height="100px" src="<?php bloginfo('template_url');?>/images/sponsors/logo-rvu.svg" />
+        <p>RV University, Bangalore</p>
+      </a>
     </div><!-- /.col-lg-4 -->
   </div><!-- /.row -->
 
