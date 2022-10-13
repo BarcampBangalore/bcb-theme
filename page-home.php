@@ -39,7 +39,7 @@
       </div>
     </div>
     <div class="col-md-5 mt-4">
-    <img height="500px" src="<?php bloginfo('template_url');?>/images/hero-02.jpg" />
+    <img  style="width: inherit; height: inherit;" src="<?php bloginfo('template_url');?>/images/hero-02.jpg" />
     </div>
   </div>
 
@@ -80,7 +80,7 @@
       </p>
     </div>
     <div class="col-md-5">
-    <img height="500px" src="<?php bloginfo('template_url');?>/images/hero-03.jpg" />
+    <img  style="width: inherit; height: inherit;" src="<?php bloginfo('template_url');?>/images/hero-03.jpg" />
     </div>
   </div>
 
