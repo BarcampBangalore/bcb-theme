@@ -219,68 +219,12 @@
                                     <h5 class="heading"><a href="<?php echo get_permalink(); ?>" title=""><?php echo get_the_title(); ?></a></h5>
                                     <div class="mt-2">
                                         <div class="mt-2">
-                                        <span class="card-meta"><?php echo attending_users_count(get_the_ID()) ?> attendees</span>,
+                                        <span class="card-meta"><?php echo attending_users_count(get_the_ID()) ?> interested</span>,
                                         <span class="card-meta"><?php comments_number('0', '1', '%');?> comments</span> </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-                        <!-- <div class="sessions_page_card col-12 col-md-6" data-track-id="<?php echo $track_id; ?>">
-                            <div class="sessions_page_card_content container-fluid track_color_border_<?php echo $track_id; ?>">
-                                <div class="row">
-                                    <div class="sessions_page_card_avatar">
-                                        <?php echo '<a href="' . get_author_posts_url(get_the_author_meta('ID')) . '">' . get_avatar(get_the_author_meta('ID'), 48) . '</a>'; ?>
-                                    </div>
-                                    <div class="sessions_page_card_right_column track_color_border_<?php echo $track_id ?> col">
-                                        <div class="sessions_page_card_title">
-
-                                            <?php
-                                                $titlestr = get_the_title();
-                                                $title_trimmed = false;
-                                                if (strlen($titlestr) > 50) {
-                                                    $titlestr = substr($titlestr, 0, 50)."...";
-                                                    $title_trimmed = true;
-                                                }
-                                            ?>
-                                            <a href="<?php echo get_permalink(); ?>" <?php if ($title_trimmed) {echo 'title="'.get_the_title().'"';} ?>>
-                                                <?php echo $titlestr; ?>
-                                            </a>
-                                        </div>
-                                        <div class="sessions_page_card_author">
-                                            <?php echo '<a href="' . get_author_posts_url(get_the_author_meta('ID')) . '">' . get_the_author_meta('user_nicename') . '</a>'; ?>
-                                        </div>
-                                        <div class="sessions_page_card_bottomarea">
-
-                                            <div class="sessions_page_card_comments_stats">
-                                                <div class="sessions_page_card_comments_icon">
-                                                    <img src="<?php echo get_bloginfo('template_url').'/images/icons-21.png' ?>" title="Comments" />
-                                                </div>
-                                                <div class="sessions_page_card_comments_count">
-                                                    <?php comments_number('0', '1', '%'); ?>
-                                                </div>
-                                            </div>
-
-                                            <div class="sessions_page_card_attendees_stats">
-                                                <div class="sessions_page_card_attendees_icon">
-                                                    <img src="<?php echo get_bloginfo('template_url').'/images/icons-20.png' ?>" title="Attendees" />
-                                                </div>
-                                                <div id="sessions_page_card_attendees_count_<?php echo get_the_ID();  ?>" class="sessions_page_card_attendees_count">
-                                                    <?php echo attending_users_count(get_the_ID()) ?>
-                                                </div>
-                                            </div>
-
-                                            <div class="sessions_page_card_attend_button" data-postid="<?php echo get_the_ID(); ?>">
-                                                <?php echo get_my_attending_button(get_the_ID()); ?>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-
-                        </div> -->
 
                     <?php endwhile; ?>
                 </div>

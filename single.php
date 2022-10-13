@@ -86,7 +86,7 @@
                             <div class="single_page_box">
                                 <div id="single_page_attendees_header">
                                     <img id="single_page_attendees_icon" src="<?php echo get_bloginfo('template_url') . '/images/icons-20.png' ?>">
-                                    <span id="single_page_attendees_count"><?php echo attending_users_count(get_the_ID()) ?> Attending</span>
+                                    <span id="single_page_attendees_count"><?php echo attending_users_count(get_the_ID()) ?> Interested</span>
                                 </div>
                                 <div id="single_page_attendees_list">
                                     <?php echo get_attending_users_links(get_the_ID(), "", "&bull;"); ?>
