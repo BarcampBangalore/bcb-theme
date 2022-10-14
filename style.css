@@ -738,7 +738,7 @@ footer {
 
 .avatar {
     margin-right: 10px;
-    border-radius: 5px;
+    border-radius: 32px;
 }
 
 .card {
@@ -751,7 +751,6 @@ footer {
 
 .session-card {
     background-color: #e1f5ff;
-    margin: 0 10px 10px 0;
 }
 
 .card-content {

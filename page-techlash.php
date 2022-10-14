@@ -31,27 +31,20 @@
               while (have_posts()) : the_post();
                   ?>
 
-                <div class="col-md-6 sessions-page-card" data-track-id="<?php echo $track_id; ?>">
-                    <div class="card archive-session-card p-3 mb-2">
-                        <div class="d-flex justify-content-between">
-                            <div class="d-flex flex-row align-items-center">
-                                <div class="icon"><?php echo '<a href="' . get_author_posts_url(get_the_author_meta('ID')) . '">' . get_avatar(get_the_author_meta('ID'), 64) . '</a>'; ?></div>
-                                <div class="ms-2 c-details">
-                                    <h6 class="mb-0"><?php echo '<a href="' . get_author_posts_url(get_the_author_meta('ID')) . '">' . get_the_author_meta('display_name') . '</a>'; ?></h6>
+                        <div class="col-xs-12 col-sm-6 col-md-4 mb-3">
+                            <div class="card shadow-sm session-card">
+                                <div class="card-body text-center">
+                                    <p><?php echo '<a href="' . get_author_posts_url(get_the_author_meta('ID')) . '">' . get_avatar(get_the_author_meta('ID'), 64) . '</a>'; ?></p>
+                                    <p class="card-title"><?php echo '<a href="' . get_author_posts_url(get_the_author_meta('ID')) . '">' . get_the_author_meta('display_name') . '</a>'; ?></p>
+                                    <h4 class="card-text"><a href="<?php echo get_permalink(); ?>" title=""><?php echo get_the_title(); ?></a></h4>
+                                    <div class="mt-2">
+                                        <div class="mt-2">
+                                        <span class="card-meta"><?php echo attending_users_count(get_the_ID()) ?> attendees</span>,
+                                        <span class="card-meta"><?php comments_number('0', '1', '%');?> comments</span> </div>
+                                    </div>
                                 </div>
                             </div>
-                            <!-- <div class="badge"> <span>Design</span> </div> -->
                         </div>
-                        <div class="mt-2">
-                            <h5 class="heading"><a href="<?php echo get_permalink(); ?>" title=""><?php echo get_the_title(); ?></a></h5>
-                            <div class="mt-2">
-                                <div class="mt-2">
-                                <span class="card-meta"><?php echo attending_users_count(get_the_ID()) ?> interested</span>,
-                                <span class="card-meta"><?php comments_number('0', '1', '%');?> comments</span> </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <?php
               endwhile;
             else :
