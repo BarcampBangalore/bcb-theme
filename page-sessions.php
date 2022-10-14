@@ -204,7 +204,7 @@
                         }
                         ?>
 
-                        <div class="col-xs-12 col-sm-6 col-md-4 mb-3">
+                        <div class="col-xs-12 col-sm-6 col-md-4 mb-3" data-track-id="<?php echo $track_id; ?>">
                             <div class="card shadow-sm session-card">
                                 <div class="card-body text-center">
                                     <p><?php echo '<a href="' . get_author_posts_url(get_the_author_meta('ID')) . '">' . get_avatar(get_the_author_meta('ID'), 64) . '</a>'; ?></p>
