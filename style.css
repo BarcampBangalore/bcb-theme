@@ -492,12 +492,12 @@ body {
     color: white;
 }
 
-.btn-sponsor-us {
+.btn-bcb {
     background-color: var(--color5);
     color: white;
 }
 
-.btn-sponsor-us:hover {
+.btn-bcb:hover {
     background-color: var(--color1);
     color: white;
 }

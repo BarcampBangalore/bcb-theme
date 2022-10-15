@@ -86,6 +86,79 @@
 
   <hr class="featurette-divider">
 
+  <div class="row featurette text-center">
+    <div class="col-md-12 mb-4">
+      <h2 class="section-heading">Event format</h2>
+      <p class="lead">We start registration at 8:30AM, and end with feedback session at 5:30PM.</p>
+    </div>
+    <div class="col-md-6">
+      <h3 class="">
+        Talks <br/>
+        <span class="text-muted">Duration: 45 minutes each, 6 parallel tracks</span>
+      </h3>
+      <p class="lead">
+        We have 6 rooms to host 6 sessions in parallel. So that you can always find something you want to attend.
+        Don't like a session? Walk out and into another session. You're encouraged to do that.
+        We call it the <a href="https://planning.barcampbangalore.com/law-of-two-feet/">law of two feet</a>.
+      </p>
+    </div>
+    <div class="col-md-6">
+      <h3 class="">
+        Techlash <br/>
+        <span class="text-muted">Duration: 6 minutes each, 1 hour total</span>
+      </h3>
+      <p class="lead">
+        Your 6 minutes to fame. Showcase your tech prowess by showcasing something you built and inspire the crowd.
+        See the <a href="<?php echo get_settings('home'); ?>/techlash">submitted techlash sessions</a>.
+      </p>
+    </div>
+    <div class="col-md-12 mt-3">
+      <p>
+        <a class="btn btn-bcb" href="https://barcampbangalore.com/bcb/schedule">Check out the detailed event schedule format</a>
+      </p>
+    </div>
+  </div>
+
+  <hr class="featurette-divider">
+
+  <div class="row featurette text-center">
+    <div class="col-md-12 mb-4">
+      <h2 class="section-heading">Types of talks</h2>
+    </div>
+    <div class="col-md-4">
+      <h3 class="">
+        Introductory <br/>
+        <span class="text-muted">Spark the flame</span>
+      </h3>
+      <p class="lead">
+        Introduce an idea, a tool, or a lifestyle. If you think you're doing/know something that most people don't,
+        and you want to bridge that gap, this session type is for your talk. Go ahead and start your cult.
+      </p>
+    </div>
+    <div class="col-md-4">
+      <h3 class="">
+        Open discussion <br/>
+        <span class="text-muted">Give and take</span>
+      </h3>
+      <p class="lead">
+        Need feedback on something? Or looking for opinion from everyone in the room? Share your knowledge and gether
+        more from others around you. This session type os perfect to get everyone talking.
+      </p>
+    </div>
+    <div class="col-md-4">
+      <h3 class="">
+        Deep dive <br/>
+        <span class="text-muted">Get your feet wet</span>
+      </h3>
+      <p class="lead">
+        Take an idea and get your hands dirty while you dig deeper into it. This session type is perfect for
+        intermediate/expert level talks.
+      </p>
+    </div>
+  </div>
+
+  <hr class="featurette-divider">
+
   <div class="row">
     <div class="col-lg-12 text-center mb-10">
       <h1 class="pb-2 section-heading">Event venue</h1>
@@ -111,7 +184,7 @@
       <img height="100px" src="<?php bloginfo('template_url');?>/images/money.png" />
 
       <p>Be the hero we need.</p>
-      <p><a class="btn btn-sponsor-us" href="https://planning.barcampbangalore.com/call-for-sponsors-for-barcamp-bangalore-2022/" target="_blank">Sponsor us</a></p>
+      <p><a class="btn btn-bcb" href="https://planning.barcampbangalore.com/call-for-sponsors-for-barcamp-bangalore-2022/" target="_blank">Sponsor us</a></p>
     </div>
     <div class="col-lg-6">
       <h2>Silver Sponsors</h2>
