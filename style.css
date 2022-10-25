@@ -1974,3 +1974,55 @@ input[type=checkbox].add-to-calendar-checkbox {
     margin-top: 2em;
   }
 }
+
+.schedule-header {
+    background-color: var(--color5);
+    color: white;
+    padding: 20px 0;
+}
+
+.schedule-body {
+    background-color: var(--color4);
+    color: white;
+}
+
+.schedule-content-card-wrapper {
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.schedule-content-card {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 2px 3px 10px 0px #ccc;
+}
+
+.schedule-content-card-time {
+    border-right-width: 2px;
+    border-right-style: solid;
+    border-right-color: red;
+}
+
+.schedule-content-card-title {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.schedule-content-card-description {
+    font-size: 11px;
+    margin-bottom: 5px;
+}
+
+.schedule-content-card-room {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.schedule-content-card-speaker {
+    font-size: 12px;
+    font-weight: bold;
+}
