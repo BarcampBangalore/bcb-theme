@@ -4,18 +4,18 @@
 
   <div class="row featurette align-items-center first-featurette">
     <div class="col-md-7">
-      <h2 class="featurette-heading">What is BarCamp Bangalore? <br/><span class="text-muted">#bcb2022</span></h2>
+      <h2 class="featurette-heading">What is BarCamp Bangalore? <br/><span class="text-muted">#bcb2023</span></h2>
       <p class="lead">BarCamp Bangalore is an unconference – an ad hoc gathering born from the desire for people to share and learn in an open environment.</p>
       <p class="lead">It is an opportunity for people to come together to learn, network, and discuss great ideas in person.</p>
-      <p class="lead">We're coming back on <span id="page_home_hero_date">November 5, 2022, Saturday</span>, at the <a href="https://goo.gl/maps/m7ARhpVeEHAWxYYGA" target="_blank">RV University, Bangalore</a>.</p>
+      <p class="lead">We're coming back on <span id="page_home_hero_date">May 13, 2023, Saturday</span>, at the <a href="https://goo.gl/maps/m7ARhpVeEHAWxYYGA" target="_blank">RV University, Bangalore</a>.</p>
       <div class="calendar-options">
         <script src="https://cdn.jsdelivr.net/npm/add-to-calendar-button@1" async defer></script>
         <div class="atcb" >
             {
                 "name":"Barcamp Bangalore",
                 "description":"BarCamp Bangalore is an opportunity for people to come together to learn, network, and discuss great ideas in person.",
-                "startDate":"2022-11-05",
-                "endDate":"2022-11-05",
+                "startDate":"2023-05-13",
+                "endDate":"2023-05-13",
                 "startTime":"09:00",
                 "endTime":"17:00",
                 "size": "5",
@@ -33,7 +33,7 @@
 
                 "inline":true,
                 "listStyle":"modal",
-                "iCalFileName":"bcb-2022-reminder"
+                "iCalFileName":"bcb-2023-reminder"
             }
         </div>
       </div>
@@ -188,7 +188,11 @@
     </div>
     <div class="col-lg-6">
       <h2>Silver Sponsors</h2>
-      <div class="row">
+      <img height="100px" src="<?php bloginfo('template_url');?>/images/money.png" />
+
+      <p>Be the hero we need.</p>
+      <p><a class="btn btn-bcb" href="https://planning.barcampbangalore.com/call-for-sponsors-for-barcamp-bangalore-2022/" target="_blank">Sponsor us</a></p>
+      <!-- <div class="row">
         <div class="col-lg-4">
           <a href="https://planning.barcampbangalore.com/announcing-foss-united-as-a-silver-sponsor-for-barcamp-bangalore-2022/">
             <img height="100px" src="<?php bloginfo('template_url');?>/images/sponsors/logo-fossunited.png" />
@@ -201,7 +205,7 @@
             <p>HooChat</p>
           </a>
         </div>
-      </div>
+      </div> -->
     </div><!-- /.col-lg-4 -->
     <div class="col-lg-6">
       <h2>Friends of Barcamp </h2>
