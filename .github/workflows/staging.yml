@@ -3,7 +3,7 @@ name: update-theme-on-staging
 on:
   push:
     branches:
-      - 2022-theme-update
+      - bcb-2023
 
 jobs:
   build:

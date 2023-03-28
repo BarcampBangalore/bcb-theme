@@ -16,7 +16,7 @@
                 "description":"BarCamp Bangalore is an opportunity for people to come together to learn, network, and discuss great ideas in person.",
                 "startDate":"2023-05-13",
                 "endDate":"2023-05-13",
-                "startTime":"09:00",
+                "startTime":"08:00",
                 "endTime":"17:00",
                 "size": "5",
                 "location":"RV University, near Pattanagere Metro, Bengaluru",
@@ -184,14 +184,14 @@
       <img height="100px" src="<?php bloginfo('template_url');?>/images/money.png" />
 
       <p>Be the hero we need.</p>
-      <p><a class="btn btn-bcb" href="https://planning.barcampbangalore.com/call-for-sponsors-for-barcamp-bangalore-2022/" target="_blank">Sponsor us</a></p>
+      <p><a class="btn btn-bcb" href="https://planning.barcampbangalore.com/sponsorship-opportunities-for-barcamp-bangalore-2023/" target="_blank">Sponsor us</a></p>
     </div>
     <div class="col-lg-6">
       <h2>Silver Sponsors</h2>
       <img height="100px" src="<?php bloginfo('template_url');?>/images/money.png" />
 
       <p>Be the hero we need.</p>
-      <p><a class="btn btn-bcb" href="https://planning.barcampbangalore.com/call-for-sponsors-for-barcamp-bangalore-2022/" target="_blank">Sponsor us</a></p>
+      <p><a class="btn btn-bcb" href="https://planning.barcampbangalore.com/sponsorship-opportunities-for-barcamp-bangalore-2023/" target="_blank">Sponsor us</a></p>
       <!-- <div class="row">
         <div class="col-lg-4">
           <a href="https://planning.barcampbangalore.com/announcing-foss-united-as-a-silver-sponsor-for-barcamp-bangalore-2022/">

@@ -223,7 +223,7 @@ function get_current_cats(bool $get_as_string)
 
     // Tech, Design, Mobile & Web, Bangalore LIfestyle, Scaling Infra, Entrepreneurship, Rest of world
 
-    $tracks = array(1881, 1876, 1878, 1875, 1880, 1877, 1879);
+    $tracks = array(1922, 1917, 1919, 1916, 1921, 1918, 1920);
 
     if ($get_as_string) {
         return implode(", ", $tracks);
