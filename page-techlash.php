@@ -20,7 +20,7 @@
         </div>
 
         <div class="row">
-            <h2 id="page_techlash_sessionheading" class="col">Techlash sessions for BCB 2022</h2>
+            <h2 id="page_techlash_sessionheading" class="col">Techlash sessions for BCB 2023</h2>
         </div>
 
         <div id="page_techlash_post_parent" class="row">

@@ -27,14 +27,6 @@
 
                 <div class="page_team_membercard col-6 col-md-3">
                     <div class="page_team_member_avatar">
-                        <img src="<?php echo get_bloginfo('template_url').'/images/team/arunteja.jpg' ?>" />
-                    </div>
-                    <div class="page_team_member_name">Arun Teja</div>
-                    <div class="page_team_member_link"><a href="https://twitter.com/aruntejagod">@aruntejagod</a></div>
-                </div>
-
-                <div class="page_team_membercard col-6 col-md-3">
-                    <div class="page_team_member_avatar">
                         <img src="<?php echo get_bloginfo('template_url').'/images/team/sathya.jpg' ?>" />
                     </div>
                     <div class="page_team_member_name">Sathyajith Bhat</div>
