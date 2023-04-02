@@ -25,7 +25,7 @@ $cat_buckets = array(
     "3" => array(array(), array()),
 );
 $cat_names = array(
-    240  => array("1915", "BCB 2023")
+    240  => array("1915", "BCB 2023"),
     230  => array("1874", "BCB 2022"),
     220  => array("1863", "BCB Virtual 2021"),
     210  => array("1759", "BCB Spring 2019"),
