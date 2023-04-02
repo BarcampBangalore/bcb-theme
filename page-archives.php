@@ -459,7 +459,8 @@ get_header();?>
                     </div>
                     <div id="archives_page_bcb_selector_buttons">
                         <ul id="archives_page_bcb_selector">
-                            <li class="archive_selected"><a class="archives_current" data-contentdiv="archive_1863">BCB 2021 Virtual</a></li>
+                            <li class="archive_selected"><a class="archives_current" data-contentdiv="archive_1863">BCB 2022</a></li>
+                            <li><a data-contentdiv="archive_1759">BCB 2021 Virtual</a></li>
                             <li><a data-contentdiv="archive_1759">BCB Spring 2019</a></li>
                             <li><a data-contentdiv="archive_1691">BCB Spring 2018</a></li>
                             <li><a data-contentdiv="archive_1556">BCB Spring 2016</a></li>
@@ -484,6 +485,7 @@ get_header();?>
             <?php
 $techlash_categories = array(639, 787, 933, 1065, 1232, 1465);
 $archive_categories = array(
+    1874 => "BCB 2022",
     1863 => "BCB 2021 Virtual",
     1759 => "BCB Spring 2019", 1691 => "BCB Spring 2018",
     1556 => "BCB Spring 2016", 1458 => "BCB Monsoon 2015", 1366 => 'bcbxah',
