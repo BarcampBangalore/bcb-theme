@@ -8,6 +8,8 @@
         <h5>Reach us</h5>
         <ul class="list-unstyled text-small">
           <li><a target="_blank" href="https://discord.gg/MxgfAMXwFS">Discord</a></li>
+          <li><a target="_blank" href="https://t.me/BarcampBangalore">Telegram</a></li>
+          <li><a target="_blank" href="https://hachyderm.io/@barcampbangalore">Mastodon</a></li>
           <li><a target="_blank" href="https://twitter.com/barcampbng">Twitter</a></li>
           <li><a target="_blank" href="https://www.facebook.com/barcampbng">Facebook</a></li>
           <li><a target="_blank" href="https://www.meetup.com/Barcamp-Bangalore/">Meetup</a></li>
@@ -19,7 +21,7 @@
         <ul class="list-unstyled text-small">
           <li><a target="_blank" href="https://planning.barcampbangalore.com/">Blog</a></li>
           <li><a target="_blank" href="https://github.com/barcampbangalore">Our code</a></li>
-          <li><a target="_blank" href="https://planning.barcampbangalore.com/call-for-sponsors-for-barcamp-bangalore-2022/">Be a sponsor</a></li>
+          <li><a target="_blank" href="https://planning.barcampbangalore.com/sponsorship-opportunities-for-barcamp-bangalore-2023/">Be a sponsor</a></li>
         </ul>
       </div>
       <div class="col-6 col-md">
@@ -33,7 +35,7 @@
     </div>
     <div class="row">
       <div class="col-12 col-md">
-        <img class="mb-2" src="<?php bloginfo('template_url'); ?>/images/logo-bcb22.png" alt="" height="24">
+        <img class="mb-2" src="<?php bloginfo('template_url'); ?>/images/logo-bcb2023.png" alt="" height="24">
         <small class="d-block mb-3 text-muted">
           <!--[if lte IE 8]><span style="filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2); display: inline-block;"><![endif]-->
           <span style="-webkit-transform: rotate(180deg); -moz-transform: rotate(180deg); -o-transform: rotate(180deg); -khtml-transform: rotate(180deg); -ms-transform: rotate(180deg); transform: rotate(180deg); display: inline-block;">
