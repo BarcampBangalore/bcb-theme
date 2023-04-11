@@ -7,15 +7,15 @@
       <h2 class="featurette-heading">What is BarCamp Bangalore? <br/><span class="text-muted">#bcb2023</span></h2>
       <p class="lead">BarCamp Bangalore is an unconference – an ad hoc gathering born from the desire for people to share and learn in an open environment.</p>
       <p class="lead">It is an opportunity for people to come together to learn, network, and discuss great ideas in person.</p>
-      <p class="lead">We're coming back on <span id="page_home_hero_date">May 13, 2023, Saturday</span>, at the <a href="https://goo.gl/maps/m7ARhpVeEHAWxYYGA" target="_blank">RV University, Bangalore</a>.</p>
+      <p class="lead">We're coming back on <span id="page_home_hero_date">May 20, 2023, Saturday</span>, at the <a href="https://goo.gl/maps/m7ARhpVeEHAWxYYGA" target="_blank">RV University, Bangalore</a>.</p>
       <div class="calendar-options">
         <script src="https://cdn.jsdelivr.net/npm/add-to-calendar-button@1" async defer></script>
         <div class="atcb" >
             {
                 "name":"Barcamp Bangalore",
                 "description":"BarCamp Bangalore is an opportunity for people to come together to learn, network, and discuss great ideas in person.",
-                "startDate":"2023-05-13",
-                "endDate":"2023-05-13",
+                "startDate":"2023-05-20",
+                "endDate":"2023-05-20",
                 "startTime":"08:00",
                 "endTime":"17:00",
                 "size": "5",
