@@ -34,8 +34,9 @@ if ( ! current_user_can( 'manage_options' ) ) {
 
 
   $sessionz = $wpdb->get_results("SELECT DISTINCT post_id, count(*) as c FROM $wpdb->postmeta 
-				   WHERE post_id >= 8088 AND meta_key='user_attending' group by post_id   order by c DESC");
-	$sessionz2 = $wpdb->get_results(" SELECT * FROM $wpdb->posts wposts WHERE wposts.ID >= 8088 AND  wposts.post_status = 'publish' AND wposts.post_type = 'post' ORDER BY wposts.post_date DESC");
+				   WHERE post_id >= 8228 AND meta_key='user_attending' group by post_id   order by c DESC");
+	$sessionz2 = $wpdb->get_results(" SELECT * FROM $wpdb->posts wposts WHERE wposts.ID >= 8228
+	 AND  wposts.post_status = 'publish' AND wposts.post_type = 'post' ORDER BY wposts.post_date DESC");
 $wpdb->error;
 
 		echo $totalCount = count($sessionz);
