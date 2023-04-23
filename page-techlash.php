@@ -10,10 +10,13 @@
 
         <div class="row">
             <div id="page_techlash_description" class="col">
-                <p>Showcase your tech project in the latest edition of Barcamp Bangalore Techlash.</p>
-                <p>Talk about your latest tech smartness in front of hundreds of techies.</p>
-                <p style="font-weight: bold; font-size: 20px;">6 Min per session and a total of 10 speakers.</p>
+                <p>Are you an innovator looking to showcase your tech or product to a diverse and enthusiastic audience? 
+                Look no further than our Techlash Showdown at Barcamp! This session is all about giving participants the opportunity to present their latest and greatest tech or product innovations in a 6-minute time limit.
+                
+                <p>This session is open to anyone who has a product they would like to demonstrate. Whether you're an entrepreneur, inventor, or hobbyist, this is your chance to showcase your innovation to an engaged and supportive audience.</p>
 
+                <p>Simply <a href="how-to-register">register</a> for Barcamp and <a href="add-a-session">submit a session</a> under the "Techlash" category. 
+                There are a limited number of spots available, so sign up early to ensure your spot.</p>
                 <p>PS: These ideas will undergo a filtering process. Remember to put in your phone number in the right field while you adding your session, we might require some clarifications from you.</p>
 
             </div>
@@ -65,4 +68,3 @@
 
 
 <?php get_footer(); ?>
-
