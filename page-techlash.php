@@ -17,6 +17,7 @@
 
                 <p>Simply <a href="how-to-register">register</a> for Barcamp and <a href="add-a-session">submit a session</a> under the "Techlash" category. 
                 There are a limited number of spots available, so sign up early to ensure your spot.</p>
+                <p>PS: These ideas will undergo a filtering process. Remember to put in your phone number in the right field while you adding your session, we might require some clarifications from you.</p>
 
             </div>
         </div>
