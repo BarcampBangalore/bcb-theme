@@ -10,7 +10,7 @@
           <li><a target="_blank" href="https://discord.gg/MxgfAMXwFS">Discord</a></li>
           <li><a target="_blank" href="https://t.me/BarcampBangalore">Telegram</a></li>
           <li><a rel="me" target="_blank" href="https://hachyderm.io/@barcampbangalore">Mastodon</a></li>
-          <li><a target="_blank" href="https://twitter.com/barcampbng">Twitter</a></li>
+          <li><a target="_blank" href="https://twitter.com/barcampbng">X</a></li>
           <li><a target="_blank" href="https://www.facebook.com/barcampbng">Facebook</a></li>
           <li><a target="_blank" href="https://www.meetup.com/Barcamp-Bangalore/">Meetup</a></li>
           <li><a target="_blank" href="mailto:contact@barcampbangalore.com">Mail us</a></li>
@@ -21,7 +21,7 @@
         <ul class="list-unstyled text-small">
           <li><a target="_blank" href="https://planning.barcampbangalore.com/">Blog</a></li>
           <li><a target="_blank" href="https://github.com/barcampbangalore">Our code</a></li>
-          <li><a target="_blank" href="https://planning.barcampbangalore.com/sponsorship-opportunities-for-barcamp-bangalore-2023/">Be a sponsor</a></li>
+          <li><a target="_blank" href="https://planning.barcampbangalore.com/sponsorship-opportunities-for-barcamp-bangalore-2024/">Be a sponsor</a></li>
         </ul>
       </div>
       <div class="col-6 col-md">

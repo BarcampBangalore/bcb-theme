@@ -34,7 +34,7 @@
         <div class="row">
           <div class="col-12" style="text-align: center;">
           <a class="navbar-brand" href="<?php echo home_url( '/' ); ?>">
-            <img class="logo-on-top" src="<?php bloginfo('template_url'); ?>/images/logo-bcb2023.png" alt="test">
+            <img class="logo-on-top" src="<?php bloginfo('template_url'); ?>/images/logo-bcb-no-year.png" alt="test">
           </a>
           </div>
         </div>
