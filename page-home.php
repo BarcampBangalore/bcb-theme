@@ -16,7 +16,7 @@
                 "description":"BarCamp Bangalore is an opportunity for people to come together to learn, network, and discuss great ideas in person.",
                 "startDate":"2024-06-08",
                 "endDate":"2024-06-08",
-                "startTime":"08:00",
+                "startTime":"09:00",
                 "endTime":"17:00",
                 "size": "5",
                 "location":"RV University, near Pattanagere Metro, Bengaluru",
