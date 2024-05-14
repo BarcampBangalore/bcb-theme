@@ -5,6 +5,7 @@ $curauth = (get_query_var('author_name')) ? get_user_by('slug', get_query_var('a
 
 
 $cat_buckets = array(
+    "1970" => array(array(), array()),
     "1915" => array(array(), array()),
     "1874" => array(array(), array()),
     "1863" => array(array(), array()),
@@ -25,6 +26,7 @@ $cat_buckets = array(
     "3" => array(array(), array()),
 );
 $cat_names = array(
+    250  => array("1970", "BCB 2024"),
     240  => array("1915", "BCB 2023"),
     230  => array("1874", "BCB 2022"),
     220  => array("1863", "BCB Virtual 2021"),

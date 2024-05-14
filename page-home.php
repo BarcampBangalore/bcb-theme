@@ -4,19 +4,19 @@
 
   <div class="row featurette align-items-center first-featurette">
     <div class="col-md-7">
-      <h2 class="featurette-heading">What is BarCamp Bangalore? <br/><span class="text-muted">#bcb2023</span></h2>
+      <h2 class="featurette-heading">What is BarCamp Bangalore? <br/><span class="text-muted">#bcb2024</span></h2>
       <p class="lead">BarCamp Bangalore is an unconference – an ad hoc gathering born from the desire for people to share and learn in an open environment.</p>
       <p class="lead">It is an opportunity for people to come together to learn, network, and discuss great ideas in person.</p>
-      <p class="lead">We're coming back on <span id="page_home_hero_date">May 20, 2023, Saturday</span>, at the <a href="https://goo.gl/maps/m7ARhpVeEHAWxYYGA" target="_blank">RV University, Bangalore</a>.</p>
+      <p class="lead">We're coming back on <span id="page_home_hero_date">June 8, 2024, Saturday</span>, at the <a href="https://goo.gl/maps/m7ARhpVeEHAWxYYGA" target="_blank">RV University, Bangalore</a>.</p>
       <div class="calendar-options">
         <script src="https://cdn.jsdelivr.net/npm/add-to-calendar-button@1" async defer></script>
         <div class="atcb" >
             {
                 "name":"Barcamp Bangalore",
                 "description":"BarCamp Bangalore is an opportunity for people to come together to learn, network, and discuss great ideas in person.",
-                "startDate":"2023-05-20",
-                "endDate":"2023-05-20",
-                "startTime":"08:00",
+                "startDate":"2024-06-08",
+                "endDate":"2024-06-08",
+                "startTime":"09:00",
                 "endTime":"17:00",
                 "size": "5",
                 "location":"RV University, near Pattanagere Metro, Bengaluru",
@@ -33,7 +33,7 @@
 
                 "inline":true,
                 "listStyle":"modal",
-                "iCalFileName":"bcb-2023-reminder"
+                "iCalFileName":"bcb-2024-reminder"
             }
         </div>
       </div>
@@ -184,14 +184,14 @@
       <img height="100px" src="<?php bloginfo('template_url');?>/images/money.png" />
 
       <p>Be the hero we need.</p>
-      <p><a class="btn btn-bcb" href="https://planning.barcampbangalore.com/sponsorship-opportunities-for-barcamp-bangalore-2023/" target="_blank">Sponsor us</a></p>
+      <p><a class="btn btn-bcb" href="https://planning.barcampbangalore.com/sponsorship-opportunities-for-barcamp-bangalore-2024/" target="_blank">Sponsor us</a></p>
     </div>
     <div class="col-lg-6">
       <h2>Silver Sponsors</h2>
       <img height="100px" src="<?php bloginfo('template_url');?>/images/money.png" />
 
       <p>Be the hero we need.</p>
-      <p><a class="btn btn-bcb" href="https://planning.barcampbangalore.com/sponsorship-opportunities-for-barcamp-bangalore-2023/" target="_blank">Sponsor us</a></p>
+      <p><a class="btn btn-bcb" href="https://planning.barcampbangalore.com/sponsorship-opportunities-for-barcamp-bangalore-2024/" target="_blank">Sponsor us</a></p>
       <!-- <div class="row">
         <div class="col-lg-4">
           <a href="https://planning.barcampbangalore.com/announcing-foss-united-as-a-silver-sponsor-for-barcamp-bangalore-2022/">
