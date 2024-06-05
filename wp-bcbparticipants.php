@@ -89,7 +89,7 @@ function t_authlink($author,$hyperlinktext=NULL)
 		<div id="authorlist">
 		<?php 
 			if (function_exists('_bcb_all_participants')) {
-				_bcb_all_participants("8228");
+				_bcb_all_participants("8393");
 			}
 		?>
 		<?php
