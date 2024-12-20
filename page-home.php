@@ -21,7 +21,7 @@
                 "startTime": "09:00",
                 "endTime": "17:00",
                 "size": "5",
-                "location": "Cobalt Building, Museum Rd, Bangalore 560001",
+                "location": "Cobalt Building, Church Street, Bangalore 560001",
                 "label": "Save a calendar reminder",
                 "lightMode": "system",
                 "options":[
