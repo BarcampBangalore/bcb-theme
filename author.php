@@ -1,10 +1,11 @@
 <?php get_header(); ?>
 
-<?php 
+<?php
 $curauth = (get_query_var('author_name')) ? get_user_by('slug', get_query_var('author_name')) : get_userdata(get_query_var('author'));
 
 
 $cat_buckets = array(
+    "2004" => array(array(), array()),
     "1970" => array(array(), array()),
     "1915" => array(array(), array()),
     "1874" => array(array(), array()),
@@ -26,6 +27,7 @@ $cat_buckets = array(
     "3" => array(array(), array()),
 );
 $cat_names = array(
+    260  => array("2004", "BCB 2025"),
     250  => array("1970", "BCB 2024"),
     240  => array("1915", "BCB 2023"),
     230  => array("1874", "BCB 2022"),
@@ -49,9 +51,9 @@ $cat_names = array(
 
 
 ?>
-    
+
 <div id="page_author_container">
-    
+
     <div id="page_author_wrapper" class="d-flex flex-column container-fluid">
         <div class="row">
             <div class="col-2">
@@ -64,12 +66,12 @@ $cat_names = array(
                 </div>
             </div>
         </div>
-        
+
         <div class="row">
-            
+
             <div class="col-2"></div>
             <div class="col-10">
-                
+
                     <?php
 // find presented sessions
                     while (have_posts()) : the_post();
@@ -103,47 +105,47 @@ $cat_names = array(
                                 <div class="authorpage_bcb_title">
                                     <?php echo $bcb[1]; // BCB Title  ?>
                                 </div>
-                            
+
                             <div class="row">
                                 <?php
-                                
+
                                 if (count($cat_buckets[$bcb[0]][1]) > 0) {
                                     ?>
                                     <div class="col-sm-6 authorpage_sessions_area">
                                         <div class="authorpage_sesstions_type">
                                             Sessions Attended
                                         </div>
-                                        <?php 
+                                        <?php
                                             foreach ($cat_buckets[$bcb[0]][1] as $sess) {
-                                                
+
                                                 echo '<div class="authorpage_session_item">'.$sess.'</div>';
-                                                
+
                                             }
                                         ?>
                                     </div>
-                                <?php    
+                                <?php
                                 }
-                                
-                                
-                                
+
+
+
                                 if (count($cat_buckets[$bcb[0]][0]) > 0) {
                                     ?>
                                     <div class="col-sm-6 authorpage_sessions_area">
                                         <div class="authorpage_sesstions_type">
                                             Sessions Proposed/Presented
                                         </div>
-                                        <?php 
+                                        <?php
                                             foreach ($cat_buckets[$bcb[0]][0] as $sess) {
-                                                
+
                                                 echo '<div class="authorpage_session_item">'.$sess.'</div>';
-                                                
+
                                             }
                                         ?>
                                     </div>
-                                <?php    
+                                <?php
                                 }
-                                
-                                
+
+
                                 ?>
                                 </div>
                             </div>
@@ -154,14 +156,14 @@ $cat_names = array(
                     ?>
 
             </div>
-            
+
         </div>
-        
+
     </div>
-    
-    
+
+
 </div>
-    
-    
+
+
 <?php get_footer(); ?>
-    
+
