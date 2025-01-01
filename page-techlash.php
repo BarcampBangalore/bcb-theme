@@ -28,7 +28,7 @@
 
         <div id="page_techlash_post_parent" class="row">
             <?php
-            $args = 'cat=1979';
+            $args = 'cat=2011';
             query_posts($args);
             if ( have_posts() ) :
               while (have_posts()) : the_post();
