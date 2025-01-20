@@ -119,6 +119,11 @@
         <a class="btn btn-bcb" href="https://barcampbangalore.com/bcb/schedule">Check out the detailed event schedule format</a>
       </p>
     </div>
+    <div class="col-md-12 mt-3">
+      <p>
+        <a class="btn btn-bcb" href="https://barcampbangalore2025.rsvpify.com">Register now!</a>
+      </p>
+    </div>
   </div>
 
   <hr class="featurette-divider">
@@ -161,7 +166,7 @@
 
   <hr class="featurette-divider">
 
-  <div class="row">
+  <div class="row featurette">
     <div class="col-lg-12 text-center mb-10">
       <h1 class="pb-2 section-heading">Event venue</h1>
       <p class="pb-2">The Takshashila Institution (2nd floor) and Samagata Foundation (4th floor)<br>46/1, Cobalt Building<br>Church Street (above Church Street Social)<br>Bengaluru - 560001</p>
@@ -170,7 +175,7 @@
         <p>Take the metro and get down at the MG Road station on the
           Purple line<br>
           Walk over to Church Street Social to find the venue</p>
-      </div>
+          </div>
     </div>
     <div class="col-lg-12">
       <iframe class="home-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d903.7571911674339!2d77.60243193065465!3d12.975622873500768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae167c7b6919e9%3A0x86936959d24e13f5!2sCobalt%2C%20Museum%20Rd%2C%20Haridevpur%2C%20Shanthala%20Nagar%2C%20Ashok%20Nagar%2C%20Bengaluru%2C%20Karnataka%20560001!5e0!3m2!1sen!2sin!4v1734510391422!5m2!1sen!2sin" width="100%" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -179,7 +184,7 @@
 
   <hr class="featurette-divider">
 
-  <div class="row text-center">
+  <div class="row text-center home-page-sponsors featurette">
     <div class="col-lg-12 mb-10">
       <h1 class="pb-5 section-heading">Sponsors</h1>
     </div>
