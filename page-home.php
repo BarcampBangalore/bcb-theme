@@ -90,8 +90,20 @@
 
   <div class="row featurette text-center">
     <div class="col-md-12 mb-4">
+      <h2 class="section-heading">Let us know you’re coming</h2>
+      <p class="lead">
+        Your RSVP enables us to better plan the event by providing an accurate attendee count, 
+        ensuring a seamless and enjoyable experience for all.
+      </p>
+      <a class="btn btn-bcb" href="https://barcampbangalore2025.rsvpify.com">RSVP now</a>
+    </div>
+  </div>
+
+  <hr class="featurette-divider">
+
+  <div class="row featurette text-center">
+    <div class="col-md-12 mb-4">
       <h2 class="section-heading">Event format</h2>
-      <p class="lead">We start registration at 8:30AM, and end with feedback session at 5:30PM.</p>
     </div>
     <div class="col-md-6">
       <h3 class="">
@@ -117,11 +129,6 @@
     <div class="col-md-12 mt-3">
       <p>
         <a class="btn btn-bcb" href="https://barcampbangalore.com/bcb/schedule">Check out the detailed event schedule format</a>
-      </p>
-    </div>
-    <div class="col-md-12 mt-3">
-      <p>
-        <a class="btn btn-bcb" href="https://barcampbangalore2025.rsvpify.com">Register now!</a>
       </p>
     </div>
   </div>
