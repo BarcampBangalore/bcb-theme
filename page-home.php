@@ -40,8 +40,8 @@
         </div>
       </div>
     </div>
-    <div class="col-md-5 mt-4">
-    <img  style="width: inherit; height: inherit;" src="<?php bloginfo('template_url');?>/images/hero-02.jpg" />
+    <div class="col-md-5 mt-4 pt-4 ">
+    <img  style="width: inherit; height: inherit;" src="<?php bloginfo('template_url');?>/images/talk_cropped.JPG" />
     </div>
   </div>
 
@@ -62,8 +62,8 @@
         the community.
       </p>
     </div>
-    <div class="col-md-5 order-md-1">
-      <img style="width: inherit; height: inherit;" src="<?php bloginfo('template_url');?>/images/hero-01.jpg" />
+    <div class="col-md-5 order-md-1 pt-4 mt-4">
+      <img style="width: inherit; height: inherit;" src="<?php bloginfo('template_url');?>/images/crowd_cropped.JPG" />
     </div>
   </div>
 
@@ -82,7 +82,7 @@
       </p>
     </div>
     <div class="col-md-5">
-    <img  style="width: inherit; height: inherit;" src="<?php bloginfo('template_url');?>/images/hero-03.jpg" />
+    <img  style="width: inherit; height: inherit;" src="<?php bloginfo('template_url');?>/images/techlash_cropped.JPG" />
     </div>
   </div>
 
