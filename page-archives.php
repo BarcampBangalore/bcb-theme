@@ -40,6 +40,29 @@ function insertSponsors($bcbname)
             </div>
             <?php
 break;
+        case "BCB 2024":
+            ?>
+
+            <div>
+                <h2>Sponsors for <?php echo $bcbname; ?></h2>
+
+                <div class="archive_sponsor">
+                    <h3 class="archive_sponsor_title">Venue Sponsor</h3>
+                    <a target="_blank" href="https://rvu.edu.in/">
+                        <div><img class="archive_sponsor_logo" src="<?php echo get_bloginfo('template_url') . '/images/sponsors/logo-rvu.svg' ?>"/></div>
+                        <div>RV University</div>
+                    </a>
+                </div>
+
+                <div class="archive_sponsor">
+                    <h3 class="archive_sponsor_title">Friends of Barcamp</h3>
+                    <div><img class="archive_sponsor_logo" src="<?php bloginfo('template_url')?>/images/sponz_logos/janastu_logo.gif" /></div>
+                    <div>Janastu</div>
+                </div>
+            </div>
+
+            <?php
+break;
         case "BCB 2023":
             ?>
 
@@ -482,7 +505,9 @@ get_header();?>
                     </div>
                     <div id="archives_page_bcb_selector_buttons">
                         <ul id="archives_page_bcb_selector">
-                            <li class="archive_selected"><a class="archives_current" data-contentdiv="archive_1874">BCB 2022</a></li>
+                            <li class="archive_selected"><a class="archives_current" data-contentdiv="archive_1970">BCB 2024</a></li>
+                            <li><a data-contentdiv="archive_1915">BCB 2023</a></li>
+                            <li><a data-contentdiv="archive_1874">BCB 2022</a></li>
                             <li><a data-contentdiv="archive_1863">BCB 2021 Virtual</a></li>
                             <li><a data-contentdiv="archive_1759">BCB Spring 2019</a></li>
                             <li><a data-contentdiv="archive_1691">BCB Spring 2018</a></li>
@@ -506,8 +531,10 @@ get_header();?>
 
 
             <?php
-$techlash_categories = array(639, 787, 933, 1065, 1232, 1465);
+$techlash_categories = array(639, 787, 933, 1065, 1232, 1465,1979, 2011);
 $archive_categories = array(
+    1970 =>"BCB 2024",
+    1915 => "BCB 2023",
     1874 => "BCB 2022",
     1863 => "BCB 2021 Virtual",
     1759 => "BCB Spring 2019", 1691 => "BCB Spring 2018",
