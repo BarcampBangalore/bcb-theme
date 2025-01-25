@@ -38,6 +38,29 @@ function insertSponsors($bcbname)
                     <div>Janastu</div>
                 </div>
             </div>
+            <?php
+break;
+        case "BCB 2023":
+            ?>
+
+            <div>
+                <h2>Sponsors for <?php echo $bcbname; ?></h2>
+
+                <div class="archive_sponsor">
+                    <h3 class="archive_sponsor_title">Venue Sponsor</h3>
+                    <a target="_blank" href="https://rvu.edu.in/">
+                        <div><img class="archive_sponsor_logo" src="<?php echo get_bloginfo('template_url') . '/images/sponsors/logo-rvu.svg' ?>"/></div>
+                        <div>RV University</div>
+                    </a>
+                </div>
+
+                <div class="archive_sponsor">
+                    <h3 class="archive_sponsor_title">Friends of Barcamp</h3>
+                    <div><img class="archive_sponsor_logo" src="<?php bloginfo('template_url')?>/images/sponz_logos/janastu_logo.gif" /></div>
+                    <div>Janastu</div>
+                </div>
+            </div>
+
 
             <?php
 break;
