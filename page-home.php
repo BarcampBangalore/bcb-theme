@@ -155,7 +155,7 @@
         <span class="text-muted">Give and take</span>
       </h3>
       <p class="lead">
-        Need feedback on something? Or looking for opinion from everyone in the room? Share your knowledge and gether
+        Need feedback on something? Or looking for opinion from everyone in the room? Share your knowledge and gather
         more from others around you. This session type is perfect to get everyone talking.
       </p>
     </div>
