@@ -95,7 +95,7 @@
         Your RSVP enables us to better plan the event by providing an accurate attendee count, 
         ensuring a seamless and enjoyable experience for all.
       </p>
-      <a class="btn btn-bcb" href="https://barcampbangalore2025.rsvpify.com">RSVP now</a>
+      <a class="btn btn-bcb" target="_blank" href="https://forms.gle/AcnAkse5FJw9Vq599">RSVP now</a>
     </div>
   </div>
 
