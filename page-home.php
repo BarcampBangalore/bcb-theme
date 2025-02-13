@@ -41,7 +41,7 @@
       </div>
     </div>
     <div class="col-md-5 mt-4 pt-4 ">
-    <img  style="width: inherit; height: inherit;" src="<?php bloginfo('template_url');?>/images/talk_cropped.JPG" />
+    <img  style="width: inherit; height: inherit;" src="<?php bloginfo('template_url');?>/images/techlash_cropped.JPG" />
     </div>
   </div>
 
@@ -82,7 +82,7 @@
       </p>
     </div>
     <div class="col-md-5">
-    <img  style="width: inherit; height: inherit;" src="<?php bloginfo('template_url');?>/images/techlash_cropped.JPG" />
+    <img  style="width: inherit; height: inherit;" src="<?php bloginfo('template_url');?>/images/talk_cropped.JPG" />
     </div>
   </div>
 
