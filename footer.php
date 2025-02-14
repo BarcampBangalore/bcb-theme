@@ -9,9 +9,11 @@
         <ul class="list-unstyled text-small">
           <li><a target="_blank" href="https://discord.gg/MxgfAMXwFS">Discord</a></li>
           <li><a target="_blank" href="https://t.me/BarcampBangalore">Telegram</a></li>
-          <li><a rel="me" target="_blank" href="https://hachyderm.io/@barcampbangalore">Mastodon</a></li>
+          <li><a target="_blank" href="https://www.linkedin.com/company/barcamp-bangalore/">LinkedIn</a></li>
+          <li><a target="_blank" href="https://www.instagram.com/barcampblr/">Instagram</a></li>
           <li><a target="_blank" href="https://twitter.com/barcampbng">Twitter/X</a></li>
           <li><a target="_blank" href="https://www.facebook.com/barcampbng">Facebook</a></li>
+          <li><a rel="me" target="_blank" href="https://hachyderm.io/@barcampbangalore">Mastodon</a></li>
           <li><a target="_blank" href="https://www.meetup.com/Barcamp-Bangalore/">Meetup</a></li>
           <li><a target="_blank" href="mailto:contact@barcampbangalore.com">Mail us</a></li>
         </ul>
