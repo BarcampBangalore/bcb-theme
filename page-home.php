@@ -105,7 +105,7 @@
                 Your RSVP enables us to better plan the event by providing an accurate attendee count,
                 ensuring a seamless and enjoyable experience for all.
             </p>
-            <a class="btn btn-bcb" target="_blank" href="https://forms.gle/AcnAkse5FJw9Vq599">RSVP now</a>
+            <a class="btn btn-bcb" target="_blank" href="https://luma.com/rrb8o5p4">RSVP now</a>
         </div>
     </div>
 
