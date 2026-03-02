@@ -4,29 +4,31 @@
 
     <div class="row featurette align-items-center first-featurette">
         <div class="col-md-7">
-            <h2 class="featurette-heading">What is BarCamp Bangalore? <br/><span class="text-muted">#bcb2025</span></h2>
+            <h2 class="featurette-heading">What is BarCamp Bangalore? <br /><span class="text-muted">#bcb2026</span>
+            </h2>
             <p class="lead">BarCamp Bangalore is an unconference – an ad hoc gathering born from the desire for people
                 to share and learn in an open environment.</p>
             <p class="lead">It is an opportunity for people to come together to learn, network, and discuss great ideas
                 in person.</p>
-            <p class="lead">We're coming back on <span id="page_home_hero_date">Novemeber 22, 2025, Saturday</span>,
-                at <a href="https://maps.app.goo.gl/YH51ZW2WC5JaLT147" target="_blank">Reva University, Rukmini
-                    Knowledge Park, Yelahanka, Bengaluru 560064</a></p>
+            <p class="lead">We're coming back on <span id="page_home_hero_date">April 18, 2026, Saturday</span>,
+                at <a href="https://maps.app.goo.gl/xZ6D7B69bSLpjRmo8" target="_blank">The Takshashila Institution (2nd
+                    floor) and Samagata
+                    Foundation (4th floor), Cobalt Building, Church Street, Bengaluru - 560001</a></p>
 
             <div class="calendar-options">
                 <script src="https://cdn.jsdelivr.net/npm/add-to-calendar-button@1" async defer></script>
                 <div class="atcb">
                     {
-                    "name": "Barcamp Bangalore",
+                    "name": "Barcamp Bangalore Summer",
                     "description": "BarCamp Bangalore is an opportunity for people to come together to learn, network,
                     and
                     discuss great ideas in person.",
-                    "startDate": "2025-11-22",
-                    "endDate": "2025-11-22",
+                    "startDate": "2026-04-18",
+                    "endDate": "2026-04-18",
                     "startTime": "09:00",
                     "endTime": "17:00",
                     "size": "5",
-                    "location": "Reva University, Yelahanka, Bengaluru 560064",
+                    "location": "Cobalt Building, Church Street, Bangalore 560001",
                     "label": "Save a calendar reminder",
                     "lightMode": "system",
                     "options":[
@@ -40,14 +42,14 @@
 
                     "inline":true,
                     "listStyle": "modal",
-                    "iCalFileName": "bcb-2025-reminder"
+                    "iCalFileName": "bcb-2026-summer-reminder"
                     }
                 </div>
             </div>
         </div>
         <div class="col-md-5 mt-4 pt-4 ">
             <img style="width: inherit; height: inherit;"
-                 src="<?php bloginfo('template_url'); ?>/images/techlash_cropped.JPG"/>
+                src="<?php bloginfo('template_url'); ?>/images/techlash_cropped.JPG" />
         </div>
     </div>
 
@@ -57,9 +59,9 @@
         <div class="col-md-7 order-md-2">
             <h2 class="featurette-heading">
                 What is an Unconference?
-                <br/><span class="text-muted">
-          You decide what to talk about and what talks to listen to. You're in control.
-        </span>
+                <br /><span class="text-muted">
+                    You decide what to talk about and what talks to listen to. You're in control.
+                </span>
             </h2>
             <p class="lead">
                 Unconferences do not have speaker list or a fixed schedule until the actual event date. The
@@ -70,7 +72,7 @@
         </div>
         <div class="col-md-5 order-md-1 pt-4 mt-4">
             <img style="width: inherit; height: inherit;"
-                 src="<?php bloginfo('template_url'); ?>/images/Samagata.jpeg"/>
+                src="<?php bloginfo('template_url'); ?>/images/Samagata.jpeg" />
         </div>
     </div>
 
@@ -79,7 +81,7 @@
     <div class="row featurette">
         <div class="col-md-7">
             <h2 class="featurette-heading">
-                Meet the most outside-the-box thinkers in the city. <br/>
+                Meet the most outside-the-box thinkers in the city. <br />
                 <span class="text-muted">No, really.</span>
             </h2>
             <p class="lead">
@@ -91,8 +93,7 @@
             </p>
         </div>
         <div class="col-md-5 pt-4 mt-4">
-            <img style="width: inherit; height: inherit;"
-                 src="<?php bloginfo('template_url'); ?>/images/ui.webp"/>
+            <img style="width: inherit; height: inherit;" src="<?php bloginfo('template_url'); ?>/images/ui.webp" />
         </div>
     </div>
 
@@ -105,7 +106,7 @@
                 Your RSVP enables us to better plan the event by providing an accurate attendee count,
                 ensuring a seamless and enjoyable experience for all.
             </p>
-            <a class="btn btn-bcb" target="_blank" href="https://luma.com/rrb8o5p4">RSVP now</a>
+            <a class="btn btn-bcb" target="_blank" href="https://luma.com/ekad3pug">RSVP now</a>
         </div>
     </div>
 
@@ -117,7 +118,7 @@
         </div>
         <div class="col-md-6">
             <h3 class="">
-                Talks <br/>
+                Talks <br />
                 <span class="text-muted">Duration: 45 minutes each, 6 parallel tracks</span>
             </h3>
             <p class="lead">
@@ -129,7 +130,7 @@
         </div>
         <div class="col-md-6">
             <h3 class="">
-                Techlash <br/>
+                Techlash <br />
                 <span class="text-muted">Duration: 6 minutes each, 1 hour total</span>
             </h3>
             <p class="lead">
@@ -154,7 +155,7 @@
         </div>
         <div class="col-md-4">
             <h3 class="">
-                Introductory <br/>
+                Introductory <br />
                 <span class="text-muted">Spark the flame</span>
             </h3>
             <p class="lead">
@@ -165,7 +166,7 @@
         </div>
         <div class="col-md-4">
             <h3 class="">
-                Open discussion <br/>
+                Open discussion <br />
                 <span class="text-muted">Give and take</span>
             </h3>
             <p class="lead">
@@ -176,7 +177,7 @@
         </div>
         <div class="col-md-4">
             <h3 class="">
-                Deep dive <br/>
+                Deep dive <br />
                 <span class="text-muted">Get your feet wet</span>
             </h3>
             <p class="lead">
@@ -188,16 +189,23 @@
 
     <hr class="featurette-divider">
 
-    <div class="row featurette">
+    <div class="row">
         <div class="col-lg-12 text-center mb-10">
             <h1 class="pb-2 section-heading">Event venue</h1>
-            <h2 class="pb-2">Reva University, Rukmini Knowledge Park, Yelahanka, Bengaluru 560064.</h2>
+            <p class="pb-2">The Takshashila Institution (2nd floor) and Samagata Foundation (4th floor)<br>46/1, Cobalt
+                Building<br>Church Street (above Church Street Social)<br>Bengaluru - 560001</p>
+            <div class="pb-4">
+                <h2>How to reach</h2>
+                <p>Take the metro and get down at the MG Road station on the
+                    Purple line<br>
+                    Walk over to Church Street Social to find the venue</p>
+            </div>
         </div>
         <div class="col-lg-12">
             <iframe class="home-map"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3885.7206597773843!2d77.63203687498306!3d13.11687448721202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae191736187a37%3A0x3092096ba7fb4c9b!2sREVA%20University!5e0!3m2!1sen!2sin!4v1761109288161!5m2!1sen!2sin"
-                    width="100%" height="450" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d903.7571911674339!2d77.60243193065465!3d12.975622873500768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae167c7b6919e9%3A0x86936959d24e13f5!2sCobalt%2C%20Museum%20Rd%2C%20Haridevpur%2C%20Shanthala%20Nagar%2C%20Ashok%20Nagar%2C%20Bengaluru%2C%20Karnataka%20560001!5e0!3m2!1sen!2sin!4v1734510391422!5m2!1sen!2sin"
+                width="100%" height="450" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div><!-- /.row -->
 
@@ -209,23 +217,23 @@
         </div>
         <div class="col-lg-6">
             <!-- <img height="100px" src="<?php bloginfo('template_url'); ?>/images/money.png" /> -->
-            <img height="100px" src="<?php bloginfo('template_url'); ?>/images/new/sponsors/blaze.png"/>
+            <img height="100px" src="<?php bloginfo('template_url'); ?>/images/new/sponsors/blaze.png" />
             <h2 style="margin: 15px 0;">Blaze Sponsors</h2>
 
             <!-- <p>Be the hero we need.</p> -->
             <p><a class="btn btn-bcb"
-                  href="https://planning.barcampbangalore.com/sponsorship-opportunities-for-barcamp-bangalore-2024/"
-                  target="_blank">Sponsor us</a></p>
+                    href="https://planning.barcampbangalore.com/sponsorship-opportunities-for-barcamp-bangalore-2024/"
+                    target="_blank">Sponsor us</a></p>
         </div>
         <div class="col-lg-6">
             <!-- <img height="100px" src="<?php bloginfo('template_url'); ?>/images/money.png" /> -->
-            <img height="100px" src="<?php bloginfo('template_url'); ?>/images/new/sponsors/ember.png"/>
+            <img height="100px" src="<?php bloginfo('template_url'); ?>/images/new/sponsors/ember.png" />
             <h2 style="margin: 15px 0;">Ember Sponsors</h2>
 
             <!-- <p>Be the hero we need.</p> -->
             <p><a class="btn btn-bcb"
-                  href="https://planning.barcampbangalore.com/sponsorship-opportunities-for-barcamp-bangalore-2024/"
-                  target="_blank">Sponsor us</a></p>
+                    href="https://planning.barcampbangalore.com/sponsorship-opportunities-for-barcamp-bangalore-2024/"
+                    target="_blank">Sponsor us</a></p>
             <!-- <div class="row">
         <div class="col-lg-4">
           <a href="https://planning.barcampbangalore.com/announcing-foss-united-as-a-silver-sponsor-for-barcamp-bangalore-2022/">
@@ -242,24 +250,28 @@
       </div> -->
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-6">
-            <img height="100px" src="<?php bloginfo('template_url'); ?>/images/new/sponsors/spark.png"/>
+            <img height="100px" src="<?php bloginfo('template_url'); ?>/images/new/sponsors/spark.png" />
             <h2 style="margin: 15px 0;">Spark Sponsors</h2>
 
             <a href="https://barcampbangalore.com/bcb/about-janastu">
-                <img height="60px" src="<?php bloginfo('template_url'); ?>/images/sponsors/janastu_logo.gif"/>
+                <img height="60px" src="<?php bloginfo('template_url'); ?>/images/sponsors/janastu_logo.gif" />
                 <p>Janastu</p>
             </a>
         </div><!-- /.col-lg-4 -->
-
         <div class="col-lg-6">
-            <img height="100px" src="<?php bloginfo('template_url'); ?>/images/new/sponsors/venue.png"/>
-            <h2 style="margin: 15px 0;">Venue Sponsor</h2>
-
-            <a href="https://www.reva.edu.in/" target="_blank" rel="noopener noreferrer">
-                <img height="60px" src="<?php bloginfo('template_url'); ?>/images/sponsors/2025/revaLogo.png"/>
-                <p style="margin-top: 10px">Reva University</p>
-            </a>
-
+            <img height="100px" src="<?php bloginfo('template_url'); ?>/images/new/sponsors/venue.png" />
+            <h2 style="margin: 15px 0;">Venue Sponsors</h2>
+            <div style="display: flex; align-items: center; gap: 40px; flex-wrap: wrap; padding-left: 50px">
+                <a href="https://takshashila.org.in/" target="_blank" rel="noopener noreferrer"
+                    style="text-align: center;">
+                    <img height="60px" src="<?php bloginfo('template_url'); ?>/images/sponsors/2025/takshashila.png" />
+                    <p style="margin-top: 10px">The Takshashila Institution</p>
+                </a>
+                <a href="https://samagata.org/" target="_blank" rel="noopener noreferrer" style="text-align: center;">
+                    <img height="55px" src="<?php bloginfo('template_url'); ?>/images/sponsors/2025/samagata.svg" />
+                    <p style="margin-top: 10px">Samagata Foundation</p>
+                </a>
+            </div>
         </div><!-- /.col-lg-4 -->
     </div><!-- /.row -->
 
