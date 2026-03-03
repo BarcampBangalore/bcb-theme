@@ -249,19 +249,27 @@
         </div>
       </div> -->
         </div><!-- /.col-lg-4 -->
-        <div class="col-lg-6">
+        <div class="col-lg-6 text-center">
             <img height="100px" src="<?php bloginfo('template_url'); ?>/images/new/sponsors/spark.png" />
+
             <h2 style="margin: 15px 0;">Spark Sponsors</h2>
 
-            <a href="https://barcampbangalore.com/bcb/about-janastu">
-                <img height="60px" src="<?php bloginfo('template_url'); ?>/images/sponsors/janastu_logo.gif" />
-                <p>Janastu</p>
-            </a>
-        </div><!-- /.col-lg-4 -->
+            <div style="display: flex; justify-content: center; align-items: center; gap: 40px;flex-wrap: wrap;">
+                <a href="https://fossunited.org/" target="_blank" rel="noopener noreferrer" style="text-align:center;">
+                    <img height="60px" src="<?php bloginfo('template_url'); ?>/images/sponsors/2025/foss-united.svg" />
+                    <p style="margin-top: 10px;">Foss United</p>
+                </a>
+
+                <a href="https://barcampbangalore.com/bcb/about-janastu" style="text-align:center;">
+                    <img height="60px" src="<?php bloginfo('template_url'); ?>/images/sponsors/janastu_logo.gif" />
+                    <p style="margin-top: 10px;">Janastu</p>
+                </a>
+            </div>
+        </div><!-- /.col-lg-6 -->
         <div class="col-lg-6">
             <img height="100px" src="<?php bloginfo('template_url'); ?>/images/new/sponsors/venue.png" />
             <h2 style="margin: 15px 0;">Venue Sponsors</h2>
-            <div style="display: flex; align-items: center; gap: 40px; flex-wrap: wrap; padding-left: 50px">
+            <div style="display: flex; justify-content: center; align-items: center; gap: 40px; flex-wrap: wrap;">
                 <a href="https://takshashila.org.in/" target="_blank" rel="noopener noreferrer"
                     style="text-align: center;">
                     <img height="60px" src="<?php bloginfo('template_url'); ?>/images/sponsors/2025/takshashila.png" />
