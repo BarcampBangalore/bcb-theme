@@ -708,3 +708,59 @@ body {
 @media (max-width: 640px) {
   .bcb-session-grid { grid-template-columns: minmax(0, 1fr); }
 }
+
+/* ==========================================================
+   FAQ (page-faq.php): [expand] shortcodes rendered as <details>
+   ========================================================== */
+.bcb-faq { max-width: 820px; margin: 0 auto; display: flex; flex-direction: column; gap: 20px; }
+.bcb-faq__item {
+  background: oklch(96% 0.02 75);
+  border: 3px solid oklch(18% 0.02 40);
+  border-radius: 12px;
+  box-shadow: 6px 6px 0 oklch(64% 0.19 45);
+  transition: transform .15s, box-shadow .15s;
+}
+.bcb-faq__item:nth-child(even) { box-shadow: 6px 6px 0 oklch(52% 0.12 150); }
+.bcb-faq__item[open] { box-shadow: 8px 8px 0 oklch(64% 0.19 45); }
+.bcb-faq__item[open]:nth-child(even) { box-shadow: 8px 8px 0 oklch(52% 0.12 150); }
+.bcb-faq__question {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px 24px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.35;
+}
+.bcb-faq__question::-webkit-details-marker { display: none; }
+.bcb-faq__question::after {
+  content: '+';
+  flex-shrink: 0;
+  width: 32px; height: 32px;
+  display: inline-flex; align-items: center; justify-content: center;
+  border: 2px solid oklch(18% 0.02 40);
+  border-radius: 50%;
+  font-size: 22px; line-height: 1;
+  transition: transform .15s;
+}
+.bcb-faq__item[open] > .bcb-faq__question::after { content: '−'; }
+.bcb-faq__question:focus-visible { outline: 3px solid oklch(64% 0.19 45); outline-offset: 2px; border-radius: 9px; }
+.bcb-faq__answer {
+  padding: 0 24px 22px;
+  font-size: 16px;
+  line-height: 1.7;
+  color: oklch(30% 0.02 40);
+  overflow-wrap: anywhere;
+}
+.bcb-faq__answer p { margin: 0 0 12px; }
+.bcb-faq__answer p:last-child { margin-bottom: 0; }
+.bcb-faq__answer a { color: oklch(52% 0.12 150); font-weight: 600; text-decoration: underline; }
+
+@media (max-width: 900px) {
+  .bcb-faq__question { padding: 16px 18px; font-size: 16px; }
+  .bcb-faq__answer { padding: 0 18px 18px; }
+}

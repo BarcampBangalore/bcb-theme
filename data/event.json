@@ -209,6 +209,11 @@
     "submit_label": "Showcase your project?"
   },
 
+  "faq": {
+    "_help": "The questions/answers are the content of the FAQ page in WP admin ([expand title=\"...\"]answer[/expand]).",
+    "label": "FAQ"
+  },
+
   "footer": {
     "copy": "Copyleft. All wrongs reserved.",
     "social": [

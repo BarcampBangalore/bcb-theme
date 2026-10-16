@@ -387,6 +387,21 @@ function bcb_rich($text)
 }
 
 /**
+ * Renders [expand title="..."]answer[/expand] (the shortcode the FAQ page content
+ * is written with) as a native <details> accordion. Used only by page-faq.php,
+ * so it doesn't depend on the collapse-o-matic plugin and looks the same everywhere.
+ */
+function bcb_expand_shortcode($atts, $content = '')
+{
+    $atts = shortcode_atts(array('title' => ''), $atts, 'expand');
+
+    return '<details class="bcb-faq__item">'
+        . '<summary class="bcb-faq__question">' . esc_html(trim($atts['title'])) . '</summary>'
+        . '<div class="bcb-faq__answer">' . wpautop(do_shortcode(trim($content))) . '</div>'
+        . '</details>';
+}
+
+/**
  * Replace {year} (event year), {event} (event name) and {home} (site URL)
  * in a config string.
  */
