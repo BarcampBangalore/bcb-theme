@@ -676,9 +676,15 @@ $bcb_name       = bcb_cfg('event.name', 'BarCamp Bangalore');
       <h2 class="bcb-what__heading"><?php echo bcb_rich(bcb_cfg('what.heading')); ?></h2>
       <p class="bcb-what__body"><?php echo bcb_rich(bcb_cfg('what.body')); ?></p>
     </div>
+    <?php if (bcb_cfg('what.photo.src')) : ?>
+    <div style="height:280px; border-radius:8px; overflow:hidden; border:2px solid oklch(35% 0.03 40);">
+      <img src="<?php echo esc_url(bcb_asset(bcb_cfg('what.photo.src'))); ?>" alt="<?php echo esc_attr(bcb_cfg('what.photo.alt')); ?>" style="width:100%; height:100%; object-fit:cover; display:block;">
+    </div>
+    <?php else : ?>
     <div class="ph" style="height:280px; color:oklch(52% 0.12 150); background-color:oklch(25% 0.03 40); border-radius:8px; font-size:13px; font-weight:600; border:2px solid oklch(35% 0.03 40);">
       <span><?php echo bcb_rich(bcb_cfg('what.photo_caption')); ?></span>
     </div>
+    <?php endif; ?>
   </section>
 
   <!-- WHO SHOWS UP -->
