@@ -148,29 +148,29 @@
 
   "sponsors": {
     "label": "Thank you to our sponsors",
-    "_help": "items[].type: 'cta' (text + link), 'logos' (logos[] of {src, alt, name?, link?}) or 'text'. color: orange | green.",
+    "_help": "items[].type: 'cta' (text + link), 'logos' (logos[] of {src, alt, name?, link?}) or 'text'. badge = optional tier image, layout = 'stack' puts logos one below the other (default: side by side), link/link_label = optional \"Sponsor us\" link shown under the logos, caption = small text above the tier name. color: orange | green.",
     "items": [
       {
-        "type": "cta", "tier": "BLAZE", "color": "orange",
-        "text": "Be the hero we need.",
+        "type": "cta", "tier": "BLAZE", "caption": "First tier", "badge": "images/new/sponsors/blaze.png", "color": "orange",
         "link": "https://planning.barcampbangalore.com/sponsorship-opportunities-for-barcamp-bangalore-2024/",
         "link_label": "Sponsor us →"
       },
       {
-        "type": "cta", "tier": "EMBER", "color": "green",
-        "text": "Be the hero we need.",
+        "type": "cta", "tier": "EMBER", "caption": "Second tier", "badge": "images/new/sponsors/ember.png", "color": "green",
         "link": "https://planning.barcampbangalore.com/sponsorship-opportunities-for-barcamp-bangalore-2024/",
         "link_label": "Sponsor us →"
       },
       {
-        "type": "logos", "tier": "SPARK", "color": "orange",
+        "type": "logos", "tier": "SPARK", "caption": "Third tier", "badge": "images/new/sponsors/spark.png", "color": "orange",
+        "link": "https://planning.barcampbangalore.com/sponsorship-opportunities-for-barcamp-bangalore-2024/",
+        "link_label": "Sponsor us →",
         "logos": [
           { "src": "images/sponsors/2025/foss-united.svg", "alt": "Foss United", "name": "Foss United", "link": "https://fossunited.org/" },
           { "src": "images/sponsors/janastu_logo.gif",     "alt": "Janastu",    "name": "Janastu",     "link": "https://barcampbangalore.com/bcb/about-janastu" }
         ]
       },
       {
-        "type": "logos", "tier": "VENUE", "color": "green",
+        "type": "logos", "tier": "VENUE", "layout": "stack", "caption": "Venue partner", "badge": "images/new/sponsors/venue.png", "color": "green",
         "logos": [
           { "src": "images/sponsors/2025/takshashila.png", "alt": "The Takshashila Institution", "name": "The Takshashila Institution", "link": "https://takshashila.org.in/" },
           { "src": "images/sponsors/2025/samagata.svg",    "alt": "Samagata Foundation",         "name": "Samagata Foundation",         "link": "https://samagata.org/" }
