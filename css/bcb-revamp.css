@@ -764,3 +764,118 @@ body {
   .bcb-faq__question { padding: 16px 18px; font-size: 16px; }
   .bcb-faq__answer { padding: 0 18px 18px; }
 }
+
+/* ==========================================================
+   Generic content pages (page.php): about, how-to-register, add-a-session, ...
+   ========================================================== */
+.bcb-prose--page { max-width: 820px; margin-bottom: 0; }
+.bcb-prose h2, .bcb-prose h3, .bcb-prose h4 {
+  font-family: 'Instrument Serif', serif;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.15;
+  margin: 40px 0 12px;
+  color: oklch(18% 0.02 40);
+}
+.bcb-prose > :first-child { margin-top: 0; }
+.bcb-prose h2 { font-size: 38px; }
+.bcb-prose h3 { font-size: 30px; }
+.bcb-prose h4 { font-size: 24px; }
+.bcb-prose h2:empty, .bcb-prose h3:empty, .bcb-prose p:empty { display: none; }
+.bcb-prose ul, .bcb-prose ol { margin: 0 0 20px; padding-left: 1.4em; }
+.bcb-prose li { margin-bottom: 8px; }
+.bcb-prose li > ul, .bcb-prose li > ol { margin: 8px 0 0; }
+.bcb-prose img, .bcb-prose iframe, .bcb-prose video { max-width: 100%; height: auto; border-radius: 8px; }
+.bcb-prose table { width: 100%; border-collapse: collapse; margin: 0 0 24px; }
+.bcb-prose th, .bcb-prose td { border: 2px solid oklch(18% 0.02 40); padding: 10px 14px; text-align: left; }
+.bcb-prose blockquote { margin: 0 0 20px; padding: 4px 0 4px 20px; border-left: 4px solid oklch(64% 0.19 45); }
+
+/* Forms inside content (e.g. the Add a Session form) */
+.bcb-prose form ul { list-style: none; padding: 0; margin: 0; }
+.bcb-prose form li { margin-bottom: 20px; }
+.bcb-prose label {
+  display: block;
+  margin-bottom: 6px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  color: oklch(18% 0.02 40);
+}
+.bcb-prose input[type="text"], .bcb-prose input[type="email"], .bcb-prose input[type="url"],
+.bcb-prose input[type="password"], .bcb-prose input[type="number"], .bcb-prose input[type="tel"],
+.bcb-prose input[type="date"], .bcb-prose textarea, .bcb-prose select {
+  width: 100%;
+  padding: 12px 14px;
+  border: 2px solid oklch(18% 0.02 40);
+  border-radius: 8px;
+  background: white;
+  font: inherit;
+  color: inherit;
+}
+.bcb-prose input:focus, .bcb-prose textarea:focus, .bcb-prose select:focus {
+  outline: 3px solid oklch(64% 0.19 45);
+  outline-offset: 1px;
+}
+.bcb-prose input[type="submit"], .bcb-prose button[type="submit"], .bcb-prose .wpuf-submit-button {
+  background: oklch(18% 0.02 40);
+  color: white;
+  padding: 14px 30px;
+  border: none;
+  border-radius: 100px;
+  box-shadow: 5px 5px 0 oklch(64% 0.19 45);
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* ==========================================================
+   Archives (page-archives.php)
+   ========================================================== */
+.bcb-edition[hidden] { display: none; }
+.bcb-edition__sessions-heading { text-align: center; margin: 8px 0 32px; font-size: 34px; }
+.bcb-archive-sponsors {
+  margin: 0 0 56px;
+  padding: 28px 24px;
+  background: oklch(92% 0.03 70);
+  border: 3px solid oklch(18% 0.02 40);
+  border-radius: 12px;
+  box-shadow: 8px 8px 0 oklch(52% 0.12 150);
+  text-align: center;
+}
+.bcb-archive-sponsors:empty { display: none; }
+.bcb-archive-sponsors h2 {
+  margin: 0 0 24px;
+  font-family: 'Instrument Serif', serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 30px;
+  padding: 0;
+}
+.bcb-archive-sponsors .archive_sponsor { margin: 0 20px 20px; }
+.bcb-archive-sponsors .archive_sponsor_title {
+  margin: 0 0 12px;
+  padding: 0;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: oklch(64% 0.19 45);
+}
+.bcb-archive-sponsors .archive_sponsor_logo { max-width: 140px; max-height: 60px; object-fit: contain; }
+.bcb-archive-sponsors a { color: oklch(18% 0.02 40); font-weight: 600; text-decoration: underline; }
+.bcb-archive-sponsors img { max-width: 100%; }
+
+@media (max-width: 900px) {
+  .bcb-prose h2 { font-size: 30px; }
+  .bcb-prose h3 { font-size: 26px; }
+  .bcb-archive-sponsors { padding: 20px 16px; }
+}
+
+/* Longer nav (8 links): tighten before it runs out of room; below 900px the links are hidden (see above). */
+@media (max-width: 1240px) {
+  .bcb-nav { padding-left: 32px; padding-right: 32px; }
+  .bcb-nav__links { gap: 18px; font-size: 14px; }
+  .bcb-btn-outline, .bcb-btn-green { padding: 8px 16px; }
+}

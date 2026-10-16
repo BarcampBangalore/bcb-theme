@@ -24,10 +24,14 @@
 
   "nav": {
     "links": [
-      { "label": "Sessions",  "url": "/sessions" },
-      { "label": "Techlash",  "url": "/techlash" },
-      { "label": "FAQ",       "url": "/faq" },
-      { "label": "Team",      "url": "/team" }
+      { "label": "Sessions",        "url": "/sessions" },
+      { "label": "Techlash",        "url": "/techlash" },
+      { "label": "How to register", "url": "/how-to-register" },
+      { "label": "Add a session",   "url": "/add-a-session" },
+      { "label": "Archives",        "url": "/archives" },
+      { "label": "FAQ",             "url": "/faq" },
+      { "label": "About",           "url": "/about" },
+      { "label": "Team",            "url": "/team" }
     ]
   },
 
@@ -207,6 +211,37 @@
     "empty_text": "Sorry no techlash session has been posted yet.",
     "submit_url": "/add-a-session",
     "submit_label": "Showcase your project?"
+  },
+
+  "archives": {
+    "_help": "editions[] = tabs, first one is selected by default. category_id is the WordPress category holding that edition's sessions. sponsors_key picks the sponsor block in page-archives.php (insertSponsors); an unknown key just shows no sponsors.",
+    "label": "Archives",
+    "body": "Sessions and sponsors from every BarCamp Bangalore so far.",
+    "sessions_heading": "Sessions",
+    "empty_text": "No sessions found for this edition.",
+    "editions": [
+      { "label": "BCB 2025", "category_id": 2004, "sponsors_key": "BCB 2025" },
+      { "label": "BCB 2025 Autumn", "category_id": 2045, "sponsors_key": "BCB 2025 Autumn" },
+      { "label": "BCB 2024", "category_id": 1970, "sponsors_key": "BCB 2024" },
+      { "label": "BCB 2023", "category_id": 1915, "sponsors_key": "BCB 2023" },
+      { "label": "BCB 2022", "category_id": 1874, "sponsors_key": "BCB 2022" },
+      { "label": "BCB 2021 Virtual", "category_id": 1863, "sponsors_key": "BCB 2021 Virtual" },
+      { "label": "BCB Spring 2019", "category_id": 1759, "sponsors_key": "BCB Spring 2019" },
+      { "label": "BCB Spring 2018", "category_id": 1691, "sponsors_key": "BCB Spring 2018" },
+      { "label": "BCB Spring 2016", "category_id": 1556, "sponsors_key": "BCB Spring 2016" },
+      { "label": "BCB Monsoon 2015", "category_id": 1458, "sponsors_key": "BCB Monsoon 2015" },
+      { "label": "BCBX AntHill", "category_id": 1366, "sponsors_key": "bcbxah" },
+      { "label": "BCB17", "category_id": 1224, "sponsors_key": "bcb17" },
+      { "label": "BCB16", "category_id": 1057, "sponsors_key": "bcb16" },
+      { "label": "BCB15", "category_id": 931, "sponsors_key": "bcb15" },
+      { "label": "BCB14", "category_id": 785, "sponsors_key": "bcb14" },
+      { "label": "BCB13", "category_id": 636, "sponsors_key": "bcb13" },
+      { "label": "BCB12", "category_id": 479, "sponsors_key": "bcb12" },
+      { "label": "BCB11", "category_id": 399, "sponsors_key": "bcb11" },
+      { "label": "BCB10", "category_id": 324, "sponsors_key": "bcb10" },
+      { "label": "BCB9", "category_id": 220, "sponsors_key": "bcb9" },
+      { "label": "BCB8", "category_id": 3, "sponsors_key": "bcb8" }
+    ]
   },
 
   "faq": {

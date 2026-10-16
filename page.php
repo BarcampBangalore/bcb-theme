@@ -1,17 +1,22 @@
-<?php get_header(); ?>
+<?php
+/**
+ * Generic content page (About, How to register, Add a session, ...).
+ * The page content comes from WP admin; layout is the shared revamp chrome.
+ */
+get_header('bcb');
+the_post();
+?>
 
-<div class="container">
-  <div class="row">
-    <div class="col-12 p-5">
-      <?php the_post(); ?>
-      <div class="display-4 fitted-title text-center pb-3">
-        <?php echo get_the_title(); ?>
-      </div>
-      <div id="page_about_content" class="d-flex flex-column">
-        <?php the_content(); ?>
-      </div>
+<section class="bcb-pagehead">
+    <h1 class="bcb-section-heading"><?php echo get_the_title(); ?></h1>
+</section>
+
+<section class="bcb-listing">
+    <div class="bcb-listing__inner">
+        <div class="bcb-prose bcb-prose--page">
+            <?php the_content(); ?>
+        </div>
     </div>
-  </div>
-</div>
+</section>
 
-<?php get_footer(); ?>
+<?php get_footer('bcb'); ?>
