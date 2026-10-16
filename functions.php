@@ -12,12 +12,11 @@ function neobcb21_enqueue_scripts()
     wp_enqueue_script("bootstrap-js", "https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js");
 
     wp_enqueue_style('bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css');
-//    wp_enqueue_style('font-awesome', get_bloginfo('template_url') . "/font-awesome-4.7.0/css/font-awesome.min.css");
+    //    wp_enqueue_style('font-awesome', get_bloginfo('template_url') . "/font-awesome-4.7.0/css/font-awesome.min.css");
     wp_enqueue_style('font-awesome', get_bloginfo('template_url') . "/fontawesome-free-5.15.2-web/css/all.css");
     wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css?family=Lato');
 
     wp_enqueue_style('style', get_stylesheet_uri());
-
 }
 
 add_action('wp_enqueue_scripts', 'neobcb21_enqueue_scripts');
@@ -30,7 +29,6 @@ function register_my_menus()
     register_nav_menu('menu_part1', "Menu Part 1");
     register_nav_menu('menu_part2', "Menu Part 2");
     register_nav_menu('menu_part3', "Menu Part 3");
-
 }
 add_action('after_setup_theme', 'register_my_menus');
 
@@ -38,9 +36,9 @@ function mytheme_comment($comment, $args, $depth)
 {
     $GLOBALS['comment'] = $comment;
 
-    ?>
-    <li <?php comment_class();?> id="li-comment-<?php comment_ID()?>">
-        <div id="comment-<?php comment_ID();?>" class="comment-body">
+?>
+    <li <?php comment_class(); ?> id="li-comment-<?php comment_ID() ?>">
+        <div id="comment-<?php comment_ID(); ?>" class="comment-body">
             <?php echo get_avatar($comment->comment_author_email, 48); ?>
             <div class="comment-body-inner">
                 <div class="comment-author vcard">
@@ -49,23 +47,23 @@ function mytheme_comment($comment, $args, $depth)
                     <cite class="fn"><a href="<?php echo get_author_posts_url(get_user_by('email', get_comment_author_email())->ID); ?>"><?php echo get_user_by('email', get_comment_author_email())->data->user_nicename; ?></a></cite>
                 </div>
                 <?php if ($comment->comment_approved == '0'): ?>
-                    <em><?php _e('Your comment is awaiting moderation.')?></em>
+                    <em><?php _e('Your comment is awaiting moderation.') ?></em>
                     <br>
-                <?php endif;?>
+                <?php endif; ?>
 
-                <?php comment_text()?>
+                <?php comment_text() ?>
                 <div class="comment_footer">
-                    <span class="comment-meta commentmetadata"><a href="<?php echo esc_url(get_comment_link($comment->comment_ID)) ?>"><?php printf(__('%1$s at %2$s'), get_comment_date(), get_comment_time())?></a><?php edit_comment_link(__('Edit'), ' &SmallCircle; ', '')?></span>
+                    <span class="comment-meta commentmetadata"><a href="<?php echo esc_url(get_comment_link($comment->comment_ID)) ?>"><?php printf(__('%1$s at %2$s'), get_comment_date(), get_comment_time()) ?></a><?php edit_comment_link(__('Edit'), ' &SmallCircle; ', '') ?></span>
                     &SmallCircle;
                     <span class="reply">
-                        <?php comment_reply_link(array_merge($args, array('depth' => $depth, 'max_depth' => $args['max_depth'])))?>
+                        <?php comment_reply_link(array_merge($args, array('depth' => $depth, 'max_depth' => $args['max_depth']))) ?>
                     </span>
                 </div>
             </div>
             <div style="clear: both"></div>
         </div>
     </li>
-    <?php
+<?php
 }
 
 /**************************************************************
@@ -82,7 +80,7 @@ function neo_attend_toggle_attend()
 
     global $current_user;
     $result = array();
-//        if ( !wp_verify_nonce( $_REQUEST['nonce'], "neo_attend_nonce")) {
+    //        if ( !wp_verify_nonce( $_REQUEST['nonce'], "neo_attend_nonce")) {
     //        exit("No naughty business please");
     //     }
     if (is_user_logged_in()) {
@@ -96,13 +94,11 @@ function neo_attend_toggle_attend()
         $result['button_text'] = get_my_attending_button($_REQUEST['post_id']);
         $result['attendees_list'] = get_attending_users_links($_REQUEST['post_id'], "", "&bull;");
         $result['attendees_count'] = attending_users_count($_REQUEST['post_id']);
-
     } else {
         $result['status'] = 'ERROR! User must be logged in';
     }
     echo json_encode($result);
     die();
-
 }
 
 function neo_attend_toggle_attend_nologin()
@@ -150,7 +146,6 @@ function get_attending_users_links($postid, $prev = 'Who is attending : ', $sepa
     }
 
     return $result;
-
 }
 
 function get_my_attending_button($postid)
@@ -161,10 +156,10 @@ function get_my_attending_button($postid)
 
     if (array_search($current_user->user_login, $attendingusers) !== false) {
         $result .= '<div class="neo_attend_button neo_button_attending" data-postid="' . $postid . '" >'
-        . '<img src="' . get_bloginfo('template_url') . '/images/icons-19.png" title="I am Attending" /></div>';
+            . '<img src="' . get_bloginfo('template_url') . '/images/icons-19.png" title="I am Attending" /></div>';
     } else {
         $result .= '<div class="neo_attend_button neo_button_wanna_attend" data-postid="' . $postid . '" >'
-        . '<img src="' . get_bloginfo('template_url') . '/images/icons-18.png" title="I wanna Attend" /></div>';
+            . '<img src="' . get_bloginfo('template_url') . '/images/icons-18.png" title="I wanna Attend" /></div>';
     }
     return $result;
 }
@@ -177,10 +172,10 @@ function get_my_attending_button_single($postid)
 
     if (array_search($current_user->user_login, $attendingusers) !== false) {
         $result .= '<div class="neo_attend_button neo_button_attending" data-postid="' . $postid . '" >'
-        . '<img src="' . get_bloginfo('template_url') . '/images/icons-19.png" title="I am Attending" /><div class="attend_text">Click to Cancel</div></div>';
+            . '<img src="' . get_bloginfo('template_url') . '/images/icons-19.png" title="I am Attending" /><div class="attend_text">Click to Cancel</div></div>';
     } else {
         $result .= '<div class="neo_attend_button neo_button_wanna_attend" data-postid="' . $postid . '" >'
-        . '<img src="' . get_bloginfo('template_url') . '/images/icons-18.png" title="I wanna Attend" /><div class="attend_text">Click to Attend</div></div>';
+            . '<img src="' . get_bloginfo('template_url') . '/images/icons-18.png" title="I wanna Attend" /><div class="attend_text">Click to Attend</div></div>';
     }
     return $result;
 }
@@ -191,14 +186,15 @@ function get_my_attending_button_single($postid)
  *
  **************************************************************/
 
-add_action('rest_api_init', function() {
+add_action('rest_api_init', function () {
     register_rest_route('custom', '/sessions', array(
         'methods' => 'GET',
         'callback' => 'getSessions'
     ));
 });
 
-function getSessions($data) {
+function getSessions($data)
+{
     $post = get_posts(array(
         'name' => $data->get_param('slug'),
         'post_status' => 'any'
@@ -233,7 +229,6 @@ function get_current_cats(bool $get_as_string)
     } else {
         return $tracks;
     }
-
 }
 
 
@@ -241,16 +236,154 @@ function get_current_cats(bool $get_as_string)
  * Return array of post ids of 2 chosen tracks.
  * If tracks not chosen, return empty array
  */
-function get_chosen_track_ids() {
+function get_chosen_track_ids()
+{
     return array(7354, 7363);
 
-//    return array(7300, 7302);
+    //    return array(7300, 7302);
 }
 
 
 
-function get_archived_track_ids() {
+function get_archived_track_ids()
+{
 
     return array();
 }
 
+
+/**************************************************************
+ *
+ * Event config (data/event.json) helpers
+ *
+ * Event-specific content (dates, images, venue, sponsors, schedule
+ * board, copy) lives in data/event.json so a new edition is a JSON edit.
+ *
+ **************************************************************/
+
+/**
+ * Decoded contents of data/event.json. Cached per request.
+ * Returns an empty array (and logs) if the file is missing or invalid,
+ * so a bad edit never takes the site down.
+ */
+function bcb_config()
+{
+    static $config = null;
+
+    if ($config !== null) {
+        return $config;
+    }
+
+    $config = array();
+    $file = get_template_directory() . '/data/event.json';
+
+    if (!is_readable($file)) {
+        error_log('bcb_config: cannot read ' . $file);
+        return $config;
+    }
+
+    $decoded = json_decode(file_get_contents($file), true);
+
+    if (!is_array($decoded)) {
+        error_log('bcb_config: invalid JSON in ' . $file . ' (' . json_last_error_msg() . ')');
+        return $config;
+    }
+
+    $config = $decoded;
+    return $config;
+}
+
+/**
+ * Dot-path getter, e.g. bcb_cfg('venue.name') or bcb_cfg('board.items.0.start').
+ */
+function bcb_cfg($path, $default = '')
+{
+    $node = bcb_config();
+
+    foreach (explode('.', $path) as $key) {
+        if (is_array($node) && array_key_exists($key, $node)) {
+            $node = $node[$key];
+        } else {
+            return $default;
+        }
+    }
+
+    return $node;
+}
+
+/**
+ * Same as bcb_cfg() but always returns an array (for loops).
+ */
+function bcb_cfg_list($path)
+{
+    $value = bcb_cfg($path, array());
+    return is_array($value) ? $value : array();
+}
+
+/**
+ * URL for an image/file. Absolute http(s) URLs are returned as-is,
+ * anything else is treated as relative to the theme directory.
+ */
+function bcb_asset($path)
+{
+    if (preg_match('#^(https?:)?//#', $path)) {
+        return $path;
+    }
+
+    return get_template_directory_uri() . '/' . ltrim($path, '/');
+}
+
+/**
+ * Site-relative ("/rsvp") or absolute URL for a link.
+ */
+function bcb_link($url)
+{
+    if (preg_match('#^(https?:)?//#', $url)) {
+        return $url;
+    }
+
+    return home_url($url);
+}
+
+/**
+ * Plain text, escaped.
+ */
+function bcb_text($text)
+{
+    return esc_html($text);
+}
+
+/**
+ * Text that may contain a little inline markup (<em>, <strong>, <br>).
+ */
+function bcb_rich($text)
+{
+    return wp_kses($text, array(
+        'em' => array(),
+        'strong' => array(),
+        'br' => array(),
+    ));
+}
+
+/**
+ * Event start date formatted in the configured timezone,
+ * e.g. bcb_event_date('D, M j') => "Sat, Apr 18".
+ */
+function bcb_event_date($format = 'D, M j')
+{
+    $start = bcb_cfg('event.start_date', '');
+
+    if ($start === '') {
+        return '';
+    }
+
+    try {
+        $tz = new DateTimeZone(bcb_cfg('event.timezone', 'Asia/Kolkata'));
+        $date = new DateTime($start, $tz);
+    } catch (Exception $e) {
+        error_log('bcb_event_date: ' . $e->getMessage());
+        return '';
+    }
+
+    return $date->format($format);
+}

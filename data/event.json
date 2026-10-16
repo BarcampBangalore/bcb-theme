@@ -1,0 +1,183 @@
+{
+  "event": {
+    "name": "BarCamp Bangalore",
+    "hashtag": "#bcb2026",
+    "start_date": "2026-11-21",
+    "timezone": "Asia/Kolkata",
+    "location_short": "Church Street, Bengaluru"
+  },
+
+  "images": {
+    "logo": "images/logo-bcb-no-year.png",
+    "favicon_32": "images/favicon-32x32.png",
+    "favicon_16": "images/favicon-16x16.png",
+    "hero": { "src": "images/hero-02.jpg", "alt": "BarCamp Bangalore crowd" },
+    "moments": [
+      { "src": "images/hero-01.jpg",   "alt": "BCB crowd" },
+      { "src": "images/hero-02.jpg",   "alt": "Session pitch board" },
+      { "src": "images/hero-03.jpg",   "alt": "Techlash lightning talk" },
+      { "src": "images/header-1.jpg",  "alt": "Hallway conversation" },
+      { "src": "images/header-2.jpg",  "alt": "Lunch break chats" },
+      { "src": "images/header-3.jpg",  "alt": "Sticky-note schedule" }
+    ]
+  },
+
+  "nav": {
+    "links": [
+      { "label": "Sessions",  "url": "/sessions" },
+      { "label": "Techlash",  "url": "/techlash" },
+      { "label": "FAQ",       "url": "/faq" },
+      { "label": "Team",      "url": "/team" }
+    ]
+  },
+
+  "rsvp": {
+    "enabled": true,
+    "url": "/rsvp",
+    "label": "RSVP now →"
+  },
+
+  "hero": {
+    "circle": ["NO SPEAKERS", "NO SCHEDULE", "JUST YOU"],
+    "heading": "The unconference <em>Bangalore</em> builds together.",
+    "sub": "No fixed agenda. No keynote speakers. Just a room full of curious people and a blank schedule — filled in by whoever shows up with something to say."
+  },
+
+  "what": {
+    "label": "01 — What's an unconference",
+    "heading": "You decide what to talk about. You're in control.",
+    "body": "There's no speaker list until the day itself. The schedule is built live — by you, and everyone else who walks in with a topic, a story, or a half-formed idea worth arguing about.",
+    "photo_caption": "PHOTO<br>attendees pitching a session on the board"
+  },
+
+  "who": {
+    "label": "02 — Who shows up",
+    "heading": "The most outside-the-box thinkers in the city. No, really.",
+    "body": "Design, tech, creativity, entrepreneurship, astronomy, music — if it crosses boundaries, steps on toes, or just spreads joy, we want to hear about it.",
+    "tags": ["Design", "Technology", "Entrepreneurship", "Astronomy", "Music", "Lifestyle"]
+  },
+
+  "moments": {
+    "label": "Moments from BCB",
+    "heading": "A few frames from years past."
+  },
+
+  "format": {
+    "label": "03 — Event Format",
+    "cards": [
+      {
+        "color": "orange",
+        "title": "Talks",
+        "meta": "45 min · 6 parallel tracks",
+        "text": "Six rooms, six sessions running at once. Don't like one? Get up and walk into another — we call that the law of two feet."
+      },
+      {
+        "color": "green",
+        "title": "Techlash",
+        "meta": "6 min · 1 hour total",
+        "text": "Your six minutes of fame. Show the crowd something you built and inspire the room."
+      }
+    ]
+  },
+
+  "board": {
+    "label": "How the day takes shape",
+    "heading": "The board fills in as the day goes.",
+    "body": "No printed agenda — just a whiteboard, a pack of sticky notes, and whoever grabs a marker first.",
+    "collapsed_text": "ROOMS 01 · 02 · 03 — six sessions, a stack of posties, and a marker.",
+    "reveal_label": "Reveal the board ↓",
+    "collapse_label": "Collapse the board ↑",
+    "hint": "↑ this is what the board looked like at the last BCB. bring your own posties.",
+    "rooms": ["ROOM 01", "ROOM 02", "ROOM 03"],
+    "_help": "items[].type: 'slot' = a time row (cells: null = empty, string = sticky note, {\"plain\": \"text\"} = handwritten text). 'break' = full-width row, style is one of big | break | techlash | feedback.",
+    "items": [
+      {
+        "type": "slot", "start": "10:30", "end": "11:15",
+        "cells": [ "Machine Learning & LLMs<br>— Sanjay", null, null ]
+      },
+      {
+        "type": "slot", "start": "11:20", "end": "12:05",
+        "cells": [ null, "Advocacy for open<br>internet — Aman", null ]
+      },
+      {
+        "type": "slot", "start": "12:05", "end": "12:50", "thick": true,
+        "cells": [ { "plain": "Volunteering @ FOSS Unit" }, "Live scraping & visualizing IRCTC", "Money matters" ]
+      },
+      { "type": "break", "style": "big", "label": "LUNCH BREAK" },
+      {
+        "type": "slot", "start": "2:00", "end": "2:45",
+        "cells": [ { "plain": "Thoughts on Leadership" }, null, null ]
+      },
+      {
+        "type": "slot", "start": "2:50", "end": "3:35", "thick": true,
+        "cells": [ "Fighting CBFC & freedom<br>— Aman & Winter", null, null ]
+      },
+      { "type": "break", "style": "break", "label": "TEA BREAK" },
+      { "type": "break", "style": "techlash", "label": "TECHLASH" },
+      { "type": "break", "style": "feedback", "label": "FEEDBACK" }
+    ]
+  },
+
+  "talks": {
+    "label": "05 — Types of Talks",
+    "cards": [
+      { "sub": "Spark the flame",   "title": "Introductory",    "text": "Introduce an idea, a tool, a lifestyle. Bridge the gap — start your cult." },
+      { "sub": "Give and take",     "title": "Open discussion", "text": "Need feedback or opinions from the room? This format gets everyone talking." },
+      { "sub": "Get your feet wet", "title": "Deep dive",       "text": "Take an idea and dig in. Best suited for intermediate/expert-level talks." }
+    ]
+  },
+
+  "rsvp_section": {
+    "heading": "Let us know you're coming.",
+    "body": "Your RSVP helps us plan an accurate headcount so the day runs smoothly for everyone."
+  },
+
+  "venue": {
+    "label": "06 — Venue",
+    "name": "Takshashila Institution & Samagata Foundation",
+    "address": "46/1, Cobalt Building, Church Street (above Church Street Social), Bengaluru – 560001.",
+    "directions": "Take the Purple line to MG Road station, then walk over to Church Street Social to find the venue.",
+    "map_embed_url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.9724835083087!2d77.60454931548427!3d12.971765090861785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae167a1a4b2cbf%3A0xf3a3ce5c793dcd5b!2sChurch%20Street%20Social!5e0!3m2!1sen!2sin!4v1663609000000!5m2!1sen!2sin",
+    "map_title": "Venue map — Cobalt Building, Church Street"
+  },
+
+  "sponsors": {
+    "label": "Thank you to our sponsors",
+    "_help": "items[].type: 'cta' (text + link), 'logos' (logos[] of {src, alt}) or 'text'. color: orange | green.",
+    "items": [
+      {
+        "type": "cta", "tier": "BLAZE", "color": "orange",
+        "text": "Be the hero we need.",
+        "link": "https://planning.barcampbangalore.com/sponsorship-opportunities-for-barcamp-bangalore-2024/",
+        "link_label": "Sponsor us →"
+      },
+      {
+        "type": "cta", "tier": "EMBER", "color": "green",
+        "text": "Be the hero we need.",
+        "link": "https://planning.barcampbangalore.com/sponsorship-opportunities-for-barcamp-bangalore-2024/",
+        "link_label": "Sponsor us →"
+      },
+      {
+        "type": "logos", "tier": "SPARK", "color": "orange",
+        "logos": [
+          { "src": "images/sponsors/logo-fossunited.png", "alt": "Foss United" },
+          { "src": "images/sponsors/janastu_logo.gif",    "alt": "Janastu" }
+        ]
+      },
+      {
+        "type": "text", "tier": "VENUE", "color": "green",
+        "text": "Takshashila · Samagata"
+      }
+    ]
+  },
+
+  "footer": {
+    "copy": "Copyleft. All wrongs reserved.",
+    "social": [
+      { "label": "Discord",   "url": "https://discord.gg/MxgfAMXwFS" },
+      { "label": "Instagram", "url": "https://www.instagram.com/barcampblr/" },
+      { "label": "LinkedIn",  "url": "https://www.linkedin.com/company/barcamp-bangalore" },
+      { "label": "Twitter/X", "url": "https://twitter.com/barcampbng" }
+    ]
+  }
+}
