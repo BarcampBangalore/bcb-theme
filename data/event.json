@@ -172,6 +172,43 @@
     ]
   },
 
+  "sessions": {
+    "_help": "tracks[] order = order of the filter chips. category_id is the WordPress category for that track. chosen_post_ids / archived_post_ids are post IDs hidden from the list.",
+    "label": "Proposed sessions",
+    "heading": "Pick a track, find your people.",
+    "body": "Everything attendees have proposed so far. Filter by track, then show up and follow your curiosity.",
+    "all_label": "All tracks",
+    "empty_text": "No sessions in this track yet :)",
+    "tracks": [
+      { "name": "Technology",              "icon": "images/ICONS/web-icons-19.png", "category_id": 2078 },
+      { "name": "Design",                  "icon": "images/ICONS/web-icons-15.png", "category_id": 2079 },
+      { "name": "Mobile & Web",            "icon": "images/ICONS/web-icons-16.png", "category_id": 2080 },
+      { "name": "Bangalore & Lifestyle",   "icon": "images/ICONS/web-icons-13.png", "category_id": 2081 },
+      { "name": "Scaling & Infrastructure","icon": "images/ICONS/web-icons-14.png", "category_id": 2082 },
+      { "name": "Entrepreneurship",        "icon": "images/ICONS/web-icons-17.png", "category_id": 2083 },
+      { "name": "Rest of the world",       "icon": "images/ICONS/web-icons-18.png", "category_id": 2084 }
+    ],
+    "chosen_post_ids": [7354, 7363],
+    "archived_post_ids": []
+  },
+
+  "techlash": {
+    "_help": "{year} is replaced with the event year, {home} with the site URL. intro[] items are paragraphs; <a>, <em>, <strong>, <br> are allowed.",
+    "label": "Techlash",
+    "heading": "Six minute brew",
+    "intro": [
+      "Are you an innovator looking to showcase your tech or product to a diverse and enthusiastic audience? Look no further than our Techlash Showdown at Barcamp! This session is all about giving participants the opportunity to present their latest and greatest tech or product innovations in a 6-minute time limit.",
+      "This session is open to anyone who has a product they would like to demonstrate. Whether you're an entrepreneur, inventor, or hobbyist, this is your chance to showcase your innovation to an engaged and supportive audience.",
+      "Simply <a href=\"{home}/how-to-register\">register</a> for Barcamp and <a href=\"{home}/add-a-session\">submit a session</a> under the \"Techlash\" category. There are a limited number of spots available, so sign up early to ensure your spot.",
+      "PS: These ideas will undergo a filtering process. Remember to put in your phone number in the right field while you adding your session, we might require some clarifications from you."
+    ],
+    "category_id": 2085,
+    "list_heading": "Techlash sessions for BCB {year}",
+    "empty_text": "Sorry no techlash session has been posted yet.",
+    "submit_url": "/add-a-session",
+    "submit_label": "Showcase your project?"
+  },
+
   "footer": {
     "copy": "Copyleft. All wrongs reserved.",
     "social": [

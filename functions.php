@@ -211,18 +211,17 @@ function getSessions($data)
 
 
 
+/**
+ * Category ids of the session tracks, in the same order as the track
+ * chips on the sessions page. Configured in data/event.json (sessions.tracks).
+ */
 function get_current_cats(bool $get_as_string)
 {
+    $tracks = array();
 
-
-    // NOTE -  The Order of the categories matters! It has to be same as the icons on the sessions page.
-
-    // Tech, Design, Mobile & Web, Bangalore LIfestyle, Scaling Infra, Entrepreneurship, Rest of world
-
-    $tracks = array(2078, 2079, 2080, 2081, 2082, 2083, 2084);
-    // $tracks = array(2046, 2047, 2048, 2049, 2050, 2051, 2052);
-    // $tracks = array(2012, 2006, 2008, 2005, 2010, 2007, 2009);
-    // $tracks = array(1971, 1972, 1973, 1974, 1975, 1976, 1977);
+    foreach (bcb_cfg_list('sessions.tracks') as $track) {
+        $tracks[] = (int) $track['category_id'];
+    }
 
     if ($get_as_string) {
         return implode(", ", $tracks);
@@ -238,17 +237,39 @@ function get_current_cats(bool $get_as_string)
  */
 function get_chosen_track_ids()
 {
-    return array(7354, 7363);
-
-    //    return array(7300, 7302);
+    return array_map('intval', bcb_cfg_list('sessions.chosen_post_ids'));
 }
 
 
 
 function get_archived_track_ids()
 {
+    return array_map('intval', bcb_cfg_list('sessions.archived_post_ids'));
+}
 
-    return array();
+/**
+ * One session card, for use inside the loop (sessions + techlash pages).
+ *
+ * @param int|null $track_index Index into sessions.tracks, for the track filter.
+ * @param int      $variant     Position in the list; alternates the card's shadow color.
+ */
+function bcb_render_session_card($track_index = null, $variant = 0)
+{
+    $author_id  = get_the_author_meta('ID');
+    $author_url = get_author_posts_url($author_id);
+    $color      = $variant % 2 ? 'green' : 'orange';
+    $attendees  = attending_users_count(get_the_ID());
+?>
+    <article class="bcb-session-card bcb-session-card--<?php echo $color; ?>"<?php echo $track_index !== null ? ' data-track-id="' . (int) $track_index . '"' : ''; ?>>
+        <a class="bcb-session-card__avatar" href="<?php echo esc_url($author_url); ?>"><?php echo get_avatar($author_id, 64); ?></a>
+        <p class="bcb-session-card__author"><a href="<?php echo esc_url($author_url); ?>"><?php echo esc_html(get_the_author_meta('display_name')); ?></a></p>
+        <h3 class="bcb-session-card__title"><a href="<?php echo esc_url(get_permalink()); ?>"><?php echo get_the_title(); ?></a></h3>
+        <div class="bcb-session-card__meta">
+            <?php echo (int) $attendees; ?> <?php echo $attendees === 1 ? 'attendee' : 'attendees'; ?> ·
+            <?php comments_number('0 comments', '1 comment', '% comments'); ?>
+        </div>
+    </article>
+<?php
 }
 
 
@@ -362,6 +383,32 @@ function bcb_rich($text)
         'em' => array(),
         'strong' => array(),
         'br' => array(),
+    ));
+}
+
+/**
+ * Replace {year} (event year), {event} (event name) and {home} (site URL)
+ * in a config string.
+ */
+function bcb_tpl($text)
+{
+    return strtr($text, array(
+        '{year}'  => bcb_event_date('Y'),
+        '{event}' => bcb_cfg('event.name', 'BarCamp Bangalore'),
+        '{home}'  => untrailingslashit(home_url()),
+    ));
+}
+
+/**
+ * Paragraph-level text with links, from config. Run bcb_tpl() first if it uses tokens.
+ */
+function bcb_prose($text)
+{
+    return wp_kses($text, array(
+        'a'      => array('href' => array(), 'target' => array(), 'rel' => array()),
+        'em'     => array(),
+        'strong' => array(),
+        'br'     => array(),
     ));
 }
 
