@@ -244,6 +244,11 @@
     ]
   },
 
+  "how_to_register": {
+    "_help": "On the How to register page, every top-level list with 2+ items becomes a vertical step-by-step progress bar, unless the heading above it contains one of these words.",
+    "non_step_headings": ["FAQ"]
+  },
+
   "faq": {
     "_help": "The questions/answers are the content of the FAQ page in WP admin ([expand title=\"...\"]answer[/expand]).",
     "label": "FAQ"

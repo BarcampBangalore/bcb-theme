@@ -402,6 +402,63 @@ function bcb_expand_shortcode($atts, $content = '')
 }
 
 /**
+ * Marks the top-level lists of a content block as a vertical stepper (class "bcb-steps").
+ * A list qualifies when it has 2+ items and the heading above it doesn't contain any of
+ * $skip_headings (e.g. "FAQ"). Content is untouched if DOM support is missing.
+ */
+function bcb_mark_steps($html, $skip_headings = array())
+{
+    if (!class_exists('DOMDocument') || trim($html) === '') {
+        return $html;
+    }
+
+    $dom = new DOMDocument();
+    libxml_use_internal_errors(true);
+    $dom->loadHTML('<?xml encoding="utf-8" ?><div>' . $html . '</div>', LIBXML_HTML_NOIMPLIED | LIBXML_HTML_NODEFDTD);
+    libxml_clear_errors();
+
+    $root = $dom->getElementsByTagName('div')->item(0);
+    if (!$root) {
+        return $html;
+    }
+
+    $heading = '';
+    $out = '';
+
+    foreach ($root->childNodes as $node) {
+        if ($node->nodeType === XML_ELEMENT_NODE) {
+            $tag = strtolower($node->nodeName);
+
+            if (preg_match('/^h[1-6]$/', $tag)) {
+                $heading = $node->textContent;
+            } elseif ($tag === 'ol' || $tag === 'ul') {
+                $items = 0;
+                foreach ($node->childNodes as $child) {
+                    if ($child->nodeType === XML_ELEMENT_NODE && strtolower($child->nodeName) === 'li') {
+                        $items++;
+                    }
+                }
+
+                $skip = false;
+                foreach ($skip_headings as $needle) {
+                    if ($needle !== '' && stripos($heading, $needle) !== false) {
+                        $skip = true;
+                    }
+                }
+
+                if ($items >= 2 && !$skip) {
+                    $class = trim($node->getAttribute('class') . ' bcb-steps');
+                    $node->setAttribute('class', $class);
+                }
+            }
+        }
+        $out .= $dom->saveHTML($node);
+    }
+
+    return $out;
+}
+
+/**
  * Replace {year} (event year), {event} (event name) and {home} (site URL)
  * in a config string.
  */

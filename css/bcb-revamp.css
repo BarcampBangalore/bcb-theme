@@ -879,3 +879,69 @@ body {
   .bcb-nav__links { gap: 18px; font-size: 14px; }
   .bcb-btn-outline, .bcb-btn-green { padding: 8px 16px; }
 }
+
+/* ==========================================================
+   Step-by-step lists (How to register): vertical progress stepper
+   ========================================================== */
+.bcb-prose ol.bcb-steps, .bcb-prose ul.bcb-steps { list-style: none; margin: 0 0 48px; padding: 0; counter-reset: bcb-step; }
+.bcb-steps > li {
+  position: relative;
+  counter-increment: bcb-step;
+  margin: 0;
+  padding: 6px 0 36px 68px;
+  min-height: 40px;
+}
+.bcb-steps > li:last-child { padding-bottom: 0; }
+/* number badge */
+.bcb-steps > li::before {
+  content: counter(bcb-step);
+  position: absolute;
+  left: 0; top: 0;
+  z-index: 1;
+  width: 42px; height: 42px;
+  display: flex; align-items: center; justify-content: center;
+  border: 3px solid oklch(18% 0.02 40);
+  border-radius: 50%;
+  background: oklch(52% 0.12 150);
+  color: white;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  transition: background-color .25s, color .25s, box-shadow .25s;
+}
+/* connector to the next step */
+.bcb-steps > li::after {
+  content: '';
+  position: absolute;
+  left: 19.5px; top: 42px; bottom: 0;
+  width: 3px;
+  background: oklch(52% 0.12 150);
+  transition: background-color .25s;
+}
+.bcb-steps > li:last-child::after { display: none; }
+
+/* with JS: steps you haven't reached yet are outlined, the current one is orange */
+.bcb-steps--live > li:not(.is-reached)::before { background: oklch(96% 0.02 75); color: oklch(45% 0.02 40); border-color: oklch(75% 0.01 90); }
+.bcb-steps--live > li:not(.is-linked)::after { background: oklch(82% 0.01 90); }
+.bcb-steps--live > li.is-current::before { background: oklch(64% 0.19 45); border-color: oklch(18% 0.02 40); box-shadow: 0 0 0 5px oklch(64% 0.19 45 / 0.25); }
+
+/* sub-notes (nested lists) become a small callout */
+.bcb-steps > li ul, .bcb-steps > li ol {
+  list-style: none;
+  margin: 12px 0 0;
+  padding: 14px 18px;
+  background: oklch(92% 0.03 70);
+  border: 2px dashed oklch(75% 0.01 90);
+  border-radius: 10px;
+  font-size: 15px;
+}
+.bcb-steps > li ul li, .bcb-steps > li ol li { margin: 0; }
+
+@media (prefers-reduced-motion: reduce) {
+  .bcb-steps > li::before, .bcb-steps > li::after { transition: none; }
+}
+@media (max-width: 900px) {
+  .bcb-steps > li { padding-left: 56px; }
+  .bcb-steps > li::before { width: 38px; height: 38px; font-size: 15px; }
+  .bcb-steps > li::after { left: 17.5px; top: 38px; }
+}
