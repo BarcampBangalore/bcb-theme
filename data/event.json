@@ -2,7 +2,7 @@
   "event": {
     "name": "BarCamp Bangalore",
     "hashtag": "#bcb2026",
-    "start_date": "2026-11-21",
+    "start_date": "2026-04-18",
     "timezone": "Asia/Kolkata",
     "location_short": "Church Street, Bengaluru"
   },
@@ -11,7 +11,7 @@
     "logo": "images/logo-bcb-no-year.png",
     "favicon_32": "images/favicon-32x32.png",
     "favicon_16": "images/favicon-16x16.png",
-    "hero": { "src": "images/hero-02.jpg", "alt": "BarCamp Bangalore crowd" },
+    "hero": { "src": "images/techlash_cropped.JPG", "alt": "Techlash lightning talk at BarCamp Bangalore" },
     "moments": [
       { "src": "images/hero-01.jpg",   "alt": "BCB crowd" },
       { "src": "images/hero-02.jpg",   "alt": "Session pitch board" },
@@ -37,7 +37,7 @@
 
   "rsvp": {
     "enabled": true,
-    "url": "/rsvp",
+    "url": "https://luma.com/ekad3pug",
     "label": "RSVP now →"
   },
 
@@ -139,16 +139,16 @@
 
   "venue": {
     "label": "06 — Venue",
-    "name": "Takshashila Institution & Samagata Foundation",
-    "address": "46/1, Cobalt Building, Church Street (above Church Street Social), Bengaluru – 560001.",
-    "directions": "Take the Purple line to MG Road station, then walk over to Church Street Social to find the venue.",
-    "map_embed_url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.9724835083087!2d77.60454931548427!3d12.971765090861785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae167a1a4b2cbf%3A0xf3a3ce5c793dcd5b!2sChurch%20Street%20Social!5e0!3m2!1sen!2sin!4v1663609000000!5m2!1sen!2sin",
+    "name": "The Takshashila Institution (2nd floor) & Samagata Foundation (4th floor)",
+    "address": "46/1, Cobalt Building, Church Street (above Church Street Social), Bengaluru - 560001.",
+    "directions": "Take the metro and get down at the MG Road station on the Purple line. Walk over to Church Street Social to find the venue.",
+    "map_embed_url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d903.7571911674339!2d77.60243193065465!3d12.975622873500768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae167c7b6919e9%3A0x86936959d24e13f5!2sCobalt%2C%20Museum%20Rd%2C%20Haridevpur%2C%20Shanthala%20Nagar%2C%20Ashok%20Nagar%2C%20Bengaluru%2C%20Karnataka%20560001!5e0!3m2!1sen!2sin!4v1734510391422!5m2!1sen!2sin",
     "map_title": "Venue map — Cobalt Building, Church Street"
   },
 
   "sponsors": {
     "label": "Thank you to our sponsors",
-    "_help": "items[].type: 'cta' (text + link), 'logos' (logos[] of {src, alt}) or 'text'. color: orange | green.",
+    "_help": "items[].type: 'cta' (text + link), 'logos' (logos[] of {src, alt, name?, link?}) or 'text'. color: orange | green.",
     "items": [
       {
         "type": "cta", "tier": "BLAZE", "color": "orange",
@@ -165,13 +165,16 @@
       {
         "type": "logos", "tier": "SPARK", "color": "orange",
         "logos": [
-          { "src": "images/sponsors/logo-fossunited.png", "alt": "Foss United" },
-          { "src": "images/sponsors/janastu_logo.gif",    "alt": "Janastu" }
+          { "src": "images/sponsors/2025/foss-united.svg", "alt": "Foss United", "name": "Foss United", "link": "https://fossunited.org/" },
+          { "src": "images/sponsors/janastu_logo.gif",     "alt": "Janastu",    "name": "Janastu",     "link": "https://barcampbangalore.com/bcb/about-janastu" }
         ]
       },
       {
-        "type": "text", "tier": "VENUE", "color": "green",
-        "text": "Takshashila · Samagata"
+        "type": "logos", "tier": "VENUE", "color": "green",
+        "logos": [
+          { "src": "images/sponsors/2025/takshashila.png", "alt": "The Takshashila Institution", "name": "The Takshashila Institution", "link": "https://takshashila.org.in/" },
+          { "src": "images/sponsors/2025/samagata.svg",    "alt": "Samagata Foundation",         "name": "Samagata Foundation",         "link": "https://samagata.org/" }
+        ]
       }
     ]
   },
@@ -258,9 +261,14 @@
     "copy": "Copyleft. All wrongs reserved.",
     "social": [
       { "label": "Discord",   "url": "https://discord.gg/MxgfAMXwFS" },
+      { "label": "Telegram",  "url": "https://t.me/BarcampBangalore" },
+      { "label": "LinkedIn",  "url": "https://www.linkedin.com/company/barcamp-bangalore/" },
       { "label": "Instagram", "url": "https://www.instagram.com/barcampblr/" },
-      { "label": "LinkedIn",  "url": "https://www.linkedin.com/company/barcamp-bangalore" },
-      { "label": "Twitter/X", "url": "https://twitter.com/barcampbng" }
+      { "label": "Twitter/X", "url": "https://twitter.com/barcampbng" },
+      { "label": "Facebook",  "url": "https://www.facebook.com/barcampbng" },
+      { "label": "Mastodon",  "url": "https://hachyderm.io/@barcampbangalore" },
+      { "label": "Meetup",    "url": "https://www.meetup.com/Barcamp-Bangalore/" },
+      { "label": "Mail us",   "url": "mailto:contact@barcampbangalore.com" }
     ]
   }
 }
