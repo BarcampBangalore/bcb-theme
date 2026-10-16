@@ -4,7 +4,7 @@ function insertSponsors($bcbname)
 {
     switch ($bcbname) {
         case "BCB 2025":
-            ?>
+?>
 
             <div>
                 <h2>Sponsors for <?php echo $bcbname; ?></h2>
@@ -53,10 +53,10 @@ function insertSponsors($bcbname)
 
             </div>
 
-            <?php
+        <?php
             break;
         case "BCB 2025 Autumn":
-            ?>
+        ?>
 
             <div>
                 <h2>Sponsors for <?php echo $bcbname; ?></h2>
@@ -83,10 +83,10 @@ function insertSponsors($bcbname)
 
             </div>
 
-            <?php
+        <?php
             break;
         case "BCB 2022":
-            ?>
+        ?>
 
             <div>
                 <h2>Sponsors for <?php echo $bcbname; ?></h2>
@@ -124,10 +124,10 @@ function insertSponsors($bcbname)
                     <div>Janastu</div>
                 </div>
             </div>
-            <?php
+        <?php
             break;
         case "BCB 2024":
-            ?>
+        ?>
 
             <div>
                 <h2>Sponsors for <?php echo $bcbname; ?></h2>
@@ -149,10 +149,10 @@ function insertSponsors($bcbname)
                 </div>
             </div>
 
-            <?php
+        <?php
             break;
         case "BCB 2023":
-            ?>
+        ?>
 
             <div>
                 <h2>Sponsors for <?php echo $bcbname; ?></h2>
@@ -175,10 +175,10 @@ function insertSponsors($bcbname)
             </div>
 
 
-            <?php
+        <?php
             break;
         case "BCB 2021 Virtual":
-            ?>
+        ?>
 
             <div>
                 <h2>Sponsors for <?php echo $bcbname; ?></h2>
@@ -206,10 +206,10 @@ function insertSponsors($bcbname)
                 </div>
             </div>
 
-            <?php
+        <?php
             break;
         case "BCB Spring 2019":
-            ?>
+        ?>
 
             <div>
                 <h2>Sponsors for <?php echo $bcbname; ?></h2>
@@ -237,10 +237,10 @@ function insertSponsors($bcbname)
                 </div>
             </div>
 
-            <?php
+        <?php
             break;
         case "BCB Spring 2018":
-            ?>
+        ?>
 
             <div>
                 <h2>Sponsors for <?php echo $bcbname; ?></h2>
@@ -292,10 +292,10 @@ function insertSponsors($bcbname)
                 </div>
             </div>
 
-            <?php
+        <?php
             break;
         case "BCB Spring 2016":
-            ?>
+        ?>
 
             <div>
                 <h2>Sponsors for <?php echo $bcbname; ?></h2>
@@ -307,11 +307,11 @@ function insertSponsors($bcbname)
                 </div>
             </div>
 
-            <?php
+        <?php
             break;
 
         case "BCB Monsoon 2015":
-            ?>
+        ?>
 
             <div>
                 <h2>Sponsors for <?php echo $bcbname; ?></h2>
@@ -323,11 +323,11 @@ function insertSponsors($bcbname)
                 </div>
             </div>
 
-            <?php
+        <?php
             break;
 
         case "bcbxah":
-            ?>
+        ?>
 
             <div>
                 <h2>Sponsors for BCBXAntHill</h2>
@@ -343,10 +343,10 @@ function insertSponsors($bcbname)
                 </div>
             </div>
 
-            <?php
+        <?php
             break;
         case "bcb17":
-            ?>
+        ?>
 
             <div>
                 <h2>Sponsors for <?php echo $bcbname; ?></h2>
@@ -362,11 +362,11 @@ function insertSponsors($bcbname)
                 </div>
             </div>
 
-            <?php
+        <?php
             break;
 
         case "bcb16":
-            ?>
+        ?>
 
             <div>
                 <h2>Sponsors for <?php echo $bcbname; ?></h2>
@@ -384,11 +384,11 @@ function insertSponsors($bcbname)
                 </div>
             </div>
 
-            <?php
+        <?php
             break;
 
         case "bcb15":
-            ?>
+        ?>
 
             <div>
                 <h2>Sponsors for <?php echo $bcbname ?></h2>
@@ -411,11 +411,11 @@ function insertSponsors($bcbname)
 
             </div>
 
-            <?php
+        <?php
             break;
 
         case "bcb14":
-            ?>
+        ?>
 
             <div>
                 <h2>Sponsors for <?php echo $bcbname ?></h2>
@@ -453,11 +453,11 @@ function insertSponsors($bcbname)
 
             </div>
 
-            <?php
+        <?php
             break;
 
         case "bcb13":
-            ?>
+        ?>
 
             <div>
                 <h2>Sponsors for <?php echo $bcbname ?></h2>
@@ -479,11 +479,11 @@ function insertSponsors($bcbname)
                 </div>
             </div>
 
-            <?php
+        <?php
             break;
 
         case "bcb12":
-            ?>
+        ?>
 
             <div>
                 <h2>Sponsors for <?php echo $bcbname ?></h2>
@@ -505,11 +505,11 @@ function insertSponsors($bcbname)
                 </div>
             </div>
 
-            <?php
+        <?php
             break;
 
         case "bcb11":
-            ?>
+        ?>
 
             <div>
                 <h2>Sponsors for <?php echo $bcbname ?></h2>
@@ -527,11 +527,11 @@ function insertSponsors($bcbname)
 
             </div>
 
-            <?php
+        <?php
             break;
 
         case "bcb10":
-            ?>
+        ?>
 
             <div>
                 <h2>Sponsors for <?php echo $bcbname ?></h2>
@@ -553,11 +553,11 @@ function insertSponsors($bcbname)
                 </div>
             </div>
 
-            <?php
+        <?php
             break;
 
         case "bcb9":
-            ?>
+        ?>
 
             <div>
                 <h2>Sponsors for <?php echo $bcbname ?></h2>
@@ -578,11 +578,11 @@ function insertSponsors($bcbname)
                 </div>
             </div>
 
-            <?php
+        <?php
             break;
 
         case "bcb8":
-            ?>
+        ?>
 
             <div>
                 <h2>Sponsors for <?php echo $bcbname ?></h2>
@@ -594,7 +594,7 @@ function insertSponsors($bcbname)
 
             </div>
 
-            <?php
+<?php
             break;
 
         default:
@@ -613,8 +613,8 @@ get_header(); ?>
     <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/libs/jquery.isotope.js"></script>
 
     <script type="text/javascript">
-        $(function () {
-            $("#archives_page_bcb_selector a").click(function () {
+        $(function() {
+            $("#archives_page_bcb_selector a").click(function() {
                 $("#archives_page_bcb_selector li").removeClass("archive_selected");
                 $(".archives_parent").hide();
                 var contentdiv = "#" + $(this).data("contentdiv");
@@ -627,7 +627,6 @@ get_header(); ?>
 
 
         });
-
     </script>
 
 
@@ -694,7 +693,7 @@ get_header(); ?>
             3 => 'bcb8'
         );
         foreach ($archive_categories as $archive_cat => $archive_catname):
-            ?>
+        ?>
             <div id="archive_<?php echo $archive_cat; ?>" class="archives_parent">
                 <div class="row archive_sponsors_wrapper">
                     <div class="col-12 p-2 text-center">
@@ -710,7 +709,7 @@ get_header(); ?>
                     query_posts('cat=' . $archive_cat);
                     while (have_posts()):
                         the_post();
-                        ?>
+                    ?>
                         <div class="col-xs-12 col-sm-6 col-md-4 mb-3">
                             <div class="card shadow-sm session-card">
                                 <div class="card-body text-center">
