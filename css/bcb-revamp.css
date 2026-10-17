@@ -1145,3 +1145,98 @@ a.bcb-sponsor-logo:hover { opacity: 0.75; }
 @media (prefers-reduced-motion: reduce) {
   .bcb-nav__bars, .bcb-nav__bars::before, .bcb-nav__bars::after { transition: none; }
 }
+
+/* ==========================================================
+   Single session page (single.php)
+   ========================================================== */
+.bcb-session-hero { padding: 48px 56px 24px; background: oklch(96% 0.02 75); }
+.bcb-session-hero__inner, .bcb-article { max-width: 820px; margin: 0 auto; }
+.bcb-back {
+  display: inline-block;
+  margin-bottom: 28px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: oklch(40% 0.03 60);
+  text-decoration: none;
+}
+.bcb-back:hover { color: oklch(18% 0.02 40); text-decoration: underline; }
+.bcb-session-hero .bcb-section-label { margin-bottom: 12px; }
+.bcb-session-hero__title {
+  margin: 0 0 28px;
+  font-family: 'Instrument Serif', serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 1.05;
+  overflow-wrap: anywhere;
+}
+.bcb-session-hero__by { display: flex; align-items: center; gap: 14px; margin-bottom: 28px; }
+.bcb-session-hero__by img { width: 56px; height: 56px; border-radius: 50%; border: 2px solid oklch(18% 0.02 40); display: block; }
+.bcb-session-hero__presenter { font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 16px; }
+.bcb-session-hero__presenter a { color: inherit; text-decoration: underline; text-decoration-color: oklch(64% 0.19 45); text-underline-offset: 3px; }
+.bcb-session-hero__time { font-family: 'Space Grotesk', sans-serif; font-size: 13px; color: oklch(45% 0.03 60); }
+
+.bcb-attend { display: flex; align-items: center; flex-wrap: wrap; gap: 14px 18px; }
+.bcb-btn-dark--sm { padding: 12px 24px; font-size: 15px; border: none; cursor: pointer; box-shadow: 4px 4px 0 oklch(64% 0.19 45); }
+.bcb-btn-dark--sm.is-on { box-shadow: 4px 4px 0 oklch(52% 0.12 150); }
+.bcb-btn-dark--sm:disabled { opacity: .6; cursor: progress; }
+.bcb-avatars { display: flex; align-items: center; padding-left: 8px; }
+.bcb-avatars img { width: 28px; height: 28px; border-radius: 50%; border: 2px solid oklch(96% 0.02 75); margin-left: -8px; background: white; display: block; }
+.bcb-avatars__more { margin-left: 6px; font-family: 'Space Grotesk', sans-serif; font-size: 12px; font-weight: 700; color: oklch(45% 0.03 60); }
+.bcb-attend__count { font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 14px; color: oklch(40% 0.03 60); }
+
+.bcb-article .bcb-prose--page { max-width: none; margin-bottom: 40px; }
+.bcb-article .bcb-prose--page > .post-edit-link, .bcb-article .post-edit-link { font-family: 'Space Grotesk', sans-serif; font-size: 13px; }
+
+/* info boxes */
+.bcb-box-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; align-items: start; margin-bottom: 40px; }
+.bcb-box { padding: 22px 24px; background: oklch(96% 0.02 75); border: 3px solid oklch(18% 0.02 40); border-radius: 12px; min-width: 0; }
+.bcb-box--orange { box-shadow: 6px 6px 0 oklch(64% 0.19 45); }
+.bcb-box--green  { box-shadow: 6px 6px 0 oklch(52% 0.12 150); }
+.bcb-box__title { margin-bottom: 12px; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: oklch(45% 0.03 60); }
+.bcb-box__body { font-size: 15px; line-height: 1.8; overflow-wrap: anywhere; }
+.bcb-box__body--scroll { max-height: 200px; overflow-y: auto; padding-right: 6px; }
+.bcb-box__body a { color: oklch(18% 0.02 40); font-weight: 600; text-decoration: underline; text-decoration-color: oklch(64% 0.19 45); text-underline-offset: 3px; }
+.bcb-tag-link {
+  display: inline-block;
+  margin: 0 6px 6px 0;
+  padding: 4px 14px;
+  border-radius: 100px;
+  background: oklch(88% 0.04 60);
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  text-decoration: none !important;
+}
+.bcb-muted { color: oklch(45% 0.03 60); }
+
+/* share */
+.bcb-share { display: flex; align-items: center; flex-wrap: wrap; gap: 10px; margin-bottom: 56px; }
+.bcb-share__label { margin-right: 6px; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 14px; }
+.bcb-chip--link { padding: 8px 18px; text-decoration: none; }
+.bcb-chip--link:hover { color: oklch(18% 0.02 40); }
+
+/* comments (comments.php + mytheme_comment()) */
+.bcb-comments { max-width: none; margin-bottom: 0; }
+.bcb-comments h2, .bcb-comments #sessionpage_commentshead { margin: 0 0 20px; font-size: 38px; color: oklch(18% 0.02 40); text-decoration: none; }
+.bcb-comments ul.commentlist, .bcb-comments ul.children { list-style: none; margin: 0; padding: 0; }
+.bcb-comments ul.children { margin: 16px 0 0 28px; }
+.bcb-comments .commentlist li { margin: 0 0 16px; }
+.bcb-comments .comment-body { display: flex; gap: 14px; padding: 16px 18px; background: oklch(96% 0.02 75); border: 2px solid oklch(18% 0.02 40); border-radius: 12px; }
+.bcb-comments .comment-body img.avatar { width: 48px; height: 48px; border-radius: 50%; flex-shrink: 0; }
+.bcb-comments .comment-body-inner { min-width: 0; flex: 1; font-size: 15px; line-height: 1.6; overflow-wrap: anywhere; }
+.bcb-comments .comment-author cite { font-style: normal; font-weight: 700; font-family: 'Space Grotesk', sans-serif; }
+.bcb-comments .comment-author a { color: inherit; text-decoration: none; }
+.bcb-comments .comment_footer, .bcb-comments .comment-meta, .bcb-comments .reply { font-family: 'Space Grotesk', sans-serif; font-size: 12px; color: oklch(45% 0.03 60); }
+.bcb-comments .comment_footer a { color: inherit; font-weight: 600; text-decoration: underline; }
+.bcb-comments #reply-title { font-size: 28px; }
+.bcb-comments .comment-form-comment textarea { min-height: 140px; }
+.bcb-comments .logged-in-as, .bcb-comments .must-log-in { font-size: 14px; color: oklch(40% 0.03 60); }
+.bcb-comments .comment-form p { margin: 0 0 16px; }
+
+@media (max-width: 900px) {
+  .bcb-session-hero { padding: 32px 24px 16px; }
+  .bcb-session-hero__title { font-size: 38px; }
+  .bcb-box-grid { grid-template-columns: minmax(0, 1fr); }
+}
