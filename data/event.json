@@ -15,12 +15,13 @@
     "favicon_16": "images/favicon-16x16.png",
     "hero": { "src": "images/techlash_cropped.JPG", "alt": "Techlash lightning talk at BarCamp Bangalore" },
     "moments": [
-      { "src": "images/hero-01.jpg",   "alt": "BCB crowd" },
       { "src": "images/hero-02.jpg",   "alt": "Session pitch board" },
       { "src": "images/hero-03.jpg",   "alt": "Techlash lightning talk" },
-      { "src": "images/header-1.jpg",  "alt": "Hallway conversation" },
-      { "src": "images/header-2.jpg",  "alt": "Lunch break chats" },
-      { "src": "images/header-3.jpg",  "alt": "Sticky-note schedule" }
+      { "src": "images/header-3.jpg",  "alt": "Sticky-note schedule" },
+      { "src": "images/early-2026/IMG_5049.png",  "alt": "Touring in Vietnam" },
+      { "src": "images/early-2026/IMG_5091.png",  "alt": "Crowd" },
+      { "src": "images/early-2026/IMG_5108.png",  "alt": "Poster" },
+      { "src": "images/early-2026/IMG_7646.png",  "alt": "All of us" }
     ]
   },
 
