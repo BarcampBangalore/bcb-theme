@@ -6,118 +6,67 @@
     "timezone": "Asia/Kolkata",
     "location_short": "Church Street, Bengaluru"
   },
+
   "images": {
     "logo": "images/logo-bcb-no-year.png",
     "favicon_32": "images/favicon-32x32.png",
     "favicon_16": "images/favicon-16x16.png",
-    "hero": {
-      "src": "images/techlash_cropped.JPG",
-      "alt": "Techlash lightning talk at BarCamp Bangalore"
-    },
+    "hero": { "src": "images/techlash_cropped.JPG", "alt": "Techlash lightning talk at BarCamp Bangalore" },
     "moments": [
-      {
-        "src": "images/hero-01.jpg",
-        "alt": "BCB crowd"
-      },
-      {
-        "src": "images/hero-02.jpg",
-        "alt": "Session pitch board"
-      },
-      {
-        "src": "images/hero-03.jpg",
-        "alt": "Techlash lightning talk"
-      },
-      {
-        "src": "images/header-1.jpg",
-        "alt": "Hallway conversation"
-      },
-      {
-        "src": "images/header-2.jpg",
-        "alt": "Lunch break chats"
-      },
-      {
-        "src": "images/header-3.jpg",
-        "alt": "Sticky-note schedule"
-      }
+      { "src": "images/hero-01.jpg",   "alt": "BCB crowd" },
+      { "src": "images/hero-02.jpg",   "alt": "Session pitch board" },
+      { "src": "images/hero-03.jpg",   "alt": "Techlash lightning talk" },
+      { "src": "images/header-1.jpg",  "alt": "Hallway conversation" },
+      { "src": "images/header-2.jpg",  "alt": "Lunch break chats" },
+      { "src": "images/header-3.jpg",  "alt": "Sticky-note schedule" }
     ]
   },
+
   "nav": {
     "links": [
-      {
-        "label": "Sessions",
-        "url": "/sessions"
-      },
-      {
-        "label": "Techlash",
-        "url": "/techlash"
-      },
-      {
-        "label": "How to register",
-        "url": "/how-to-register"
-      },
-      {
-        "label": "Add a session",
-        "url": "/add-a-session"
-      },
-      {
-        "label": "Archives",
-        "url": "/archives"
-      },
-      {
-        "label": "FAQ",
-        "url": "/faq"
-      },
-      {
-        "label": "About",
-        "url": "/about"
-      },
-      {
-        "label": "Team",
-        "url": "/team"
-      }
+      { "label": "Sessions",        "url": "/sessions" },
+      { "label": "Techlash",        "url": "/techlash" },
+      { "label": "How to register", "url": "/how-to-register" },
+      { "label": "Add a session",   "url": "/add-a-session" },
+      { "label": "Archives",        "url": "/archives" },
+      { "label": "FAQ",             "url": "/faq" },
+      { "label": "About",           "url": "/about" },
+      { "label": "Team",            "url": "/team" }
     ]
   },
+
   "rsvp": {
     "enabled": true,
     "url": "https://luma.com/ekad3pug",
     "label": "RSVP now →"
   },
+
   "hero": {
-    "circle": [
-      "NO SPEAKERS",
-      "NO SCHEDULE",
-      "JUST YOU"
-    ],
+    "circle": ["NO SPEAKERS", "NO SCHEDULE", "JUST YOU"],
     "heading": "The unconference <em>Bangalore</em> builds together.",
     "sub": "No fixed agenda. No keynote speakers. Just a room full of curious people and a blank schedule — filled in by whoever shows up with something to say."
   },
+
   "what": {
     "label": "01 — What's an unconference",
     "heading": "You decide what to talk about. You're in control.",
     "body": "There's no speaker list until the day itself. The schedule is built live — by you, and everyone else who walks in with a topic, a story, or a half-formed idea worth arguing about.",
-    "photo": {
-      "src": "images/Samagata.jpeg",
-      "alt": "BarCamp Bangalore attendees"
-    },
+    "photo": { "src": "images/Samagata.jpeg", "alt": "BarCamp Bangalore attendees" },
     "photo_caption": "PHOTO<br>attendees pitching a session on the board"
   },
+
   "who": {
     "label": "02 — Who shows up",
     "heading": "The most outside-the-box thinkers in the city. No, really.",
     "body": "Design, tech, creativity, entrepreneurship, astronomy, music — if it crosses boundaries, steps on toes, or just spreads joy, we want to hear about it.",
-    "tags": [
-      "Design",
-      "Technology",
-      "Entrepreneurship",
-      "Astronomy",
-      "Music",
-      "Lifestyle"
-    ]
+    "tags": ["Design", "Technology", "Entrepreneurship", "Astronomy", "Music", "Lifestyle"]
   },
+
   "moments": {
     "label": "Moments from BCB",
     "heading": "A few frames from years past."
   },
+
   "format": {
     "label": "03 — Event Format",
     "cards": [
@@ -135,6 +84,7 @@
       }
     ]
   },
+
   "board": {
     "label": "How the day takes shape",
     "heading": "The board fills in as the day goes.",
@@ -143,115 +93,50 @@
     "reveal_label": "Reveal the board ↓",
     "collapse_label": "Collapse the board ↑",
     "hint": "↑ this is what the board looked like at the last BCB. bring your own posties.",
-    "rooms": [
-      "ROOM 01",
-      "ROOM 02",
-      "ROOM 03"
-    ],
+    "rooms": ["ROOM 01", "ROOM 02", "ROOM 03"],
     "_help": "items[].type: 'slot' = a time row (cells: null = empty, string = sticky note, {\"plain\": \"text\"} = handwritten text). 'break' = full-width row, style is one of big | break | techlash | feedback.",
     "items": [
       {
-        "type": "slot",
-        "start": "10:30",
-        "end": "11:15",
-        "cells": [
-          "Machine Learning & LLMs<br>— Sanjay",
-          null,
-          null
-        ]
+        "type": "slot", "start": "10:30", "end": "11:15",
+        "cells": [ "Machine Learning & LLMs<br>— Sanjay", null, null ]
       },
       {
-        "type": "slot",
-        "start": "11:20",
-        "end": "12:05",
-        "cells": [
-          null,
-          "Advocacy for open<br>internet — Aman",
-          null
-        ]
+        "type": "slot", "start": "11:20", "end": "12:05",
+        "cells": [ null, "Advocacy for open<br>internet — Aman", null ]
       },
       {
-        "type": "slot",
-        "start": "12:05",
-        "end": "12:50",
-        "thick": true,
-        "cells": [
-          {
-            "plain": "Volunteering @ FOSS Unit"
-          },
-          "Live scraping & visualizing IRCTC",
-          "Money matters"
-        ]
+        "type": "slot", "start": "12:05", "end": "12:50", "thick": true,
+        "cells": [ { "plain": "Volunteering @ FOSS Unit" }, "Live scraping & visualizing IRCTC", "Money matters" ]
+      },
+      { "type": "break", "style": "big", "label": "LUNCH BREAK" },
+      {
+        "type": "slot", "start": "2:00", "end": "2:45",
+        "cells": [ { "plain": "Thoughts on Leadership" }, null, null ]
       },
       {
-        "type": "break",
-        "style": "big",
-        "label": "LUNCH BREAK"
+        "type": "slot", "start": "2:50", "end": "3:35", "thick": true,
+        "cells": [ "Fighting CBFC & freedom<br>— Aman & Winter", null, null ]
       },
-      {
-        "type": "slot",
-        "start": "2:00",
-        "end": "2:45",
-        "cells": [
-          {
-            "plain": "Thoughts on Leadership"
-          },
-          null,
-          null
-        ]
-      },
-      {
-        "type": "slot",
-        "start": "2:50",
-        "end": "3:35",
-        "thick": true,
-        "cells": [
-          "Fighting CBFC & freedom<br>— Aman & Winter",
-          null,
-          null
-        ]
-      },
-      {
-        "type": "break",
-        "style": "break",
-        "label": "TEA BREAK"
-      },
-      {
-        "type": "break",
-        "style": "techlash",
-        "label": "TECHLASH"
-      },
-      {
-        "type": "break",
-        "style": "feedback",
-        "label": "FEEDBACK"
-      }
+      { "type": "break", "style": "break", "label": "TEA BREAK" },
+      { "type": "break", "style": "techlash", "label": "TECHLASH" },
+      { "type": "break", "style": "feedback", "label": "FEEDBACK" }
     ]
   },
+
   "talks": {
     "label": "05 — Types of Talks",
     "cards": [
-      {
-        "sub": "Spark the flame",
-        "title": "Introductory",
-        "text": "Introduce an idea, a tool, a lifestyle. Bridge the gap — start your cult."
-      },
-      {
-        "sub": "Give and take",
-        "title": "Open discussion",
-        "text": "Need feedback or opinions from the room? This format gets everyone talking."
-      },
-      {
-        "sub": "Get your feet wet",
-        "title": "Deep dive",
-        "text": "Take an idea and dig in. Best suited for intermediate/expert-level talks."
-      }
+      { "sub": "Spark the flame",   "title": "Introductory",    "text": "Introduce an idea, a tool, a lifestyle. Bridge the gap — start your cult." },
+      { "sub": "Give and take",     "title": "Open discussion", "text": "Need feedback or opinions from the room? This format gets everyone talking." },
+      { "sub": "Get your feet wet", "title": "Deep dive",       "text": "Take an idea and dig in. Best suited for intermediate/expert-level talks." }
     ]
   },
+
   "rsvp_section": {
     "heading": "Let us know you're coming.",
     "body": "Your RSVP helps us plan an accurate headcount so the day runs smoothly for everyone."
   },
+
   "venue": {
     "label": "06 — Venue",
     "name": "The Takshashila Institution (2nd floor) & Samagata Foundation (4th floor)",
@@ -260,75 +145,40 @@
     "map_embed_url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d903.7571911674339!2d77.60243193065465!3d12.975622873500768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae167c7b6919e9%3A0x86936959d24e13f5!2sCobalt%2C%20Museum%20Rd%2C%20Haridevpur%2C%20Shanthala%20Nagar%2C%20Ashok%20Nagar%2C%20Bengaluru%2C%20Karnataka%20560001!5e0!3m2!1sen!2sin!4v1734510391422!5m2!1sen!2sin",
     "map_title": "Venue map — Cobalt Building, Church Street"
   },
+
   "sponsors": {
     "label": "Thank you to our sponsors",
     "_help": "items[].type: 'cta' (text + link), 'logos' (logos[] of {src, alt, name?, link?}) or 'text'. badge = optional tier image, layout = 'stack' puts logos one below the other (default: side by side), link/link_label = optional \"Sponsor us\" link shown under the logos, caption = small text above the tier name. color: orange | green.",
     "items": [
       {
-        "type": "cta",
-        "tier": "BLAZE",
-        "caption": "First tier",
-        "badge": "images/new/sponsors/blaze.png",
-        "color": "orange",
+        "type": "cta", "tier": "BLAZE", "caption": "First tier", "badge": "images/new/sponsors/blaze.png", "color": "orange",
         "link": "https://planning.barcampbangalore.com/sponsorship-opportunities-for-barcamp-bangalore-2024/",
         "link_label": "Sponsor us →"
       },
       {
-        "type": "cta",
-        "tier": "EMBER",
-        "caption": "Second tier",
-        "badge": "images/new/sponsors/ember.png",
-        "color": "green",
+        "type": "cta", "tier": "EMBER", "caption": "Second tier", "badge": "images/new/sponsors/ember.png", "color": "green",
         "link": "https://planning.barcampbangalore.com/sponsorship-opportunities-for-barcamp-bangalore-2024/",
         "link_label": "Sponsor us →"
       },
       {
-        "type": "logos",
-        "tier": "SPARK",
-        "caption": "Third tier",
-        "badge": "images/new/sponsors/spark.png",
-        "color": "orange",
+        "type": "logos", "tier": "SPARK", "caption": "Third tier", "badge": "images/new/sponsors/spark.png", "color": "orange",
         "link": "https://planning.barcampbangalore.com/sponsorship-opportunities-for-barcamp-bangalore-2024/",
         "link_label": "Sponsor us →",
         "logos": [
-          {
-            "src": "images/sponsors/2025/foss-united.svg",
-            "alt": "Foss United",
-            "name": "Foss United",
-            "link": "https://fossunited.org/"
-          },
-          {
-            "src": "images/sponsors/janastu_logo.gif",
-            "alt": "Janastu",
-            "name": "Janastu",
-            "link": "https://barcampbangalore.com/bcb/about-janastu"
-          }
+          { "src": "images/sponsors/2025/foss-united.svg", "alt": "Foss United", "name": "Foss United", "link": "https://fossunited.org/" },
+          { "src": "images/sponsors/janastu_logo.gif",     "alt": "Janastu",    "name": "Janastu",     "link": "https://barcampbangalore.com/bcb/about-janastu" }
         ]
       },
       {
-        "type": "logos",
-        "tier": "VENUE",
-        "layout": "stack",
-        "caption": "Venue partner",
-        "badge": "images/new/sponsors/venue.png",
-        "color": "green",
+        "type": "logos", "tier": "VENUE", "layout": "stack", "caption": "Venue partner", "badge": "images/new/sponsors/venue.png", "color": "green",
         "logos": [
-          {
-            "src": "images/sponsors/2025/takshashila.png",
-            "alt": "The Takshashila Institution",
-            "name": "The Takshashila Institution",
-            "link": "https://takshashila.org.in/"
-          },
-          {
-            "src": "images/sponsors/2025/samagata.svg",
-            "alt": "Samagata Foundation",
-            "name": "Samagata Foundation",
-            "link": "https://samagata.org/"
-          }
+          { "src": "images/sponsors/2025/takshashila.png", "alt": "The Takshashila Institution", "name": "The Takshashila Institution", "link": "https://takshashila.org.in/" },
+          { "src": "images/sponsors/2025/samagata.svg",    "alt": "Samagata Foundation",         "name": "Samagata Foundation",         "link": "https://samagata.org/" }
         ]
       }
     ]
   },
+
   "sessions": {
     "_help": "tracks[] order = order of the filter chips. category_id is the WordPress category for that track. chosen_post_ids / archived_post_ids are post IDs hidden from the list.",
     "label": "Proposed sessions",
@@ -337,48 +187,18 @@
     "all_label": "All tracks",
     "empty_text": "No sessions in this track yet :)",
     "tracks": [
-      {
-        "name": "Technology",
-        "icon": "images/ICONS/web-icons-19.png",
-        "category_id": 2078
-      },
-      {
-        "name": "Design",
-        "icon": "images/ICONS/web-icons-15.png",
-        "category_id": 2079
-      },
-      {
-        "name": "Mobile & Web",
-        "icon": "images/ICONS/web-icons-16.png",
-        "category_id": 2080
-      },
-      {
-        "name": "Bangalore & Lifestyle",
-        "icon": "images/ICONS/web-icons-13.png",
-        "category_id": 2081
-      },
-      {
-        "name": "Scaling & Infrastructure",
-        "icon": "images/ICONS/web-icons-14.png",
-        "category_id": 2082
-      },
-      {
-        "name": "Entrepreneurship",
-        "icon": "images/ICONS/web-icons-17.png",
-        "category_id": 2083
-      },
-      {
-        "name": "Rest of the world",
-        "icon": "images/ICONS/web-icons-18.png",
-        "category_id": 2084
-      }
+      { "name": "Technology",              "icon": "images/ICONS/web-icons-19.png", "category_id": 2078 },
+      { "name": "Design",                  "icon": "images/ICONS/web-icons-15.png", "category_id": 2079 },
+      { "name": "Mobile & Web",            "icon": "images/ICONS/web-icons-16.png", "category_id": 2080 },
+      { "name": "Bangalore & Lifestyle",   "icon": "images/ICONS/web-icons-13.png", "category_id": 2081 },
+      { "name": "Scaling & Infrastructure","icon": "images/ICONS/web-icons-14.png", "category_id": 2082 },
+      { "name": "Entrepreneurship",        "icon": "images/ICONS/web-icons-17.png", "category_id": 2083 },
+      { "name": "Rest of the world",       "icon": "images/ICONS/web-icons-18.png", "category_id": 2084 }
     ],
-    "chosen_post_ids": [
-      7354,
-      7363
-    ],
+    "chosen_post_ids": [7354, 7363],
     "archived_post_ids": []
   },
+
   "techlash": {
     "_help": "{year} is replaced with the event year, {home} with the site URL. intro[] items are paragraphs; <a>, <em>, <strong>, <br> are allowed.",
     "label": "Techlash",
@@ -395,6 +215,7 @@
     "submit_url": "/add-a-session",
     "submit_label": "Showcase your project?"
   },
+
   "archives": {
     "_help": "editions[] = tabs, first one is selected by default. category_id is the WordPress category holding that edition's sessions. sponsors_key picks the sponsor block in page-archives.php (insertSponsors); an unknown key just shows no sponsors.",
     "label": "Archives",
@@ -402,123 +223,40 @@
     "sessions_heading": "Sessions",
     "empty_text": "No sessions found for this edition.",
     "editions": [
-      {
-        "label": "BCB 2025",
-        "category_id": 2004,
-        "sponsors_key": "BCB 2025"
-      },
-      {
-        "label": "BCB 2025 Autumn",
-        "category_id": 2045,
-        "sponsors_key": "BCB 2025 Autumn"
-      },
-      {
-        "label": "BCB 2024",
-        "category_id": 1970,
-        "sponsors_key": "BCB 2024"
-      },
-      {
-        "label": "BCB 2023",
-        "category_id": 1915,
-        "sponsors_key": "BCB 2023"
-      },
-      {
-        "label": "BCB 2022",
-        "category_id": 1874,
-        "sponsors_key": "BCB 2022"
-      },
-      {
-        "label": "BCB 2021 Virtual",
-        "category_id": 1863,
-        "sponsors_key": "BCB 2021 Virtual"
-      },
-      {
-        "label": "BCB Spring 2019",
-        "category_id": 1759,
-        "sponsors_key": "BCB Spring 2019"
-      },
-      {
-        "label": "BCB Spring 2018",
-        "category_id": 1691,
-        "sponsors_key": "BCB Spring 2018"
-      },
-      {
-        "label": "BCB Spring 2016",
-        "category_id": 1556,
-        "sponsors_key": "BCB Spring 2016"
-      },
-      {
-        "label": "BCB Monsoon 2015",
-        "category_id": 1458,
-        "sponsors_key": "BCB Monsoon 2015"
-      },
-      {
-        "label": "BCBX AntHill",
-        "category_id": 1366,
-        "sponsors_key": "bcbxah"
-      },
-      {
-        "label": "BCB17",
-        "category_id": 1224,
-        "sponsors_key": "bcb17"
-      },
-      {
-        "label": "BCB16",
-        "category_id": 1057,
-        "sponsors_key": "bcb16"
-      },
-      {
-        "label": "BCB15",
-        "category_id": 931,
-        "sponsors_key": "bcb15"
-      },
-      {
-        "label": "BCB14",
-        "category_id": 785,
-        "sponsors_key": "bcb14"
-      },
-      {
-        "label": "BCB13",
-        "category_id": 636,
-        "sponsors_key": "bcb13"
-      },
-      {
-        "label": "BCB12",
-        "category_id": 479,
-        "sponsors_key": "bcb12"
-      },
-      {
-        "label": "BCB11",
-        "category_id": 399,
-        "sponsors_key": "bcb11"
-      },
-      {
-        "label": "BCB10",
-        "category_id": 324,
-        "sponsors_key": "bcb10"
-      },
-      {
-        "label": "BCB9",
-        "category_id": 220,
-        "sponsors_key": "bcb9"
-      },
-      {
-        "label": "BCB8",
-        "category_id": 3,
-        "sponsors_key": "bcb8"
-      }
+      { "label": "BCB 2025", "category_id": 2004, "sponsors_key": "BCB 2025" },
+      { "label": "BCB 2025 Autumn", "category_id": 2045, "sponsors_key": "BCB 2025 Autumn" },
+      { "label": "BCB 2024", "category_id": 1970, "sponsors_key": "BCB 2024" },
+      { "label": "BCB 2023", "category_id": 1915, "sponsors_key": "BCB 2023" },
+      { "label": "BCB 2022", "category_id": 1874, "sponsors_key": "BCB 2022" },
+      { "label": "BCB 2021 Virtual", "category_id": 1863, "sponsors_key": "BCB 2021 Virtual" },
+      { "label": "BCB Spring 2019", "category_id": 1759, "sponsors_key": "BCB Spring 2019" },
+      { "label": "BCB Spring 2018", "category_id": 1691, "sponsors_key": "BCB Spring 2018" },
+      { "label": "BCB Spring 2016", "category_id": 1556, "sponsors_key": "BCB Spring 2016" },
+      { "label": "BCB Monsoon 2015", "category_id": 1458, "sponsors_key": "BCB Monsoon 2015" },
+      { "label": "BCBX AntHill", "category_id": 1366, "sponsors_key": "bcbxah" },
+      { "label": "BCB17", "category_id": 1224, "sponsors_key": "bcb17" },
+      { "label": "BCB16", "category_id": 1057, "sponsors_key": "bcb16" },
+      { "label": "BCB15", "category_id": 931, "sponsors_key": "bcb15" },
+      { "label": "BCB14", "category_id": 785, "sponsors_key": "bcb14" },
+      { "label": "BCB13", "category_id": 636, "sponsors_key": "bcb13" },
+      { "label": "BCB12", "category_id": 479, "sponsors_key": "bcb12" },
+      { "label": "BCB11", "category_id": 399, "sponsors_key": "bcb11" },
+      { "label": "BCB10", "category_id": 324, "sponsors_key": "bcb10" },
+      { "label": "BCB9", "category_id": 220, "sponsors_key": "bcb9" },
+      { "label": "BCB8", "category_id": 3, "sponsors_key": "bcb8" }
     ]
   },
+
   "how_to_register": {
     "_help": "On the How to register page, every top-level list with 2+ items becomes a vertical step-by-step progress bar, unless the heading above it contains one of these words.",
-    "non_step_headings": [
-      "FAQ"
-    ]
+    "non_step_headings": ["FAQ"]
   },
+
   "faq": {
     "_help": "The questions/answers are the content of the FAQ page in WP admin ([expand title=\"...\"]answer[/expand]).",
     "label": "FAQ"
   },
+
   "team": {
     "_help": "groups[] are the sections of the Team page, in order. members[]: name, photo (theme-relative), links[] of {label, url}, bio[] paragraphs (plain text), optional quote. Ported from planning.barcampbangalore.com/meet-the-team.",
     "label": "The team",
@@ -529,8 +267,41 @@
         "heading": "Current planners",
         "members": [
           {
+            "name": "Sathyajith Bhat",
+            "photo": "images/team/sathya.jpg",
+            "links": [
+              {
+                "label": "Twitter",
+                "url": "https://twitter.com/SathyaBhat"
+              },
+              {
+                "label": "Blog",
+                "url": "https://sathyabh.at"
+              }
+            ],
+            "bio": [
+              "AWS Community Hero. SRE by trade, Author of Practical Docker with Python & co-author of The CDK Book/ Gamer & Occasional streamer. I also look after BCB’s servers and handle BCB’s social media accounts."
+            ],
+            "quote": "Barcamp to me, is being able to strike up a conversation / discussion about anything at any point and come out of the discussion with some new ideas and techniques – that’s something which only twitter has offered as a medium."
+          },
+          {
+            "name": "Saurabh Minni",
+            "photo": "images/team/saurabh.jpg",
+            "links": [
+              {
+                "label": "Twitter",
+                "url": "https://twitter.com/the100rabh"
+              }
+            ],
+            "bio": [
+              "A technologist trying to make a dent in the Universe. Long-time participant and planner for BCB—expanding the world of sharing and learning.",
+              "Developer who does programming. Already written essays in Assembly, C, C++, Java, JavaScript, Python, Pascal, PHP, and HTML.",
+              "Always interested in all new tech."
+            ]
+          },
+          {
             "name": "Shreyas Ranganatha",
-            "photo": "images/team/shreyas-ranganatha.png",
+            "photo": "images/team/shreyas-ranganatha.jpeg",
             "links": [
               {
                 "label": "LinkedIn",
@@ -540,23 +311,6 @@
             "bio": [
               "aka. strawsnoceans",
               "I love building tech! and puzzles!, a lot!!"
-            ]
-          },
-          {
-            "name": "Darsh",
-            "photo": "images/team/darsh.jpg",
-            "links": [
-              {
-                "label": "LinkedIn",
-                "url": "https://www.linkedin.com/in/vdarshh/"
-              },
-              {
-                "label": "Website",
-                "url": "https://heydarsh.xyz"
-              }
-            ],
-            "bio": [
-              "Fighting segfaults and inner demons."
             ]
           },
           {
@@ -599,36 +353,20 @@
             ]
           },
           {
-            "name": "Sathyajith Bhat",
-            "photo": "images/team/sathya.jpg",
+            "name": "Darsh",
+            "photo": "images/team/darsh.jpg",
             "links": [
               {
-                "label": "Twitter",
-                "url": "https://twitter.com/SathyaBhat"
+                "label": "LinkedIn",
+                "url": "https://www.linkedin.com/in/vdarshh/"
               },
               {
-                "label": "Blog",
-                "url": "https://sathyabh.at"
+                "label": "Website",
+                "url": "https://heydarsh.xyz"
               }
             ],
             "bio": [
-              "AWS Community Hero. SRE by trade, Author of Practical Docker with Python & co-author of The CDK Book/ Gamer & Occasional streamer. I also look after BCB’s servers and handle BCB’s social media accounts."
-            ],
-            "quote": "Barcamp to me, is being able to strike up a conversation / discussion about anything at any point and come out of the discussion with some new ideas and techniques – that’s something which only twitter has offered as a medium."
-          },
-          {
-            "name": "Saurabh Minni",
-            "photo": "images/team/saurabh.jpg",
-            "links": [
-              {
-                "label": "Twitter",
-                "url": "https://twitter.com/the100rabh"
-              }
-            ],
-            "bio": [
-              "A technologist trying to make a dent in the Universe. Long-time participant and planner for BCB—expanding the world of sharing and learning.",
-              "Developer who does programming. Already written essays in Assembly, C, C++, Java, JavaScript, Python, Pascal, PHP, and HTML.",
-              "Always interested in all new tech."
+              "Fighting segfaults and inner demons."
             ]
           }
         ]
@@ -874,45 +612,19 @@
       "url": "https://planning.barcampbangalore.com/"
     }
   },
+
   "footer": {
     "copy": "Copyleft. All wrongs reserved.",
     "social": [
-      {
-        "label": "Discord",
-        "url": "https://discord.gg/MxgfAMXwFS"
-      },
-      {
-        "label": "Telegram",
-        "url": "https://t.me/BarcampBangalore"
-      },
-      {
-        "label": "LinkedIn",
-        "url": "https://www.linkedin.com/company/barcamp-bangalore/"
-      },
-      {
-        "label": "Instagram",
-        "url": "https://www.instagram.com/barcampblr/"
-      },
-      {
-        "label": "Twitter/X",
-        "url": "https://twitter.com/barcampbng"
-      },
-      {
-        "label": "Facebook",
-        "url": "https://www.facebook.com/barcampbng"
-      },
-      {
-        "label": "Mastodon",
-        "url": "https://hachyderm.io/@barcampbangalore"
-      },
-      {
-        "label": "Meetup",
-        "url": "https://www.meetup.com/Barcamp-Bangalore/"
-      },
-      {
-        "label": "Mail us",
-        "url": "mailto:contact@barcampbangalore.com"
-      }
+      { "label": "Discord",   "url": "https://discord.gg/MxgfAMXwFS" },
+      { "label": "Telegram",  "url": "https://t.me/BarcampBangalore" },
+      { "label": "LinkedIn",  "url": "https://www.linkedin.com/company/barcamp-bangalore/" },
+      { "label": "Instagram", "url": "https://www.instagram.com/barcampblr/" },
+      { "label": "Twitter/X", "url": "https://twitter.com/barcampbng" },
+      { "label": "Facebook",  "url": "https://www.facebook.com/barcampbng" },
+      { "label": "Mastodon",  "url": "https://hachyderm.io/@barcampbangalore" },
+      { "label": "Meetup",    "url": "https://www.meetup.com/Barcamp-Bangalore/" },
+      { "label": "Mail us",   "url": "mailto:contact@barcampbangalore.com" }
     ]
   }
 }
