@@ -459,15 +459,19 @@ function bcb_mark_steps($html, $skip_headings = array())
 }
 
 /**
- * Replace {year} (event year), {event} (event name) and {home} (site URL)
- * in a config string.
+ * Replace {year} (event year), {date} (full event date, e.g. "Saturday, April 18, 2026"),
+ * {event} (event name), {venue} (venue name), {rsvp_url} (RSVP link) and {home} (site URL)
+ * in a config string or in WP page content (FAQ, How to register).
  */
 function bcb_tpl($text)
 {
     return strtr($text, array(
-        '{year}'  => bcb_event_date('Y'),
-        '{event}' => bcb_cfg('event.name', 'BarCamp Bangalore'),
-        '{home}'  => untrailingslashit(home_url()),
+        '{year}'     => bcb_event_date('Y'),
+        '{date}'     => bcb_event_date('l, F j, Y'),
+        '{event}'    => bcb_cfg('event.name', 'BarCamp Bangalore'),
+        '{venue}'    => bcb_cfg('venue.name'),
+        '{rsvp_url}' => bcb_cfg('rsvp.url'),
+        '{home}'     => untrailingslashit(home_url()),
     ));
 }
 

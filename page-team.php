@@ -1,56 +1,71 @@
-<?php get_header(); ?>
+<?php
+/**
+ * Team page. Members, groups and copy come from data/event.json (team.*);
+ * ported from planning.barcampbangalore.com/meet-the-team.
+ */
+get_header('bcb');
+the_post();
 
+$bcb_groups = bcb_cfg_list('team.groups');
+$bcb_first  = bcb_cfg_list('team.first_planners');
+$bcb_blog   = bcb_cfg_list('team.planners_blog');
+?>
 
+<section class="bcb-pagehead">
+    <div class="bcb-section-label bcb-section-label--green"><?php echo bcb_text(bcb_cfg('team.label', 'The team')); ?></div>
+    <h1 class="bcb-section-heading"><?php echo bcb_text(bcb_cfg('team.heading', get_the_title())); ?></h1>
+    <p class="bcb-section-body">
+        <?php echo bcb_text(bcb_cfg('team.intro')); ?>
+        <?php if (!empty($bcb_blog['url'])) : ?>
+        See the behind-the-scenes action on the <a href="<?php echo esc_url($bcb_blog['url']); ?>"><?php echo bcb_text($bcb_blog['label']); ?></a>.
+        <?php endif; ?>
+    </p>
+</section>
 
-<div class="container">
-  <div class="row">
-    <div class="col-12">
-        <?php the_post(); ?>
-        <div class="display-4 fitted-title text-center p-3">
-            <?php echo get_the_title(); ?>
+<section class="bcb-listing">
+    <div class="bcb-listing__inner">
+
+        <?php foreach ($bcb_groups as $group) : ?>
+        <h2 class="bcb-team__group"><?php echo bcb_text($group['heading']); ?></h2>
+        <div class="bcb-team">
+            <?php foreach (($group['members'] ?? array()) as $i => $member) : ?>
+            <article class="bcb-member bcb-member--<?php echo $i % 2 ? 'green' : 'orange'; ?>">
+                <?php if (!empty($member['photo'])) : ?>
+                <img class="bcb-member__photo" src="<?php echo esc_url(bcb_asset($member['photo'])); ?>" alt="<?php echo esc_attr($member['name']); ?>" loading="lazy" width="96" height="96">
+                <?php endif; ?>
+                <div class="bcb-member__body">
+                    <h3 class="bcb-member__name"><?php echo bcb_text($member['name']); ?></h3>
+                    <?php if (!empty($member['links'])) : ?>
+                    <ul class="bcb-member__links">
+                        <?php foreach ($member['links'] as $link) : ?>
+                        <li><a href="<?php echo esc_url($link['url']); ?>" target="_blank" rel="noopener"><?php echo bcb_text($link['label']); ?></a></li>
+                        <?php endforeach; ?>
+                    </ul>
+                    <?php endif; ?>
+                    <?php foreach (($member['bio'] ?? array()) as $para) : ?>
+                    <p class="bcb-member__bio"><?php echo bcb_text($para); ?></p>
+                    <?php endforeach; ?>
+                    <?php if (!empty($member['quote'])) : ?>
+                    <blockquote class="bcb-member__quote"><?php echo bcb_text($member['quote']); ?></blockquote>
+                    <?php endif; ?>
+                </div>
+            </article>
+            <?php endforeach; ?>
         </div>
+        <?php endforeach; ?>
 
-        <div id="page_team_content" class="text-center">
-            <div id="page_team_intro" >
-                Meet the planners behind Barcamp Bangalore, and see behind the scenes action at <a href="https://planning.barcampbangalore.com/">BCB Planners Blog</a>.
-            </div>
+        <?php if (!empty($bcb_first['photo']['src'])) : ?>
+        <figure class="bcb-team__first">
+            <h2 class="bcb-team__group"><?php echo bcb_text($bcb_first['heading']); ?></h2>
+            <img src="<?php echo esc_url(bcb_asset($bcb_first['photo']['src'])); ?>" alt="<?php echo esc_attr($bcb_first['photo']['alt']); ?>" loading="lazy">
+            <?php if (!empty($bcb_first['credit_url'])) : ?>
+            <figcaption><a href="<?php echo esc_url($bcb_first['credit_url']); ?>" target="_blank" rel="noopener"><?php echo bcb_text($bcb_first['credit_label']); ?></a></figcaption>
+            <?php endif; ?>
+        </figure>
+        <?php endif; ?>
 
-            <div id="page_team_memberlist" class="row">
-
-                <div class="page_team_membercard col-6 col-md-3">
-                    <div class="page_team_member_avatar">
-                        <img src="<?php echo get_bloginfo('template_url').'/images/team/aman.jpg' ?>" />
-                    </div>
-                    <div class="page_team_member_name">Aman Manglik</div>
-                    <div class="page_team_member_link"><a href="https://twitter.com/amanmanglik">@amanmanglik</a></div>
-                </div>
-
-                <div class="page_team_membercard col-6 col-md-3">
-                    <div class="page_team_member_avatar">
-                        <img src="<?php echo get_bloginfo('template_url').'/images/team/sathya.jpg' ?>" />
-                    </div>
-                    <div class="page_team_member_name">Sathyajith Bhat</div>
-                    <div class="page_team_member_link"><a href="https://twitter.com/SathyaBhat">@SathyaBhat</a></div>
-                </div>
-
-                <div class="page_team_membercard col-6 col-md-3">
-                    <div class="page_team_member_avatar">
-                        <img src="<?php echo get_bloginfo('template_url').'/images/team/saurabh.jpg' ?>" />
-                    </div>
-                    <div class="page_team_member_name">Saurabh Minni</div>
-                    <div class="page_team_member_link"><a href="https://twitter.com/the100rabh">@the100rabh</a></div>
-                </div>
-
-                <div class="page_team_membercard col-6 col-md-3">
-                    <div class="page_team_member_avatar">
-                        <img src="<?php echo get_bloginfo('template_url').'/images/team/fossil.jpg' ?>" />
-                    </div>
-                    <div class="page_team_member_name">Varun</div>
-                    <div class="page_team_member_link"><a href="https://twitter.com/fossiloflife">@fossiloflife</a></div>
-                </div>
-            </div>
-        </div>
+        <p class="bcb-team__footer"><?php echo bcb_prose(bcb_cfg('team.footer')); ?></p>
     </div>
-  </div>
-</div>
-<?php get_footer(); ?>
+</section>
+
+<?php get_footer('bcb'); ?>

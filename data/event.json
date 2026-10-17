@@ -257,6 +257,362 @@
     "label": "FAQ"
   },
 
+  "team": {
+    "_help": "groups[] are the sections of the Team page, in order. members[]: name, photo (theme-relative), links[] of {label, url}, bio[] paragraphs (plain text), optional quote. Ported from planning.barcampbangalore.com/meet-the-team.",
+    "label": "The team",
+    "heading": "Wheels of Barcamp Bangalore",
+    "intro": "You might like to know a little more about the folks who have been planning and working around the clock to make this happen!",
+    "groups": [
+      {
+        "heading": "Current planners",
+        "members": [
+          {
+            "name": "Sathyajith Bhat",
+            "photo": "images/team/sathya.jpg",
+            "links": [
+              {
+                "label": "Twitter",
+                "url": "https://twitter.com/SathyaBhat"
+              },
+              {
+                "label": "Blog",
+                "url": "https://sathyabh.at"
+              }
+            ],
+            "bio": [
+              "AWS Community Hero. SRE by trade, Author of Practical Docker with Python & co-author of The CDK Book/ Gamer & Occasional streamer. I also look after BCB’s servers and handle BCB’s social media accounts."
+            ],
+            "quote": "Barcamp to me, is being able to strike up a conversation / discussion about anything at any point and come out of the discussion with some new ideas and techniques – that’s something which only twitter has offered as a medium."
+          },
+          {
+            "name": "Saurabh Minni",
+            "photo": "images/team/saurabh.jpg",
+            "links": [
+              {
+                "label": "Twitter",
+                "url": "https://twitter.com/the100rabh"
+              }
+            ],
+            "bio": [
+              "A technologist trying to make a dent in the Universe. Long-time participant and planner for BCB—expanding the world of sharing and learning.",
+              "Developer who does programming. Already written essays in Assembly, C, C++, Java, JavaScript, Python, Pascal, PHP, and HTML.",
+              "Always interested in all new tech."
+            ]
+          },
+          {
+            "name": "Shreyas Ranganatha",
+            "photo": "images/team/shreyas-ranganatha.jpeg",
+            "links": [
+              {
+                "label": "LinkedIn",
+                "url": "https://linkedin.com/in/shreyass-ranganatha"
+              }
+            ],
+            "bio": [
+              "aka. strawsnoceans",
+              "I love building tech! and puzzles!, a lot!!"
+            ]
+          },
+          {
+            "name": "Rayan Sheikh",
+            "photo": "images/team/rayan-sheikh.jpeg",
+            "links": [
+              {
+                "label": "LinkedIn",
+                "url": "https://www.linkedin.com/in/imrayansheikh"
+              }
+            ],
+            "bio": [
+              "I like finding out how things work"
+            ]
+          },
+          {
+            "name": "Bhavika Varshney",
+            "photo": "images/team/bhavika-varshney.jpeg",
+            "links": [
+              {
+                "label": "LinkedIn",
+                "url": "https://www.linkedin.com/in/bhavika-varshney-30032002/"
+              }
+            ],
+            "bio": [
+              "Coding, gaming, and cuddling with cats; my perfect trifecta."
+            ]
+          },
+          {
+            "name": "Tharang S",
+            "photo": "images/team/tharang.jpeg",
+            "links": [
+              {
+                "label": "X",
+                "url": "https://x.com/Tharang1007"
+              }
+            ],
+            "bio": [
+              "I love programming, gaming, reading, board games and typically any other nerdy stuff that comes to mind"
+            ]
+          },
+          {
+            "name": "Darsh",
+            "photo": "images/team/darsh.jpg",
+            "links": [
+              {
+                "label": "LinkedIn",
+                "url": "https://www.linkedin.com/in/vdarshh/"
+              },
+              {
+                "label": "Website",
+                "url": "https://heydarsh.xyz"
+              }
+            ],
+            "bio": [
+              "Fighting segfaults and inner demons."
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Previous planners",
+        "members": [
+          {
+            "name": "Varun Sabari",
+            "photo": "images/team/fossil.jpg",
+            "bio": [
+              "Visual Designer, an AD guy, online junkie, pakka mallu. smoked Wills..drank Old Monk, *ignores everyone* *now the DP reminds me, of the old me*."
+            ]
+          },
+          {
+            "name": "adtmlck",
+            "photo": "images/team/adtmlck.png",
+            "quote": "I enjoy making art, very much. I wanted to be a part of a collaborative event where all the different people meet. Looking forward to experience it in real time. I’m incredibly shy. But if you’re a swiftie, please hit me up."
+          },
+          {
+            "name": "Aman Manglik",
+            "photo": "images/team/aman.jpg",
+            "links": [
+              {
+                "label": "Twitter",
+                "url": "https://twitter.com/amanmanglik"
+              }
+            ],
+            "bio": [
+              "Aman is a software developer. He devotes his free time to his love of photography. For Barcamp Bangalore, he takes care of the website design, brand design, and the scheduling system."
+            ]
+          },
+          {
+            "name": "Amit Khare",
+            "photo": "images/team/daaku.jpg",
+            "links": [
+              {
+                "label": "Twitter",
+                "url": "https://twitter.com/daaku"
+              }
+            ],
+            "bio": [
+              "Daakuism!! what else do you expect!!"
+            ]
+          },
+          {
+            "name": "Arun Vijayan",
+            "photo": "images/team/arun.jpg",
+            "links": [
+              {
+                "label": "Twitter",
+                "url": "https://twitter.com/mixdev"
+              },
+              {
+                "label": "Medium",
+                "url": "https://medium.com/@mixdev"
+              }
+            ],
+            "bio": [
+              "Opinionated technologist who changes those opinions as new facts come in. A long term Barcamp attendee who is interested in keeping the Barcamp Bangalore brand fresh and independent."
+            ]
+          },
+          {
+            "name": "Ashwin Murali",
+            "photo": "images/team/cruise.jpg",
+            "links": [
+              {
+                "label": "Twitter",
+                "url": "https://twitter.com/cruisemaniac"
+              }
+            ],
+            "bio": [
+              "Dad, Husband, Geek."
+            ]
+          },
+          {
+            "name": "Bibhas Debnath",
+            "photo": "images/team/bibhas.png",
+            "links": [
+              {
+                "label": "Twitter",
+                "url": "https://twitter.com/bibhasdn"
+              }
+            ],
+            "bio": [
+              "Wannabe-generalist with a love for travel, photography, culinary arts and technology."
+            ],
+            "quote": "I find great happiness in connecting with people and ideas. So no wonder that I am interested in Barcamp Bangalore. I help with whatever I can."
+          },
+          {
+            "name": "Dhruva Krishnan",
+            "photo": "images/team/dkris.jpg",
+            "links": [
+              {
+                "label": "Twitter",
+                "url": "https://twitter.com/dkris"
+              }
+            ],
+            "bio": [
+              "Working towards Awesomeness!"
+            ]
+          },
+          {
+            "name": "Eswar",
+            "photo": "images/team/eswar.jpg",
+            "links": [
+              {
+                "label": "Twitter",
+                "url": "https://twitter.com/eswar_001"
+              }
+            ],
+            "bio": [
+              "Mobile enthusiast, geek and a polyglot programmer."
+            ]
+          },
+          {
+            "name": "Fagun Bhavsar",
+            "photo": "images/team/fagun.jpg",
+            "links": [
+              {
+                "label": "Twitter",
+                "url": "https://twitter.com/FagunB"
+              }
+            ],
+            "bio": [
+              "Fagun Bhavsar, a QA professional, attended the first ever Barcamp in Bangalore in 2005. Since then, have been regular at it. I take care of QA stuff and make sure everything gets chaotic before it gets calm."
+            ]
+          },
+          {
+            "name": "Ninad Pundalik",
+            "photo": "images/team/ninad.png",
+            "links": [
+              {
+                "label": "Twitter",
+                "url": "https://twitter.com/ni_nad"
+              }
+            ],
+            "bio": [
+              "Yet another geek who keeps servers ticking throughout the world."
+            ],
+            "quote": "Barcamp has always been the perfect real life example of a melting pot, where different ideas and people come together to make something greater than the sum. Which is why I always keep coming back to attend and help!"
+          },
+          {
+            "name": "Nishant Agrawal",
+            "photo": "images/team/nishant.png",
+            "links": [
+              {
+                "label": "Twitter",
+                "url": "https://twitter.com/nish_crafts"
+              },
+              {
+                "label": "Twitter (thencrafts)",
+                "url": "https://twitter.com/thencrafts"
+              },
+              {
+                "label": "Twitter (formcrafts)",
+                "url": "https://twitter.com/formcrafts"
+              }
+            ],
+            "bio": [
+              "Founder @thencrafts and @formcrafts.",
+              "Figuring out stuff."
+            ]
+          },
+          {
+            "name": "Parth",
+            "photo": "images/team/parth.png",
+            "links": [
+              {
+                "label": "Twitter",
+                "url": "https://twitter.com/pslashb"
+              }
+            ],
+            "bio": [
+              "My parents warned me about the drugs in the street but never of the ones in books and on the internet. Studying Economics, Business Studies and Web Development at New York University. Fascinated by financial markets, technology, science and people. Like listening to Progressive House, watching Seinfeld, eating food and learning new things."
+            ]
+          },
+          {
+            "name": "Rahul Arora",
+            "photo": "images/team/rahul.jpg",
+            "links": [
+              {
+                "label": "Twitter",
+                "url": "https://twitter.com/AuroraRahul"
+              },
+              {
+                "label": "LinkedIn",
+                "url": "http://in.linkedin.com/in/rahula/"
+              }
+            ],
+            "bio": [
+              "Zen Master @bizodyssey, helping various startups shape their ideas in to products and sail through user experience and product marketing challenges. Beyond work, I am a sprint level triathlete who loves to spend time reading biographies and discuss world politics at length."
+            ]
+          },
+          {
+            "name": "Sohom Bhattacharjee",
+            "photo": "images/team/sohom.jpg",
+            "bio": [
+              "Jack of all trades who likes computers. Apart from computers, I also like hiking, and anything on two-wheels. 🙂"
+            ]
+          },
+          {
+            "name": "Shree Kumar",
+            "photo": "images/team/shree.jpg",
+            "links": [
+              {
+                "label": "Twitter",
+                "url": "https://twitter.com/shreekumar3d"
+              }
+            ],
+            "bio": [
+              "A software engineer with deep interest in systems, electronics and all things 3D. Cross country cycle rider, looking to graduate to walking!"
+            ]
+          },
+          {
+            "name": "Vivek K",
+            "photo": "images/team/vivek.jpg",
+            "links": [
+              {
+                "label": "Twitter",
+                "url": "https://twitter.com/ivivekkm"
+              }
+            ],
+            "bio": [
+              "#Bitcoin #Blockchain #Healthcare! Inspired by Barcamp Idea! And here to contribute."
+            ]
+          }
+        ]
+      }
+    ],
+    "first_planners": {
+      "heading": "The first Barcamp Bangalore planners",
+      "photo": {
+        "src": "images/team/first-planners.jpg",
+        "alt": "The first Barcamp Bangalore organizers"
+      },
+      "credit_label": "Photo on Flickr",
+      "credit_url": "https://www.flickr.com/photos/muthuonline/134064868/"
+    },
+    "footer": "Missed someone? <a href=\"mailto:contact@barcampbangalore.com\">Let us know</a>. Want to help or volunteer? Drop us a tweet <a href=\"https://twitter.com/BarcampBng\">@BarcampBng</a> or <a href=\"mailto:contact@barcampbangalore.com\">email us</a>.",
+    "planners_blog": {
+      "label": "BCB Planners Blog",
+      "url": "https://planning.barcampbangalore.com/"
+    }
+  },
+
   "footer": {
     "copy": "Copyleft. All wrongs reserved.",
     "social": [
