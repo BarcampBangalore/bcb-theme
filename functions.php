@@ -12,12 +12,11 @@ function neobcb21_enqueue_scripts()
     wp_enqueue_script("bootstrap-js", "https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js");
 
     wp_enqueue_style('bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css');
-//    wp_enqueue_style('font-awesome', get_bloginfo('template_url') . "/font-awesome-4.7.0/css/font-awesome.min.css");
+    //    wp_enqueue_style('font-awesome', get_bloginfo('template_url') . "/font-awesome-4.7.0/css/font-awesome.min.css");
     wp_enqueue_style('font-awesome', get_bloginfo('template_url') . "/fontawesome-free-5.15.2-web/css/all.css");
     wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css?family=Lato');
 
     wp_enqueue_style('style', get_stylesheet_uri());
-
 }
 
 add_action('wp_enqueue_scripts', 'neobcb21_enqueue_scripts');
@@ -30,7 +29,6 @@ function register_my_menus()
     register_nav_menu('menu_part1', "Menu Part 1");
     register_nav_menu('menu_part2', "Menu Part 2");
     register_nav_menu('menu_part3', "Menu Part 3");
-
 }
 add_action('after_setup_theme', 'register_my_menus');
 
@@ -38,9 +36,9 @@ function mytheme_comment($comment, $args, $depth)
 {
     $GLOBALS['comment'] = $comment;
 
-    ?>
-    <li <?php comment_class();?> id="li-comment-<?php comment_ID()?>">
-        <div id="comment-<?php comment_ID();?>" class="comment-body">
+?>
+    <li <?php comment_class(); ?> id="li-comment-<?php comment_ID() ?>">
+        <div id="comment-<?php comment_ID(); ?>" class="comment-body">
             <?php echo get_avatar($comment->comment_author_email, 48); ?>
             <div class="comment-body-inner">
                 <div class="comment-author vcard">
@@ -49,23 +47,23 @@ function mytheme_comment($comment, $args, $depth)
                     <cite class="fn"><a href="<?php echo get_author_posts_url(get_user_by('email', get_comment_author_email())->ID); ?>"><?php echo get_user_by('email', get_comment_author_email())->data->user_nicename; ?></a></cite>
                 </div>
                 <?php if ($comment->comment_approved == '0'): ?>
-                    <em><?php _e('Your comment is awaiting moderation.')?></em>
+                    <em><?php _e('Your comment is awaiting moderation.') ?></em>
                     <br>
-                <?php endif;?>
+                <?php endif; ?>
 
-                <?php comment_text()?>
+                <?php comment_text() ?>
                 <div class="comment_footer">
-                    <span class="comment-meta commentmetadata"><a href="<?php echo esc_url(get_comment_link($comment->comment_ID)) ?>"><?php printf(__('%1$s at %2$s'), get_comment_date(), get_comment_time())?></a><?php edit_comment_link(__('Edit'), ' &SmallCircle; ', '')?></span>
+                    <span class="comment-meta commentmetadata"><a href="<?php echo esc_url(get_comment_link($comment->comment_ID)) ?>"><?php printf(__('%1$s at %2$s'), get_comment_date(), get_comment_time()) ?></a><?php edit_comment_link(__('Edit'), ' &SmallCircle; ', '') ?></span>
                     &SmallCircle;
                     <span class="reply">
-                        <?php comment_reply_link(array_merge($args, array('depth' => $depth, 'max_depth' => $args['max_depth'])))?>
+                        <?php comment_reply_link(array_merge($args, array('depth' => $depth, 'max_depth' => $args['max_depth']))) ?>
                     </span>
                 </div>
             </div>
             <div style="clear: both"></div>
         </div>
     </li>
-    <?php
+<?php
 }
 
 /**************************************************************
@@ -82,7 +80,7 @@ function neo_attend_toggle_attend()
 
     global $current_user;
     $result = array();
-//        if ( !wp_verify_nonce( $_REQUEST['nonce'], "neo_attend_nonce")) {
+    //        if ( !wp_verify_nonce( $_REQUEST['nonce'], "neo_attend_nonce")) {
     //        exit("No naughty business please");
     //     }
     if (is_user_logged_in()) {
@@ -96,13 +94,11 @@ function neo_attend_toggle_attend()
         $result['button_text'] = get_my_attending_button($_REQUEST['post_id']);
         $result['attendees_list'] = get_attending_users_links($_REQUEST['post_id'], "", "&bull;");
         $result['attendees_count'] = attending_users_count($_REQUEST['post_id']);
-
     } else {
         $result['status'] = 'ERROR! User must be logged in';
     }
     echo json_encode($result);
     die();
-
 }
 
 function neo_attend_toggle_attend_nologin()
@@ -150,7 +146,6 @@ function get_attending_users_links($postid, $prev = 'Who is attending : ', $sepa
     }
 
     return $result;
-
 }
 
 function get_my_attending_button($postid)
@@ -161,10 +156,10 @@ function get_my_attending_button($postid)
 
     if (array_search($current_user->user_login, $attendingusers) !== false) {
         $result .= '<div class="neo_attend_button neo_button_attending" data-postid="' . $postid . '" >'
-        . '<img src="' . get_bloginfo('template_url') . '/images/icons-19.png" title="I am Attending" /></div>';
+            . '<img src="' . get_bloginfo('template_url') . '/images/icons-19.png" title="I am Attending" /></div>';
     } else {
         $result .= '<div class="neo_attend_button neo_button_wanna_attend" data-postid="' . $postid . '" >'
-        . '<img src="' . get_bloginfo('template_url') . '/images/icons-18.png" title="I wanna Attend" /></div>';
+            . '<img src="' . get_bloginfo('template_url') . '/images/icons-18.png" title="I wanna Attend" /></div>';
     }
     return $result;
 }
@@ -177,10 +172,10 @@ function get_my_attending_button_single($postid)
 
     if (array_search($current_user->user_login, $attendingusers) !== false) {
         $result .= '<div class="neo_attend_button neo_button_attending" data-postid="' . $postid . '" >'
-        . '<img src="' . get_bloginfo('template_url') . '/images/icons-19.png" title="I am Attending" /><div class="attend_text">Click to Cancel</div></div>';
+            . '<img src="' . get_bloginfo('template_url') . '/images/icons-19.png" title="I am Attending" /><div class="attend_text">Click to Cancel</div></div>';
     } else {
         $result .= '<div class="neo_attend_button neo_button_wanna_attend" data-postid="' . $postid . '" >'
-        . '<img src="' . get_bloginfo('template_url') . '/images/icons-18.png" title="I wanna Attend" /><div class="attend_text">Click to Attend</div></div>';
+            . '<img src="' . get_bloginfo('template_url') . '/images/icons-18.png" title="I wanna Attend" /><div class="attend_text">Click to Attend</div></div>';
     }
     return $result;
 }
@@ -191,14 +186,15 @@ function get_my_attending_button_single($postid)
  *
  **************************************************************/
 
-add_action('rest_api_init', function() {
+add_action('rest_api_init', function () {
     register_rest_route('custom', '/sessions', array(
         'methods' => 'GET',
         'callback' => 'getSessions'
     ));
 });
 
-function getSessions($data) {
+function getSessions($data)
+{
     $post = get_posts(array(
         'name' => $data->get_param('slug'),
         'post_status' => 'any'
@@ -215,25 +211,23 @@ function getSessions($data) {
 
 
 
+/**
+ * Category ids of the session tracks, in the same order as the track
+ * chips on the sessions page. Configured in data/event.json (sessions.tracks).
+ */
 function get_current_cats(bool $get_as_string)
 {
+    $tracks = array();
 
-
-    // NOTE -  The Order of the categories matters! It has to be same as the icons on the sessions page.
-
-    // Tech, Design, Mobile & Web, Bangalore LIfestyle, Scaling Infra, Entrepreneurship, Rest of world
-
-    $tracks = array(2078, 2079, 2080, 2081, 2082, 2083, 2084);
-    // $tracks = array(2046, 2047, 2048, 2049, 2050, 2051, 2052);
-    // $tracks = array(2012, 2006, 2008, 2005, 2010, 2007, 2009);
-    // $tracks = array(1971, 1972, 1973, 1974, 1975, 1976, 1977);
+    foreach (bcb_cfg_list('sessions.tracks') as $track) {
+        $tracks[] = (int) $track['category_id'];
+    }
 
     if ($get_as_string) {
         return implode(", ", $tracks);
     } else {
         return $tracks;
     }
-
 }
 
 
@@ -241,16 +235,274 @@ function get_current_cats(bool $get_as_string)
  * Return array of post ids of 2 chosen tracks.
  * If tracks not chosen, return empty array
  */
-function get_chosen_track_ids() {
-    return array(7354, 7363);
-
-//    return array(7300, 7302);
+function get_chosen_track_ids()
+{
+    return array_map('intval', bcb_cfg_list('sessions.chosen_post_ids'));
 }
 
 
 
-function get_archived_track_ids() {
-
-    return array();
+function get_archived_track_ids()
+{
+    return array_map('intval', bcb_cfg_list('sessions.archived_post_ids'));
 }
 
+/**
+ * One session card, for use inside the loop (sessions + techlash pages).
+ *
+ * @param int|null $track_index Index into sessions.tracks, for the track filter.
+ * @param int      $variant     Position in the list; alternates the card's shadow color.
+ */
+function bcb_render_session_card($track_index = null, $variant = 0)
+{
+    $author_id  = get_the_author_meta('ID');
+    $author_url = get_author_posts_url($author_id);
+    $color      = $variant % 2 ? 'green' : 'orange';
+    $attendees  = attending_users_count(get_the_ID());
+?>
+    <article class="bcb-session-card bcb-session-card--<?php echo $color; ?>"<?php echo $track_index !== null ? ' data-track-id="' . (int) $track_index . '"' : ''; ?>>
+        <a class="bcb-session-card__avatar" href="<?php echo esc_url($author_url); ?>"><?php echo get_avatar($author_id, 64); ?></a>
+        <p class="bcb-session-card__author"><a href="<?php echo esc_url($author_url); ?>"><?php echo esc_html(get_the_author_meta('display_name')); ?></a></p>
+        <h3 class="bcb-session-card__title"><a href="<?php echo esc_url(get_permalink()); ?>"><?php echo get_the_title(); ?></a></h3>
+        <div class="bcb-session-card__meta">
+            <?php echo (int) $attendees; ?> <?php echo $attendees === 1 ? 'attendee' : 'attendees'; ?> ·
+            <?php comments_number('0 comments', '1 comment', '% comments'); ?>
+        </div>
+    </article>
+<?php
+}
+
+
+/**************************************************************
+ *
+ * Event config (data/event.json) helpers
+ *
+ * Event-specific content (dates, images, venue, sponsors, schedule
+ * board, copy) lives in data/event.json so a new edition is a JSON edit.
+ *
+ **************************************************************/
+
+/**
+ * Decoded contents of data/event.json. Cached per request.
+ * Returns an empty array (and logs) if the file is missing or invalid,
+ * so a bad edit never takes the site down.
+ */
+function bcb_config()
+{
+    static $config = null;
+
+    if ($config !== null) {
+        return $config;
+    }
+
+    $config = array();
+    $file = get_template_directory() . '/data/event.json';
+
+    if (!is_readable($file)) {
+        error_log('bcb_config: cannot read ' . $file);
+        return $config;
+    }
+
+    $decoded = json_decode(file_get_contents($file), true);
+
+    if (!is_array($decoded)) {
+        error_log('bcb_config: invalid JSON in ' . $file . ' (' . json_last_error_msg() . ')');
+        return $config;
+    }
+
+    $config = $decoded;
+    return $config;
+}
+
+/**
+ * Dot-path getter, e.g. bcb_cfg('venue.name') or bcb_cfg('board.items.0.start').
+ */
+function bcb_cfg($path, $default = '')
+{
+    $node = bcb_config();
+
+    foreach (explode('.', $path) as $key) {
+        if (is_array($node) && array_key_exists($key, $node)) {
+            $node = $node[$key];
+        } else {
+            return $default;
+        }
+    }
+
+    return $node;
+}
+
+/**
+ * Same as bcb_cfg() but always returns an array (for loops).
+ */
+function bcb_cfg_list($path)
+{
+    $value = bcb_cfg($path, array());
+    return is_array($value) ? $value : array();
+}
+
+/**
+ * URL for an image/file. Absolute http(s) URLs are returned as-is,
+ * anything else is treated as relative to the theme directory.
+ */
+function bcb_asset($path)
+{
+    if (preg_match('#^(https?:)?//#', $path)) {
+        return $path;
+    }
+
+    return get_template_directory_uri() . '/' . ltrim($path, '/');
+}
+
+/**
+ * Site-relative ("/rsvp") or absolute URL for a link.
+ */
+function bcb_link($url)
+{
+    if (preg_match('#^(https?:)?//#', $url)) {
+        return $url;
+    }
+
+    return home_url($url);
+}
+
+/**
+ * Plain text, escaped.
+ */
+function bcb_text($text)
+{
+    return esc_html($text);
+}
+
+/**
+ * Text that may contain a little inline markup (<em>, <strong>, <br>).
+ */
+function bcb_rich($text)
+{
+    return wp_kses($text, array(
+        'em' => array(),
+        'strong' => array(),
+        'br' => array(),
+    ));
+}
+
+/**
+ * Renders [expand title="..."]answer[/expand] (the shortcode the FAQ page content
+ * is written with) as a native <details> accordion. Used only by page-faq.php,
+ * so it doesn't depend on the collapse-o-matic plugin and looks the same everywhere.
+ */
+function bcb_expand_shortcode($atts, $content = '')
+{
+    $atts = shortcode_atts(array('title' => ''), $atts, 'expand');
+
+    return '<details class="bcb-faq__item">'
+        . '<summary class="bcb-faq__question">' . esc_html(trim($atts['title'])) . '</summary>'
+        . '<div class="bcb-faq__answer">' . wpautop(do_shortcode(trim($content))) . '</div>'
+        . '</details>';
+}
+
+/**
+ * Marks the top-level lists of a content block as a vertical stepper (class "bcb-steps").
+ * A list qualifies when it has 2+ items and the heading above it doesn't contain any of
+ * $skip_headings (e.g. "FAQ"). Content is untouched if DOM support is missing.
+ */
+function bcb_mark_steps($html, $skip_headings = array())
+{
+    if (!class_exists('DOMDocument') || trim($html) === '') {
+        return $html;
+    }
+
+    $dom = new DOMDocument();
+    libxml_use_internal_errors(true);
+    $dom->loadHTML('<?xml encoding="utf-8" ?><div>' . $html . '</div>', LIBXML_HTML_NOIMPLIED | LIBXML_HTML_NODEFDTD);
+    libxml_clear_errors();
+
+    $root = $dom->getElementsByTagName('div')->item(0);
+    if (!$root) {
+        return $html;
+    }
+
+    $heading = '';
+    $out = '';
+
+    foreach ($root->childNodes as $node) {
+        if ($node->nodeType === XML_ELEMENT_NODE) {
+            $tag = strtolower($node->nodeName);
+
+            if (preg_match('/^h[1-6]$/', $tag)) {
+                $heading = $node->textContent;
+            } elseif ($tag === 'ol' || $tag === 'ul') {
+                $items = 0;
+                foreach ($node->childNodes as $child) {
+                    if ($child->nodeType === XML_ELEMENT_NODE && strtolower($child->nodeName) === 'li') {
+                        $items++;
+                    }
+                }
+
+                $skip = false;
+                foreach ($skip_headings as $needle) {
+                    if ($needle !== '' && stripos($heading, $needle) !== false) {
+                        $skip = true;
+                    }
+                }
+
+                if ($items >= 2 && !$skip) {
+                    $class = trim($node->getAttribute('class') . ' bcb-steps');
+                    $node->setAttribute('class', $class);
+                }
+            }
+        }
+        $out .= $dom->saveHTML($node);
+    }
+
+    return $out;
+}
+
+/**
+ * Replace {year} (event year), {event} (event name) and {home} (site URL)
+ * in a config string.
+ */
+function bcb_tpl($text)
+{
+    return strtr($text, array(
+        '{year}'  => bcb_event_date('Y'),
+        '{event}' => bcb_cfg('event.name', 'BarCamp Bangalore'),
+        '{home}'  => untrailingslashit(home_url()),
+    ));
+}
+
+/**
+ * Paragraph-level text with links, from config. Run bcb_tpl() first if it uses tokens.
+ */
+function bcb_prose($text)
+{
+    return wp_kses($text, array(
+        'a'      => array('href' => array(), 'target' => array(), 'rel' => array()),
+        'em'     => array(),
+        'strong' => array(),
+        'br'     => array(),
+    ));
+}
+
+/**
+ * Event start date formatted in the configured timezone,
+ * e.g. bcb_event_date('D, M j') => "Sat, Apr 18".
+ */
+function bcb_event_date($format = 'D, M j')
+{
+    $start = bcb_cfg('event.start_date', '');
+
+    if ($start === '') {
+        return '';
+    }
+
+    try {
+        $tz = new DateTimeZone(bcb_cfg('event.timezone', 'Asia/Kolkata'));
+        $date = new DateTime($start, $tz);
+    } catch (Exception $e) {
+        error_log('bcb_event_date: ' . $e->getMessage());
+        return '';
+    }
+
+    return $date->format($format);
+}

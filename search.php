@@ -2,10 +2,7 @@
 
 
 <script type="text/javascript">
-    
     bcb_page_name = "search";
-    
-    
 </script>
 
 <div id="page_search_container" class="d-flex justify-content-center">
@@ -20,8 +17,8 @@
             <?php if (have_posts()) : ?>
                 <ul>
                     <?php while (have_posts()) : the_post(); ?>
-                        <li  class="search_result_item single_page_box">
-                            <h2><a  class="search_result_item_title"  href="<?php the_permalink(); ?>" ><?php the_title(); ?></a></h2>
+                        <li class="search_result_item single_page_box">
+                            <h2><a class="search_result_item_title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
                             <div class="search_result_item_details">Tags: <?php the_tags("", " | ", ""); ?> </div>
                         </li>
                     <?php endwhile; ?>
@@ -37,4 +34,3 @@
 
 
 <?php get_footer(); ?>
-    
