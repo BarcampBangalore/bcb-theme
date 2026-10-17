@@ -1240,3 +1240,30 @@ a.bcb-sponsor-logo:hover { opacity: 0.75; }
   .bcb-session-hero__title { font-size: 38px; }
   .bcb-box-grid { grid-template-columns: minmax(0, 1fr); }
 }
+
+/* ==========================================================
+   Author (camper) page (author.php)
+   ========================================================== */
+.bcb-edition-card { margin-bottom: 32px; }
+.bcb-edition-card__title { margin: 0 0 16px; font-family: 'Instrument Serif', serif; font-style: italic; font-weight: 400; font-size: 34px; line-height: 1.1; }
+.bcb-edition-card__cols { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px; }
+.bcb-edition-card__cols:has(> div:only-child) { grid-template-columns: minmax(0, 1fr); }
+.bcb-session-list { list-style: none; margin: 0; padding: 0; }
+.bcb-session-list li { margin: 0 0 10px; padding: 0; overflow-wrap: anywhere; }
+.bcb-session-list a {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.4;
+  color: oklch(18% 0.02 40);
+  text-decoration: underline;
+  text-decoration-color: oklch(64% 0.19 45);
+  text-underline-offset: 3px;
+}
+.bcb-session-list a:hover { text-decoration-color: oklch(18% 0.02 40); }
+.bcb-article .bcb-empty { margin-top: 8px; }
+
+@media (max-width: 900px) {
+  .bcb-edition-card__cols { grid-template-columns: minmax(0, 1fr); }
+  .bcb-edition-card__title { font-size: 28px; }
+}

@@ -4,7 +4,9 @@
     "hashtag": "#bcb2026",
     "start_date": "2026-11-21",
     "timezone": "Asia/Kolkata",
-    "location_short": "Church Street, Bengaluru"
+    "location_short": "Church Street, Bengaluru",
+    "edition_label": "BCB 2026",
+    "category_id": 2077
   },
 
   "images": {
