@@ -278,6 +278,33 @@
     "non_step_headings": ["FAQ"]
   },
 
+  "about": {
+    "_help": "The About page: logo hero, facts strip, photo collage, then the page text from WP admin, then a closing call to action. photos[]: src, alt, optional caption and credit_url/credit_label; the first one is shown larger. cta.links[] are extra buttons (the RSVP button is added when rsvp.enabled).",
+    "label": "About",
+    "lead": "An open to public, participatory, workshop-event focused around people, ideas and collaboration.",
+    "sticker": "SINCE 2006",
+    "facts": [
+      { "value": "2006",     "label": "our first Barcamp" },
+      { "value": "100%",     "label": "volunteer-run, not-for-profit" },
+      { "value": "Free",     "label": "to attend and to speak" },
+      { "value": "Hundreds", "label": "of participants" }
+    ],
+    "photos": [
+      { "src": "images/team/first-planners.jpg", "alt": "The first Barcamp Bangalore organizers", "caption": "The first Barcamp Bangalore planners", "credit_label": "Photo on Flickr", "credit_url": "https://www.flickr.com/photos/muthuonline/134064868/" },
+      { "src": "images/hero-01.jpg",       "alt": "A hand holding a Barcamp Bangalore keychain" },
+      { "src": "images/crowd_cropped.JPG", "alt": "Attendees listening to a session" },
+      { "src": "images/hero-03.jpg",       "alt": "A maker showing off a homemade gadget" }
+    ],
+    "cta": {
+      "heading": "Come be part of it.",
+      "text": "Anyone with something to contribute or the desire to learn is welcome.",
+      "links": [
+        { "label": "Read the FAQ",  "url": "/faq" },
+        { "label": "Meet the team", "url": "/team" }
+      ]
+    }
+  },
+
   "faq": {
     "_help": "The questions/answers are the content of the FAQ page in WP admin ([expand title=\"...\"]answer[/expand]).",
     "label": "FAQ"
