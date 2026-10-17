@@ -50,7 +50,7 @@
     "waiting": {
       "sticker": "HOLD TIGHT",
       "heading": "We're planning the next one.",
-      "text": "The last BarCamp is in the books. Date and venue for the next edition will land here soon! Join the community channels below to hear first."
+      "text": "The last BarCamp is in the books. Date and venue for the next edition will land here soon — join the community channels below to hear first."
     }
   },
 
@@ -343,7 +343,7 @@
               },
               {
                 "label": "Website",
-                "url": "https://heydarsh.in"
+                "url": "https://heydarsh.xyz"
               }
             ],
             "bio": [
