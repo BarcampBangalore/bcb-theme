@@ -267,41 +267,8 @@
         "heading": "Current planners",
         "members": [
           {
-            "name": "Sathyajith Bhat",
-            "photo": "images/team/sathya.jpg",
-            "links": [
-              {
-                "label": "Twitter",
-                "url": "https://twitter.com/SathyaBhat"
-              },
-              {
-                "label": "Blog",
-                "url": "https://sathyabh.at"
-              }
-            ],
-            "bio": [
-              "AWS Community Hero. SRE by trade, Author of Practical Docker with Python & co-author of The CDK Book/ Gamer & Occasional streamer. I also look after BCB’s servers and handle BCB’s social media accounts."
-            ],
-            "quote": "Barcamp to me, is being able to strike up a conversation / discussion about anything at any point and come out of the discussion with some new ideas and techniques – that’s something which only twitter has offered as a medium."
-          },
-          {
-            "name": "Saurabh Minni",
-            "photo": "images/team/saurabh.jpg",
-            "links": [
-              {
-                "label": "Twitter",
-                "url": "https://twitter.com/the100rabh"
-              }
-            ],
-            "bio": [
-              "A technologist trying to make a dent in the Universe. Long-time participant and planner for BCB—expanding the world of sharing and learning.",
-              "Developer who does programming. Already written essays in Assembly, C, C++, Java, JavaScript, Python, Pascal, PHP, and HTML.",
-              "Always interested in all new tech."
-            ]
-          },
-          {
             "name": "Shreyas Ranganatha",
-            "photo": "images/team/shreyas-ranganatha.jpeg",
+            "photo": "images/team/shreyas-ranganatha.png",
             "links": [
               {
                 "label": "LinkedIn",
@@ -311,6 +278,23 @@
             "bio": [
               "aka. strawsnoceans",
               "I love building tech! and puzzles!, a lot!!"
+            ]
+          },
+          {
+            "name": "Darsh",
+            "photo": "images/team/darsh.jpg",
+            "links": [
+              {
+                "label": "LinkedIn",
+                "url": "https://www.linkedin.com/in/vdarshh/"
+              },
+              {
+                "label": "Website",
+                "url": "https://heydarsh.xyz"
+              }
+            ],
+            "bio": [
+              "Fighting segfaults and inner demons."
             ]
           },
           {
@@ -353,20 +337,36 @@
             ]
           },
           {
-            "name": "Darsh",
-            "photo": "images/team/darsh.jpg",
+            "name": "Sathyajith Bhat",
+            "photo": "images/team/sathya.jpg",
             "links": [
               {
-                "label": "LinkedIn",
-                "url": "https://www.linkedin.com/in/vdarshh/"
+                "label": "Twitter",
+                "url": "https://twitter.com/SathyaBhat"
               },
               {
-                "label": "Website",
-                "url": "https://heydarsh.xyz"
+                "label": "Blog",
+                "url": "https://sathyabh.at"
               }
             ],
             "bio": [
-              "Fighting segfaults and inner demons."
+              "AWS Community Hero. SRE by trade, Author of Practical Docker with Python & co-author of The CDK Book/ Gamer & Occasional streamer. I also look after BCB’s servers and handle BCB’s social media accounts."
+            ],
+            "quote": "Barcamp to me, is being able to strike up a conversation / discussion about anything at any point and come out of the discussion with some new ideas and techniques – that’s something which only twitter has offered as a medium."
+          },
+          {
+            "name": "Saurabh Minni",
+            "photo": "images/team/saurabh.jpg",
+            "links": [
+              {
+                "label": "Twitter",
+                "url": "https://twitter.com/the100rabh"
+              }
+            ],
+            "bio": [
+              "A technologist trying to make a dent in the Universe. Long-time participant and planner for BCB—expanding the world of sharing and learning.",
+              "Developer who does programming. Already written essays in Assembly, C, C++, Java, JavaScript, Python, Pascal, PHP, and HTML.",
+              "Always interested in all new tech."
             ]
           }
         ]
