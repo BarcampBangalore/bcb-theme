@@ -110,9 +110,39 @@ function neo_attend_toggle_attend_nologin()
     die;
 }
 
+/**
+ * Lowercased logins of every existing user, loaded once per request. Attendance is stored as
+ * post meta holding a login, and some of those users have since been deleted.
+ */
+function bcb_valid_user_logins()
+{
+    static $valid = null;
+
+    if ($valid === null) {
+        global $wpdb;
+        $valid = array_flip(array_map('strtolower', $wpdb->get_col("SELECT user_login FROM {$wpdb->users}")));
+    }
+
+    return $valid;
+}
+
+/**
+ * Logins of the users marked as attending a session. Users that no longer exist and
+ * repeated entries are left out, so counts, names and avatars all agree.
+ */
 function attending_users($postid)
 {
-    return get_post_meta($postid, 'user_attending');
+    $valid = bcb_valid_user_logins();
+    $users = array();
+
+    foreach (get_post_meta($postid, 'user_attending') as $login) {
+        $key = strtolower($login);
+        if (isset($valid[$key]) && !isset($users[$key])) {
+            $users[$key] = $login;
+        }
+    }
+
+    return array_values($users);
 }
 
 function attending_users_count($postid)
@@ -138,6 +168,9 @@ function get_attending_users_links($postid, $prev = 'Who is attending : ', $sepa
                 $result .= $separator;
             }
             $user = get_user_by('login', $user);
+            if (!$user) {
+                continue;
+            }
             $result .= '<a class="attending_user" href="' . get_author_posts_url($user->ID) . '">' . get_the_author_meta('user_nicename', $user->ID) . '</a>';
         }
         $result .= '</div>';
@@ -461,18 +494,19 @@ function bcb_mark_steps($html, $skip_headings = array())
 /**
  * Replace {year} (event year), {date} (full event date, e.g. "Saturday, April 18, 2026"),
  * {event} (event name), {venue} (venue name), {rsvp_url} (RSVP link) and {home} (site URL)
- * in a config string or in WP page content (FAQ, How to register).
+ * in a config string or in WP page content (FAQ, How to register). $extra adds more
+ * tokens, e.g. array('{title}' => ...).
  */
-function bcb_tpl($text)
+function bcb_tpl($text, $extra = array())
 {
-    return strtr($text, array(
+    return strtr($text, array_merge(array(
         '{year}'     => bcb_event_date('Y'),
         '{date}'     => bcb_event_date('l, F j, Y'),
         '{event}'    => bcb_cfg('event.name', 'BarCamp Bangalore'),
         '{venue}'    => bcb_cfg('venue.name'),
         '{rsvp_url}' => bcb_cfg('rsvp.url'),
         '{home}'     => untrailingslashit(home_url()),
-    ));
+    ), $extra));
 }
 
 /**
@@ -509,4 +543,35 @@ function bcb_event_date($format = 'D, M j')
     }
 
     return $date->format($format);
+}
+
+/**
+ * Days until the configured event, or null when there is no upcoming event
+ * (missing/invalid start_date, or the date is already in the past).
+ * The event day itself counts as upcoming (returns 0).
+ */
+function bcb_days_until_event()
+{
+    $start = bcb_cfg('event.start_date', '');
+
+    if ($start === '') {
+        return null;
+    }
+
+    try {
+        $tz = new DateTimeZone(bcb_cfg('event.timezone', 'Asia/Kolkata'));
+        $event = new DateTime($start, $tz);
+        $today = new DateTime('today', $tz);
+    } catch (Exception $e) {
+        error_log('bcb_days_until_event: ' . $e->getMessage());
+        return null;
+    }
+
+    $event->setTime(0, 0);
+
+    if ($event < $today) {
+        return null;
+    }
+
+    return (int) $today->diff($event)->days;
 }

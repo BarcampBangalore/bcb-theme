@@ -1,176 +1,142 @@
-<?php get_header(); ?>
-
 <?php
-$curauth = (get_query_var('author_name')) ? get_user_by('slug', get_query_var('author_name')) : get_userdata(get_query_var('author'));
+/**
+ * Author (camper) page: sessions presented and attended, grouped by edition.
+ * Editions come from data/event.json: the current one (event.category_id / edition_label)
+ * plus archives.editions, newest first.
+ */
+get_header('bcb');
+global $wpdb;
 
+$bcb_author = get_queried_object();
+if (!($bcb_author instanceof WP_User)) {
+    $bcb_author = get_userdata(get_query_var('author'));
+}
 
-$cat_buckets = array(
-    "2077" => array(array(), array()),
-    "2045" => array(array(), array()),
-    "2004" => array(array(), array()),
-    "1970" => array(array(), array()),
-    "1915" => array(array(), array()),
-    "1874" => array(array(), array()),
-    "1863" => array(array(), array()),
-    "1759" => array(array(), array()),
-    "1691" => array(array(), array()),
-    "1556" => array(array(), array()),
-    "1458" => array(array(), array()),
-    "1366" => array(array(), array()),
-    "1224" => array(array(), array()),
-    "1057" => array(array(), array()),
-    "931" => array(array(), array()),
-    "785" => array(array(), array()),
-    "636" => array(array(), array()),
-    "479" => array(array(), array()),
-    "399" => array(array(), array()),
-    "324" => array(array(), array()),
-    "220" => array(array(), array()),
-    "3" => array(array(), array()),
-);
-$cat_names = array(
-    280 => array("2077", "BCB 2026"),
-    270 => array("2045", "BCB 2025 Autumn"),
-    260 => array("2004", "BCB 2025"),
-    250 => array("1970", "BCB 2024"),
-    240 => array("1915", "BCB 2023"),
-    230 => array("1874", "BCB 2022"),
-    220 => array("1863", "BCB Virtual 2021"),
-    210 => array("1759", "BCB Spring 2019"),
-    200 => array("1691", "BCB Spring 2018"),
-    190 => array("1556", "BCB Spring 2016"),
-    180 => array("1458", "BCB Monsoon 2015"),
-    175 => array("1366", "BCBX AntHill"),
-    170 => array("1224", "BCB Spring 2015"),
-    160 => array("1057", "BCB Monsoon 2014"),
-    150 => array("931", "BCB Spring 2014"),
-    140 => array("785", "BCB Monsoon 2013"),
-    130 => array("636", "BCB13"),
-    120 => array("479", "BCB12"),
-    110 => array("399", "BCB11"),
-    100 => array("324", "BCB10"),
-    90 => array("220", "BCB9"),
-    80 => array("3", "BCB8")
-);
+// edition category id => label, newest first
+$bcb_editions = array();
+if ((int) bcb_cfg('event.category_id', 0) > 0) {
+    $bcb_editions[(int) bcb_cfg('event.category_id')] = bcb_cfg('event.edition_label', bcb_cfg('event.name'));
+}
+foreach (bcb_cfg_list('archives.editions') as $edition) {
+    $bcb_editions[(int) $edition['category_id']] = $edition['label'];
+}
+krsort($bcb_editions);
 
+$bcb_presented = array(); // edition id => WP_Post[]
+$bcb_attended  = array();
+$bcb_n_presented = 0;
+$bcb_n_attended  = 0;
 
+if ($bcb_author) {
+    // Sessions presented (all of them, not just the first page of the author archive)
+    $presented = get_posts(array(
+        'author'           => $bcb_author->ID,
+        'posts_per_page'   => -1,
+        'post_status'      => 'publish',
+        'suppress_filters' => false,
+    ));
+    foreach ($presented as $p) {
+        $placed = false;
+        foreach (get_the_category($p->ID) as $c) {
+            if (isset($bcb_editions[(int) $c->cat_ID])) {
+                $bcb_presented[(int) $c->cat_ID][] = $p;
+                $placed = true;
+            }
+        }
+        $bcb_n_presented += $placed ? 1 : 0;
+    }
+
+    // Sessions attended (marked "interested")
+    $ids = $wpdb->get_col($wpdb->prepare(
+        "SELECT post_id FROM {$wpdb->postmeta} WHERE meta_key = 'user_attending' AND meta_value = %s ORDER BY meta_id DESC",
+        $bcb_author->user_login
+    ));
+    $ids = array_values(array_unique(array_map('intval', $ids)));
+    $attended = $ids ? get_posts(array(
+        'post__in'       => $ids,
+        'orderby'        => 'post__in',
+        'posts_per_page' => -1,
+        'post_type'      => 'any',
+        'post_status'    => 'publish',
+    )) : array();
+    foreach ($attended as $p) {
+        $placed = false;
+        foreach (get_the_category($p->ID) as $c) {
+            if (isset($bcb_editions[(int) $c->cat_ID])) {
+                $bcb_attended[(int) $c->cat_ID][] = $p;
+                $placed = true;
+            }
+        }
+        $bcb_n_attended += $placed ? 1 : 0;
+    }
+}
+
+$bcb_name = $bcb_author ? ($bcb_author->display_name ? $bcb_author->display_name : $bcb_author->user_nicename) : '';
 ?>
 
-<div id="page_author_container">
+<section class="bcb-session-hero">
+    <div class="bcb-session-hero__inner">
+        <a class="bcb-back" href="<?php echo esc_url(home_url('/sessions')); ?>" onclick="if (history.length > 1) { history.back(); return false; }">← Back</a>
 
-    <div id="page_author_wrapper" class="d-flex flex-column container-fluid">
-        <div class="row">
-            <div class="col-2">
-                <div id="page_author_avatar" class=""><?php echo get_avatar(get_the_author_meta('ID'), 150); ?></div>
-            </div>
-            <div class="col-10">
-                <div class="single_page_box">
-                    <div id="page_author_name" class="">User :
-                        <?php echo '<a href="' . get_author_posts_url(get_the_author_meta('ID')) . '">' . get_the_author_meta('user_nicename') . '</a>'; ?>
-                    </div>
-                    <div id="page_author_sincedate">Camper since
-                        <?php echo date("F, Y", strtotime($curauth->user_registered)); ?></div>
+        <div class="bcb-section-label bcb-section-label--orange">Camper</div>
+        <h1 class="bcb-session-hero__title"><?php echo esc_html($bcb_name); ?></h1>
+
+        <?php if ($bcb_author) : ?>
+        <div class="bcb-session-hero__by">
+            <?php echo get_avatar($bcb_author->ID, 56); ?>
+            <div>
+                <div class="bcb-session-hero__presenter">Camper since <?php echo esc_html(date_i18n('F Y', strtotime($bcb_author->user_registered))); ?></div>
+                <div class="bcb-session-hero__time">
+                    <?php echo (int) $bcb_n_presented; ?> presented · <?php echo (int) $bcb_n_attended; ?> attended
                 </div>
             </div>
         </div>
-
-        <div class="row">
-
-            <div class="col-2"></div>
-            <div class="col-10">
-
-                <?php
-                // find presented sessions
-                while (have_posts()):
-                    the_post();
-                    $cat = get_the_category();
-                    for ($i = 0; $i < count($cat); $i++) {
-                        if (array_key_exists((string) $cat[$i]->cat_ID, $cat_buckets)) {
-                            $cat_buckets[$cat[$i]->cat_ID][0][] = '<h2><a href="' . get_permalink() . '" >' . get_the_title() . '</a></h2>';
-                        }
-                    }
-                endwhile;
-                // Find sessions attended
-                $sql = "SELECT * FROM $wpdb->postmeta WHERE meta_value = '$curauth->user_login' AND meta_key = 'user_attending' order by meta_id desc";
-                $attending_sessions = $wpdb->get_results($sql);
-                foreach ($attending_sessions as $session) {
-                    $post_row = get_post($session->post_id);
-                    $cat = get_the_category($session->post_id);
-                    for ($i = 0; $i < count($cat); $i++) {
-                        if (array_key_exists((string) $cat[$i]->cat_ID, $cat_buckets)) {
-                            $cat_buckets[$cat[$i]->cat_ID][1][] = '<h2><a href="' . get_permalink($session->post_id) . '" >' . $post_row->post_title . '</a></h2>';
-                        }
-                    }
-                }
-                // Now render the sessions
-                ?>
-
-                <?php
-                foreach ($cat_names as $bcb) {
-                    if (count($cat_buckets[$bcb[0]][0]) > 0 || count($cat_buckets[$bcb[0]][1]) > 0) {
-                        ?>
-                        <div class="single_page_box">
-                            <div class="authorpage_bcb_title">
-                                <?php echo $bcb[1]; // BCB Title  ?>
-                            </div>
-
-                            <div class="row">
-                                <?php
-
-                                if (count($cat_buckets[$bcb[0]][1]) > 0) {
-                                    ?>
-                                    <div class="col-sm-6 authorpage_sessions_area">
-                                        <div class="authorpage_sesstions_type">
-                                            Sessions Attended
-                                        </div>
-                                        <?php
-                                        foreach ($cat_buckets[$bcb[0]][1] as $sess) {
-
-                                            echo '<div class="authorpage_session_item">' . $sess . '</div>';
-
-                                        }
-                                        ?>
-                                    </div>
-                                    <?php
-                                }
-
-
-
-                                if (count($cat_buckets[$bcb[0]][0]) > 0) {
-                                    ?>
-                                    <div class="col-sm-6 authorpage_sessions_area">
-                                        <div class="authorpage_sesstions_type">
-                                            Sessions Proposed/Presented
-                                        </div>
-                                        <?php
-                                        foreach ($cat_buckets[$bcb[0]][0] as $sess) {
-
-                                            echo '<div class="authorpage_session_item">' . $sess . '</div>';
-
-                                        }
-                                        ?>
-                                    </div>
-                                    <?php
-                                }
-
-
-                                ?>
-                            </div>
-                        </div>
-
-                        <?php
-                    }
-                }
-                ?>
-
-            </div>
-
-        </div>
-
+        <?php endif; ?>
     </div>
+</section>
 
+<section class="bcb-listing">
+    <div class="bcb-article">
+        <?php
+        $bcb_shown = 0;
+        foreach ($bcb_editions as $edition_id => $edition_label) :
+            $p_list = isset($bcb_presented[$edition_id]) ? $bcb_presented[$edition_id] : array();
+            $a_list = isset($bcb_attended[$edition_id]) ? $bcb_attended[$edition_id] : array();
+            if (!$p_list && !$a_list) {
+                continue;
+            }
+        ?>
+        <div class="bcb-box bcb-box--<?php echo $bcb_shown++ % 2 ? 'green' : 'orange'; ?> bcb-edition-card">
+            <h2 class="bcb-edition-card__title"><?php echo esc_html($edition_label); ?></h2>
+            <div class="bcb-edition-card__cols">
+                <?php if ($p_list) : ?>
+                <div>
+                    <div class="bcb-box__title">Sessions proposed / presented</div>
+                    <ul class="bcb-session-list">
+                        <?php foreach ($p_list as $p) : ?>
+                        <li><a href="<?php echo esc_url(get_permalink($p->ID)); ?>"><?php echo esc_html(get_the_title($p->ID)); ?></a></li>
+                        <?php endforeach; ?>
+                    </ul>
+                </div>
+                <?php endif; ?>
+                <?php if ($a_list) : ?>
+                <div>
+                    <div class="bcb-box__title">Sessions attended</div>
+                    <ul class="bcb-session-list">
+                        <?php foreach ($a_list as $p) : ?>
+                        <li><a href="<?php echo esc_url(get_permalink($p->ID)); ?>"><?php echo esc_html(get_the_title($p->ID)); ?></a></li>
+                        <?php endforeach; ?>
+                    </ul>
+                </div>
+                <?php endif; ?>
+            </div>
+        </div>
+        <?php endforeach; ?>
 
-</div>
+        <?php if ($bcb_shown === 0) : ?>
+        <div class="bcb-empty">No sessions yet.</div>
+        <?php endif; ?>
+    </div>
+</section>
 
-
-<?php get_footer(); ?>
+<?php get_footer('bcb'); ?>

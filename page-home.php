@@ -14,7 +14,44 @@ $bcb_color = function ($color) {
 $bcb_rsvp_on    = (bool) bcb_cfg('rsvp.enabled', true);
 $bcb_rsvp_url   = bcb_link(bcb_cfg('rsvp.url', '/rsvp'));
 $bcb_rsvp_label = bcb_cfg('rsvp.label', 'RSVP now →');
+
+// Banner: "upcoming" while the event date is today or later, "waiting" once it has passed.
+$bcb_days = bcb_days_until_event();
+if ($bcb_days === null) {
+  $bcb_banner_state = 'waiting';
+} else {
+  $bcb_banner_state = 'upcoming';
+  $bcb_banner_when  = $bcb_days === 0
+    ? bcb_cfg('banner.upcoming.today_text')
+    : ($bcb_days === 1
+      ? bcb_cfg('banner.upcoming.tomorrow_text')
+      : str_replace('{days}', $bcb_days, bcb_cfg('banner.upcoming.countdown_text')));
+}
 ?>
+
+<?php if (bcb_cfg('banner.enabled', true)) : ?>
+  <!-- EVENT BANNER -->
+  <aside class="bcb-banner bcb-banner--<?php echo $bcb_banner_state; ?>" role="status">
+    <div class="bcb-banner__inner">
+      <span class="bcb-banner__sticker"><?php echo bcb_text(bcb_cfg("banner.$bcb_banner_state.sticker")); ?></span>
+      <?php if ($bcb_banner_state === 'upcoming') : ?>
+        <div class="bcb-banner__body">
+          <strong class="bcb-banner__heading"><?php echo bcb_text(str_replace('{name}', bcb_cfg('event.name'), bcb_cfg('banner.upcoming.heading'))); ?></strong>
+          <span class="bcb-banner__meta"><?php echo bcb_text(bcb_event_date('l, F j, Y') . ' · ' . bcb_cfg('event.location_short')); ?></span>
+        </div>
+        <span class="bcb-banner__pill"><?php echo bcb_text($bcb_banner_when); ?></span>
+        <?php if ($bcb_rsvp_on) : ?>
+          <a class="bcb-banner__cta" href="<?php echo esc_url($bcb_rsvp_url); ?>"><?php echo bcb_text($bcb_rsvp_label); ?></a>
+        <?php endif; ?>
+      <?php else : ?>
+        <div class="bcb-banner__body">
+          <strong class="bcb-banner__heading"><?php echo bcb_text(bcb_cfg('banner.waiting.heading')); ?></strong>
+          <span class="bcb-banner__meta"><?php echo bcb_text(bcb_cfg('banner.waiting.text')); ?></span>
+        </div>
+      <?php endif; ?>
+    </div>
+  </aside>
+<?php endif; ?>
 
 <!-- HERO -->
 <section class="bcb-hero">

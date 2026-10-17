@@ -2,9 +2,11 @@
   "event": {
     "name": "BarCamp Bangalore",
     "hashtag": "#bcb2026",
-    "start_date": "2026-04-18",
+    "start_date": "2026-11-21",
     "timezone": "Asia/Kolkata",
-    "location_short": "Church Street, Bengaluru"
+    "location_short": "Church Street, Bengaluru",
+    "edition_label": "BCB 2026",
+    "category_id": 2077
   },
 
   "images": {
@@ -33,6 +35,23 @@
       { "label": "About",           "url": "/about" },
       { "label": "Team",            "url": "/team" }
     ]
+  },
+
+  "banner": {
+    "_help": "Home page banner above the hero. Shown as 'upcoming' while event.start_date is today or later, otherwise as 'waiting' (the next event isn't scheduled yet). Set enabled to false to hide it entirely. Only upcoming shows the RSVP button (and only if rsvp.enabled).",
+    "enabled": true,
+    "upcoming": {
+      "sticker": "NEW EVENT",
+      "heading": "{name} is happening!",
+      "today_text": "It's today — come on in.",
+      "tomorrow_text": "Tomorrow!",
+      "countdown_text": "{days} days to go"
+    },
+    "waiting": {
+      "sticker": "HOLD TIGHT",
+      "heading": "We're planning the next one.",
+      "text": "The last BarCamp is in the books. Date and venue for the next edition will land here soon — join the community channels below to hear first."
+    }
   },
 
   "rsvp": {
@@ -247,9 +266,43 @@
     ]
   },
 
+  "share": {
+    "_help": "Used by the session pages. {event} {year} come from the event settings; {title} and {url} are the session's. The hashtag is event.hashtag; handle is appended as @handle.",
+    "label": "Share this session",
+    "message": "I am attending {event} {year}! Session titled \"{title}\" looks interesting. More info at {url}",
+    "handle": "barcampbng"
+  },
+
   "how_to_register": {
     "_help": "On the How to register page, every top-level list with 2+ items becomes a vertical step-by-step progress bar, unless the heading above it contains one of these words.",
     "non_step_headings": ["FAQ"]
+  },
+
+  "about": {
+    "_help": "The About page: logo hero, facts strip, photo collage, then the page text from WP admin, then a closing call to action. photos[]: src, alt, optional caption and credit_url/credit_label; the first one is shown larger. cta.links[] are extra buttons (the RSVP button is added when rsvp.enabled).",
+    "label": "About",
+    "lead": "An open to public, participatory, workshop-event focused around people, ideas and collaboration.",
+    "sticker": "SINCE 2006",
+    "facts": [
+      { "value": "2006",     "label": "our first Barcamp" },
+      { "value": "100%",     "label": "volunteer-run, not-for-profit" },
+      { "value": "Free",     "label": "to attend and to speak" },
+      { "value": "Hundreds", "label": "of participants" }
+    ],
+    "photos": [
+      { "src": "images/team/first-planners.jpg", "alt": "The first Barcamp Bangalore organizers", "caption": "The first Barcamp Bangalore planners", "credit_label": "Photo on Flickr", "credit_url": "https://www.flickr.com/photos/muthuonline/134064868/" },
+      { "src": "images/hero-01.jpg",       "alt": "A hand holding a Barcamp Bangalore keychain" },
+      { "src": "images/crowd_cropped.JPG", "alt": "Attendees listening to a session" },
+      { "src": "images/hero-03.jpg",       "alt": "A maker showing off a homemade gadget" }
+    ],
+    "cta": {
+      "heading": "Come be part of it.",
+      "text": "Anyone with something to contribute or the desire to learn is welcome.",
+      "links": [
+        { "label": "Read the FAQ",  "url": "/faq" },
+        { "label": "Meet the team", "url": "/team" }
+      ]
+    }
   },
 
   "faq": {
