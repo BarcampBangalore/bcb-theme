@@ -15,12 +15,13 @@
     "favicon_16": "images/favicon-16x16.png",
     "hero": { "src": "images/techlash_cropped.JPG", "alt": "Techlash lightning talk at BarCamp Bangalore" },
     "moments": [
-      { "src": "images/hero-01.jpg",   "alt": "BCB crowd" },
       { "src": "images/hero-02.jpg",   "alt": "Session pitch board" },
       { "src": "images/hero-03.jpg",   "alt": "Techlash lightning talk" },
-      { "src": "images/header-1.jpg",  "alt": "Hallway conversation" },
-      { "src": "images/header-2.jpg",  "alt": "Lunch break chats" },
-      { "src": "images/header-3.jpg",  "alt": "Sticky-note schedule" }
+      { "src": "images/header-3.jpg",  "alt": "Sticky-note schedule" },
+      { "src": "images/early-2026/IMG_5049.png",  "alt": "Touring in Vietnam" },
+      { "src": "images/early-2026/IMG_5091.png",  "alt": "Crowd" },
+      { "src": "images/early-2026/IMG_5108.png",  "alt": "Poster" },
+      { "src": "images/early-2026/IMG_7646.png",  "alt": "All of us" }
     ]
   },
 
@@ -219,20 +220,44 @@
   },
 
   "techlash": {
-    "_help": "{year} is replaced with the event year, {home} with the site URL. intro[] items are paragraphs; <a>, <em>, <strong>, <br> are allowed.",
-    "label": "Techlash",
-    "heading": "Six minute brew",
+    "_help": "The Techlash page: hero with the title, photo stack and a timer sticker, a facts strip, intro text, 'how to take part' steps, the session list, then a closing call to action. {year} is replaced with the event year, {home} with the site URL. intro[] items are paragraphs; <a>, <em>, <strong>, <br> are allowed. photos[]: src, alt, caption; the first one is shown larger. steps[]: title, text.",
+    "label": "Six minute brew",
+    "title": "Techlash",
+    "lead": "Show your tech or product to a diverse, enthusiastic audience. You get six minutes and the whole room.",
+    "sticker": "6:00",
+    "facts": [
+      { "value": "6 min", "label": "to show what you've built" },
+      { "value": "Anyone", "label": "entrepreneur, inventor or hobbyist" },
+      { "value": "Limited", "label": "spots, so sign up early" },
+      { "value": "Curated", "label": "ideas go through a filtering process" }
+    ],
+    "photos": [
+      { "src": "images/techlash-lead.jpg", "alt": "Two attendees comparing glowing homemade lightsabers", "caption": "Techlash, live" },
+      { "src": "images/hero-02.jpg", "alt": "Speakers presenting to a Barcamp audience", "caption": "Six minutes. Go." }
+    ],
     "intro": [
       "Are you an innovator looking to showcase your tech or product to a diverse and enthusiastic audience? Look no further than our Techlash Showdown at Barcamp! This session is all about giving participants the opportunity to present their latest and greatest tech or product innovations in a 6-minute time limit.",
-      "This session is open to anyone who has a product they would like to demonstrate. Whether you're an entrepreneur, inventor, or hobbyist, this is your chance to showcase your innovation to an engaged and supportive audience.",
-      "Simply <a href=\"{home}/how-to-register\">register</a> for Barcamp and <a href=\"{home}/add-a-session\">submit a session</a> under the \"Techlash\" category. There are a limited number of spots available, so sign up early to ensure your spot.",
-      "PS: These ideas will undergo a filtering process. Remember to put in your phone number in the right field while you adding your session, we might require some clarifications from you."
+      "This session is open to anyone who has a product they would like to demonstrate. Whether you're an entrepreneur, inventor, or hobbyist, this is your chance to showcase your innovation to an engaged and supportive audience."
+    ],
+    "steps_heading": "How to get on stage",
+    "steps": [
+      { "title": "Register", "text": "<a href=\"{home}/how-to-register\">Register</a> for Barcamp. There are a limited number of spots available, so sign up early to ensure your spot." },
+      { "title": "Submit a session", "text": "<a href=\"{home}/add-a-session\">Submit a session</a> under the \"Techlash\" category." },
+      { "title": "Keep your phone handy", "text": "These ideas will undergo a filtering process. Put your phone number in the right field while adding your session, we might require some clarifications from you." }
     ],
     "category_id": 2085,
     "list_heading": "Techlash sessions for BCB {year}",
     "empty_text": "Sorry no techlash session has been posted yet.",
     "submit_url": "/add-a-session",
-    "submit_label": "Showcase your project?"
+    "submit_label": "Showcase your project?",
+    "cta": {
+      "heading": "Got something to show?",
+      "text": "Six minutes is plenty. Submit your idea under the Techlash category.",
+      "button_label": "Showcase your project →",
+      "links": [
+        { "label": "How to register", "url": "/how-to-register" }
+      ]
+    }
   },
 
   "archives": {
