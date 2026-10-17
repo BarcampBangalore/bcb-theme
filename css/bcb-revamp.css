@@ -596,12 +596,23 @@ a.bcb-sponsor-logo:hover { opacity: 0.75; }
 @media (max-width: 900px) {
   .bcb-hero__heading { font-size: 56px; }
   .bcb-hero { padding: 48px 0 60px; }
-  .bcb-hero__inner { padding: 0 24px 100px; }
-  .bcb-hero__photo { display: none; }
-  .bcb-hero__circle { display: none; }
+  .bcb-hero__inner { padding: 0 24px 64px; }
+  /* photo drops below the text; the circle sticker overlaps its bottom-left corner */
+  .bcb-hero__photo {
+    position: relative;
+    right: auto; top: auto;
+    width: 100%; max-width: 440px; height: 260px;
+    margin: 44px auto 0;
+    transform: rotate(2deg);
+  }
+  .bcb-hero__circle {
+    bottom: 22px; left: 16px;
+    width: 96px; height: 96px;
+    background: oklch(96% 0.02 75);
+    font-size: 11px;
+  }
   .bcb-hero__badge { right: 24px; }
   .bcb-nav { padding: 20px 24px; }
-  .bcb-nav__links { display: none; }
   .bcb-what { grid-template-columns: 1fr; padding: 48px 24px; gap: 32px; }
   .bcb-who { padding: 48px 24px; }
   .bcb-format { padding: 48px 24px; }
@@ -901,7 +912,7 @@ a.bcb-sponsor-logo:hover { opacity: 0.75; }
   .bcb-archive-sponsors { padding: 20px 16px; }
 }
 
-/* Longer nav (8 links): tighten before it runs out of room; below 900px the links are hidden (see above). */
+/* Longer nav (8 links): tighten before it runs out of room; below 900px the links move into the menu (see "Mobile menu"). */
 @media (max-width: 1240px) {
   .bcb-nav { padding-left: 32px; padding-right: 32px; }
   .bcb-nav__links { gap: 18px; font-size: 14px; }
@@ -972,4 +983,103 @@ a.bcb-sponsor-logo:hover { opacity: 0.75; }
   .bcb-steps > li { padding-left: 56px; }
   .bcb-steps > li::before { width: 38px; height: 38px; font-size: 15px; }
   .bcb-steps > li::after { left: 17.5px; top: 38px; }
+}
+
+/* ==========================================================
+   Team page
+   ========================================================== */
+.bcb-pagehead .bcb-section-body a { color: oklch(52% 0.12 150); font-weight: 600; }
+.bcb-team__group { font-family: 'Instrument Serif', serif; font-weight: 400; font-size: 40px; text-align: center; margin: 56px 0 32px; }
+.bcb-team { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px; }
+.bcb-member {
+  display: flex;
+  gap: 20px;
+  padding: 24px;
+  background: oklch(96% 0.02 75);
+  border: 3px solid oklch(18% 0.02 40);
+  border-radius: 12px;
+  min-width: 0;
+}
+.bcb-member--orange { box-shadow: 8px 8px 0 oklch(64% 0.19 45); }
+.bcb-member--green  { box-shadow: 8px 8px 0 oklch(52% 0.12 150); }
+.bcb-member__photo { flex: none; width: 96px; height: 96px; border-radius: 50%; border: 2px solid oklch(18% 0.02 40); object-fit: cover; }
+.bcb-member__body { min-width: 0; font-size: 15px; line-height: 1.6; color: oklch(30% 0.02 40); overflow-wrap: anywhere; }
+.bcb-member__name { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 20px; margin: 0 0 6px; color: oklch(18% 0.02 40); }
+.bcb-member__links { display: flex; flex-wrap: wrap; gap: 4px 14px; list-style: none; margin: 0 0 10px; padding: 0; font-family: 'Space Grotesk', sans-serif; font-size: 14px; font-weight: 600; }
+.bcb-member__links a, .bcb-team__footer a, .bcb-team__first figcaption a { color: oklch(52% 0.12 150); }
+.bcb-member__bio { margin: 0 0 8px; }
+.bcb-member__quote { margin: 10px 0 0; padding-left: 14px; border-left: 3px solid oklch(64% 0.19 45); font-style: italic; }
+.bcb-team__first { margin: 64px 0 0; text-align: center; }
+.bcb-team__first .bcb-team__group { margin-top: 0; }
+.bcb-team__first img { max-width: 100%; height: auto; border: 3px solid oklch(18% 0.02 40); border-radius: 12px; }
+.bcb-team__first figcaption { margin-top: 10px; font-size: 14px; }
+.bcb-team__footer { text-align: center; margin: 56px auto 0; max-width: 640px; line-height: 1.7; }
+
+@media (max-width: 900px) {
+  .bcb-team { grid-template-columns: 1fr; }
+  .bcb-team__group { font-size: 32px; margin-top: 40px; }
+}
+@media (max-width: 480px) {
+  .bcb-member { flex-direction: column; align-items: flex-start; }
+}
+
+/* ==========================================================
+   Mobile menu (header-bcb.php + scripts/nav.js)
+   ========================================================== */
+.bcb-nav__brand { display: flex; align-items: center; }
+.bcb-nav__menu { display: contents; }
+.bcb-nav__toggle { display: none; }
+
+@media (max-width: 900px) {
+  .bcb-nav { flex-wrap: wrap; padding: 16px 24px; position: relative; }
+  .bcb-nav__menu {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    gap: 16px;
+    padding-top: 12px;
+  }
+  .bcb-nav__links { flex-direction: column; gap: 0; font-size: 18px; }
+  .bcb-nav__links li + li { border-top: 1px solid oklch(85% 0.02 70); }
+  .bcb-nav__links a { display: block; padding: 12px 0; min-height: 44px; }
+  .bcb-nav__links a.is-active { text-underline-offset: 4px; }
+  .bcb-nav__actions { flex-wrap: wrap; padding-bottom: 8px; }
+
+  /* With JS the menu is a collapsible; without it the links just stay visible. */
+  .bcb-nav--js .bcb-nav__toggle { display: inline-flex; }
+  .bcb-nav--js .bcb-nav__menu { display: none; }
+  .bcb-nav--js.is-open .bcb-nav__menu { display: flex; }
+}
+
+.bcb-nav__toggle {
+  align-items: center;
+  justify-content: center;
+  width: 48px; height: 48px;
+  padding: 0;
+  border: 2px solid oklch(18% 0.02 40);
+  border-radius: 12px;
+  background: oklch(96% 0.02 75);
+  color: oklch(18% 0.02 40);
+  cursor: pointer;
+}
+.bcb-nav__toggle:focus-visible { outline: 3px solid oklch(64% 0.19 45); outline-offset: 2px; }
+.bcb-nav__links a:focus-visible, .bcb-nav__brand:focus-visible { outline: 3px solid oklch(64% 0.19 45); outline-offset: 3px; border-radius: 4px; }
+
+/* hamburger -> X */
+.bcb-nav__bars, .bcb-nav__bars::before, .bcb-nav__bars::after {
+  display: block;
+  width: 22px; height: 2.5px;
+  background: currentColor;
+  border-radius: 2px;
+  transition: transform .2s, background-color .2s;
+}
+.bcb-nav__bars { position: relative; }
+.bcb-nav__bars::before, .bcb-nav__bars::after { content: ''; position: absolute; left: 0; }
+.bcb-nav__bars::before { top: -7px; }
+.bcb-nav__bars::after { top: 7px; }
+.is-open .bcb-nav__bars { background: transparent; }
+.is-open .bcb-nav__bars::before { transform: translateY(7px) rotate(45deg); }
+.is-open .bcb-nav__bars::after { transform: translateY(-7px) rotate(-45deg); }
+@media (prefers-reduced-motion: reduce) {
+  .bcb-nav__bars, .bcb-nav__bars::before, .bcb-nav__bars::after { transition: none; }
 }

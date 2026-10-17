@@ -2,12 +2,13 @@
 /**
  * How to register. Content is the page content in WP admin; its step lists are shown
  * as a vertical progress stepper (see bcb_mark_steps() and the .bcb-steps styles).
+ * Tokens like {date}, {rsvp_url} and {home} are filled in from data/event.json (see bcb_tpl()).
  * Lists under headings listed in data/event.json (how_to_register.non_step_headings), e.g. FAQ, stay plain.
  */
 get_header('bcb');
 the_post();
 
-$bcb_content = apply_filters('the_content', get_the_content());
+$bcb_content = apply_filters('the_content', bcb_tpl(get_the_content()));
 $bcb_content = bcb_mark_steps($bcb_content, bcb_cfg_list('how_to_register.non_step_headings'));
 ?>
 
