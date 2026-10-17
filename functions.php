@@ -510,3 +510,34 @@ function bcb_event_date($format = 'D, M j')
 
     return $date->format($format);
 }
+
+/**
+ * Days until the configured event, or null when there is no upcoming event
+ * (missing/invalid start_date, or the date is already in the past).
+ * The event day itself counts as upcoming (returns 0).
+ */
+function bcb_days_until_event()
+{
+    $start = bcb_cfg('event.start_date', '');
+
+    if ($start === '') {
+        return null;
+    }
+
+    try {
+        $tz = new DateTimeZone(bcb_cfg('event.timezone', 'Asia/Kolkata'));
+        $event = new DateTime($start, $tz);
+        $today = new DateTime('today', $tz);
+    } catch (Exception $e) {
+        error_log('bcb_days_until_event: ' . $e->getMessage());
+        return null;
+    }
+
+    $event->setTime(0, 0);
+
+    if ($event < $today) {
+        return null;
+    }
+
+    return (int) $today->diff($event)->days;
+}

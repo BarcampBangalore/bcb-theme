@@ -74,6 +74,68 @@ body {
   cursor: pointer;
 }
 
+/* Event banner (above the hero) */
+@keyframes bcb-banner-pulse {
+  0%, 100% { transform: rotate(-4deg) scale(1); }
+  50%      { transform: rotate(-4deg) scale(1.08); }
+}
+.bcb-banner {
+  background: oklch(64% 0.19 45);
+  color: white;
+  border-bottom: 3px solid oklch(18% 0.02 40);
+  font-family: 'Space Grotesk', sans-serif;
+}
+.bcb-banner--waiting { background: oklch(52% 0.12 150); }
+.bcb-banner__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 14px 56px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.bcb-banner__sticker {
+  background: oklch(96% 0.02 75);
+  color: oklch(18% 0.02 40);
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  box-shadow: 3px 3px 0 oklch(18% 0.02 40);
+  transform: rotate(-4deg);
+  animation: bcb-banner-pulse 2.4s ease-in-out infinite;
+}
+.bcb-banner__body { display: flex; flex-direction: column; gap: 2px; flex: 1 1 280px; }
+.bcb-banner__heading { font-size: 18px; line-height: 1.25; }
+.bcb-banner__meta { font-size: 14px; opacity: 0.95; }
+.bcb-banner__pill {
+  background: oklch(18% 0.02 40);
+  padding: 7px 16px;
+  border-radius: 100px;
+  font-weight: 700;
+  font-size: 14px;
+  white-space: nowrap;
+}
+.bcb-banner__cta {
+  background: oklch(96% 0.02 75);
+  color: oklch(18% 0.02 40);
+  padding: 9px 20px;
+  border-radius: 100px;
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+  box-shadow: 3px 3px 0 oklch(18% 0.02 40);
+}
+.bcb-banner__cta:hover { transform: translate(1px, 1px); box-shadow: 2px 2px 0 oklch(18% 0.02 40); }
+@media (prefers-reduced-motion: reduce) {
+  .bcb-banner__sticker { animation: none; }
+}
+@media (max-width: 900px) {
+  .bcb-banner__inner { padding: 14px 24px; gap: 12px; }
+}
+
 /* Hero */
 .bcb-hero {
   position: relative;

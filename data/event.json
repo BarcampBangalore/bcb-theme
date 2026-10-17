@@ -2,7 +2,7 @@
   "event": {
     "name": "BarCamp Bangalore",
     "hashtag": "#bcb2026",
-    "start_date": "2026-04-18",
+    "start_date": "2026-11-21",
     "timezone": "Asia/Kolkata",
     "location_short": "Church Street, Bengaluru"
   },
@@ -33,6 +33,23 @@
       { "label": "About",           "url": "/about" },
       { "label": "Team",            "url": "/team" }
     ]
+  },
+
+  "banner": {
+    "_help": "Home page banner above the hero. Shown as 'upcoming' while event.start_date is today or later, otherwise as 'waiting' (the next event isn't scheduled yet). Set enabled to false to hide it entirely. Only upcoming shows the RSVP button (and only if rsvp.enabled).",
+    "enabled": true,
+    "upcoming": {
+      "sticker": "NEW EVENT",
+      "heading": "{name} is happening!",
+      "today_text": "It's today — come on in.",
+      "tomorrow_text": "Tomorrow!",
+      "countdown_text": "{days} days to go"
+    },
+    "waiting": {
+      "sticker": "HOLD TIGHT",
+      "heading": "We're planning the next one.",
+      "text": "The last BarCamp is in the books. Date and venue for the next edition will land here soon — join the community channels below to hear first."
+    }
   },
 
   "rsvp": {
