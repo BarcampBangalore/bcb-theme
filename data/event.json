@@ -185,7 +185,6 @@
         "link": "https://planning.barcampbangalore.com/sponsorship-opportunities-for-barcamp-bangalore-2024/",
         "link_label": "Sponsor us →",
         "logos": [
-          { "src": "images/sponsors/2025/foss-united.svg", "alt": "Foss United", "name": "Foss United", "link": "https://fossunited.org/" },
           { "src": "images/sponsors/janastu_logo.gif",     "alt": "Janastu",    "name": "Janastu",     "link": "https://barcampbangalore.com/bcb/about-janastu" }
         ]
       },
