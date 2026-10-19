@@ -58,11 +58,11 @@ wp_enqueue_style(
       </ul>
       <div class="bcb-nav__actions">
         <?php if (is_user_logged_in()) : ?>
-          <a class="bcb-btn-outline" href="<?php echo admin_url('profile.php'); ?>">Hi, <?php echo $current_user->user_login; ?></a>
-          <a class="bcb-btn-green" href="<?php echo wp_logout_url(home_url('/')); ?>">Logout</a>
+          <a class="btn bcb-btn-outline" href="<?php echo admin_url('profile.php'); ?>">Hi, <?php echo $current_user->user_login; ?></a>
+          <a class="btn bcb-btn-green" href="<?php echo wp_logout_url(home_url('/')); ?>">Logout</a>
         <?php else : ?>
-          <a class="bcb-btn-outline" href="<?php echo wp_login_url(get_permalink()); ?>">Login</a>
-          <a class="bcb-btn-green" href="<?php echo wp_registration_url(); ?>">Sign up</a>
+          <a class="btn bcb-btn-outline" href="<?php echo wp_login_url(get_permalink()); ?>">Login</a>
+          <a class="btn bcb-btn-green" href="<?php echo wp_registration_url(); ?>">Sign up</a>
         <?php endif; ?>
       </div>
     </div>
