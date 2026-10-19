@@ -41,7 +41,7 @@ if ($bcb_days === null) {
         </div>
         <span class="bcb-banner__pill"><?php echo bcb_text($bcb_banner_when); ?></span>
         <?php if ($bcb_rsvp_on) : ?>
-          <a class="bcb-banner__cta" href="<?php echo esc_url($bcb_rsvp_url); ?>"><?php echo bcb_text($bcb_rsvp_label); ?></a>
+          <a class="btn bcb-banner__cta" href="<?php echo esc_url($bcb_rsvp_url); ?>"><?php echo bcb_text($bcb_rsvp_label); ?></a>
         <?php endif; ?>
       <?php else : ?>
         <div class="bcb-banner__body">
@@ -64,7 +64,7 @@ if ($bcb_days === null) {
       <p class="bcb-hero__sub"><?php echo bcb_rich(bcb_cfg('hero.sub')); ?></p>
       <div class="bcb-hero__cta">
         <?php if ($bcb_rsvp_on) : ?>
-          <a class="bcb-btn-dark" href="<?php echo esc_url($bcb_rsvp_url); ?>"><?php echo bcb_text($bcb_rsvp_label); ?></a>
+          <a class="btn bcb-btn-dark" href="<?php echo esc_url($bcb_rsvp_url); ?>"><?php echo bcb_text($bcb_rsvp_label); ?></a>
         <?php endif; ?>
         <span class="bcb-hero__meta"><?php echo bcb_text(bcb_event_date('D, M j') . ' · ' . bcb_cfg('event.location_short')); ?></span>
       </div>
@@ -171,7 +171,7 @@ if ($bcb_days === null) {
         <div class="bcb-sticky-dot" style="transform:rotate(-3deg)"></div>
       </div>
       <p class="bcb-board-text"><?php echo bcb_text(bcb_cfg('board.collapsed_text')); ?></p>
-      <button class="bcb-btn-reveal" onclick="document.getElementById('board-collapsed').style.display='none'; document.getElementById('board-expanded').style.display='block'"><?php echo bcb_text(bcb_cfg('board.reveal_label')); ?></button>
+      <button class="btn bcb-btn-reveal" onclick="document.getElementById('board-collapsed').style.display='none'; document.getElementById('board-expanded').style.display='block'"><?php echo bcb_text(bcb_cfg('board.reveal_label')); ?></button>
     </div>
   </div>
 
@@ -224,7 +224,7 @@ if ($bcb_days === null) {
         <?php endforeach; ?>
       </div>
     </div>
-    <button class="bcb-collapse-link" onclick="document.getElementById('board-expanded').style.display='none'; document.getElementById('board-collapsed').style.display='block'"><?php echo bcb_text(bcb_cfg('board.collapse_label')); ?></button>
+    <button class="btn bcb-collapse-link" onclick="document.getElementById('board-expanded').style.display='none'; document.getElementById('board-collapsed').style.display='block'"><?php echo bcb_text(bcb_cfg('board.collapse_label')); ?></button>
   </div>
 
   <p class="bcb-board-hint"><?php echo bcb_text(bcb_cfg('board.hint')); ?></p>
@@ -251,7 +251,7 @@ if ($bcb_days === null) {
       <h2 class="bcb-rsvp__heading"><?php echo bcb_rich(bcb_cfg('rsvp_section.heading')); ?></h2>
       <p><?php echo bcb_rich(bcb_cfg('rsvp_section.body')); ?></p>
     </div>
-    <a class="bcb-btn-rsvp" href="<?php echo esc_url($bcb_rsvp_url); ?>"><?php echo bcb_text($bcb_rsvp_label); ?></a>
+    <a class="btn bcb-btn-rsvp" href="<?php echo esc_url($bcb_rsvp_url); ?>"><?php echo bcb_text($bcb_rsvp_label); ?></a>
   </section>
 <?php endif; ?>
 
