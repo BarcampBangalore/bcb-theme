@@ -6,7 +6,7 @@
     "timezone": "Asia/Kolkata",
     "location_short": "Church Street, Bengaluru",
     "edition_label": "BCB 2026",
-    "category_id": 2077
+    "category_id": 2100
   },
 
   "images": {
@@ -206,13 +206,13 @@
     "all_label": "All tracks",
     "empty_text": "No sessions in this track yet :)",
     "tracks": [
-      { "name": "Technology",              "icon": "images/ICONS/web-icons-19.png", "category_id": 2078 },
-      { "name": "Design",                  "icon": "images/ICONS/web-icons-15.png", "category_id": 2079 },
-      { "name": "Mobile & Web",            "icon": "images/ICONS/web-icons-16.png", "category_id": 2080 },
-      { "name": "Bangalore & Lifestyle",   "icon": "images/ICONS/web-icons-13.png", "category_id": 2081 },
-      { "name": "Scaling & Infrastructure","icon": "images/ICONS/web-icons-14.png", "category_id": 2082 },
-      { "name": "Entrepreneurship",        "icon": "images/ICONS/web-icons-17.png", "category_id": 2083 },
-      { "name": "Rest of the world",       "icon": "images/ICONS/web-icons-18.png", "category_id": 2084 }
+      { "name": "Technology",              "icon": "images/ICONS/web-icons-19.png", "category_id": 2101 },
+      { "name": "Design",                  "icon": "images/ICONS/web-icons-15.png", "category_id": 2102 },
+      { "name": "Mobile & Web",            "icon": "images/ICONS/web-icons-16.png", "category_id": 2103 },
+      { "name": "Bangalore & Lifestyle",   "icon": "images/ICONS/web-icons-13.png", "category_id": 2104 },
+      { "name": "Scaling & Infrastructure","icon": "images/ICONS/web-icons-14.png", "category_id": 2105 },
+      { "name": "Entrepreneurship",        "icon": "images/ICONS/web-icons-17.png", "category_id": 2106 },
+      { "name": "Rest of the world",       "icon": "images/ICONS/web-icons-18.png", "category_id": 2107 }
     ],
     "chosen_post_ids": [7354, 7363],
     "archived_post_ids": []
@@ -244,7 +244,7 @@
       { "title": "Submit a session", "text": "<a href=\"{home}/add-a-session\">Submit a session</a> under the \"Techlash\" category." },
       { "title": "Keep your phone handy", "text": "These ideas will undergo a filtering process. Put your phone number in the right field while adding your session, we might require some clarifications from you." }
     ],
-    "category_id": 2085,
+    "category_id": 2108,
     "list_heading": "Techlash sessions for BCB {year}",
     "empty_text": "Sorry no techlash session has been posted yet.",
     "submit_url": "/add-a-session",
