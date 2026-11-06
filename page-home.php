@@ -290,36 +290,36 @@ if ($bcb_days === null) {
           <div class="bcb-sponsor-card__tier bcb-sponsor-card__tier--<?php echo $color; ?>"><?php echo bcb_text($sponsor['tier']); ?></div>
           <a class="bcb-sponsor-cta-link" href="<?php echo esc_url(bcb_link($sponsor['link'])); ?>" target="_blank" rel="noopener"><?php echo bcb_text($sponsor['link_label']); ?></a>
         <?php else : ?>
-        <div class="bcb-sponsor-card__head">
-          <?php if (!empty($sponsor['badge'])) : ?>
-            <img class="bcb-sponsor-card__badge" src="<?php echo esc_url(bcb_asset($sponsor['badge'])); ?>" alt="" loading="lazy">
-          <?php endif; ?>
-          <div>
-            <?php if (!empty($sponsor['caption'])) : ?>
-              <div class="bcb-sponsor-card__caption"><?php echo bcb_text($sponsor['caption']); ?></div>
+          <div class="bcb-sponsor-card__head">
+            <?php if (!empty($sponsor['badge'])) : ?>
+              <img class="bcb-sponsor-card__badge" src="<?php echo esc_url(bcb_asset($sponsor['badge'])); ?>" alt="" loading="lazy">
             <?php endif; ?>
-            <div class="bcb-sponsor-card__tier bcb-sponsor-card__tier--<?php echo $color; ?>"><?php echo bcb_text($sponsor['tier']); ?></div>
+            <div>
+              <?php if (!empty($sponsor['caption'])) : ?>
+                <div class="bcb-sponsor-card__caption"><?php echo bcb_text($sponsor['caption']); ?></div>
+              <?php endif; ?>
+              <div class="bcb-sponsor-card__tier bcb-sponsor-card__tier--<?php echo $color; ?>"><?php echo bcb_text($sponsor['tier']); ?></div>
+            </div>
           </div>
-        </div>
-        <div class="bcb-sponsor-card__body<?php echo (isset($sponsor['layout']) && $sponsor['layout'] === 'stack') ? ' bcb-sponsor-card__body--stack' : ''; ?>">
-          <?php if ($type === 'logos') : ?>
-            <?php foreach ($sponsor['logos'] as $logo) :
-              $logo_link = !empty($logo['link']) ? bcb_link($logo['link']) : '';
-            ?>
-              <<?php echo $logo_link ? 'a href="' . esc_url($logo_link) . '" target="_blank" rel="noopener noreferrer"' : 'div'; ?> class="bcb-sponsor-logo">
-                <img src="<?php echo esc_url(bcb_asset($logo['src'])); ?>" alt="<?php echo esc_attr($logo['alt']); ?>">
-                <?php if (!empty($logo['name'])) : ?>
-                  <span><?php echo bcb_text($logo['name']); ?></span>
-                <?php endif; ?>
-              </<?php echo $logo_link ? 'a' : 'div'; ?>>
-            <?php endforeach; ?>
-          <?php else : ?>
-            <span class="bcb-sponsor-text"><?php echo bcb_text($sponsor['text']); ?></span>
+          <div class="bcb-sponsor-card__body<?php echo (isset($sponsor['layout']) && $sponsor['layout'] === 'stack') ? ' bcb-sponsor-card__body--stack' : ''; ?>">
+            <?php if ($type === 'logos') : ?>
+              <?php foreach ($sponsor['logos'] as $logo) :
+                $logo_link = !empty($logo['link']) ? bcb_link($logo['link']) : '';
+              ?>
+                <<?php echo $logo_link ? 'a href="' . esc_url($logo_link) . '" target="_blank" rel="noopener noreferrer"' : 'div'; ?> class="bcb-sponsor-logo">
+                  <img src="<?php echo esc_url(bcb_asset($logo['src'])); ?>" alt="<?php echo esc_attr($logo['alt']); ?>">
+                  <?php if (!empty($logo['name'])) : ?>
+                    <span><?php echo bcb_text($logo['name']); ?></span>
+                  <?php endif; ?>
+                </<?php echo $logo_link ? 'a' : 'div'; ?>>
+              <?php endforeach; ?>
+            <?php else : ?>
+              <span class="bcb-sponsor-text"><?php echo bcb_text($sponsor['text']); ?></span>
+            <?php endif; ?>
+          </div>
+          <?php if (!empty($sponsor['link'])) : ?>
+            <a class="bcb-sponsor-cta-link bcb-sponsor-cta-link--below" href="<?php echo esc_url(bcb_link($sponsor['link'])); ?>" target="_blank" rel="noopener"><?php echo bcb_text(isset($sponsor['link_label']) ? $sponsor['link_label'] : 'Sponsor us →'); ?></a>
           <?php endif; ?>
-        </div>
-        <?php if (!empty($sponsor['link'])) : ?>
-          <a class="bcb-sponsor-cta-link bcb-sponsor-cta-link--below" href="<?php echo esc_url(bcb_link($sponsor['link'])); ?>" target="_blank" rel="noopener"><?php echo bcb_text(isset($sponsor['link_label']) ? $sponsor['link_label'] : 'Sponsor us →'); ?></a>
-        <?php endif; ?>
         <?php endif; ?>
       </div>
     <?php endforeach; ?>
