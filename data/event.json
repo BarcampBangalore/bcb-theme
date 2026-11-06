@@ -62,7 +62,7 @@
   },
 
   "hero": {
-    "circle": ["NO SPEAKERS", "NO SCHEDULE", "JUST YOU"],
+    "circle": ["YOU TALK", "YOU LISTEN", "YOU CHOOSE"],
     "heading": "The unconference <em>Bangalore</em> builds together.",
     "sub": "No fixed agenda. No keynote speakers. Just a room full of curious people and a blank schedule. Filled in by whoever shows up with something to say."
   },
@@ -94,7 +94,7 @@
         "color": "orange",
         "title": "Talks",
         "meta": "45 min · 4 parallel tracks",
-        "text": "Six rooms, six sessions running at once. Don't like one? Get up and walk into another. We call that the Law of Two Feet."
+        "text": "Four rooms, four sessions running at once. Don't like one? Get up and walk into another. We call that the Law of Two Feet."
       },
       {
         "color": "green",
@@ -159,7 +159,7 @@
 
   "venue": {
     "label": "06 — Venue",
-    "name": "The Takshashila Institution (2nd floor) & Samagata Foundation (4th floor)",
+    "name": "Samagata Foundation (4th floor) &<br> The Takshashila Institution (2nd floor)",
     "address": "46/1, Cobalt Building, Church Street (above Church Street Social), Bengaluru - 560001.",
     "directions": "Take the metro and get down at the MG Road station on the Purple line. Walk over to Church Street Social to find the venue.",
     "map_embed_url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d903.7571911674339!2d77.60243193065465!3d12.975622873500768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae167c7b6919e9%3A0x86936959d24e13f5!2sCobalt%2C%20Museum%20Rd%2C%20Haridevpur%2C%20Shanthala%20Nagar%2C%20Ashok%20Nagar%2C%20Bengaluru%2C%20Karnataka%20560001!5e0!3m2!1sen!2sin!4v1734510391422!5m2!1sen!2sin",
